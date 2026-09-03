@@ -1,0 +1,26 @@
+{
+  "name": "hriech-web",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "test": "node --test test/*.test.mjs",
+    "build": "astro build && node scripts/verify-public-build.mjs",
+    "qa": "pnpm run check && pnpm run test && pnpm run build",
+    "deploy": "pnpm run qa && wrangler deploy"
+  },
+  "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/manrope": "^5.2.8",
+    "@fontsource-variable/newsreader": "^5.2.10",
+    "astro": "7.2.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "typescript": "^5.9.3",
+    "wrangler": "4.128.0"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

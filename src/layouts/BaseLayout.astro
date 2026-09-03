@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#111522" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:site_name" content="Hriech" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__brand" href="/">Hriech<b>.</b></a>
+      <span class="site-header__context">Verejné dáta · zdroje · mechanizmus</span>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <p><strong>Hriech</strong> mapuje verejne doložiteľné profesionálne a inštitucionálne vzťahy. Väzba sama osebe nie je dôkazom vplyvu ani konfliktu.</p>
+      <p><a href="#outlet-dennik-n">Späť na začiatok ↑</a></p>
+    </footer>
+  </body>
+</html>

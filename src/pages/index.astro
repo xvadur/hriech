@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import EditorialOrganizationMap from "../components/EditorialOrganizationMap.astro";
+import editorialMap from "../data/editorial-organization-map.json";
+
+const title = "Hriech — Kto tvorí slovenský informačný priestor?";
+const description = "Verejnozdrojová mapa ľudí, redakčných štruktúr, vlastníctva, financií a inštitucionálnych väzieb desiatich slovenských online médií.";
+---
+
+<BaseLayout {title} {description}>
+  {editorialMap.outlets.map((_, outletIndex) => (
+    <EditorialOrganizationMap data={editorialMap} {outletIndex} showGlobal={outletIndex === 0} />
+  ))}
+</BaseLayout>
