@@ -1,0 +1,1098 @@
+{
+  "outlet": {
+    "id": "pravda",
+    "name": "Pravda",
+    "legalEntity": {
+      "name": "OUR MEDIA SR a. s.",
+      "registrationId": "51267055",
+      "legalForm": "akciová spoločnosť",
+      "registeredOffice": "Kalinčiakova 14083/33, 831 04 Bratislava – mestská časť Nové Mesto",
+      "sourceRefIds": [
+        "pravda-source-contacts",
+        "pravda-source-orsr"
+      ]
+    },
+    "website": "https://www.pravda.sk/",
+    "mappingState": "public_roster_mapped",
+    "coverage": {
+      "summary": "Zmapované všetky mená a profesionálne roly z aktuálnej verejnej kontaktnej stránky Pravdy vrátane vedenia, vedúcich deskov a príloh, výroby, IT, marketingu a obchodu; doplnené aktuálne orgány a vlastnícka vrstva z registrov.",
+      "knownGaps": [
+        "Pravda nezverejňuje na kontaktnej stránke úplný zoznam radových redaktorov, editorov, fotografov, grafikov, korektorov ani produkčných pracovníkov; nemožno preto tvrdiť úplný interný headcount redakcie.",
+        "Verejné zmluvy a dotácie neboli v rýchlom prvom priechode konsolidovane prehľadané; žiadne sa preto neuvádzajú.",
+        "Finančné čísla patria celej spoločnosti OUR MEDIA SR a. s., nie iba značke Pravda."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "pravda-product-print",
+        "name": "Denník Pravda",
+        "kind": "print",
+        "relationship": "hlavný tlačený denník",
+        "url": "https://www.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-web",
+        "name": "Pravda.sk",
+        "kind": "publication",
+        "relationship": "hlavný spravodajský web",
+        "url": "https://www.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-tv",
+        "name": "TV Pravda",
+        "kind": "publication",
+        "relationship": "video produkt Pravdy",
+        "url": "https://tv.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-varecha",
+        "name": "Varecha",
+        "kind": "magazine",
+        "relationship": "kulinárska vertikála pomenovaná v kontaktoch",
+        "url": "https://varecha.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-uzitocna",
+        "name": "Užitočná Pravda",
+        "kind": "magazine",
+        "relationship": "servisná príloha/vertikála",
+        "url": "https://uzitocna.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-vikend",
+        "name": "Víkend",
+        "kind": "magazine",
+        "relationship": "príloha",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-dobre-zdravie",
+        "name": "Dobré zdravie",
+        "kind": "magazine",
+        "relationship": "príloha",
+        "url": "https://zdravie.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-krizovky",
+        "name": "Krížovky",
+        "kind": "magazine",
+        "relationship": "príloha",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-mediaklik",
+        "name": "Mediaklik",
+        "kind": "publication",
+        "relationship": "portál uvedený v reklamnom portfóliu vydavateľa",
+        "url": "https://www.mediaklik.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-product-ahojmama",
+        "name": "AhojMama",
+        "kind": "publication",
+        "relationship": "portál uvedený v reklamnom portfóliu vydavateľa",
+        "url": "https://ahojmama.pravda.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "pravda-unit-publisher",
+        "name": "OUR MEDIA SR a. s.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts",
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-unit-governance",
+        "name": "Predstavenstvo a dozorná rada",
+        "kind": "governance",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-unit-ownership",
+        "name": "Vlastníctvo",
+        "kind": "ownership",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-orsr",
+          "pravda-source-rpvs-2025",
+          "pravda-source-rpvs-current"
+        ]
+      },
+      {
+        "id": "pravda-unit-leadership",
+        "name": "Vedenie obsahu",
+        "kind": "leadership",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-newsroom",
+        "name": "Redakcia Pravdy",
+        "kind": "newsroom",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-domace",
+        "name": "Domáce udalosti",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-ekonomika",
+        "name": "Ekonomika",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-zahranicie",
+        "name": "Zahraničné udalosti",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-nazory",
+        "name": "Názory",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-kultura",
+        "name": "Kultúra",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-sport",
+        "name": "Šport",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-online",
+        "name": "Online",
+        "kind": "desk",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-prilohy",
+        "name": "Prílohy a vertikály",
+        "kind": "editorial",
+        "parentId": "pravda-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-production",
+        "name": "Výroba a distribúcia",
+        "kind": "production",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-technology",
+        "name": "IS a IT",
+        "kind": "technology",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-marketing",
+        "name": "Marketing",
+        "kind": "commercial",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-unit-commercial",
+        "name": "Inzercia a obchod",
+        "kind": "commercial",
+        "parentId": "pravda-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "pravda-person-maros-havran",
+        "name": "Maroš Havran",
+        "roles": [
+          {
+            "title": "predseda predstavenstva",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-ladislav-olle",
+        "name": "Ladislav Ollé",
+        "roles": [
+          {
+            "title": "člen predstavenstva; obchodný riaditeľ",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-katarina-agnerova",
+        "name": "Katarína Agnerová",
+        "roles": [
+          {
+            "title": "členka predstavenstva; finančná riaditeľka",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-rastislav-sedaj",
+        "name": "Rastislav Šedaj",
+        "roles": [
+          {
+            "title": "člen dozornej rady; riaditeľ IS a IT",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-rudolf-ondrus",
+        "name": "Rudolf Ondruš",
+        "roles": [
+          {
+            "title": "člen dozornej rady",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-natalia-petkacova",
+        "name": "Natália Petkáčová",
+        "roles": [
+          {
+            "title": "členka dozornej rady; riaditeľka marketingu",
+            "unitId": "pravda-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-person-michal-voracek",
+        "name": "Michal Voráček",
+        "roles": [
+          {
+            "title": "konečný užívateľ výhod podľa RPVS",
+            "unitId": "pravda-unit-ownership",
+            "roleLevel": "owner",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-rpvs-2025",
+              "pravda-source-rpvs-current"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-rpvs-2025",
+          "pravda-source-rpvs-current"
+        ]
+      },
+      {
+        "id": "pravda-person-daniela-madunicka",
+        "name": "Daniela Madunická",
+        "roles": [
+          {
+            "title": "manažérka výroby a distribúcie",
+            "unitId": "pravda-unit-production",
+            "roleLevel": "support_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-lubos-kamenisty",
+        "name": "Ľuboš Kamenistý",
+        "roles": [
+          {
+            "title": "riaditeľ obsahu",
+            "unitId": "pravda-unit-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-anna-mogilevskaia",
+        "name": "Anna Mogilevskaia",
+        "roles": [
+          {
+            "title": "vedúca kontaktu pre Domáce udalosti",
+            "unitId": "pravda-unit-domace",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-jaroslav-fabok",
+        "name": "Jaroslav Fabok",
+        "roles": [
+          {
+            "title": "vedúci kontaktu pre Ekonomiku",
+            "unitId": "pravda-unit-ekonomika",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-andrej-matisak",
+        "name": "Andrej Matišák",
+        "roles": [
+          {
+            "title": "vedúci kontaktu pre Zahraničné udalosti",
+            "unitId": "pravda-unit-zahranicie",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-igor-danis",
+        "name": "Igor Daniš",
+        "roles": [
+          {
+            "title": "vedúci kontaktu pre Názory",
+            "unitId": "pravda-unit-nazory",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-katarina-sedlakova",
+        "name": "Katarína Sedláková",
+        "roles": [
+          {
+            "title": "vedúca kontaktu pre Kultúru; vedúca Pravda TV magazínu",
+            "unitId": "pravda-unit-kultura",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-adam-zelinka",
+        "name": "Adam Zelinka",
+        "roles": [
+          {
+            "title": "vedúci kontaktu pre Šport",
+            "unitId": "pravda-unit-sport",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-ivan-piovarci",
+        "name": "Ivan Piovarči",
+        "roles": [
+          {
+            "title": "vedúci kontaktu pre Online",
+            "unitId": "pravda-unit-online",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-zuzana-hlavackova",
+        "name": "Zuzana Hlavačková",
+        "roles": [
+          {
+            "title": "vedúca Užitočnej Pravdy",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-henrieta-halasova",
+        "name": "Henrieta Halasová",
+        "roles": [
+          {
+            "title": "vedúca komerčných príloh",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-patricia-zlamalova",
+        "name": "Patrícia Zlámalová",
+        "roles": [
+          {
+            "title": "vedúca Varechy",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-miroslav-caplovic",
+        "name": "Miroslav Čaplovič",
+        "roles": [
+          {
+            "title": "vedúci Víkendu",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-bianka-stuppacherova",
+        "name": "Bianka Stuppacherová",
+        "roles": [
+          {
+            "title": "vedúca Dobrého zdravia",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-frantisek-steffek",
+        "name": "František Šteffek",
+        "roles": [
+          {
+            "title": "vedúci Krížoviek",
+            "unitId": "pravda-unit-prilohy",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-lubica-sulejova",
+        "name": "Ľubica Šulejová",
+        "roles": [
+          {
+            "title": "referentka inzercie",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-maria-krajcovicova",
+        "name": "Mária Krajčovičová",
+        "roles": [
+          {
+            "title": "referentka inzercie",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-lubos-borovsky",
+        "name": "Ľuboš Borovský",
+        "roles": [
+          {
+            "title": "Head of Print",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-peter-hejduk",
+        "name": "Peter Hejduk",
+        "roles": [
+          {
+            "title": "Key Account Manager; zahraničná inzercia",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-xenia-valentova",
+        "name": "Xénia Valentová",
+        "roles": [
+          {
+            "title": "manažérka inzercie",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-livia-dvorska",
+        "name": "Lívia Dvorská",
+        "roles": [
+          {
+            "title": "manažérka inzercie",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-radovan-gasparik",
+        "name": "Radovan Gašparík",
+        "roles": [
+          {
+            "title": "Head of Online Advertising",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-miriam-puhova",
+        "name": "Miriam Puhová",
+        "roles": [
+          {
+            "title": "Key Account Manager",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      },
+      {
+        "id": "pravda-person-andrea-hevesova",
+        "name": "Andrea Hevešová",
+        "roles": [
+          {
+            "title": "Senior Digital Specialist",
+            "unitId": "pravda-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "pravda-source-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-contacts"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "pravda-rel-blueberg-owns-our-media",
+        "subjectType": "legal_entity",
+        "subjectId": "pravda-owner-blueberg-media",
+        "predicate": "owns",
+        "objectType": "legal_entity",
+        "objectLabel": "OUR MEDIA SR a. s.",
+        "note": "Blueberg Media a.s. je v aktuálnom ORSR uvedená ako jediný akcionár.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-orsr"
+        ]
+      },
+      {
+        "id": "pravda-rel-blueberg-slovakia-owns-blueberg",
+        "subjectType": "legal_entity",
+        "subjectId": "pravda-owner-blueberg-media-slovakia",
+        "predicate": "owns",
+        "objectType": "legal_entity",
+        "objectLabel": "Blueberg Media a.s.",
+        "note": "Verifikačný dokument uvádza 100 % vlastnícky reťazec.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-rpvs-2025"
+        ]
+      },
+      {
+        "id": "pravda-rel-voracek-beneficial-owner",
+        "subjectType": "person",
+        "subjectId": "pravda-person-michal-voracek",
+        "predicate": "beneficial_owner_of",
+        "objectType": "legal_entity",
+        "objectLabel": "OUR MEDIA SR a. s.",
+        "note": "Uvedené výlučne ako registračný profesijný status bez súkromných údajov.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "pravda-source-rpvs-2025",
+          "pravda-source-rpvs-current"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "pravda-fin-2025-turnover",
+        "period": "2025",
+        "metric": "čistý obrat",
+        "value": 7858801,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti OUR MEDIA SR a. s.; 2024: 8 399 548 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "pravda-fin-2025-net-result",
+        "period": "2025",
+        "metric": "výsledok hospodárenia po zdanení",
+        "value": -133896,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti; 2024: zisk 387 854 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "pravda-fin-2025-equity",
+        "period": "2025",
+        "metric": "vlastné imanie",
+        "value": 2780873,
+        "unit": "EUR",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "pravda-fin-2025-personnel-costs",
+        "period": "2025",
+        "metric": "osobné náklady",
+        "value": 2144389,
+        "unit": "EUR",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "pravda-source-ruz-2025"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Ktorí radoví redaktori, editori, fotografi, grafici, korektori a produkční pracovníci tvoria aktuálnu redakciu mimo zverejnených vedúcich kontaktov?",
+      "Aké verejné zmluvy alebo dotácie možno priamo priradiť OUR MEDIA SR a. s. v CRZ a dotačných registroch?",
+      "Aký podiel na firemných finančných výsledkoch tvorí samostatne značka Pravda?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "pravda-source-contacts",
+      "title": "Kontakty – vedenie, redakcia, prílohy a obchod",
+      "publisher": "Pravda / OUR MEDIA SR a. s.",
+      "url": "https://www.pravda.sk/info/kontakty",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálna first-party kontaktná stránka; dokument nezachytáva telefóny ani e-maily."
+    },
+    {
+      "id": "pravda-source-orsr",
+      "title": "Aktuálny výpis OUR MEDIA SR a. s., IČO 51267055",
+      "publisher": "Obchodný register SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=408378&SID=2&P=0",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "pravda-source-ruz-entity",
+      "title": "OUR MEDIA SR a. s. – účtovná jednotka a závierky",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/accountingentity/show/1738996",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "pravda-source-ruz-2025",
+      "title": "OUR MEDIA SR a. s. – účtovná závierka 2025",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10088717/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "pravda-source-rpvs-2025",
+      "title": "Verifikačný dokument OUR MEDIA SR a. s. z 25. 8. 2025",
+      "publisher": "Register partnerov verejného sektora",
+      "url": "https://rpvs.gov.sk/rpvs/Partner/Partner/Dokument/236564",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Použitá len vlastnícka štruktúra a profesijný status KUV; súkromné adresy a dátumy narodenia sú vedome vynechané."
+    },
+    {
+      "id": "pravda-source-rpvs-current",
+      "title": "Aktuálny výpis RPVS – OUR MEDIA SR a. s.",
+      "publisher": "Register partnerov verejného sektora",
+      "url": "https://rpvs.gov.sk/rpvs/Partner/Partner/DetailPdf/33329",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Použitý iba stav registrácie a meno KUV; súkromné údaje sú vynechané."
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+{
+  "outlet": {
+    "id": "hospodarske-noviny",
+    "name": "Hospodárske noviny",
+    "legalEntity": {
+      "name": "MAFRA Slovakia, a.s.",
+      "registrationId": "51904446",
+      "legalForm": "akciová spoločnosť",
+      "registeredOffice": "Kalinčiakova 33, 831 04 Bratislava – mestská časť Nové Mesto",
+      "sourceRefIds": [
+        "hn-source-publisher-contacts",
+        "hn-source-orsr"
+      ]
+    },
+    "website": "https://hnonline.sk/",
+    "mappingState": "partial",
+    "coverage": {
+      "summary": "Aktuálne first-party zdroje potvrdzujú šéfredaktorku, produkty HN a spoločné vedenie/podporu vydavateľa. Vydavateľ však nezverejňuje aktuálny úplný newsroom roster, preto nie sú radoví redaktori dopĺňaní z historických kontaktov ani odvodení z jednotlivých bylinov.",
+      "knownGaps": [
+        "Aktuálny úplný roster redaktorov, editorov, vedúcich deskov, fotografov, grafikov, produkcie a korektúr nie je na verejných first-party stránkach dostupný.",
+        "Starý článok „xHNS Kontakt“ obsahuje historický tím a nesmie sa považovať za aktuálny roster.",
+        "Finančné čísla patria celej MAFRA Slovakia, a.s., nie iba Hospodárskym novinám.",
+        "Verejné zmluvy a dotácie neboli v rýchlom prvom priechode konsolidovane prehľadané."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "hn-product-print",
+        "name": "Hospodárske noviny",
+        "kind": "print",
+        "relationship": "celoštátny ekonomický denník",
+        "url": "https://hnonline.sk/dennik",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-about"
+        ]
+      },
+      {
+        "id": "hn-product-web",
+        "name": "HNonline.sk",
+        "kind": "publication",
+        "relationship": "spravodajský portál Hospodárskych novín s archívom",
+        "url": "https://hnonline.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-about",
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-product-hn24",
+        "name": "HN24",
+        "kind": "news_service",
+        "relationship": "rýchly spravodajský servis",
+        "url": "https://hn24.hnonline.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-product-tv",
+        "name": "HNtelevízia",
+        "kind": "publication",
+        "relationship": "video a relácie",
+        "url": "https://hnonline.sk/tv",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-product-magazin",
+        "name": "HNmagazín",
+        "kind": "magazine",
+        "relationship": "pravidelná printová príloha",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-supplements-2026"
+        ]
+      },
+      {
+        "id": "hn-product-preco-nie",
+        "name": "Prečo nie?!",
+        "kind": "magazine",
+        "relationship": "magazín/príloha HN",
+        "url": "https://hnonline.sk/style/preco-nie",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home",
+          "hn-source-publisher-about"
+        ]
+      },
+      {
+        "id": "hn-product-prakticke-hn",
+        "name": "Praktické HN",
+        "kind": "publication",
+        "relationship": "servisný obsah o daniach, majetku, práci a poradenstve",
+        "url": "https://hnonline.sk/prakticke-hn",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-product-konferencie",
+        "name": "HN konferencie",
+        "kind": "events",
+        "relationship": "podujatia pod značkou HN",
+        "url": "https://konferencie.hnonline.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-product-brifing",
+        "name": "Brífing HN",
+        "kind": "newsletter",
+        "relationship": "spravodajský brífing v menu HN",
+        "url": "https://hnonline.sk/komentare/brifing-hn",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "hn-unit-publisher",
+        "name": "MAFRA Slovakia, a. s.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-unit-governance",
+        "name": "Predstavenstvo a dozorná rada",
+        "kind": "governance",
+        "parentId": "hn-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-unit-ownership",
+        "name": "Vlastníctvo",
+        "kind": "ownership",
+        "parentId": "hn-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-orsr",
+          "hn-source-rpvs"
+        ]
+      },
+      {
+        "id": "hn-unit-newsroom",
+        "name": "Redakcia Hospodárskych novín",
+        "kind": "newsroom",
+        "parentId": "hn-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-editor-profile"
+        ]
+      },
+      {
+        "id": "hn-unit-digital",
+        "name": "HNonline, HN24 a HNtelevízia",
+        "kind": "editorial",
+        "parentId": "hn-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-unit-print",
+        "name": "Print a prílohy HN",
+        "kind": "editorial",
+        "parentId": "hn-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-about",
+          "hn-source-supplements-2026"
+        ]
+      },
+      {
+        "id": "hn-unit-events",
+        "name": "Event division / HN konferencie",
+        "kind": "commercial",
+        "parentId": "hn-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-home"
+        ]
+      },
+      {
+        "id": "hn-unit-support",
+        "name": "Spoločná prevádzková, obchodná, HR a administratívna podpora",
+        "kind": "support",
+        "parentId": "hn-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "hn-person-marcela-simkova",
+        "name": "Marcela Šimková",
+        "roles": [
+          {
+            "title": "šéfredaktorka redakcie Hospodárskych novín",
+            "unitId": "hn-unit-newsroom",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts",
+              "hn-source-editor-profile"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-editor-profile"
+        ],
+        "profileUrl": "https://hnonline.sk/autor/marcela-simkova-13042"
+      },
+      {
+        "id": "hn-person-ivan-netik",
+        "name": "Ivan Netík",
+        "roles": [
+          {
+            "title": "prevádzkový riaditeľ",
+            "unitId": "hn-unit-support",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts"
+            ]
+          },
+          {
+            "title": "podpredseda predstavenstva",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-person-katarina-michalechova",
+        "name": "Katarína Michálechová",
+        "roles": [
+          {
+            "title": "obchodná riaditeľka",
+            "unitId": "hn-unit-support",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts"
+            ]
+          },
+          {
+            "title": "členka predstavenstva",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-person-vladimira-perova",
+        "name": "Vladimíra Perová",
+        "roles": [
+          {
+            "title": "mzdová a personálna riaditeľka",
+            "unitId": "hn-unit-support",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts"
+            ]
+          },
+          {
+            "title": "členka dozornej rady",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts",
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-person-lucia-bizonova",
+        "name": "Lucia Bizoňová",
+        "roles": [
+          {
+            "title": "Head of event division",
+            "unitId": "hn-unit-events",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts"
+        ]
+      },
+      {
+        "id": "hn-person-andrea-cervenanska",
+        "name": "Andrea Červenanská",
+        "roles": [
+          {
+            "title": "asistentka",
+            "unitId": "hn-unit-support",
+            "roleLevel": "support_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-publisher-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-contacts"
+        ]
+      },
+      {
+        "id": "hn-person-michal-hanak",
+        "name": "Michal Hanák",
+        "roles": [
+          {
+            "title": "predseda predstavenstva",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-person-patrik-ovsonka",
+        "name": "Patrik Ovšonka",
+        "roles": [
+          {
+            "title": "člen dozornej rady",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-person-petr-mindzak",
+        "name": "Petr Mindžak",
+        "roles": [
+          {
+            "title": "člen dozornej rady",
+            "unitId": "hn-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "hn-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-orsr"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "hn-rel-mafra-cz-owns",
+        "subjectType": "legal_entity",
+        "subjectId": "hn-owner-mafra-cz",
+        "predicate": "owns",
+        "objectType": "legal_entity",
+        "objectLabel": "MAFRA Slovakia, a.s.",
+        "note": "MAFRA, a.s. je v aktuálnom ORSR uvedená ako jediný akcionár.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-orsr"
+        ]
+      },
+      {
+        "id": "hn-rel-publisher-publishes",
+        "subjectType": "legal_entity",
+        "subjectId": "hn-legal-mafra-slovakia",
+        "predicate": "publishes",
+        "objectType": "outlet",
+        "objectLabel": "Hospodárske noviny",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "hn-source-publisher-about"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "hn-fin-2025-turnover",
+        "period": "2025",
+        "metric": "čistý obrat",
+        "value": 16128910,
+        "unit": "EUR",
+        "note": "Údaj celej MAFRA Slovakia, a.s.; 2024: 16 328 702 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "hn-fin-2025-net-result",
+        "period": "2025",
+        "metric": "výsledok hospodárenia po zdanení",
+        "value": 772997,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti; 2024: 355 684 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "hn-fin-2025-personnel-costs",
+        "period": "2025",
+        "metric": "osobné náklady",
+        "value": 3499356,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "hn-fin-2025-operating-result",
+        "period": "2025",
+        "metric": "výsledok hospodárenia z hospodárskej činnosti",
+        "value": 1716306,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "hn-source-ruz-2025"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Kde vydavateľ publikuje aktuálny úplný masthead HN a HNonline?",
+      "Ktorí vedúci deskov, editori, reportéri, komentátori, fotografi, grafici, video/podcast pracovníci a pomocné roly sú aktuálne súčasťou HN?",
+      "Aký podiel na spoločných výsledkoch MAFRA Slovakia tvorí značka HN?",
+      "Aké verejné zmluvy alebo dotácie možno priamo priradiť MAFRA Slovakia v CRZ a dotačných registroch?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "hn-source-publisher-contacts",
+      "title": "MAFRA Slovakia – kontakty",
+      "publisher": "MAFRA Slovakia, a. s.",
+      "url": "https://mafraslovakia.hnonline.sk/kontakt.html",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálna first-party stránka zverejňuje šéfredaktorku HN a spoločné vedenie/podporu vydavateľa."
+    },
+    {
+      "id": "hn-source-publisher-about",
+      "title": "MAFRA Slovakia – o spoločnosti a portfólio",
+      "publisher": "MAFRA Slovakia, a. s.",
+      "url": "https://mafraslovakia.hnonline.sk/o-spolocnosti.html",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-home",
+      "title": "HNonline.sk – aktuálne menu a produkty",
+      "publisher": "MAFRA Slovakia, a. s.",
+      "url": "https://hnonline.sk/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-supplements-2026",
+      "title": "Harmonogram špecializovaných príloh HN 2026",
+      "publisher": "MAFRA Slovakia, a. s.",
+      "url": "https://static.hnonline.sk/pdfs/HN_harmonogram_2026.pdf",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-editor-profile",
+      "title": "Marcela Šimková – profil autorky",
+      "publisher": "Hospodárske noviny",
+      "url": "https://hnonline.sk/autor/marcela-simkova-13042",
+      "sourceKind": "professional_profile",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-orsr",
+      "title": "Aktuálny výpis MAFRA Slovakia, a.s., IČO 51904446",
+      "publisher": "Obchodný register SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=495437&SID=2&P=0",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-ruz-entity",
+      "title": "MAFRA Slovakia, a.s. – účtovná jednotka a závierky",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/accountingentity/show/1794119",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-ruz-2025",
+      "title": "MAFRA Slovakia, a.s. – účtovná závierka 2025",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10323194/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "hn-source-rpvs",
+      "title": "Aktuálny výpis RPVS – MAFRA Slovakia, a.s.",
+      "publisher": "Register partnerov verejného sektora",
+      "url": "https://rpvs.gov.sk/rpvs/Partner/Partner/DetailPdf/29414",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Súkromné údaje osôb sa nepreberajú."
+    }
+  ]
+}

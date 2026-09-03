@@ -1,18 +1,36 @@
 # Hriech
 
-Verejný frontend projektu Hriech. Prvá edícia mapuje personálnu, organizačnú,
-vlastnícku, finančnú a inštitucionálnu vrstvu desiatich vybraných slovenských
-online médií výhradne z verejne dostupných profesijných a firemných zdrojov.
+Hriech je hlavný verejný projekt Adama Rudavského pre mediálnu kritiku.
+Web [hriech.xvadur.com](https://hriech.xvadur.com) spája mapu slovenských
+redakcií, zdrojovo ohraničené prípady, metodiku, sourcebooky a postupne ďalšie
+verejné výstupy.
 
-## Hranica
+Prvá publikovaná vrstva mapuje personálnu, organizačnú, vlastnícku, finančnú a
+inštitucionálnu štruktúru desiatich slovenských online médií. Mapa je začiatok
+projektu, nie jeho konečný rozsah.
 
-Dataset neobsahuje súkromné adresy ľudí, rodné údaje, rodinné väzby, osobné
-kontakty ani osobné majetkové lustrácie. Zobrazená profesionálna alebo
-inštitucionálna väzba sama osebe nie je dôkazom vplyvu ani konfliktu.
+## Vlastníctvo obsahu
 
-Táto edícia nezahŕňa televízie, STVR, rádiá, TASR, regionálne médiá, politické
-tlačové oddelenia ani platformové algoritmy. Pri médiách bez úplného verejného
-rostra je rozsah explicitne označený ako čiastočný.
+- `src/` — verejný web a jeho kurátorované dáta.
+- `research/newsrooms/` — verejné podklady k mapovaniu redakcií.
+- `research/editorial/` — produktové a investigatívne briefy.
+- `contracts/` — verejné dátové kontrakty Hriechu.
+- `private/research/compiled/` — interný analytický rámec a case files.
+- `private/research/sourcebooks/` — pracovné argumentačné a dôkazové balíky.
+- `private/` — raw poznámky, celé transkripty a ďalšie nepublikovateľné
+  zdroje; adresár je lokálny a Git ho ignoruje.
+
+Netopier dodáva zdrojový archív a event intelligence. Hriech vlastní mediálnu
+kritiku, prípady, argumenty a verejnú prezentáciu. Obsidian a Adam.xvadur už nie
+sú kanonické úložiská Hriechu; ostávajú v nich iba navigačné odkazy alebo
+dočasné kompatibilné projekcie.
+
+## Dôkazová hranica
+
+Oddeľujeme pôvodný zdroj, Adamov komentár, analytickú syntézu, hypotézu a
+chýbajúci dôkaz. Celé licencované alebo autorskoprávne chránené transkripty sa
+nepublikujú do verejného repozitára. Profesijná väzba sama osebe nie je dôkazom
+vplyvu, konfliktu ani protiprávneho konania.
 
 ## Lokálne spustenie
 
@@ -27,6 +45,6 @@ pnpm dev
 pnpm qa
 ```
 
-Produkčný statický build vznikne v `dist/`. `hriech.pages.dev` slúži ako
-Pages preview; produkčný `hriech.xvadur.com` obsluhuje Cloudflare Worker so
-statickými assetmi a automaticky spravovaným Custom Domain DNS/TLS.
+Produkčný statický build vznikne v `dist/`. `hriech.pages.dev` je preview;
+produkčný `hriech.xvadur.com` obsluhuje Cloudflare Worker. Lokálna zmena,
+commit, GitHub push a nasadenie sú samostatné stavy.

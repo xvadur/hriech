@@ -1,0 +1,1212 @@
+{
+  "outlet": {
+    "id": "refresher",
+    "name": "Refresher",
+    "legalEntity": {
+      "name": "REFRESHER Media s. r. o.",
+      "registrationId": "50676946",
+      "legalForm": "spoločnosť s ručením obmedzeným",
+      "registeredOffice": "Prievozská 14, 821 09 Bratislava-Ružinov",
+      "sourceRefIds": [
+        "refresher-orsr",
+        "refresher-terms"
+      ]
+    },
+    "website": "https://refresher.sk/",
+    "mappingState": "public_roster_mapped",
+    "coverage": {
+      "summary": "First-party endpoint uvádza 31 ľudí v slovenskom rosteri: 1 leadership, 30 editorial/production, z toho 4 externí. Doplnený je konateľ a fyzickí spoločníci z ORSR.",
+      "knownGaps": [
+        "Roster neuvádza obchodné, technické, administratívne a ďalšie helper/support roly.",
+        "Display name Maco je zachovaný presne; profilový slug sa nepoužíva na prepis mena.",
+        "ORSR uvádza nominálne vklady, nie percentá hlasovacích a hospodárskych práv.",
+        "CRZ, dotácie a zmluvy neboli systematicky enumerované."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "refresher-web",
+        "name": "Refresher.sk",
+        "kind": "publication",
+        "relationship": "hlavné lifestylové médium",
+        "url": "https://refresher.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-about"
+        ]
+      },
+      {
+        "id": "refresher-news-product",
+        "name": "Refresher News",
+        "kind": "news_service",
+        "relationship": "spravodajská vertikála",
+        "url": "https://news.refresher.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-about"
+        ]
+      },
+      {
+        "id": "refresher-club-product",
+        "name": "Refresher Club",
+        "kind": "publication",
+        "relationship": "platený obsah a členské benefity",
+        "url": "https://refresher.sk/plus",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-club"
+        ]
+      },
+      {
+        "id": "refresher-video-product",
+        "name": "Refresher Video",
+        "kind": "publication",
+        "relationship": "video formáty a relácie",
+        "url": "https://refresher.sk/video",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-about",
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-podcast-product",
+        "name": "Refresher Podcasty",
+        "kind": "podcast",
+        "relationship": "podcastové formáty",
+        "url": "https://refresher.sk/podcasty",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-about"
+        ]
+      },
+      {
+        "id": "refresher-projects",
+        "name": "Filmová databáza, Shop, Market, Glow & Know",
+        "kind": "acquisition",
+        "relationship": "projekty v navigácii; presná právna väzba nie je rozložená",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-about"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "refresher-publisher",
+        "name": "REFRESHER Media s.r.o.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-orsr",
+          "refresher-terms"
+        ]
+      },
+      {
+        "id": "refresher-newsroom",
+        "name": "Refresher Slovensko",
+        "kind": "newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-leadership",
+        "name": "Leadership",
+        "kind": "leadership",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-premium",
+        "name": "Premium Content",
+        "kind": "desk",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-news",
+        "name": "News",
+        "kind": "desk",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-lifestyle",
+        "name": "Lifestyle",
+        "kind": "desk",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-video-premium",
+        "name": "Video Premium",
+        "kind": "production",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-video-shows",
+        "name": "Video Shows",
+        "kind": "production",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-editorial-other",
+        "name": "Editorial / Reporter",
+        "kind": "editorial",
+        "parentId": "refresher-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-governance",
+        "name": "Konateľ",
+        "kind": "governance",
+        "parentId": "refresher-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-ownership",
+        "name": "Spoločníci",
+        "kind": "ownership",
+        "parentId": "refresher-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "refresher-filip-minich",
+        "name": "Filip Minich",
+        "profileUrl": "https://refresher.sk/profil/filip-minich",
+        "roles": [
+          {
+            "title": "Editor in Chief & Head of Editorial",
+            "unitId": "refresher-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-viktor-knis",
+        "name": "Viktor Kniš",
+        "profileUrl": "https://refresher.sk/profil/viktor-knis",
+        "roles": [
+          {
+            "title": "Premium Content Lead",
+            "unitId": "refresher-premium",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-jakub-paulik",
+        "name": "Jakub Paulík",
+        "profileUrl": "https://refresher.sk/profil/jakub-paulik",
+        "roles": [
+          {
+            "title": "News Lead",
+            "unitId": "refresher-news",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-peter-valovic",
+        "name": "Peter Valovič",
+        "profileUrl": "https://refresher.sk/profil/peter-valovic",
+        "roles": [
+          {
+            "title": "Video Premium Lead",
+            "unitId": "refresher-video-premium",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-martin-juraj-mendel",
+        "name": "Maco",
+        "profileUrl": "https://refresher.sk/profil/martin-juraj-mendel",
+        "roles": [
+          {
+            "title": "Video Shows Lead",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-tereza-szalaiova",
+        "name": "Tereza Szalaiová",
+        "profileUrl": "https://refresher.sk/profil/tereza-szalaiova",
+        "roles": [
+          {
+            "title": "Lifestyle Lead",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-petra-niznanska",
+        "name": "Petra Nižnanská",
+        "profileUrl": "https://refresher.sk/profil/petra-niznanska",
+        "roles": [
+          {
+            "title": "Video Shows Production Manager",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-radoslava-jurackova",
+        "name": "Radoslava Juračková",
+        "profileUrl": "https://refresher.sk/profil/radoslava-jurackova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Manager",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-hana-divisova",
+        "name": "Hana Divišová",
+        "profileUrl": "https://refresher.sk/profil/hana-divisova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Manager",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-natalia-misaniova",
+        "name": "Natália Mišániová",
+        "profileUrl": "https://refresher.sk/profil/natalia-misaniova",
+        "roles": [
+          {
+            "title": "News Content Manager",
+            "unitId": "refresher-news",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-daniel-zbudila",
+        "name": "Daniel Zbudila",
+        "profileUrl": "https://refresher.sk/profil/daniel-zbudila",
+        "roles": [
+          {
+            "title": "News Content Manager",
+            "unitId": "refresher-news",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-filip-myslik",
+        "name": "Filip Myslík",
+        "profileUrl": "https://refresher.sk/profil/filip-myslik",
+        "roles": [
+          {
+            "title": "Lifestyle Content Manager",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-paulina-pizova",
+        "name": "Paulína Pížová",
+        "profileUrl": "https://refresher.sk/profil/paulina-pizova",
+        "roles": [
+          {
+            "title": "Video Shows Production Manager",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-timon-laska",
+        "name": "Timon Láska",
+        "profileUrl": "https://refresher.sk/profil/timon-laska",
+        "roles": [
+          {
+            "title": "Reporter",
+            "unitId": "refresher-editorial-other",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-dominik-pomichal",
+        "name": "Dominik Pomichal",
+        "profileUrl": "https://refresher.sk/profil/dominik-pomichal",
+        "roles": [
+          {
+            "title": "News Content Creator",
+            "unitId": "refresher-news",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-lukas-celka",
+        "name": "Lukáš Čelka",
+        "profileUrl": "https://refresher.sk/profil/lukas-celka",
+        "roles": [
+          {
+            "title": "Premium Content Creator",
+            "unitId": "refresher-premium",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-adriana-kralovicova",
+        "name": "Adriana Královičová",
+        "profileUrl": "https://refresher.sk/profil/adriana-kralovicova",
+        "roles": [
+          {
+            "title": "Premium Content Creator",
+            "unitId": "refresher-premium",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-timotej-gasper",
+        "name": "Timotej Gašper",
+        "profileUrl": "https://refresher.sk/profil/timotej-gasper",
+        "roles": [
+          {
+            "title": "Premium Content Creator",
+            "unitId": "refresher-premium",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-zdenka-hvolkova",
+        "name": "Zdenka Hvolková",
+        "profileUrl": "https://refresher.sk/profil/zdenka-hvolkova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Creator",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-michaela-kedzuchova",
+        "name": "Michaela Kedžuchová",
+        "profileUrl": "https://refresher.sk/profil/michaela-kedzuchova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Creator",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-lukas-turcan",
+        "name": "Lukáš Turčan",
+        "profileUrl": "https://refresher.sk/profil/lukas-turcan",
+        "roles": [
+          {
+            "title": "News Content Creator",
+            "unitId": "refresher-news",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-rebeka-hatalova",
+        "name": "Rebeka Hatalová",
+        "profileUrl": "https://refresher.sk/profil/rebeka-hatalova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Creator",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-marcela-laura-mrvova",
+        "name": "Marcela Laura Mrvová",
+        "profileUrl": "https://refresher.sk/profil/marcela-laura-mrvova",
+        "roles": [
+          {
+            "title": "Lifestyle Content Creator",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-robert-pinter",
+        "name": "Robert Pintér",
+        "profileUrl": "https://refresher.sk/profil/robert-pinter",
+        "roles": [
+          {
+            "title": "Video Premium Content Creator",
+            "unitId": "refresher-video-premium",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-gabriel-kotrha",
+        "name": "Gabriel Kotrha",
+        "profileUrl": "https://refresher.sk/profil/gabriel-kotrha",
+        "roles": [
+          {
+            "title": "Video Shows Producer",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-adrian-smolko",
+        "name": "Adrián Smolko",
+        "profileUrl": "https://refresher.sk/profil/adrian-smolko",
+        "roles": [
+          {
+            "title": "Video Shows Producer",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-jakub-strananek",
+        "name": "Jakub Straňanek",
+        "profileUrl": "https://refresher.sk/profil/jakub-strananek",
+        "roles": [
+          {
+            "title": "Video Shows Producer",
+            "unitId": "refresher-video-shows",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-dominik-vetrak",
+        "name": "Dominik Vetrák",
+        "profileUrl": "https://refresher.sk/profil/dominik-vetrak",
+        "roles": [
+          {
+            "title": "Premium Content Creator (external)",
+            "unitId": "refresher-premium",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-richard-balog",
+        "name": "Richard Balog",
+        "profileUrl": "https://refresher.sk/profil/richard-balog",
+        "roles": [
+          {
+            "title": "Lifestyle Content Creator (external)",
+            "unitId": "refresher-lifestyle",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-radka-klucarova",
+        "name": "Radka Klučárová",
+        "profileUrl": "https://refresher.sk/profil/radka-klucarova",
+        "roles": [
+          {
+            "title": "News Content Manager (external)",
+            "unitId": "refresher-news",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-karin-ondrusova",
+        "name": "Karin Ondrušová",
+        "profileUrl": "https://refresher.sk/profil/karin-ondrusova",
+        "roles": [
+          {
+            "title": "News Content Creator (external)",
+            "unitId": "refresher-news",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-roster-api"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-gabor-boros",
+        "name": "Gábor Boros",
+        "roles": [
+          {
+            "title": "Konateľ",
+            "unitId": "refresher-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-orsr"
+            ]
+          },
+          {
+            "title": "Spoločník",
+            "unitId": "refresher-ownership",
+            "roleLevel": "owner",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-alexander-barczi",
+        "name": "Alexander Barczi",
+        "roles": [
+          {
+            "title": "Spoločník",
+            "unitId": "refresher-ownership",
+            "roleLevel": "owner",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-filip-vajda",
+        "name": "Filip Vajda",
+        "roles": [
+          {
+            "title": "Spoločník",
+            "unitId": "refresher-ownership",
+            "roleLevel": "owner",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "refresher-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "refresher-company-operates",
+        "subjectType": "legal_entity",
+        "subjectId": "refresher-media-company",
+        "predicate": "operates",
+        "objectType": "outlet",
+        "objectId": "refresher",
+        "objectLabel": "Refresher",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-terms"
+        ]
+      },
+      {
+        "id": "refresher-minich-leads",
+        "subjectType": "person",
+        "subjectId": "refresher-filip-minich",
+        "predicate": "leads",
+        "objectType": "unit",
+        "objectId": "refresher-leadership",
+        "objectLabel": "Leadership",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-roster-api"
+        ]
+      },
+      {
+        "id": "refresher-boros-executive",
+        "subjectType": "person",
+        "subjectId": "refresher-gabor-boros",
+        "predicate": "executive_of",
+        "objectType": "legal_entity",
+        "objectId": "refresher-media-company",
+        "objectLabel": "REFRESHER Media s.r.o.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-boros-owner",
+        "subjectType": "person",
+        "subjectId": "refresher-gabor-boros",
+        "predicate": "shareholder_of",
+        "objectType": "legal_entity",
+        "objectId": "refresher-media-company",
+        "objectLabel": "REFRESHER Media s.r.o.",
+        "note": "Nominálny vklad 2 250 EUR.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-barczi-owner",
+        "subjectType": "person",
+        "subjectId": "refresher-alexander-barczi",
+        "predicate": "shareholder_of",
+        "objectType": "legal_entity",
+        "objectId": "refresher-media-company",
+        "objectLabel": "REFRESHER Media s.r.o.",
+        "note": "Nominálny vklad 1 750 EUR.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-vajda-owner",
+        "subjectType": "person",
+        "subjectId": "refresher-filip-vajda",
+        "predicate": "shareholder_of",
+        "objectType": "legal_entity",
+        "objectId": "refresher-media-company",
+        "objectLabel": "REFRESHER Media s.r.o.",
+        "note": "Nominálny vklad 1 000 EUR.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      },
+      {
+        "id": "refresher-modry-konik-owner",
+        "subjectType": "legal_entity",
+        "subjectId": "refresher-modry-konik",
+        "predicate": "shareholder_of",
+        "objectType": "legal_entity",
+        "objectId": "refresher-media-company",
+        "objectLabel": "REFRESHER Media s.r.o.",
+        "note": "Nominálny vklad 165 000 EUR, splatené 49 500 EUR; percento sa neodvodzuje.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "refresher-orsr"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "refresher-2025-turnover",
+        "period": "2025",
+        "metric": "Čistý obrat",
+        "value": 2698637,
+        "unit": "EUR",
+        "note": "2024: 2 550 426 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-ruz-statements"
+        ]
+      },
+      {
+        "id": "refresher-2025-services",
+        "period": "2025",
+        "metric": "Tržby z predaja služieb",
+        "value": 2698166,
+        "unit": "EUR",
+        "note": "2024: 2 550 426 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-ruz-statements"
+        ]
+      },
+      {
+        "id": "refresher-2025-personnel-costs",
+        "period": "2025",
+        "metric": "Osobné náklady",
+        "value": 91774,
+        "unit": "EUR",
+        "note": "2024: 80 964 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-ruz-statements"
+        ]
+      },
+      {
+        "id": "refresher-2025-profit-before-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia pred zdanením",
+        "value": 348071,
+        "unit": "EUR",
+        "note": "2024: 344 816 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-ruz-statements"
+        ]
+      },
+      {
+        "id": "refresher-2025-profit-after-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia po zdanení",
+        "value": 279399,
+        "unit": "EUR",
+        "note": "2024: 308 505 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "refresher-ruz-statements"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Kto tvorí obchodné, technické, administratívne a support tímy?",
+      "Aké sú presné hlasovacie a hospodárske podiely spoločníkov?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "refresher-roster-page",
+      "title": "Redakcia Refresher",
+      "publisher": "Refresher",
+      "url": "https://onas.refresher.sk/redakcia",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "First-party stránka načítava slovenský roster z vlastného JSON endpointu."
+    },
+    {
+      "id": "refresher-roster-api",
+      "title": "Editorial office JSON",
+      "publisher": "Refresher",
+      "url": "https://refresher.sk/ajx/editorial-office",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny strojový roster: 31 SK osôb, vrátane štyroch explicitne externých."
+    },
+    {
+      "id": "refresher-about",
+      "title": "O nás",
+      "publisher": "Refresher",
+      "url": "https://onas.refresher.sk/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Produkty, hodnoty a self-reported audience."
+    },
+    {
+      "id": "refresher-terms",
+      "title": "Podmienky používateľov",
+      "publisher": "Refresher",
+      "url": "https://refresher.sk/info/podmienky-pre-pouzivatelov-webovej-stranky",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Prevádzkovateľ a IČO."
+    },
+    {
+      "id": "refresher-club",
+      "title": "Refresher Club",
+      "publisher": "Refresher",
+      "url": "https://refresher.sk/plus",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Predplatné a benefity."
+    },
+    {
+      "id": "refresher-ad-code",
+      "title": "Reklamný kódex",
+      "publisher": "Refresher",
+      "url": "https://refresher.sk/reklamny-kodex",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Oddelenie reklamy a redakcie, označovanie komerčného obsahu."
+    },
+    {
+      "id": "refresher-orsr",
+      "title": "REFRESHER Media s.r.o. — ORSR",
+      "publisher": "Ministerstvo spravodlivosti SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=369033&SID=7&P=0",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny výpis; iba profesionálne funkcie a firemné údaje."
+    },
+    {
+      "id": "refresher-ruz",
+      "title": "REFRESHER Media — RÚZ 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10326076",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Riadna individuálna závierka 2025."
+    },
+    {
+      "id": "refresher-ruz-notes",
+      "title": "REFRESHER Media — poznámky 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12834595",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Charakter činnosti a účtovné poznámky."
+    },
+    {
+      "id": "refresher-ruz-statements",
+      "title": "REFRESHER Media — výkazy 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10326076/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Výkaz ziskov a strát 2025."
+    }
+  ]
+}

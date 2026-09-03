@@ -1,0 +1,781 @@
+{
+  "outlet": {
+    "id": "startitup",
+    "name": "Startitup",
+    "legalEntity": {
+      "name": "Startitup s.r.o.",
+      "registrationId": "47759089",
+      "legalForm": "spoločnosť s ručením obmedzeným",
+      "registeredOffice": "Panónska cesta 7, 852 32 Bratislava-Petržalka",
+      "sourceRefIds": [
+        "startitup-orsr",
+        "startitup-terms"
+      ]
+    },
+    "website": "https://www.startitup.sk/",
+    "mappingState": "public_roster_mapped",
+    "coverage": {
+      "summary": "Všetkých 15 osôb na aktuálnej stránke Redakcia plus dvaja spoluzakladatelia/konatelia. Video a social media sú potvrdené bez mien.",
+      "knownGaps": [
+        "Menné obsadenie video a social media oddelení nie je zverejnené.",
+        "Helper, produkčné, obchodné a administratívne roly mimo rosteru nie sú verejne vymenované.",
+        "CRZ, dotácie a zmluvy neboli systematicky enumerované."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "startitup-web",
+        "name": "Startitup.sk",
+        "kind": "publication",
+        "relationship": "hlavný web",
+        "url": "https://www.startitup.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-about"
+        ]
+      },
+      {
+        "id": "startitup-premium",
+        "name": "Startitup PREMIUM",
+        "kind": "publication",
+        "relationship": "spoločné digitálne predplatné pre portály prevádzkovateľa",
+        "url": "https://premium.startitup.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-premium-terms"
+        ]
+      },
+      {
+        "id": "startitup-up-tv",
+        "name": "UP TV / Video",
+        "kind": "publication",
+        "relationship": "videoobsah a diskusné relácie",
+        "url": "https://www.startitup.sk/video/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-about"
+        ]
+      },
+      {
+        "id": "startitup-podcasts",
+        "name": "Startitup Podcasty",
+        "kind": "podcast",
+        "relationship": "podcastová vertikála",
+        "url": "https://www.startitup.sk/podcasty/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-about"
+        ]
+      },
+      {
+        "id": "startitup-events",
+        "name": "Startitup Eventy",
+        "kind": "events",
+        "relationship": "eventový produkt",
+        "url": "https://www.startitup.sk/eventy/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-about"
+        ]
+      },
+      {
+        "id": "startitup-group-portals",
+        "name": "Interez, Fontech, Odzadu, Emefka a ďalšie portály",
+        "kind": "acquisition",
+        "relationship": "VOP ich uvádza medzi doménami prevádzkovanými Startitup s.r.o.; nejde o roster Startitup redakcie",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-premium-terms"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "startitup-publisher",
+        "name": "Startitup s.r.o.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-orsr"
+        ]
+      },
+      {
+        "id": "startitup-newsroom",
+        "name": "Startitup redakcia",
+        "kind": "newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-editorial-leadership",
+        "name": "Editori",
+        "kind": "leadership",
+        "parentId": "startitup-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-business-lifestyle",
+        "name": "Lifestyle a biznis",
+        "kind": "desk",
+        "parentId": "startitup-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-foreign",
+        "name": "Zahraničné spravodajstvo",
+        "kind": "desk",
+        "parentId": "startitup-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-politics",
+        "name": "Politické oddelenie",
+        "kind": "desk",
+        "parentId": "startitup-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-current-affairs",
+        "name": "Aktuálne dianie",
+        "kind": "desk",
+        "parentId": "startitup-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-video-social",
+        "name": "Video a social media",
+        "kind": "production",
+        "parentId": "startitup-newsroom",
+        "description": "Existencia potvrdená, menný roster nie.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-about"
+        ]
+      },
+      {
+        "id": "startitup-governance",
+        "name": "Konatelia a vedenie vydavateľa",
+        "kind": "governance",
+        "parentId": "startitup-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-orsr",
+          "startitup-about"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "startitup-rebeka-jakubova",
+        "name": "Rebeka Jakubová",
+        "profileUrl": "https://www.startitup.sk/author/rebeka-jakubova/",
+        "roles": [
+          {
+            "title": "Šéfeditorka",
+            "unitId": "startitup-editorial-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-nikola-jelinkova",
+        "name": "Nikola Jelínková",
+        "roles": [
+          {
+            "title": "Editorka",
+            "unitId": "startitup-editorial-leadership",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-robert-juris",
+        "name": "Robert Juriš",
+        "roles": [
+          {
+            "title": "Editor ekonomického a biznis obsahu",
+            "unitId": "startitup-editorial-leadership",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-tomas-zelenka",
+        "name": "Tomáš Zelenka",
+        "roles": [
+          {
+            "title": "Editor",
+            "unitId": "startitup-editorial-leadership",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-peter-dudovic",
+        "name": "Peter Dudovič",
+        "roles": [
+          {
+            "title": "Editor",
+            "unitId": "startitup-editorial-leadership",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-linda-cebrova",
+        "name": "Linda Cebrová",
+        "roles": [
+          {
+            "title": "Vedúca Lifestyle a biznis",
+            "unitId": "startitup-business-lifestyle",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-lubomira-somodiova",
+        "name": "Ľubomíra Somodiová",
+        "roles": [
+          {
+            "title": "Vedúca zahraničného spravodajstva",
+            "unitId": "startitup-foreign",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-dominika-kortvelyesiova",
+        "name": "Dominika Körtvélyesiová",
+        "roles": [
+          {
+            "title": "Vedúca politického oddelenia a moderátorka",
+            "unitId": "startitup-politics",
+            "roleLevel": "unit_lead",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-samuel-drozda",
+        "name": "Samuel Drozda",
+        "roles": [
+          {
+            "title": "Moderátor zahraničného diania",
+            "unitId": "startitup-foreign",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-alexandra-gabelova",
+        "name": "Alexandra Gábelová",
+        "roles": [
+          {
+            "title": "Redaktorka aktuálneho diania",
+            "unitId": "startitup-current-affairs",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-marek-rodak",
+        "name": "Marek Rodák",
+        "roles": [
+          {
+            "title": "Redaktor ekonomiky a zahraničného diania",
+            "unitId": "startitup-foreign",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-tamara-mrazova",
+        "name": "Tamara Mrázová",
+        "roles": [
+          {
+            "title": "Redaktorka lifestyle a biznis",
+            "unitId": "startitup-business-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-jasmina-puckova",
+        "name": "Jasmína Púčková",
+        "roles": [
+          {
+            "title": "Redaktorka lifestyle a biznis",
+            "unitId": "startitup-business-lifestyle",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-natalia-tytykalova",
+        "name": "Natália Tytykalová",
+        "roles": [
+          {
+            "title": "Redaktorka aktuálneho diania",
+            "unitId": "startitup-current-affairs",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-michal-tomala",
+        "name": "Michal Tomala",
+        "roles": [
+          {
+            "title": "Redaktor aktuálneho diania",
+            "unitId": "startitup-current-affairs",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-lukas-gasparik",
+        "name": "Lukáš Gašparík",
+        "roles": [
+          {
+            "title": "Spoluzakladateľ a vedenie média",
+            "unitId": "startitup-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-about"
+            ]
+          },
+          {
+            "title": "Konateľ",
+            "unitId": "startitup-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-about",
+          "startitup-orsr"
+        ]
+      },
+      {
+        "id": "startitup-marek-sandor",
+        "name": "Marek Šándor",
+        "roles": [
+          {
+            "title": "Spoluzakladateľ a vedenie média",
+            "unitId": "startitup-governance",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-about"
+            ]
+          },
+          {
+            "title": "Konateľ",
+            "unitId": "startitup-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "startitup-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-about",
+          "startitup-orsr"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "startitup-company-operates",
+        "subjectType": "legal_entity",
+        "subjectId": "startitup-company",
+        "predicate": "operates",
+        "objectType": "outlet",
+        "objectId": "startitup",
+        "objectLabel": "Startitup",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-terms"
+        ]
+      },
+      {
+        "id": "startitup-venture-time-owns",
+        "subjectType": "legal_entity",
+        "subjectId": "startitup-venture-time",
+        "predicate": "owns",
+        "objectType": "legal_entity",
+        "objectId": "startitup-company",
+        "objectLabel": "Startitup s.r.o.",
+        "note": "Venture Time, s.r.o. je jediný spoločník so 100 % k 31.12.2025.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-orsr",
+          "startitup-ruz-notes"
+        ]
+      },
+      {
+        "id": "startitup-rebeka-leads",
+        "subjectType": "person",
+        "subjectId": "startitup-rebeka-jakubova",
+        "predicate": "leads",
+        "objectType": "unit",
+        "objectId": "startitup-editorial-leadership",
+        "objectLabel": "Editori",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-roster"
+        ]
+      },
+      {
+        "id": "startitup-gasparik-executive",
+        "subjectType": "person",
+        "subjectId": "startitup-lukas-gasparik",
+        "predicate": "executive_of",
+        "objectType": "legal_entity",
+        "objectId": "startitup-company",
+        "objectLabel": "Startitup s.r.o.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-orsr"
+        ]
+      },
+      {
+        "id": "startitup-sandor-executive",
+        "subjectType": "person",
+        "subjectId": "startitup-marek-sandor",
+        "predicate": "executive_of",
+        "objectType": "legal_entity",
+        "objectId": "startitup-company",
+        "objectLabel": "Startitup s.r.o.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "startitup-orsr"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "startitup-2025-turnover",
+        "period": "2025",
+        "metric": "Čistý obrat",
+        "value": 4548787,
+        "unit": "EUR",
+        "note": "2024: 4 505 184 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-ruz-statements"
+        ]
+      },
+      {
+        "id": "startitup-2025-services",
+        "period": "2025",
+        "metric": "Tržby z predaja služieb",
+        "value": 4435880,
+        "unit": "EUR",
+        "note": "2024: 4 362 899 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-ruz-statements"
+        ]
+      },
+      {
+        "id": "startitup-2025-profit-before-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia pred zdanením",
+        "value": 647434,
+        "unit": "EUR",
+        "note": "2024: 929 047 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-ruz-statements"
+        ]
+      },
+      {
+        "id": "startitup-2025-profit-after-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia po zdanení",
+        "value": 469851,
+        "unit": "EUR",
+        "note": "2024: 747 114 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-ruz-statements"
+        ]
+      },
+      {
+        "id": "startitup-2025-employees",
+        "period": "2025",
+        "metric": "Počet zamestnancov podľa účtovných poznámok",
+        "value": 0,
+        "unit": "persons",
+        "note": "Poznámky uvádzajú nula zamestnancov aj v roku 2024; neznamená to nula spolupracovníkov alebo ľudí v skupine.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "startitup-ruz-notes"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Aký právny model vysvetľuje viac ako 70-členný tím pri nulovom počte zamestnancov účtovnej jednotky?",
+      "Kto tvorí video, social, produkčný, obchodný a support tím?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "startitup-roster",
+      "title": "Redakcia Startitup",
+      "publisher": "Startitup",
+      "url": "https://www.startitup.sk/redakcia-timu-startitup/",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny menný roster 15 redakčných rolí."
+    },
+    {
+      "id": "startitup-about",
+      "title": "O nás",
+      "publisher": "Startitup",
+      "url": "https://www.startitup.sk/o-nas/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Zakladatelia, tím, publikum, platformy a portfólio."
+    },
+    {
+      "id": "startitup-terms",
+      "title": "Podmienky používania",
+      "publisher": "Startitup",
+      "url": "https://www.startitup.sk/links/podmienky-pouzivania",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Identita prevádzkovateľa a IČO."
+    },
+    {
+      "id": "startitup-premium-terms",
+      "title": "VOP Startitup PREMIUM 2026",
+      "publisher": "Startitup",
+      "url": "https://www.startitup.sk/podmienky/03022026/VOP-predplatneho/Startitup_PREMIUM_VOP_predplatneho.pdf?ver=03022026x27099&x54629=",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Rozsah domén a predplatného."
+    },
+    {
+      "id": "startitup-orsr",
+      "title": "Startitup s.r.o. — ORSR",
+      "publisher": "Ministerstvo spravodlivosti SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=307458&P=0&SID=2",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny výpis; iba profesionálne a firemné údaje."
+    },
+    {
+      "id": "startitup-ruz",
+      "title": "Startitup s.r.o. — RÚZ 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10198579",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Riadna individuálna závierka 2025."
+    },
+    {
+      "id": "startitup-ruz-notes",
+      "title": "Startitup s.r.o. — poznámky 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12608078",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Vlastníctvo, činnosť a počet zamestnancov."
+    },
+    {
+      "id": "startitup-ruz-statements",
+      "title": "Startitup s.r.o. — výkazy 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10198579/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Výkaz ziskov a strát 2025."
+    }
+  ]
+}

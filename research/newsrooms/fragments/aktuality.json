@@ -1,0 +1,584 @@
+{
+  "outlet": {
+    "id": "aktuality",
+    "name": "Aktuality.sk",
+    "legalEntity": {
+      "name": "Ringier Slovakia Media s.r.o.",
+      "registrationId": "53708792",
+      "legalForm": "spoločnosť s ručením obmedzeným",
+      "registeredOffice": "Prievozská 14, 821 09 Bratislava-Ružinov",
+      "sourceRefIds": [
+        "aktuality-ringier-orsr"
+      ]
+    },
+    "website": "https://www.aktuality.sk/",
+    "mappingState": "partial",
+    "coverage": {
+      "summary": "Celý explicitný blok Náš tím (5 ľudí) a aktuálne orgány vydavateľa. Stránka deklaruje viac ako 30 novinárov; katalóg autorov mieša interných, externých a syndikovaných autorov.",
+      "knownGaps": [
+        "Kompletný menný roster viac ako 30 novinárov a helper/support rolí nie je publikovaný ako odlíšený interný tím.",
+        "Presné deskové zaradenie štyroch redaktorov nie je uvedené.",
+        "CRZ, granty a zmluvy neboli v prvom priechode systematicky enumerované."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "aktuality-web",
+        "name": "Aktuality.sk",
+        "kind": "publication",
+        "relationship": "hlavný spravodajský web",
+        "url": "https://www.aktuality.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-navyse",
+        "name": "Aktuality Navyše",
+        "kind": "publication",
+        "relationship": "platená obsahová služba spustená v roku 2022",
+        "url": "https://www.aktuality.sk/plus/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-podcasty",
+        "name": "Aktuality Podcasty",
+        "kind": "podcast",
+        "relationship": "podcastová vertikála vrátane Aktuality Nahlas, Ráno Nahlas, Mafiánsky štát a Banánové deti",
+        "url": "https://www.aktuality.sk/podcasty/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-video",
+        "name": "Aktuality Video",
+        "kind": "publication",
+        "relationship": "video vertikála vrátane Na rovinu, Ťažký týždeň, Na scéne a Mimóza",
+        "url": "https://www.aktuality.sk/videa/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "aktuality-publisher",
+        "name": "Ringier Slovakia Media s.r.o.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-newsroom",
+        "name": "Aktuality.sk",
+        "kind": "newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-leadership",
+        "name": "Vedenie redakcie",
+        "kind": "leadership",
+        "parentId": "aktuality-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-editorial",
+        "name": "Zvýraznený redakčný tím",
+        "kind": "editorial",
+        "parentId": "aktuality-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-governance",
+        "name": "Konatelia Ringier Slovakia Media",
+        "kind": "governance",
+        "parentId": "aktuality-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-supervisory",
+        "name": "Dozorná rada Ringier Slovakia Media",
+        "kind": "governance",
+        "parentId": "aktuality-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "aktuality-peter-bardy",
+        "name": "Peter Bárdy",
+        "profileUrl": "https://www.aktuality.sk/autor/peter-bardy/",
+        "roles": [
+          {
+            "title": "Šéfredaktor",
+            "unitId": "aktuality-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-about-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-jan-petrovic",
+        "name": "Ján Petrovič",
+        "roles": [
+          {
+            "title": "Redaktor",
+            "unitId": "aktuality-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-about-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-laura-kello-kalinska",
+        "name": "Laura Kellö Kalinská",
+        "roles": [
+          {
+            "title": "Redaktorka",
+            "unitId": "aktuality-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-about-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-peter-hanak",
+        "name": "Peter Hanák",
+        "roles": [
+          {
+            "title": "Redaktor",
+            "unitId": "aktuality-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-about-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-martina-benova",
+        "name": "Martina Beňová",
+        "roles": [
+          {
+            "title": "Redaktorka",
+            "unitId": "aktuality-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-about-roster"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-peter-holly",
+        "name": "Peter Hollý",
+        "roles": [
+          {
+            "title": "Konateľ",
+            "unitId": "aktuality-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-peter-chabrecek",
+        "name": "Peter Chabreček",
+        "roles": [
+          {
+            "title": "Konateľ",
+            "unitId": "aktuality-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-frantisek-novak",
+        "name": "František Novák",
+        "roles": [
+          {
+            "title": "Konateľ",
+            "unitId": "aktuality-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-milan-dubec",
+        "name": "Milan Dubec",
+        "roles": [
+          {
+            "title": "Člen dozornej rady",
+            "unitId": "aktuality-supervisory",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-michael-moersch",
+        "name": "Michael Moersch",
+        "roles": [
+          {
+            "title": "Člen dozornej rady",
+            "unitId": "aktuality-supervisory",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      },
+      {
+        "id": "aktuality-stefan-christian-benkert",
+        "name": "Stefan Christian Benkert",
+        "roles": [
+          {
+            "title": "Člen dozornej rady",
+            "unitId": "aktuality-supervisory",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "aktuality-ringier-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-orsr"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "aktuality-ringier-operates",
+        "subjectType": "legal_entity",
+        "subjectId": "aktuality-ringier-media",
+        "predicate": "operates",
+        "objectType": "outlet",
+        "objectId": "aktuality",
+        "objectLabel": "Aktuality.sk",
+        "note": "Ringier Slovakia Media je vydavateľom a prevádzkovateľom.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-bardy-leads",
+        "subjectType": "person",
+        "subjectId": "aktuality-peter-bardy",
+        "predicate": "leads",
+        "objectType": "unit",
+        "objectId": "aktuality-leadership",
+        "objectLabel": "Vedenie redakcie",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-about-roster"
+        ]
+      },
+      {
+        "id": "aktuality-ringier-cee-owns",
+        "subjectType": "legal_entity",
+        "subjectId": "aktuality-ringier-cee",
+        "predicate": "owns_share_in",
+        "objectType": "legal_entity",
+        "objectId": "aktuality-ringier-media",
+        "objectLabel": "Ringier Slovakia Media s.r.o.",
+        "note": "87 % základného imania a hlasovacích práv k 31.12.2025.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-notes"
+        ]
+      },
+      {
+        "id": "aktuality-omh-owns",
+        "subjectType": "legal_entity",
+        "subjectId": "aktuality-omh-mezzanine",
+        "predicate": "owns_share_in",
+        "objectType": "legal_entity",
+        "objectId": "aktuality-ringier-media",
+        "objectLabel": "Ringier Slovakia Media s.r.o.",
+        "note": "13 % základného imania a hlasovacích práv k 31.12.2025.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "aktuality-ringier-notes"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "aktuality-2025-turnover",
+        "period": "2025",
+        "metric": "Čistý obrat",
+        "value": 8095102,
+        "unit": "EUR",
+        "note": "2024: 7 433 766 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-statements"
+        ]
+      },
+      {
+        "id": "aktuality-2025-services",
+        "period": "2025",
+        "metric": "Tržby z predaja služieb",
+        "value": 7875955,
+        "unit": "EUR",
+        "note": "2024: 7 152 111 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-statements"
+        ]
+      },
+      {
+        "id": "aktuality-2025-personnel-costs",
+        "period": "2025",
+        "metric": "Osobné náklady",
+        "value": 3844514,
+        "unit": "EUR",
+        "note": "2024: 3 640 413 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-statements"
+        ]
+      },
+      {
+        "id": "aktuality-2025-profit-before-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia pred zdanením",
+        "value": -624389,
+        "unit": "EUR",
+        "note": "2024: -813 087 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-statements"
+        ]
+      },
+      {
+        "id": "aktuality-2025-profit-after-tax",
+        "period": "2025",
+        "metric": "Výsledok hospodárenia po zdanení",
+        "value": -443414,
+        "unit": "EUR",
+        "note": "2024: -725 831 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-statements"
+        ]
+      },
+      {
+        "id": "aktuality-2025-average-fte",
+        "period": "2025",
+        "metric": "Priemerný prepočítaný počet zamestnancov",
+        "value": 86,
+        "unit": "FTE",
+        "note": "2024: 84; celá Ringier Slovakia Media, nie iba Aktuality.sk.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "aktuality-ringier-notes"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Ktoré mená z autorského katalógu tvoria aktuálnych interných novinárov?",
+      "Aké sú deskové a produkčné/support roly mimo päťčlenného bloku Náš tím?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "aktuality-about-roster",
+      "title": "O Aktuality.sk",
+      "publisher": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/p/o-nas/",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Päť zvýraznených členov tímu, produkty, vydavateľ; zároveň deklaruje tím viac ako 30 novinárov."
+    },
+    {
+      "id": "aktuality-contact",
+      "title": "Kontaktné informácie",
+      "publisher": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/kontakt/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Prevádzková a vydavateľská vrstva."
+    },
+    {
+      "id": "aktuality-authors",
+      "title": "Zoznam autorov portálu",
+      "publisher": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/autori/",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Mieša interných, externých, partnerských a syndikovaných autorov; nie je to HR roster."
+    },
+    {
+      "id": "aktuality-rules",
+      "title": "Redakčné pravidlá Aktuality.sk",
+      "publisher": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/p/redakcne-pravidla/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Verejné redakčné pravidlá."
+    },
+    {
+      "id": "aktuality-ringier-orsr",
+      "title": "Ringier Slovakia Media s.r.o. — ORSR",
+      "publisher": "Ministerstvo spravodlivosti SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=569427&SID=2&P=0",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny výpis; iba profesionálne funkcie a firemné údaje."
+    },
+    {
+      "id": "aktuality-ringier-ruz",
+      "title": "Ringier Slovakia Media — RÚZ 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10320254",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Riadna individuálna závierka 2025."
+    },
+    {
+      "id": "aktuality-ringier-notes",
+      "title": "Ringier Slovakia Media — poznámky 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12824045",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Vlastníctvo, orgány a zamestnanci."
+    },
+    {
+      "id": "aktuality-ringier-statements",
+      "title": "Ringier Slovakia Media — výkazy 2025",
+      "publisher": "Ministerstvo financií SR",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10320254/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Výkaz ziskov a strát 2025."
+    }
+  ]
+}

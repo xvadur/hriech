@@ -1,0 +1,1801 @@
+{
+  "outlet": {
+    "id": "trend",
+    "name": "TREND",
+    "legalEntity": {
+      "name": "News and Media Holding a.s.",
+      "registrationId": "47256281",
+      "legalForm": "akciová spoločnosť",
+      "registeredOffice": "Einsteinova 25, 851 01 Bratislava – mestská časť Petržalka",
+      "sourceRefIds": [
+        "trend-source-nmh-contacts",
+        "trend-source-orsr"
+      ]
+    },
+    "website": "https://www.trend.sk/",
+    "mappingState": "public_roster_mapped",
+    "coverage": {
+      "summary": "Zmapovaný celý aktuálny first-party autorovský adresár TRENDU: 48 položiek, z toho 43 ľudí a 5 nepersonálnych atribúcií. Oddelene je pridané vedenie, governance a verejne pomenovaná spoločná podpora vydavateľa.",
+      "knownGaps": [
+        "Autorovský adresár mieša interných redaktorov, externistov, profesijných hostí a osoby bez roly; samotná prítomnosť v adresári nedokazuje pracovný pomer.",
+        "Adresár nemusí obsahovať všetky neverejné produkčné, korektorské, foto/video, dátové, administratívne alebo technické roly priradené priamo TRENDU.",
+        "Publisher support roly sú spoločné pre celé portfólio News and Media Holding; okrem explicitného marketingového priradenia nemožno tvrdiť výlučnú väzbu na TREND.",
+        "Finančné čísla patria celej News and Media Holding, nie iba TRENDU.",
+        "Verejné zmluvy a dotácie neboli v rýchlom prvom priechode konsolidovane prehľadané."
+      ],
+      "rosterObservedAt": "2026-09-03T12:00:00+02:00"
+    },
+    "products": [
+      {
+        "id": "trend-product-print",
+        "name": "Týždenník TREND",
+        "kind": "print",
+        "relationship": "ekonomický a podnikateľský týždenník",
+        "url": "https://www.trend.sk/predplatne-trendu",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-about",
+          "trend-source-nmh-products"
+        ]
+      },
+      {
+        "id": "trend-product-web",
+        "name": "TREND.sk",
+        "kind": "publication",
+        "relationship": "denný ekonomický web",
+        "url": "https://www.trend.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-advertising"
+        ]
+      },
+      {
+        "id": "trend-product-medialne",
+        "name": "Mediálne",
+        "kind": "publication",
+        "relationship": "špecializovaný web súčasťou portálu TREND",
+        "url": "https://medialne.trend.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-advertising"
+        ]
+      },
+      {
+        "id": "trend-product-reality",
+        "name": "TREND Reality",
+        "kind": "publication",
+        "relationship": "špecializovaný realitný web/vertikála",
+        "url": "https://reality.trend.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-advertising"
+        ]
+      },
+      {
+        "id": "trend-product-enjoy",
+        "name": "Enjoy",
+        "kind": "magazine",
+        "relationship": "špecializovaný lifestylový web/vertikála",
+        "url": "https://enjoy.trend.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-advertising"
+        ]
+      },
+      {
+        "id": "trend-product-analyses",
+        "name": "TREND Analyses",
+        "kind": "software",
+        "relationship": "ekonomické a firemné dáta/analýzy",
+        "url": "https://www.trendanalyses.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-product-konferencie",
+        "name": "TREND konferencie",
+        "kind": "events",
+        "relationship": "podujatia značky TREND",
+        "url": "https://www.trendkonferencie.sk/",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-product-app",
+        "name": "Aplikácia TREND",
+        "kind": "software",
+        "relationship": "mobilná distribučná aplikácia",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-advertising"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "id": "trend-unit-publisher",
+        "name": "News and Media Holding a.s.",
+        "kind": "publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-about",
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-unit-governance",
+        "name": "Predstavenstvo a dozorná rada",
+        "kind": "governance",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-unit-ownership",
+        "name": "Vlastníctvo",
+        "kind": "ownership",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-orsr",
+          "trend-source-rpvs-2025"
+        ]
+      },
+      {
+        "id": "trend-unit-newsroom",
+        "name": "Redakcia TRENDU",
+        "kind": "newsroom",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-leadership",
+        "name": "Vedenie redakcie",
+        "kind": "leadership",
+        "parentId": "trend-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-editorial",
+        "name": "Redaktori a editori",
+        "kind": "editorial",
+        "parentId": "trend-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-digital",
+        "name": "Webová a online editácia",
+        "kind": "desk",
+        "parentId": "trend-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-design",
+        "name": "Grafika",
+        "kind": "design",
+        "parentId": "trend-unit-newsroom",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-external",
+        "name": "Externí a ostatní verejne uvedení autori",
+        "kind": "editorial",
+        "parentId": "trend-unit-newsroom",
+        "description": "Adresár kombinuje externých autorov, profesijných hostí a osoby bez explicitnej roly.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-attribution",
+        "name": "Nepersonálne atribučné účty",
+        "kind": "support",
+        "parentId": "trend-unit-newsroom",
+        "description": "ČTK, SITA, TASR, Tlačová správa a We Know How; nie sú modelované ako ľudia.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ]
+      },
+      {
+        "id": "trend-unit-publisher-executive",
+        "name": "Executive Board vydavateľa",
+        "kind": "leadership",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-about"
+        ]
+      },
+      {
+        "id": "trend-unit-commercial",
+        "name": "Spoločný obchod a marketing vydavateľa",
+        "kind": "commercial",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-unit-support",
+        "name": "Spoločná prevádzka, HR, výroba, distribúcia a eventy",
+        "kind": "support",
+        "parentId": "trend-unit-publisher",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      }
+    ],
+    "people": [
+      {
+        "id": "trend-person-ronald-izip",
+        "name": "Ronald Ižip",
+        "roles": [
+          {
+            "title": "šéfredaktor",
+            "unitId": "trend-unit-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/ronald-izip"
+      },
+      {
+        "id": "trend-person-lubor-kysely",
+        "name": "Ľubor Kyselý",
+        "roles": [
+          {
+            "title": "hlavný editor, zástupca šéfredaktora",
+            "unitId": "trend-unit-leadership",
+            "roleLevel": "editorial_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/lubor-kysely"
+      },
+      {
+        "id": "trend-person-peter-scherhaufer",
+        "name": "Peter Scherhaufer",
+        "roles": [
+          {
+            "title": "editor a redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/peter-scherhaufer"
+      },
+      {
+        "id": "trend-person-benita-feketeova",
+        "name": "Benita Feketeová",
+        "roles": [
+          {
+            "title": "redaktorka",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/benita-feketeova"
+      },
+      {
+        "id": "trend-person-tomas-mikulik",
+        "name": "Tomáš Mikulík",
+        "roles": [
+          {
+            "title": "externý spolupracovník",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/t-mikulik"
+      },
+      {
+        "id": "trend-person-veronika-vankova",
+        "name": "Veronika Vaňková",
+        "roles": [
+          {
+            "title": "redaktorka",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/veronika-vankova"
+      },
+      {
+        "id": "trend-person-adam-valcek",
+        "name": "Adam Valček",
+        "roles": [
+          {
+            "title": "webový redaktor",
+            "unitId": "trend-unit-digital",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/adam-valcek"
+      },
+      {
+        "id": "trend-person-andrej-horvath",
+        "name": "Andrej Horváth",
+        "roles": [
+          {
+            "title": "externý redaktor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/andrej-horvath"
+      },
+      {
+        "id": "trend-person-branislav-toma",
+        "name": "Branislav Toma",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/branislav-toma"
+      },
+      {
+        "id": "trend-person-cyril-choma",
+        "name": "Cyril Choma",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/cyril-choma"
+      },
+      {
+        "id": "trend-person-dana-jelinkova-dudzikova",
+        "name": "Dana Jelinková Dudzíková",
+        "roles": [
+          {
+            "title": "sudkyňa Správneho súdu v Bratislave; autorovský profil bez redakčnej roly",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/dana-jelinkova-dudzikova"
+      },
+      {
+        "id": "trend-person-dana-minova",
+        "name": "Dana Miňová",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/dana-minova"
+      },
+      {
+        "id": "trend-person-daniel-ivancak",
+        "name": "Daniel Ivančák",
+        "roles": [
+          {
+            "title": "online editor",
+            "unitId": "trend-unit-digital",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/daniel-ivancak"
+      },
+      {
+        "id": "trend-person-dominika-komarova",
+        "name": "Dominika Komárová",
+        "roles": [
+          {
+            "title": "externá redaktorka",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/dominikakomarova"
+      },
+      {
+        "id": "trend-person-ivan-kotuliak",
+        "name": "Ivan Kotuliak",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/ivan-kotuliak"
+      },
+      {
+        "id": "trend-person-ivo-hlavacek",
+        "name": "Ivo Hlaváček",
+        "roles": [
+          {
+            "title": "externý autor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/ivo-hlavacek"
+      },
+      {
+        "id": "trend-person-jana-ovesna",
+        "name": "Jana Ovesná",
+        "roles": [
+          {
+            "title": "externá redaktorka",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/jana-ovesna"
+      },
+      {
+        "id": "trend-person-janko-michal",
+        "name": "Janko Michal",
+        "roles": [
+          {
+            "title": "externý autor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/janko-michal"
+      },
+      {
+        "id": "trend-person-jozef-slivka",
+        "name": "Jozef Slivka",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/jozef-slivka"
+      },
+      {
+        "id": "trend-person-juraj-filin",
+        "name": "Juraj Filin",
+        "roles": [
+          {
+            "title": "editor printu",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/juraj-filin"
+      },
+      {
+        "id": "trend-person-juraj-skacan",
+        "name": "Juraj Skačan",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/juraj-skacan"
+      },
+      {
+        "id": "trend-person-karol-krpala",
+        "name": "Karol Krpala",
+        "roles": [
+          {
+            "title": "spoločensko-politický analytik; autorovský profil bez redakčnej roly",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/karol-krpala"
+      },
+      {
+        "id": "trend-person-katarina-hrncarova",
+        "name": "Katarína Hrnčárová",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/katarina-hrncakova"
+      },
+      {
+        "id": "trend-person-laura-kuricova",
+        "name": "Laura Kuricová",
+        "roles": [
+          {
+            "title": "redaktorka",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/laura-kuricova"
+      },
+      {
+        "id": "trend-person-lucia-filcikova",
+        "name": "Lucia Filčíková",
+        "roles": [
+          {
+            "title": "externá redaktorka",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/lucia-filcikova"
+      },
+      {
+        "id": "trend-person-lukas-kovanda",
+        "name": "Lukáš Kovanda",
+        "roles": [
+          {
+            "title": "externý autor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/lukas-kovanda"
+      },
+      {
+        "id": "trend-person-marek-borovsky",
+        "name": "Marek Borovský",
+        "roles": [
+          {
+            "title": "grafik",
+            "unitId": "trend-unit-design",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/marek-borovsky"
+      },
+      {
+        "id": "trend-person-marek-janitor",
+        "name": "Marek Janitor",
+        "roles": [
+          {
+            "title": "webový editor",
+            "unitId": "trend-unit-digital",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/marek-janitor"
+      },
+      {
+        "id": "trend-person-mario-kormendy",
+        "name": "Mário Körmendy",
+        "roles": [
+          {
+            "title": "externý redaktor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/mario-kormendy"
+      },
+      {
+        "id": "trend-person-martin-polonyi",
+        "name": "Martin Polónyi",
+        "roles": [
+          {
+            "title": "externý autor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/martin-polonyi"
+      },
+      {
+        "id": "trend-person-martina-starkova",
+        "name": "Martina Štarková",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/martina-starkova"
+      },
+      {
+        "id": "trend-person-miroslav-homola",
+        "name": "Miroslav Homola",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/miroslav-homola"
+      },
+      {
+        "id": "trend-person-nina-bacharova",
+        "name": "Nina Bacharová",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/nina-bacharova--4"
+      },
+      {
+        "id": "trend-person-pavel-peterka",
+        "name": "Pavel Peterka",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/pavel-peterka"
+      },
+      {
+        "id": "trend-person-petra-adamekova",
+        "name": "Petra Adámeková",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/petra-adamekova"
+      },
+      {
+        "id": "trend-person-petra-smith",
+        "name": "Petra Smith",
+        "roles": [
+          {
+            "title": "externá autorka",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/petra-smith"
+      },
+      {
+        "id": "trend-person-radovan-vavra",
+        "name": "Radovan Vávra",
+        "roles": [
+          {
+            "title": "rola v adresári neuvedená",
+            "unitId": "trend-unit-external",
+            "roleLevel": "unknown",
+            "rosterStatus": "unknown",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/radovan-vavra"
+      },
+      {
+        "id": "trend-person-radovan-zuffa",
+        "name": "Radovan Žuffa",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/radovan-zuffa"
+      },
+      {
+        "id": "trend-person-roman-magerko",
+        "name": "Roman Magerko",
+        "roles": [
+          {
+            "title": "grafik",
+            "unitId": "trend-unit-design",
+            "roleLevel": "production_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/roman-magerko"
+      },
+      {
+        "id": "trend-person-slavka-ciganova",
+        "name": "Slávka Cigáňová",
+        "roles": [
+          {
+            "title": "redaktorka",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/slavka-ciganova"
+      },
+      {
+        "id": "trend-person-stanislav-panis",
+        "name": "Stanislav Pánis",
+        "roles": [
+          {
+            "title": "analytik J&T Banky; autorovský profil bez redakčnej roly",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/stanislav-panis"
+      },
+      {
+        "id": "trend-person-tomas-szmrecsanyi",
+        "name": "Tomáš Szmrecsányi",
+        "roles": [
+          {
+            "title": "redaktor",
+            "unitId": "trend-unit-editorial",
+            "roleLevel": "editorial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/tomas-szmrecsanyi"
+      },
+      {
+        "id": "trend-person-viktor-sedlak",
+        "name": "Viktor Sedlák",
+        "roles": [
+          {
+            "title": "externý redaktor",
+            "unitId": "trend-unit-external",
+            "roleLevel": "external_contributor",
+            "rosterStatus": "external_listed",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-authors"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-authors"
+        ],
+        "profileUrl": "https://www.trend.sk/autor/viktor-sedlak"
+      },
+      {
+        "id": "trend-person-michal-teplica",
+        "name": "Michal Teplica",
+        "roles": [
+          {
+            "title": "Chief Executive Officer",
+            "unitId": "trend-unit-publisher-executive",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          },
+          {
+            "title": "predseda predstavenstva",
+            "unitId": "trend-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about",
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-person-filip-kadlecik",
+        "name": "Filip Kadlečík",
+        "roles": [
+          {
+            "title": "Chief Content Officer",
+            "unitId": "trend-unit-publisher-executive",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about"
+        ]
+      },
+      {
+        "id": "trend-person-marian-koren",
+        "name": "Marián Koreň",
+        "roles": [
+          {
+            "title": "Chief Financial Officer",
+            "unitId": "trend-unit-publisher-executive",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          },
+          {
+            "title": "podpredseda predstavenstva",
+            "unitId": "trend-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about",
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-person-jana-vargicova",
+        "name": "Jana Vargicová",
+        "roles": [
+          {
+            "title": "Chief HR Officer",
+            "unitId": "trend-unit-publisher-executive",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about"
+        ]
+      },
+      {
+        "id": "trend-person-juraj-velicka",
+        "name": "Juraj Velička",
+        "roles": [
+          {
+            "title": "Director of Innovations",
+            "unitId": "trend-unit-publisher-executive",
+            "roleLevel": "technology_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about"
+        ]
+      },
+      {
+        "id": "trend-person-milan-vysopal",
+        "name": "Milan Vysopal",
+        "roles": [
+          {
+            "title": "Chief Sales Officer",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-about"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-about"
+        ]
+      },
+      {
+        "id": "trend-person-marcela-putalova-bobekova",
+        "name": "Marcela Putalová Bobeková",
+        "roles": [
+          {
+            "title": "Head of Print Sales",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-miroslava-andrasova",
+        "name": "Miroslava Andrášová",
+        "roles": [
+          {
+            "title": "Head of Online Sales",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-nina-hrusovska",
+        "name": "Nina Hrušovská",
+        "roles": [
+          {
+            "title": "Head of B2B Sales",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-anna-olexova",
+        "name": "Anna Olexová",
+        "roles": [
+          {
+            "title": "Event Account Manager",
+            "unitId": "trend-unit-support",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-martin-stanecky",
+        "name": "Martin Stanecký",
+        "roles": [
+          {
+            "title": "Head of Production",
+            "unitId": "trend-unit-support",
+            "roleLevel": "support_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-igor-racicky",
+        "name": "Igor Račický",
+        "roles": [
+          {
+            "title": "Deputy Head of Distribution",
+            "unitId": "trend-unit-support",
+            "roleLevel": "support_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-katarina-slezakova",
+        "name": "Katarína Slezáková",
+        "roles": [
+          {
+            "title": "Chief Marketing Officer",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "publisher_leadership",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-andrea-kubalakova",
+        "name": "Andrea Kubaľáková",
+        "roles": [
+          {
+            "title": "Senior Brand Manager",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-martina-polkova",
+        "name": "Martina Polková",
+        "roles": [
+          {
+            "title": "Senior Brand Manager",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-nikola-zimanova",
+        "name": "Nikola Zimanová",
+        "roles": [
+          {
+            "title": "Senior Brand Manager",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-sandra-adamek-conortova",
+        "name": "Sandra Adámek Conortová",
+        "roles": [
+          {
+            "title": "Brand Manager",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "commercial_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-silvia-kis",
+        "name": "Silvia Kis",
+        "roles": [
+          {
+            "title": "Marketing Support",
+            "unitId": "trend-unit-commercial",
+            "roleLevel": "support_staff",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-nmh-contacts"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-contacts"
+        ]
+      },
+      {
+        "id": "trend-person-martin-danko",
+        "name": "Martin Danko",
+        "roles": [
+          {
+            "title": "člen dozornej rady",
+            "unitId": "trend-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-person-martina-kanova",
+        "name": "Martina Kánová",
+        "roles": [
+          {
+            "title": "členka dozornej rady",
+            "unitId": "trend-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-person-milos-baranec",
+        "name": "Miloš Baranec",
+        "roles": [
+          {
+            "title": "člen dozornej rady",
+            "unitId": "trend-unit-governance",
+            "roleLevel": "governance",
+            "rosterStatus": "listed_current",
+            "evidenceState": "current_verified",
+            "sourceRefIds": [
+              "trend-source-orsr"
+            ]
+          }
+        ],
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-orsr"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "id": "trend-rel-media-sk-holdings-owns",
+        "subjectType": "legal_entity",
+        "subjectId": "trend-owner-media-sk-holdings",
+        "predicate": "owns",
+        "objectType": "legal_entity",
+        "objectLabel": "News and Media Holding a.s.",
+        "note": "MEDIA SK HOLDINGS LIMITED je v aktuálnom ORSR uvedená ako jediný akcionár.",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-orsr"
+        ]
+      },
+      {
+        "id": "trend-rel-publisher-publishes",
+        "subjectType": "legal_entity",
+        "subjectId": "trend-legal-news-and-media-holding",
+        "predicate": "publishes",
+        "objectType": "outlet",
+        "objectLabel": "TREND",
+        "evidenceState": "current_verified",
+        "observedAt": "2026-09-03T12:00:00+02:00",
+        "sourceRefIds": [
+          "trend-source-nmh-products"
+        ]
+      }
+    ],
+    "financialFacts": [
+      {
+        "id": "trend-fin-2025-turnover",
+        "period": "2025",
+        "metric": "čistý obrat",
+        "value": 41772679,
+        "unit": "EUR",
+        "note": "Údaj celej News and Media Holding a.s.; 2024: 43 409 210 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "trend-fin-2025-net-result",
+        "period": "2025",
+        "metric": "výsledok hospodárenia po zdanení",
+        "value": 2460114,
+        "unit": "EUR",
+        "note": "Údaj celej spoločnosti; 2024: 1 147 112 EUR.",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "trend-fin-2025-personnel-costs",
+        "period": "2025",
+        "metric": "osobné náklady",
+        "value": 9770125,
+        "unit": "EUR",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-ruz-2025"
+        ]
+      },
+      {
+        "id": "trend-fin-2025-operating-result",
+        "period": "2025",
+        "metric": "výsledok hospodárenia z hospodárskej činnosti",
+        "value": 6177793,
+        "unit": "EUR",
+        "evidenceState": "current_verified",
+        "sourceRefIds": [
+          "trend-source-ruz-2025"
+        ]
+      }
+    ],
+    "openQuestions": [
+      "Ktoré osoby v autorovskom adresári sú interní zamestnanci, pravidelní externisti, jednorazoví hostia alebo historické profily?",
+      "Ktoré produkčné, foto/video, korektorské, dátové, administratívne a technické roly sú pridelené priamo TRENDU?",
+      "Aký podiel na firemných výsledkoch News and Media Holding tvorí TREND?",
+      "Aká je aktuálna úplná korporátna vlastnícka reťaz za MEDIA SK HOLDINGS LIMITED?",
+      "Aké verejné zmluvy alebo dotácie možno priamo priradiť vydavateľovi v CRZ a dotačných registroch?"
+    ]
+  },
+  "sources": [
+    {
+      "id": "trend-source-authors",
+      "title": "TREND.sk – zoznam autorov",
+      "publisher": "TREND / News and Media Holding a.s.",
+      "url": "https://www.trend.sk/autori/",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Aktuálny 48-položkový adresár: 43 fyzických osôb a 5 nepersonálnych atribučných účtov."
+    },
+    {
+      "id": "trend-source-about",
+      "title": "O nás – Týždenník TREND",
+      "publisher": "TREND",
+      "url": "https://www.trend.sk/o-nas",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-advertising",
+      "title": "Prečo inzerovať na TREND.sk",
+      "publisher": "TREND",
+      "url": "https://www.trend.sk/inzercia",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-nmh-contacts",
+      "title": "News and Media Holding – kontakty",
+      "publisher": "News and Media Holding a.s.",
+      "url": "https://www.newsandmedia.sk/kontakty/",
+      "sourceKind": "official_roster",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Spoločné publisher support roly; nie všetky sú výlučne pridelené TRENDU."
+    },
+    {
+      "id": "trend-source-nmh-about",
+      "title": "News and Media Holding – o nás",
+      "publisher": "News and Media Holding a.s.",
+      "url": "https://www.newsandmedia.sk/o-nas/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-nmh-products",
+      "title": "News and Media Holding – produkty",
+      "publisher": "News and Media Holding a.s.",
+      "url": "https://www.newsandmedia.sk/produkty/",
+      "sourceKind": "official_outlet",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-orsr",
+      "title": "Aktuálny výpis News and Media Holding a.s., IČO 47256281",
+      "publisher": "Obchodný register SR",
+      "url": "https://www.orsr.sk/vypis.asp?ID=318406&SID=2&P=0",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-ruz-entity",
+      "title": "News and Media Holding a.s. – účtovná jednotka a závierky",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/accountingentity/show/1565246",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-ruz-2025",
+      "title": "News and Media Holding a.s. – účtovná závierka 2025",
+      "publisher": "Register účtovných závierok",
+      "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10185246/552",
+      "sourceKind": "financial_filing",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true
+    },
+    {
+      "id": "trend-source-rpvs",
+      "title": "Aktuálny výpis RPVS – News and Media Holding a.s.",
+      "publisher": "Register partnerov verejného sektora",
+      "url": "https://rpvs.gov.sk/rpvs/Partner/Partner/DetailPdf/25307",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Súkromné údaje osôb sa nepreberajú."
+    },
+    {
+      "id": "trend-source-rpvs-2025",
+      "title": "Verifikačný dokument News and Media Holding k 31. 12. 2025",
+      "publisher": "Register partnerov verejného sektora",
+      "url": "https://rpvs.gov.sk/rpvs/Partner/Partner/Dokument/248851",
+      "sourceKind": "official_registry",
+      "capturedAt": "2026-09-03T12:00:00+02:00",
+      "authority": "primary",
+      "publicSafe": true,
+      "note": "Používa sa iba firemná vlastnícka vrstva; súkromné a rodinné údaje sú vynechané."
+    }
+  ]
+}
