@@ -5,3 +5,13 @@ dist/
 private/
 .DS_Store
 *.log
+.impeccable/review/
+.impeccable/build/
+.claude/worktrees/
+.claude/settings.local.json
+CLAUDE.local.md
+
+# netopier pod hriechom
+netopier/.env
+netopier/.env.*
+!netopier/.env.example
