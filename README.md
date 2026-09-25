@@ -1,62 +1,33 @@
 # Hriech
 
-Hriech je hlavný verejný projekt Adama Rudavského pre mediálnu kritiku.
-Web [hriech.xvadur.com](https://hriech.xvadur.com) spája mapu slovenských
-redakcií, zdrojovo ohraničené prípady, metodiku, sourcebooky a postupne ďalšie
-verejné výstupy.
+Web a publikácia XVADUR spravodajskej služby: [hriech.xvadur.com](https://hriech.xvadur.com).
+Mediálna kritika, mapy verejného prostredia a investigatívne dáta. Prvý modul je
+mapa desiatich slovenských online redakcií (ľudia, vlastníci, financie, vzťahy, zdroje).
 
-Prvá publikovaná vrstva mapuje personálnu, organizačnú, vlastnícku, finančnú a
-inštitucionálnu štruktúru desiatich slovenských online médií. Mapa je začiatok
-projektu, nie jeho konečný rozsah.
-
-## Vlastníctvo obsahu
-
-Začni podľa práce, ktorú ideš robiť:
+Backend je [Netopier](netopier/README.md) v `netopier/`: monitoring zdrojov, archív,
+udalosti a korpusy.
 
 | Práca | Vstup |
 |---|---|
-| Písanie článku, interné prípady a zdroje | Lokálny `private/README.md` |
-| Verejné výskumné podklady | [Výskum Hriechu](research/README.md) |
-| Aktualizácia mapy médií | [Mapa redakcií](research/newsrooms/README.md) |
-| Úprava webu | `src/pages/index.astro`, komponenty v `src/components/` |
-
-Súkromný rozcestník je dostupný iba v lokálnom projekte.
-
-- `src/` — verejný web a jeho kurátorované dáta.
-- `research/newsrooms/` — verejné podklady k mapovaniu redakcií.
-- `research/editorial/` — produktové a investigatívne briefy.
-- `contracts/` — verejné dátové kontrakty Hriechu.
-- `private/research/compiled/` — interný analytický rámec a case files.
-- `private/research/sourcebooks/` — pracovné argumentačné a dôkazové balíky.
-- `private/drafts/` — verzie rozpracovaných článkov; verzia neurčuje schválenie.
-- `private/` — raw poznámky, celé transkripty a ďalšie nepublikovateľné
-  zdroje; adresár je lokálny a Git ho ignoruje.
-
-Netopier dodáva zdrojový archív a event intelligence. Hriech vlastní mediálnu
-kritiku, prípady, argumenty a verejnú prezentáciu. Obsidian a Adam.xvadur už nie
-sú kanonické úložiská Hriechu; ostávajú v nich iba navigačné odkazy alebo
-dočasné kompatibilné projekcie.
+| Úprava webu | `src/pages/`, `src/components/`, vizuál v `DESIGN.md` |
+| Publikovanie textu | `docs/PUBLISHING.md` |
+| Aktualizácia mapy médií | `research/newsrooms/README.md` |
+| Backend | `netopier/README.md` |
 
 ## Dôkazová hranica
 
 Oddeľujeme pôvodný zdroj, Adamov komentár, analytickú syntézu, hypotézu a
 chýbajúci dôkaz. Celé licencované alebo autorskoprávne chránené transkripty sa
-nepublikujú do verejného repozitára. Profesijná väzba sama osebe nie je dôkazom
-vplyvu, konfliktu ani protiprávneho konania.
+nepublikujú. Profesijná väzba sama osebe nie je dôkazom vplyvu, konfliktu ani
+protiprávneho konania.
 
-## Lokálne spustenie
+## Lokálne
 
 ```bash
 pnpm install
 pnpm dev
+pnpm qa   # check + test + build + overenie buildu
 ```
 
-## Overenie
-
-```bash
-pnpm qa
-```
-
-Produkčný statický build vznikne v `dist/`. `hriech.pages.dev` je preview;
-produkčný `hriech.xvadur.com` obsluhuje Cloudflare Worker. Lokálna zmena,
-commit, GitHub push a nasadenie sú samostatné stavy.
+Produkčný `hriech.xvadur.com` obsluhuje Cloudflare Worker `hriech-web`. Lokálna
+zmena, commit, push a nasadenie sú samostatné kroky.

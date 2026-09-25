@@ -1,16 +1,17 @@
 # STACK — hriech
 prefix: HRI
 
-## Zámok
-Framework: Astro + React islands · Štýl: Tailwind 4 + shadcn/ui (radix, lucide) + Tailark bloky · Fonty: Newsreader (serif titulky), Inter / Geist (text) · Hosting: Cloudflare Worker `hriech-web` (`wrangler.jsonc`)
-Dizajnový smer: **zamknutý 5. 9.** — svetlé neutrálne plochy, ružová iba ako akcent v logu, serifové titulky, kompaktné dátové UI, pôvodné logo a dáta zachované (DESIGN.md). Žiadna ďalšia „príliš custom“ verzia.
+## Teraz (25. 9. 2026)
+Web: Astro 7 statický, vlastné CSS bez frameworku (`src/styles/global.css`) · Fonty: Rubik, Source Sans 3 · Vizuál: ružový plastický podľa loga (`DESIGN.md`) · Hosting: Cloudflare Worker `hriech-web` (`wrangler.jsonc`) · Backend: Netopier v2 (`netopier/STACK.md`)
+
+Stack pre ďalšie moduly (mapy s vrstvami, dashboardy, live agregácia) sa určí pri redizajne.
 
 ## Príkazy
 dev: `pnpm dev`
 build: `pnpm build`
-test: `pnpm qa` (check + test + build)
-deploy: `pnpm run deploy` (externá mutácia — poverenie)
-proof: `pnpm qa`; destination-verified = `curl -sI https://hriech.xvadur.com` + readback titulku
+test: `pnpm qa` (check + test + build + overenie buildu)
+deploy: `pnpm run deploy` (externá mutácia — iba na pokyn)
+proof: `pnpm qa`; v cieli `curl -sI https://hriech.xvadur.com` + titulok
 
 ## Hranice
-`private/` = drafty, case files, zdravotné údaje (Karol) — nepublikovať, neuploadovať, nesyntetizovať do verejného textu bez rozhodnutia o anonymizácii. Každé tvrdenie v článku má zdroj v sourcebooku.
+Drafty a case files sú v `xvadur_core`, nie v repozitári. Každé tvrdenie v článku má zdroj. Publikovanie iba na výslovný pokyn.

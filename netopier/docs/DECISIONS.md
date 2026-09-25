@@ -2,8 +2,8 @@
 
 ## ADR-001: v0 is retired
 
-The clean v2 backend replaced v0 at the canonical `/Users/xvadur_mac/netopier`
-path. Retired v0 code, runtime state, generated bundles, schedulers, and clusters
+The clean v2 backend replaced v0; it now lives at `xvadur_workspace/projekty/hriech/netopier/`.
+Retired v0 code, runtime state, generated bundles, schedulers, and clusters
 are not dependencies and must not be reintroduced. Only reviewed public source
 metadata and explicitly approved evidence migrations may cross that historical
 boundary.

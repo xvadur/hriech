@@ -1,10 +1,10 @@
-# Publikovanie cez Codex
+# Publikovanie
 
 Hriech je statický Astro web. Netopier vlastní monitoring, pamäť a získavanie dôkazov. Tento projekt vlastní verejné texty, prípady a mapy.
 
 ## Lokálny postup
 
-1. Priprav redigovaný Markdown v src/content/publications alebo src/content/cases so stavom draft. Súkromné podklady nechaj v ignorovanom private/; neprekopíruj ich do kolekcie.
+1. Priprav redigovaný Markdown v src/content/publications alebo src/content/cases so stavom draft. Súkromné podklady (xvadur_core/zdroje/hriech/, xvadur_core/07_texty/drafty/) do kolekcie neprekopíruj.
 2. Spusti pnpm dev --host 127.0.0.1. Náhľad draftu je na /nahlad/publications/SLUG, prípad na /nahlad/cases/SLUG. Tieto cesty existujú iba v dev režime a majú noindex.
 3. Adam skontroluje konkrétny text, citácie, autorstvo, rozsah AI a súvisiace odkazy.
 4. Až na výslovný pokyn k publikovaniu nastav status: published, publishedAt a approvedBy. Dátum nesmie byť v budúcnosti. Aktualizácie označ updatedAt.

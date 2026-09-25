@@ -1,19 +1,9 @@
 # Netopier v2
 
 Clean, local-first Slovak public-source news-intelligence backend. Netopier v2
-replaced the retired v0 implementation and lives in the canonical `netopier`
-folder and GitHub repository.
-
-## Schválený smer frontendu — Vydanie
-
-Ďalší vývoj frontendu vychádza z prvého schváleného návrhu **Vydanie**:
-veľký názov NETOPIER, serifová typografia, čiernobiela fotografia, červené
-akcenty a novinové stĺpce. Výber návrhu je z 9. septembra 2026; rozhodnutie
-zaznamenať ho v GitHube bolo potvrdené 11. septembra 2026.
-
-**[Schválený obrázok, dizajnový smer a rozsah ďalšieho vývoja → DESIGN.md](DESIGN.md)**
-
-Ide o schválený základ na rozvíjanie; webová implementácia ešte nie je dokončená.
+replaced the retired v0 implementation. It lives in the Hriech project at
+`xvadur_workspace/projekty/hriech/netopier/` and is the backend of
+[hriech.xvadur.com](https://hriech.xvadur.com).
 
 ## Local state — 2026-09-07
 
@@ -25,18 +15,14 @@ runtime. The addresses below describe the configured services; they are not
 currently running. The private database recovery export is preserved in
 `/Users/xvadur_mac/Archive/mac-cleanup-2026-09-07/docker-recovery/`.
 Starting the stack again requires an explicit decision to provision a container
-engine. Previous integration results in `docs/reports/` remain dated evidence.
+engine. Previous integration reports are archived in `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/`.
 
 `bin/netopier` now resolves the project directory when called from another folder.
 The local CLI routing and secret scan were checked on 2026-09-07; a new live
 RSS-to-feed verification awaits the container runtime. The Python package requires
 Python 3.12; the system Python 3.9 is insufficient for the application tests.
 
-Current exploration of public sources, monitoring and research lives in
-[`docs/DISCOVERY.md`](docs/DISCOVERY.md). The public-newsroom output hypothesis
-is documented separately in
-[`docs/PRODUCT_HYPOTHESIS.md`](docs/PRODUCT_HYPOTHESIS.md); its targets are a
-proposal, not proof of implemented output. See the [documentation index](docs/README.md).
+Architecture and decisions: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 ## Runtime
 
@@ -82,10 +68,8 @@ bin/netopier snapshot-smoke
 bin/netopier contracts
 bin/netopier secret-scan
 bin/netopier model-manifest
-docker compose run --rm api python benchmarks/run_benchmark.py
-docker compose run --rm api python benchmarks/run_event_benchmark.py
 ```
 
 See [architecture](docs/ARCHITECTURE.md), [decisions](docs/DECISIONS.md), and
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Benchmark inputs and the latest
-measured report live under [`benchmarks/`](benchmarks/).
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Benchmark inputs and reports from
+September 2026 are archived in `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/benchmarks/`.

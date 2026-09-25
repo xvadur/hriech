@@ -1,31 +1,23 @@
 # STATUS — netopier
 
 ## Živé
-- v1 postavený od nuly (2.–3. 9.): Miniflux + Postgres/pgvector + FastAPI + lokálne embeddingy; kanonický repo `xvadur/netopier` (posledný commit 11. 9., 27 dirty)
-- Build 2A Event Intelligence Core: atomizácia článkov na udalosti, päťtriedny vzťahový model, TDD
-- Writing Engine v1: CLI `netopier-write`, zdrojovo uzamknutý kompilátor s hard gates
-- Person resolution modul (RPO/ORSR, Meta Business Discovery konektor) — technicky hotový, bez živého tokenu
-- Frontend „Vydanie“ vybraný (9. 9., DESIGN.md) — mock dáta, nenapojený na backend
-- Fiki Unchained korpus (25. 9.): `fiki/fiki.py` + `data/fiki/` — 93 videí (35,4 h), titulky 92 (sk ASR), 3 630 odsekov 20–40 s / 34,8 h, FTS5 `search` s časom a odkazom youtu.be?t=; sqlite a raw VTT lokálne (ignorované)
-- Datasety: SK Instagram Top 200; fact-check SMER/TA3 (187 tvrdení); Sulík vs. Barami proof-case + 7 363-slovný článok; mapa 10 redakcií (558 osôb) → Hriech
+- Kód Netopiera v2 (`src/netopier/`, ~2 500 riadkov): Miniflux ingest, archív článkov s provenienciou, embeddingy, príbehy, udalosti, feed, FastAPI (read-only), CLI; 7 testovacích modulov; migrácie Alembic
+- Runtime nebeží od 7. 9. 2026 (Colima odstránená pri upratovaní Macu); posledný doložený beh 3.–5. 9.: 76 článkov, 71 udalostí, 18 testov prešlo (reporty v `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/docs/reports/`)
+- Korpus Fiki Unchained (25. 9.): `fiki/fiki.py` + `data/fiki/` — 93 videí (35,4 h), titulky 92, 3 630 odsekov, FTS s časom a odkazom
+- Dáta o realitnom trhu: `data/realitny-trh/` (18 súborov, 27. 6. – 1. 8. 2026, mimo gitu)
 
 ## Rozhodnutia
-- 2026-08-30 — teardown „Minút po minúte“ a HotInfo; v1 na OSS komponentoch [A]
+- 2026-08-30 — teardown „Minút po minúte“ a HotInfo; v2 na OSS komponentoch [A]
 - 2026-09-01 — AI autorstvo sa nemaskuje, robí sa kvalitným [A]
-- 2026-09-07 — Netopier = „redakcia riadená jedným kurátorom“; Hriech = autorstvo a publikácia, Netopier = monitoring a dôkazy [A]
-- 2026-09-11 — Docker/OpenClaw/Hermes bežia na MacBooku, mini je pracovisko [A]
+- 2026-09-07 — Hriech = autorstvo a publikácia, Netopier = monitoring a dôkazy [A]
+- 2026-09-25 — Netopier je backend Hriechu vo workspace; v0 zmazaný; minulé koncepcie a mock „Vydanie“ archivované do `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/` [A]
 
 ## Ďalší krok
-- nič ready — napíš /issue
+- Stack a roadmapa spolu s redizajnom Hriechu; rozhodnúť, kde a ako beží runtime
 
 ## Blokované
-- NET-001 Rozbehnúť Netopier v1 runtime na MacBooku (worker), aby existoval dôkaz behu. — na: MacBook príprava (Docker/OpenClaw/Hermes handoff nedokončený, 11. 9.)
-
-## Posledný receipt
-- zatiaľ žiadny
+- nič
 
 ## Inbox
-- Fiki: 1 video vekovo obmedzené (RSmA1OmMa0w) bez titulkov — potrebuje cookies prihláseného YouTube účtu, rozhodnutie Adama; YouTube verzie môžu byť skrátené oproti fiki.sk
-- XDR-142 Martin Slíž: 30 príspevkov, register zdrojov, 3 reprodukcie — nedokončené
-- Denný publikačný kontrakt (20–30 feed správ + 3 kurátorské články) — hypotéza, worker väčšinou vypnutý
-- YouTube → prepis → porovnanie s mediálnou interpretáciou — navrhnuté v DISCOVERY.md, v kóde nie
+- Fiki: 1 video vekovo obmedzené (RSmA1OmMa0w) bez titulkov — potrebuje cookies prihláseného YouTube účtu
+- Python 3.12 na Macu chýba (testy aplikácie ho vyžadujú)

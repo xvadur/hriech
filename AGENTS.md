@@ -2,8 +2,8 @@
 
 ## Purpose
 
-Hriech je kanonický verejný projekt pre Adamovu mediálnu kritiku. Mapa redakcií
-je prvá vrstva; ďalšie prípady, sourcebooky, metodika a verejné texty patria sem.
+Hriech je web a publikácia XVADUR spravodajskej služby (mediálna kritika, mapy,
+dáta, investigatíva). Backend je Netopier v `netopier/`. Mapa redakcií je prvý modul.
 
 ## Boundaries
 
@@ -12,10 +12,10 @@ je prvá vrstva; ďalšie prípady, sourcebooky, metodika a verejné texty patri
 - Profesijná, vlastnícka alebo inštitucionálna väzba sama osebe nie je dôkazom
   vplyvu, konfliktu ani protiprávneho konania.
 - Raw Dia chaty, licencované fulltexty, celé transkripty a súkromné poznámky
-  patria do ignorovaného `private/`; do verejného Gitu smú iba redigované,
-  zdrojovo podopreté výstupy.
-- Netopier môže dodávať verejný archív, udalosti a receipts, ale editoriálne
-  prípady a verejný mediálno-kritický povrch vlastní Hriech.
+  do repozitára nepatria (sú v `xvadur_core/zdroje/hriech/`); do verejného Gitu
+  smú iba redigované, zdrojovo podopreté výstupy.
+- Netopier (`netopier/`) dodáva archív, udalosti a dáta; editoriálne prípady
+  a verejný povrch vlastní Hriech.
 - Bez explicitného súhlasu nerob push, deploy, DNS zmenu ani publikáciu.
 
 ## Engineering
