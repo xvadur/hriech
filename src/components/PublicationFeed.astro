@@ -1,0 +1,26 @@
+---
+import { getPublications } from "../lib/content";
+import { kinds, selectEntries, pageEntries } from "../lib/publication-policy.mjs";
+import PublicationRows from "./PublicationRows.astro";
+import MapCallout from "./MapCallout.astro";
+import Icon from "./Icon.astro";
+interface Props { kind?: string; page?: number }
+const {kind="",page=1} = Astro.props;
+const all = await getPublications();
+const filtered = selectEntries(all,kind);
+const result = pageEntries(filtered,page);
+const listUrl = (k: string, p=1) => k ? "/publikacie/typ/"+k+(p>1?"/strana/"+p:"") : (p>1?"/publikacie/strana/"+p:"/");
+---
+<div class="container feed-grid">
+  <section aria-labelledby="publications-title">
+    <div class="feed-heading"><h1 id="publications-title">Publikácie</h1><span>Najnovšie ako prvé</span></div>
+    <nav class="filters" aria-label="Druh publikácie">
+      <a class="chip" href="/" aria-current={!kind ? "page" : undefined}>Všetko</a>
+      {Object.entries(kinds).map(([key,label])=><a class="chip" href={listUrl(key)} aria-current={kind===key ? "page":undefined}>{label}</a>)}
+    </nav>
+    {result.entries.length ? <PublicationRows entries={result.entries}/> : <div class="empty-state"><h2>{kind==="clanok" ? "Články ešte len prídu." : kind==="postreh" ? "Postrehy ešte len prídu." : "Zatiaľ tu nie sú publikácie."}</h2><p>Aktuálne môžeš preskúmať prvý prípad Redakcie a jeho verejné mapové podklady.</p><a class="text-link" href="/pripady/redakcie">Otvoriť prípad Redakcie <Icon size={20}/></a></div>}
+    {result.pages > 1 && <nav class="pagination" aria-label="Stránkovanie">{result.current > 1 ? <a rel="prev" href={listUrl(kind,result.current-1)}><Icon name="back" size={18}/>Novšie</a>:<span/>}<span>Strana {result.current} z {result.pages}</span>{result.current < result.pages ? <a rel="next" href={listUrl(kind,result.current+1)}>Staršie<Icon size={18}/></a>:<span/>}</nav>}
+    <p class="feed-footnote">Texty a zistenia z Hriechu aj v <a href="/rss.xml">RSS</a>.</p>
+  </section>
+  <MapCallout/>
+</div>

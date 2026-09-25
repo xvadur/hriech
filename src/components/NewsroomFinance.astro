@@ -1,0 +1,9 @@
+---
+import {type Outlet,formatValue,evidenceLabel} from "../lib/newsrooms";
+import SourceRefs from "./SourceRefs.astro";
+interface Props {outlet:Outlet}
+const {outlet:o}=Astro.props;
+---
+<section><h2 class="section-title">Financie v podkladoch</h2><p class="section-description">Údaje sa vzťahujú na uvedené obdobie a subjekt zo zdrojového dokumentu. Rozsah ukazovateľov sa medzi médiami líši.</p>
+{o.financialFacts.length?<div class="finance-table-wrap" tabindex="0" role="region" aria-label="Finančné údaje"><table class="finance-table" role="table"><caption>{o.legalEntity.name} · údaje a zdrojové dokumenty</caption><thead role="rowgroup"><tr role="row"><th scope="col">Obdobie</th><th scope="col">Ukazovateľ</th><th scope="col">Hodnota</th></tr></thead><tbody role="rowgroup">{o.financialFacts.map(f=><tr role="row" id={"financia-"+f.id}><td role="cell" data-label="Obdobie">{f.period}</td><td role="cell">{f.metric}{f.note&&<small>{f.note}</small>}<SourceRefs outlet={o} ids={f.sourceRefIds}/></td><td class="value" role="cell" data-label="Hodnota">{formatValue(f.value,f.unit)}<small>{evidenceLabel(f.evidenceState)}</small></td></tr>)}</tbody></table></div>:<div class="empty-state"><h3>Finančné ukazovatele chýbajú.</h3><p>V dostupnom súbore pre toto médium nie sú uvedené.</p></div>}
+</section>

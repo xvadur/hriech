@@ -1,14 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import EditorialOrganizationMap from "../components/EditorialOrganizationMap.astro";
-import editorialMap from "../data/editorial-organization-map.json";
-
-const title = "Hriech — Kto tvorí slovenský informačný priestor?";
-const description = "Verejnozdrojová mapa ľudí, redakčných štruktúr, vlastníctva, financií a inštitucionálnych väzieb desiatich slovenských online médií.";
+import PublicationFeed from "../components/PublicationFeed.astro";
+import {outlets} from "../lib/newsrooms";
 ---
-
-<BaseLayout {title} {description}>
-  {editorialMap.outlets.map((_, outletIndex) => (
-    <EditorialOrganizationMap data={editorialMap} {outletIndex} showGlobal={outletIndex === 0} />
-  ))}
-</BaseLayout>
+<BaseLayout title="Hriech — publikácie a mapy súvislostí" description="Články, postrehy a prípady Hriechu. Objavy, ktoré vedú ku zdrojom. Pod značkou XVADUR."><PublicationFeed/></BaseLayout>
+<div data-legacy-outlets={outlets.map(o=>o.id).join(",")} hidden></div>
+<script>
+import {legacyDestination} from "../lib/publication-policy.mjs";
+const ids=(document.querySelector<HTMLElement>("[data-legacy-outlets]")?.dataset.legacyOutlets ?? "").split(",");
+const redirect=()=>{const dest=legacyDestination(location.hash,ids);if(dest)location.replace(dest);};
+redirect();window.addEventListener("hashchange",redirect);
+</script>

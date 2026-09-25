@@ -1,0 +1,17 @@
+---
+import { type Publication, entryUrl, formatDate, kindLabel } from "../lib/content";
+import Icon from "./Icon.astro";
+interface Props { entries: Publication[] }
+const { entries } = Astro.props;
+---
+<div class="publication-list">
+  {entries.map((entry) => <article class:list={["publication-row", { "with-cover": entry.data.cover }]}>
+    <div class="publication-copy">
+      <div class="publication-meta"><span>{kindLabel(entry.data.kind)}</span><time datetime={entry.data.publishedAt?.toISOString()}>{formatDate(entry.data.publishedAt!)}</time></div>
+      <h2><a href={entryUrl(entry)}>{entry.data.title}</a></h2>
+      <p>{entry.data.description}</p>
+      <a class="row-link" href={entryUrl(entry)}>Otvoriť {entry.data.kind === "pripad" ? "prípad" : "text"} <Icon size={20}/></a>
+    </div>
+    {entry.data.cover && <a tabindex="-1" aria-hidden="true" href={entryUrl(entry)} class="publication-thumbnail"><img src={entry.data.cover.src} alt="" width="160" height="120" loading="lazy"/></a>}
+  </article>)}
+</div>

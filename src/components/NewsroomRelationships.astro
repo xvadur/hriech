@@ -1,0 +1,11 @@
+---
+import Icon from "./Icon.astro";
+import {type Outlet,subjectLabel,subjectHref,predicateLabel,evidenceLabel,relationKind,relationUrl,personUrl} from "../lib/newsrooms";
+import {formatDate} from "../lib/content";
+import SourceRefs from "./SourceRefs.astro";
+interface Props {outlet:Outlet}
+const {outlet:o}=Astro.props;
+---
+<section><h2 class="section-title">Doložené vzťahy</h2><p class="section-description">Každá väzba má presný význam. Samotná existencia vzťahu nedokazuje vplyv na obsah ani protiprávne konanie.</p>
+<div class="records">{o.relationships.map(r=><details class="record" id={"vztah-"+r.id}><summary><span><span class="relation-kind">{relationKind(r.predicate)}</span><span class="relation-line"><strong>{subjectLabel(o,r)}</strong><span class="predicate">{predicateLabel(r.predicate)}</span><strong>{r.objectLabel}</strong></span></span><Icon name="chevron" size={22}/></summary><div class="record-body">{r.note&&<p>{r.note}</p>}<p class="record-meta">{evidenceLabel(r.evidenceState)} · {formatDate(r.observedAt)}</p>{subjectHref(o,r)&&<p><a class="text-link" href={subjectHref(o,r)}>Detail: {subjectLabel(o,r)} <Icon size={18}/></a></p>}{r.objectId&&o.people.some(p=>p.id===r.objectId)&&<p><a class="text-link" href={personUrl(o,r.objectId)}>Detail: {r.objectLabel} <Icon size={18}/></a></p>}<SourceRefs outlet={o} ids={r.sourceRefIds}/><a class="permalink" href={relationUrl(o,r.id)}>Trvalý odkaz na vzťah <Icon name="external" size={16}/></a></div></details>)}</div>{!o.relationships.length&&<div class="empty-state"><p>V tomto súbore zatiaľ nie sú samostatné vzťahové záznamy.</p></div>}
+</section>

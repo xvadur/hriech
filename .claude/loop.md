@@ -1,0 +1,1 @@
+Skontroluj otvorené PR tohto repa. Ak je CI červené, stiahni log, diagnostikuj a pushni minimálnu opravu len ak je poverenie na push v transkripte. Nové review komentáre spracuj a vlákna vyrieš. Ak je všetko zelené a ticho, povedz to jednou vetou. Nezačínaj nové veci.

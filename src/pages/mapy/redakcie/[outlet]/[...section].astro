@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import {outlets,sections,outletUrl} from "../../../../lib/newsrooms";
+import {formatDate} from "../../../../lib/content";
+import Overview from "../../../../components/NewsroomOverview.astro";
+import People from "../../../../components/NewsroomPeople.astro";
+import Relationships from "../../../../components/NewsroomRelationships.astro";
+import Finance from "../../../../components/NewsroomFinance.astro";
+import Sources from "../../../../components/NewsroomSources.astro";
+import FilterScript from "../../../../components/FilterScript.astro";
+import Icon from "../../../../components/Icon.astro";
+export function getStaticPaths(){return outlets.flatMap(outlet=>sections.map(section=>({params:{outlet:outlet.id,section:section.slug||undefined},props:{outlet,section}})));}
+const {outlet:o,section}=Astro.props;
+---
+<BaseLayout title={o.name+" · "+section.label+" — Hriech"} description={o.coverage.summary}>
+<div class="container">
+<nav class="breadcrumb" aria-label="Drobčeková navigácia"><a href="/mapy">Mapy</a><span aria-hidden="true">/</span><a href="/mapy/redakcie">Redakcie</a><span aria-hidden="true">/</span><span>{o.name}</span></nav>
+<div class="workspace"><aside class="outlet-sidebar"><details class="mobile-picker"><summary>Zmeniť médium: <strong>{o.name}</strong></summary><nav aria-label="Výber média na mobile">{outlets.map(item=><a href={outletUrl(item.id,section.slug)} aria-current={item.id===o.id?"true":undefined}>{item.name}</a>)}</nav></details><h2>Médiá v mape</h2><nav aria-label="Výber média">{outlets.map(item=><a href={outletUrl(item.id,section.slug)} aria-current={item.id===o.id?"true":undefined}>{item.name}</a>)}</nav><a class="text-link" href="/pripady/redakcie">O prípade a podkladoch <Icon size={18}/></a></aside>
+<div><header class="outlet-heading"><h1>{o.name}</h1><a class="external-site" href={o.website}>Web média <Icon name="external" size={17}/></a></header><p class="snapshot">Zoznam zachytený {formatDate(o.coverage.rosterObservedAt)}</p>
+<nav class="section-nav" aria-label={"Sekcie média "+o.name}>{sections.map(s=><a href={outletUrl(o.id,s.slug)} aria-current={s.slug===section.slug?"page":undefined}>{s.label}</a>)}</nav>
+{!section.slug&&<Overview outlet={o}/>}
+{section.slug==="ludia"&&<People outlet={o}/>}
+{section.slug==="vztahy"&&<Relationships outlet={o}/>}
+{section.slug==="financie"&&<Finance outlet={o}/>}
+{section.slug==="zdroje"&&<Sources outlet={o}/>}
+<details class="gap-note"><summary>Čo v podkladoch chýba</summary><p>Rozsah zachytený {formatDate(o.coverage.rosterObservedAt)}.</p><ul>{[...o.coverage.knownGaps,...o.openQuestions].map(g=><li>{g}</li>)}</ul></details>
+</div></div></div><FilterScript/>
+</BaseLayout>

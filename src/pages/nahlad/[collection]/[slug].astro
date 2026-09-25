@@ -1,0 +1,10 @@
+---
+import {getCollection} from "astro:content";
+import ArticleView from "../../../components/ArticleView.astro";
+export async function getStaticPaths(){
+ if(!import.meta.env.DEV)return [];
+ return [...await getCollection("publications"),...await getCollection("cases")].map(entry=>({params:{collection:entry.collection,slug:entry.id},props:{entry}}));
+}
+const {entry}=Astro.props;
+---
+<ArticleView entry={entry} preview/>

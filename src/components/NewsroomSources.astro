@@ -1,0 +1,9 @@
+---
+import Icon from "./Icon.astro";
+import {type Outlet,outletSources,sourceUrl} from "../lib/newsrooms";
+import {formatDate} from "../lib/content";
+interface Props {outlet:Outlet}
+const {outlet:o}=Astro.props;
+const sources=outletSources(o);
+---
+<section><h2 class="section-title">Zdroje a dokumenty</h2><p class="section-description">{sources.length} podkladov priradených k záznamom tohto média. Dátum zachytenia označuje čas zberu, nemusí byť dátumom vydania dokumentu.</p><div class="records">{sources.map(s=><article class="record source-document" id={"zdroj-"+s.id}><h3 class="source-title">{s.title}</h3><p>{s.publisher} · zachytené {formatDate(s.capturedAt)}</p>{s.note&&<p>{s.note}</p>}<a class="text-link" href={s.url}>Otvoriť pôvodný zdroj <Icon name="external" size={16}/></a><br/><a class="permalink" href={sourceUrl(o,s.id)}>Trvalý odkaz na zdroj</a></article>)}</div></section>

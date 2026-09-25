@@ -1,0 +1,42 @@
+<script>
+import {fold} from "../lib/publication-policy.mjs";
+const root=document.querySelector<HTMLElement>("[data-filter-root]");
+if(root){
+ const form=root.querySelector<HTMLFormElement>("form[data-filter-form]")!;
+ const records=[...root.querySelectorAll<HTMLElement>("[data-record]")];
+ const count=root.querySelector<HTMLElement>("[data-result-count]")!;
+ const empty=root.querySelector<HTMLElement>("[data-filter-empty]")!;
+ const controls=[...form.querySelectorAll<HTMLInputElement|HTMLSelectElement>("[name]")];
+ const refresh=(fromUrl=false)=>{
+  if(fromUrl){const params=new URLSearchParams(location.search);controls.forEach(c=>c.value=params.get(c.name)??"");}
+  const values=Object.fromEntries(controls.map(c=>[c.name,c.value]));
+  let total=0;
+  records.forEach(record=>{
+   const pairs: {unitId:string;roleLevel:string}[]=JSON.parse(record.dataset.roles??"[]");
+   const visible=fold(record.dataset.search??"").includes(fold(values.q??""))&&
+    ((!values.tim&&!values.funkcia)||pairs.some(r=>(!values.tim||r.unitId===values.tim)&&(!values.funkcia||r.roleLevel===values.funkcia)));
+   record.hidden=!visible;if(visible)total++;
+  });
+  count.textContent="Zobrazené: "+total+" z "+records.length;
+  empty.hidden=total!==0;
+ };
+ const commit=()=>{
+   const url=new URL(location.href);
+   controls.forEach(c=>c.value?url.searchParams.set(c.name,c.value):url.searchParams.delete(c.name));
+   if(url.href!==location.href)history.pushState(null,"",url);
+   refresh();
+ };
+ form.addEventListener("submit",e=>{e.preventDefault();commit();});
+ controls.filter(c=>c instanceof HTMLSelectElement).forEach(c=>c.addEventListener("change",commit));
+ form.addEventListener("reset",()=>{queueMicrotask(()=>{controls.forEach(c=>c.value="");commit();});});
+ window.addEventListener("popstate",()=>refresh(true));
+ refresh(true);
+}
+const openTarget=()=>{
+ const id=decodeURIComponent(location.hash.slice(1));
+ const target=document.getElementById(id);
+ if(target){let parent:HTMLElement|null=target;while(parent){if(parent instanceof HTMLDetailsElement)parent.open=true;parent=parent.parentElement;}target.scrollIntoView({block:"start"});}
+};
+try{openTarget();}catch{}
+window.addEventListener("hashchange",()=>{try{openTarget();}catch{}});
+</script>

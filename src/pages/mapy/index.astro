@@ -1,0 +1,10 @@
+---
+import Icon from "../../components/Icon.astro";
+import {getCollection} from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import MapCallout from "../../components/MapCallout.astro";
+const modules=(await getCollection("modules")).filter(e=>e.data.available);
+---
+<BaseLayout title="Mapy — Hriech" description="Verejné mapy organizácií, ľudí a doložených vzťahov. Začni mapou slovenských redakcií.">
+<div class="container"><header class="page-intro"><h1>Mapy súvislostí</h1><p>Za názvami sú organizácie. Za organizáciami ľudia.<br/>Preskúmaj ich verejne doložené vzťahy.</p></header><div class="map-landing">{modules.some(e=>e.id==="redakcie")&&<MapCallout/>}<div class="map-explainer"><h2>Od prehľadu ku konkrétnemu podkladu.</h2><p>Mapy spájajú ľudí, organizácie a pomenované vzťahy. Pri každom zázname nájdeš, odkiaľ pochádza a aký stav zachytáva.</p><p>Prvým modulom sú slovenské redakcie. Ďalšie oblasti pribudnú, keď budú mať vlastné overiteľné podklady.</p><a class="text-link" href="/pripady/redakcie">Prečítať prípad Redakcie <Icon size={18}/></a></div></div></div>
+</BaseLayout>

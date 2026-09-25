@@ -1,0 +1,30 @@
+---
+import {render} from "astro:content";
+import type {Publication} from "../lib/content";
+import {formatDate,kindLabel,getPublications} from "../lib/content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PublicationRows from "./PublicationRows.astro";
+import Icon from "./Icon.astro";
+interface Props {entry: Publication; preview?: boolean}
+const {entry,preview=false}=Astro.props;
+const {Content}=await render(entry);
+const d=entry.data;
+const related=(await getPublications()).filter(e=>e.data.caseId===entry.id&&entry.collection==="cases");
+---
+<BaseLayout title={d.title+" — Hriech"} description={d.description} type="article" image={d.cover?.src} noindex={preview}>
+  {preview && <div class="preview-banner">Lokálny redakčný náhľad · {d.status} · tento text nie je vo verejnom builde</div>}
+  <div class="reading-wrap">
+    <nav class="breadcrumb" aria-label="Drobčeková navigácia"><a href="/">Publikácie</a><span aria-hidden="true">/</span><span>{kindLabel(d.kind)}</span></nav>
+    <header class="article-header"><div class="publication-meta"><span>{kindLabel(d.kind)}</span>{d.publishedAt&&<time datetime={d.publishedAt.toISOString()}>{formatDate(d.publishedAt)}</time>}</div><h1>{d.title}</h1><p class="perex">{d.description}</p><div class="byline"><span>Autorstvo: <strong>{d.author}</strong></span>{d.updatedAt&&<span>Aktualizované {formatDate(d.updatedAt)}</span>}</div></header>
+    {d.moduleId==="redakcie"&&<aside class="module-entry"><div><h2>Mapa redakcií</h2><p>Desať médií. Ľudia, vlastníctvo, financie a zdroje.</p></div><a class="button" href="/mapy/redakcie">Otvoriť mapu <Icon/></a></aside>}
+    <article class="reading-paper">
+      {d.cover&&<figure><img src={d.cover.src} alt={d.cover.alt}/>{d.cover.caption&&<figcaption>{d.cover.caption}</figcaption>}</figure>}
+      <div class="prose"><Content/></div>
+      {d.sources.length>0&&<section class="article-sources" aria-labelledby="article-sources"><h2 id="article-sources">Zdroje</h2><ol>{d.sources.map(s=><li id={"zdroj-"+s.id}><a href={s.url}>{s.title} <Icon name="external" size={16}/></a></li>)}</ol></section>}
+      {d.moduleId==="redakcie"&&<section class="article-sources"><h2>Zdrojové podklady</h2><p>Všetky podklady sú priradené ku konkrétnym záznamom v mape. <a href="/mapy/redakcie">Vyber médium</a> a otvor sekciu Zdroje.</p></section>}
+      <p class="disclosure"><strong>Autorstvo a AI.</strong> {d.aiDisclosure}</p>
+    </article>
+    {d.caseId&&<p class="related">Súvisiaci prípad: <a class="text-link" href={"/pripady/"+d.caseId}>Redakcie <Icon size={18}/></a></p>}
+    {entry.collection==="cases"&&<section class="related"><h2>Publikácie k prípadu</h2>{related.length?<PublicationRows entries={related}/>:<p class="section-description">Ďalšie články a postrehy k tomuto prípadu sa objavia tu po publikovaní.</p>}</section>}
+  </div>
+</BaseLayout>

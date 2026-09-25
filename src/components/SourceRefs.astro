@@ -1,0 +1,7 @@
+---
+import Icon from "./Icon.astro";
+import {type Outlet,sourcesById,sourceUrl} from "../lib/newsrooms";
+interface Props {outlet: Outlet; ids: string[]}
+const {outlet,ids}=Astro.props;
+---
+<div class="source-refs" aria-label="Podklady">{[...new Set(ids)].map(id=>{const s=sourcesById.get(id);return s&&<a href={sourceUrl(outlet,id)}>{s.publisher} · zdroj <Icon name="external" size={16}/></a>})}</div>

@@ -1,0 +1,7 @@
+---
+import ArticleView from "../../components/ArticleView.astro";
+import {getPublications} from "../../lib/content";
+export async function getStaticPaths(){return (await getPublications()).filter(e=>e.collection==="publications").map(entry=>({params:{slug:entry.id},props:{entry}}));}
+const {entry}=Astro.props;
+---
+<ArticleView entry={entry}/>

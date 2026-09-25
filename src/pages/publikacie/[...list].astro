@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PublicationFeed from "../../components/PublicationFeed.astro";
+import {getPublications} from "../../lib/content";
+import {PAGE_SIZE,kinds,selectEntries} from "../../lib/publication-policy.mjs";
+export async function getStaticPaths(){
+ const all=await getPublications();
+ return ["",...Object.keys(kinds)].flatMap(kind=>{
+   const count=Math.max(1,Math.ceil(selectEntries(all,kind).length/PAGE_SIZE));
+   return Array.from({length:count},(_,i)=>i+1).filter(page=>kind||page>1).map(page=>({
+     params:{list:kind?"typ/"+kind+(page>1?"/strana/"+page:""):"strana/"+page},props:{kind,page}
+   }));
+ });
+}
+const {kind,page}=Astro.props;
+---
+<BaseLayout title="Publikácie — Hriech" description="Články, postrehy a prípady Hriechu. Najnovšie publikácie na jednom mieste."><PublicationFeed kind={kind} page={page}/></BaseLayout>

@@ -1,0 +1,28 @@
+---
+import Icon from "./Icon.astro";
+import {type Outlet,publisherOwnership,subjectLabel,relationUrl,personUrl,outletUrl,evidenceLabel,predicateLabel} from "../lib/newsrooms";
+import SourceRefs from "./SourceRefs.astro";
+interface Props {outlet:Outlet}
+const {outlet:o}=Astro.props;
+const owners=publisherOwnership(o);
+const kub=o.relationships.filter(r=>r.predicate==="beneficial_owner_of");
+const leaders=o.people.filter(p=>p.roles.some(r=>r.roleLevel==="editorial_leadership"));
+---
+<section class="surface">
+  <h2>Organizácia média</h2><p>{o.coverage.summary}</p>
+  <div class="org-flow">
+    {owners.length>0&&<div class="ownership-list">{owners.map(r=><div class="org-node"><span class="node-label">Vlastnícka väzba</span><strong>{subjectLabel(o,r)}</strong><span class="node-label">{predicateLabel(r.predicate)} → {r.objectLabel}</span><a href={relationUrl(o,r.id)}>Podklady vzťahu <Icon size={18}/></a></div>)}</div>}
+    <a class="text-link ownership-more" href={outletUrl(o.id,"vztahy")}>Všetky vlastnícke a ďalšie vzťahy <Icon size={18}/></a>
+    <div class="org-node publisher"><span class="node-label">Vydavateľ</span><strong>{o.legalEntity.name}</strong><p>IČO {o.legalEntity.registrationId} · {o.legalEntity.legalForm}</p><SourceRefs outlet={o} ids={o.legalEntity.sourceRefIds}/></div>
+    <div class="flow-connector" aria-hidden="true"></div>
+    {leaders.length>0?<div class="people-preview">{leaders.map(p=><a class="org-node" href={personUrl(o,p.id)}><span class="node-label">Vedenie redakcie</span><strong>{p.name}</strong><span class="node-label">{p.roles.filter(r=>r.roleLevel==="editorial_leadership").map(r=>r.title).join(" · ")}</span></a>)}</div>:<div class="org-node"><strong>Vedenie redakcie</strong><p>V tomto súbore nie je uvedená samostatne doložená osoba s rolou vedenia redakcie.</p></div>}
+  </div>
+  {kub.length>0&&<div><h3>Koneční užívatelia výhod</h3><p class="section-description">Samostatná kategória podľa zdrojového registra.</p><div class="people-preview">{kub.map(r=><div class="org-node"><strong>{subjectLabel(o,r)}</strong><a href={relationUrl(o,r.id)}>{r.objectLabel} · zdrojový záznam <Icon size={18}/></a></div>)}</div></div>}
+  <h3 class="section-title">Tímy a organizačné jednotky</h3>
+  <div class="team-grid">{o.units.map(unit=>{
+    const members=o.people.filter(p=>p.roles.some(r=>r.unitId===unit.id));
+    const parent=o.units.find(u=>u.id===unit.parentId);
+    return <section class="team" id={"tim-"+unit.id}><h3>{unit.name}</h3><a href={outletUrl(o.id,"ludia")+"?tim="+encodeURIComponent(unit.id)}>Osobné záznamy: {members.length} <Icon size={18}/></a><details><summary>Organizácia a podklady</summary>{parent&&<small>Patrí pod: <a href={"#tim-"+parent.id}>{parent.name}</a></small>}{unit.description&&<p>{unit.description}</p>}<small>{evidenceLabel(unit.evidenceState)}</small><SourceRefs outlet={o} ids={unit.sourceRefIds}/></details></section>;
+  })}</div>
+  {o.products.length>0&&<details class="products-list"><summary>Produkty a projekty ({o.products.length})</summary><div class="team-grid">{o.products.map(p=><div class="team" id={"produkt-"+p.id}><h3>{p.name}</h3><p>{p.relationship}</p>{p.url&&<a href={p.url}>Web projektu <Icon name="external" size={16}/></a>}<SourceRefs outlet={o} ids={p.sourceRefIds}/></div>)}</div></details>}
+</section>

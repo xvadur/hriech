@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Icon from "../../../components/Icon.astro";
+import FilterScript from "../../../components/FilterScript.astro";
+import {outlets,data,outletSources,outletUrl} from "../../../lib/newsrooms";
+import {formatDate} from "../../../lib/content";
+---
+<BaseLayout title="Redakcie — mapa médií — Hriech" description="Ľudia, vlastníctvo, vedenie a financie desiatich slovenských médií s verejnými zdrojmi.">
+<div class="container" data-filter-root>
+  <nav class="breadcrumb" aria-label="Drobčeková navigácia"><a href="/mapy">Mapy</a><span aria-hidden="true">/</span><span>Redakcie</span></nav>
+  <header class="page-intro"><h1>Redakcie</h1><p>Vyber médium a pozri sa, kto za ním stojí.</p><p class="snapshot">Zmapovaný stav: {formatDate(data.observedAt)} · {outlets.length} médií · {data.sources.length} zdrojov</p></header>
+  <form class="search-form" data-filter-form role="search" aria-label="Vyhľadávanie média"><div class="field"><label for="outlet-search">Názov média alebo vydavateľa</label><div class="input-wrap"><Icon name="search" size={20}/><input type="search" id="outlet-search" name="q" placeholder="Napríklad Denník N alebo N Press" autocomplete="off"/></div></div><button class="button" type="submit">Vyhľadať</button><button class="chip" type="reset">Zrušiť filter</button></form>
+  <p class="result-count" data-result-count role="status" aria-live="polite">Zobrazené: {outlets.length} z {outlets.length}</p>
+  <div class="outlet-grid">{outlets.map(o=><a class="outlet-card" href={outletUrl(o.id)} data-record data-search={o.name+" "+o.legalEntity.name}><div><h2>{o.name}</h2><p>{o.legalEntity.name}</p><small>{o.people.length} osobných záznamov · {outletSources(o).length} zdrojov</small></div><Icon/></a>)}</div>
+  <div class="empty-state" data-filter-empty hidden><h2>Také médium v mape nie je.</h2><p>Skús kratší názov alebo zruš filter. Mapa zatiaľ pokrýva desať uvedených médií.</p></div>
+  <p class="data-note">Počty označujú záznamy vo verejných podkladoch. Rozsah a úplnosť mapovania sa pri médiách líšia. <a href="/pripady/redakcie">Predmet skúmania a hranice prípadu <Icon size={18}/></a></p>
+  <noscript><p class="data-note">Zobrazené sú všetky médiá. Vyhľadávanie potrebuje JavaScript; každý detail je dostupný cez uvedené odkazy.</p></noscript>
+</div><FilterScript/>
+</BaseLayout>

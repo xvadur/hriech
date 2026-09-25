@@ -11,12 +11,24 @@ projektu, nie jeho konečný rozsah.
 
 ## Vlastníctvo obsahu
 
+Začni podľa práce, ktorú ideš robiť:
+
+| Práca | Vstup |
+|---|---|
+| Písanie článku, interné prípady a zdroje | Lokálny `private/README.md` |
+| Verejné výskumné podklady | [Výskum Hriechu](research/README.md) |
+| Aktualizácia mapy médií | [Mapa redakcií](research/newsrooms/README.md) |
+| Úprava webu | `src/pages/index.astro`, komponenty v `src/components/` |
+
+Súkromný rozcestník je dostupný iba v lokálnom projekte.
+
 - `src/` — verejný web a jeho kurátorované dáta.
 - `research/newsrooms/` — verejné podklady k mapovaniu redakcií.
 - `research/editorial/` — produktové a investigatívne briefy.
 - `contracts/` — verejné dátové kontrakty Hriechu.
 - `private/research/compiled/` — interný analytický rámec a case files.
 - `private/research/sourcebooks/` — pracovné argumentačné a dôkazové balíky.
+- `private/drafts/` — verzie rozpracovaných článkov; verzia neurčuje schválenie.
 - `private/` — raw poznámky, celé transkripty a ďalšie nepublikovateľné
   zdroje; adresár je lokálny a Git ho ignoruje.
 

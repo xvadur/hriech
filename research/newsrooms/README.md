@@ -38,3 +38,15 @@ majetkové lustrovanie fyzických osôb.
 Kanonický strojový kontrakt je
 `contracts/media/v1/editorial-organization-map.schema.json`; publikovaná dátová
 projekcia je `src/data/editorial-organization-map.json`.
+
+## Úprava dát
+
+Osem médií od Aktualít po Postoj má vstupné JSON fragmenty v `fragments/`.
+Denník N a SME sú zatiaľ priamo v `src/data/editorial-organization-map.json`.
+Po úprave fragmentu spusti z koreňa projektu `pnpm sync:newsrooms`, skontroluj
+diff výslednej projekcie a potom `pnpm qa`.
+
+Synchronizácia prepisuje osem médií ich fragmentmi, preto ich zmeny rob vo
+fragmentoch. Skript zachováva dátum snapshotu 2026-09-03; jeho spustenie samo
+osebe nepredstavuje nové overenie zdrojov. Markdown podklady aktualizuj spolu
+s príslušnými dátami.
