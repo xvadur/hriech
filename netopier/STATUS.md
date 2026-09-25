@@ -6,6 +6,7 @@
 - Writing Engine v1: CLI `netopier-write`, zdrojovo uzamknutý kompilátor s hard gates
 - Person resolution modul (RPO/ORSR, Meta Business Discovery konektor) — technicky hotový, bez živého tokenu
 - Frontend „Vydanie“ vybraný (9. 9., DESIGN.md) — mock dáta, nenapojený na backend
+- Fiki Unchained korpus (25. 9.): `fiki/fiki.py` + `data/fiki/` — 93 videí (35,4 h), titulky 92 (sk ASR), 3 630 odsekov 20–40 s / 34,8 h, FTS5 `search` s časom a odkazom youtu.be?t=; sqlite a raw VTT lokálne (ignorované)
 - Datasety: SK Instagram Top 200; fact-check SMER/TA3 (187 tvrdení); Sulík vs. Barami proof-case + 7 363-slovný článok; mapa 10 redakcií (558 osôb) → Hriech
 
 ## Rozhodnutia
@@ -24,6 +25,7 @@
 - zatiaľ žiadny
 
 ## Inbox
+- Fiki: 1 video vekovo obmedzené (RSmA1OmMa0w) bez titulkov — potrebuje cookies prihláseného YouTube účtu, rozhodnutie Adama; YouTube verzie môžu byť skrátené oproti fiki.sk
 - XDR-142 Martin Slíž: 30 príspevkov, register zdrojov, 3 reprodukcie — nedokončené
 - Denný publikačný kontrakt (20–30 feed správ + 3 kurátorské články) — hypotéza, worker väčšinou vypnutý
 - YouTube → prepis → porovnanie s mediálnou interpretáciou — navrhnuté v DISCOVERY.md, v kóde nie
