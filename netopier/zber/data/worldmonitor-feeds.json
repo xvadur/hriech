@@ -1,0 +1,1100 @@
+{
+  "source": "https://github.com/koala73/worldmonitor/blob/90dc23a3fd7c9497f85449a7ff7f6fb81d51d137/src/config/feeds.ts",
+  "license_note": "Katalóg URL kanálov prevzatý z World Monitor (AGPL-3.0); kód sa nepreberá, kanály sa čítajú priamo od vydavateľov.",
+  "categories": [
+    "politics",
+    "europe",
+    "middleeast",
+    "gov",
+    "thinktanks",
+    "crisis"
+  ],
+  "synced_at": "2026-09-26T17:29:38.401Z",
+  "feeds": [
+    {
+      "id": "wm-bbc-world",
+      "category": "politics",
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-guardian-world",
+      "category": "politics",
+      "name": "Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-ap-news",
+      "category": "politics",
+      "name": "AP News",
+      "url": "https://news.google.com/rss/search?q=site:apnews.com&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-reuters-world",
+      "category": "politics",
+      "name": "Reuters World",
+      "url": "https://news.google.com/rss/search?q=site:reuters.com+world&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-cnn-world",
+      "category": "politics",
+      "name": "CNN World",
+      "url": "https://news.google.com/rss/search?q=site:cnn.com+world+news+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-trump-truth-social",
+      "category": "politics",
+      "name": "Trump - Truth Social",
+      "url": "https://trumpstruth.org/feed",
+      "lang": "en"
+    },
+    {
+      "id": "wm-telegraph",
+      "category": "europe",
+      "name": "Telegraph",
+      "url": "https://www.telegraph.co.uk/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-interfax-en",
+      "category": "europe",
+      "name": "Interfax EN",
+      "url": "https://news.google.com/rss/search?q=site%3Ainterfax.com%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-el-pais",
+      "category": "europe",
+      "name": "El País",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "lang": "es"
+    },
+    {
+      "id": "wm-el-mundo",
+      "category": "europe",
+      "name": "El Mundo",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "lang": "es"
+    },
+    {
+      "id": "wm-bbc-mundo",
+      "category": "europe",
+      "name": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/index.xml",
+      "lang": "es"
+    },
+    {
+      "id": "wm-tagesschau",
+      "category": "europe",
+      "name": "Tagesschau",
+      "url": "https://www.tagesschau.de/xml/rss2/",
+      "lang": "de"
+    },
+    {
+      "id": "wm-bild",
+      "category": "europe",
+      "name": "Bild",
+      "url": "https://www.bild.de/feed/alles.xml",
+      "lang": "de"
+    },
+    {
+      "id": "wm-der-spiegel",
+      "category": "europe",
+      "name": "Der Spiegel",
+      "url": "https://www.spiegel.de/schlagzeilen/tops/index.rss",
+      "lang": "de"
+    },
+    {
+      "id": "wm-die-zeit",
+      "category": "europe",
+      "name": "Die Zeit",
+      "url": "https://newsfeed.zeit.de/index",
+      "lang": "de"
+    },
+    {
+      "id": "wm-handelsblatt",
+      "category": "europe",
+      "name": "Handelsblatt",
+      "url": "https://www.handelsblatt.com/contentexport/feed/schlagzeilen",
+      "lang": "de"
+    },
+    {
+      "id": "wm-welt",
+      "category": "europe",
+      "name": "Welt",
+      "url": "https://www.welt.de/feeds/latest.rss",
+      "lang": "de"
+    },
+    {
+      "id": "wm-ansa",
+      "category": "europe",
+      "name": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/topnews/topnews_rss.xml",
+      "lang": "it"
+    },
+    {
+      "id": "wm-corriere-della-sera",
+      "category": "europe",
+      "name": "Corriere della Sera",
+      "url": "https://www.corriere.it/rss/homepage.xml",
+      "lang": "it"
+    },
+    {
+      "id": "wm-repubblica",
+      "category": "europe",
+      "name": "Repubblica",
+      "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+      "lang": "it"
+    },
+    {
+      "id": "wm-nos-nieuws",
+      "category": "europe",
+      "name": "NOS Nieuws",
+      "url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+      "lang": "nl"
+    },
+    {
+      "id": "wm-nrc",
+      "category": "europe",
+      "name": "NRC",
+      "url": "https://www.nrc.nl/rss/",
+      "lang": "nl"
+    },
+    {
+      "id": "wm-de-telegraaf",
+      "category": "europe",
+      "name": "De Telegraaf",
+      "url": "https://news.google.com/rss/search?q=site:telegraaf.nl+when:1d&hl=nl&gl=NL&ceid=NL:nl",
+      "lang": "nl"
+    },
+    {
+      "id": "wm-svt-nyheter",
+      "category": "europe",
+      "name": "SVT Nyheter",
+      "url": "https://www.svt.se/nyheter/rss.xml",
+      "lang": "sv"
+    },
+    {
+      "id": "wm-dagens-nyheter",
+      "category": "europe",
+      "name": "Dagens Nyheter",
+      "url": "https://www.dn.se/rss/",
+      "lang": "sv"
+    },
+    {
+      "id": "wm-svenska-dagbladet",
+      "category": "europe",
+      "name": "Svenska Dagbladet",
+      "url": "https://www.svd.se/feed/articles.rss",
+      "lang": "sv"
+    },
+    {
+      "id": "wm-yle-news",
+      "category": "europe",
+      "name": "Yle News",
+      "url": "https://yle.fi/rss/news",
+      "lang": "en"
+    },
+    {
+      "id": "wm-nrk",
+      "category": "europe",
+      "name": "NRK",
+      "url": "https://www.nrk.no/nyheter/siste.rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-aftenposten",
+      "category": "europe",
+      "name": "Aftenposten",
+      "url": "https://www.aftenposten.no/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-dr-nyheder",
+      "category": "europe",
+      "name": "DR Nyheder",
+      "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+      "lang": "en"
+    },
+    {
+      "id": "wm-arctic-today",
+      "category": "europe",
+      "name": "Arctic Today",
+      "url": "https://news.google.com/rss/search?q=site:arctictoday.com+when:14d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-bbc-turkce",
+      "category": "europe",
+      "name": "BBC Turkce",
+      "url": "https://feeds.bbci.co.uk/turkce/rss.xml",
+      "lang": "tr"
+    },
+    {
+      "id": "wm-dw-turkish",
+      "category": "europe",
+      "name": "DW Turkish",
+      "url": "https://rss.dw.com/xml/rss-tur-all",
+      "lang": "tr"
+    },
+    {
+      "id": "wm-hurriyet",
+      "category": "europe",
+      "name": "Hurriyet",
+      "url": "https://www.hurriyet.com.tr/rss/anasayfa",
+      "lang": "tr"
+    },
+    {
+      "id": "wm-daily-sabah",
+      "category": "europe",
+      "name": "Daily Sabah",
+      "url": "https://www.dailysabah.com/rss/home-page",
+      "lang": "en"
+    },
+    {
+      "id": "wm-polsat-news",
+      "category": "europe",
+      "name": "Polsat News",
+      "url": "https://www.polsatnews.pl/rss/wszystkie.xml",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-pap",
+      "category": "europe",
+      "name": "PAP",
+      "url": "https://news.google.com/rss/search?q=site%3Apap.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-gazeta-wyborcza",
+      "category": "europe",
+      "name": "Gazeta Wyborcza",
+      "url": "https://news.google.com/rss/search?q=site%3Awyborcza.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-polityka",
+      "category": "europe",
+      "name": "Polityka",
+      "url": "https://news.google.com/rss/search?q=site%3Apolityka.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-onet",
+      "category": "europe",
+      "name": "Onet",
+      "url": "https://news.google.com/rss/search?q=site%3Awiadomosci.onet.pl%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-oko-press",
+      "category": "europe",
+      "name": "OKO.press",
+      "url": "https://oko.press/feed",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-tvp-info",
+      "category": "europe",
+      "name": "TVP Info",
+      "url": "https://news.google.com/rss/search?q=site%3Atvp.info%20when%3A2d&hl=pl&gl=PL&ceid=PL:pl",
+      "lang": "pl"
+    },
+    {
+      "id": "wm-telex",
+      "category": "europe",
+      "name": "Telex",
+      "url": "https://telex.hu/rss",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-index-hu",
+      "category": "europe",
+      "name": "Index.hu",
+      "url": "https://index.hu/24ora/rss",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-hvg",
+      "category": "europe",
+      "name": "HVG",
+      "url": "https://hvg.hu/rss",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-444-hu",
+      "category": "europe",
+      "name": "444.hu",
+      "url": "https://444.hu/feed",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-24-hu",
+      "category": "europe",
+      "name": "24.hu",
+      "url": "https://24.hu/feed/",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-hirado",
+      "category": "europe",
+      "name": "Híradó",
+      "url": "https://news.google.com/rss/search?q=site:hirado.hu+when:2d&hl=hu&gl=HU&ceid=HU:hu",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-portfolio-hu",
+      "category": "europe",
+      "name": "Portfolio.hu",
+      "url": "https://portfolio.hu/rss/all.xml",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-atv",
+      "category": "europe",
+      "name": "ATV",
+      "url": "https://www.atv.hu/rss",
+      "lang": "hu"
+    },
+    {
+      "id": "wm-seznam-zpravy",
+      "category": "europe",
+      "name": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/rss",
+      "lang": "cs"
+    },
+    {
+      "id": "wm-n1-croatia",
+      "category": "europe",
+      "name": "N1 Croatia",
+      "url": "https://n1info.hr/feed/",
+      "lang": "hr"
+    },
+    {
+      "id": "wm-index-hr",
+      "category": "europe",
+      "name": "Index.hr",
+      "url": "https://www.index.hr/rss",
+      "lang": "hr"
+    },
+    {
+      "id": "wm-jutarnji-list",
+      "category": "europe",
+      "name": "Jutarnji list",
+      "url": "https://www.jutarnji.hr/feed",
+      "lang": "hr"
+    },
+    {
+      "id": "wm-balkan-insight",
+      "category": "europe",
+      "name": "Balkan Insight",
+      "url": "https://balkaninsight.com/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-digi24",
+      "category": "europe",
+      "name": "Digi24",
+      "url": "https://www.digi24.ro/rss",
+      "lang": "ro"
+    },
+    {
+      "id": "wm-hotnews",
+      "category": "europe",
+      "name": "HotNews",
+      "url": "https://www.hotnews.ro/rss",
+      "lang": "ro"
+    },
+    {
+      "id": "wm-g4media",
+      "category": "europe",
+      "name": "G4Media",
+      "url": "https://www.g4media.ro/feed/",
+      "lang": "ro"
+    },
+    {
+      "id": "wm-dnevnik",
+      "category": "europe",
+      "name": "Dnevnik",
+      "url": "https://www.dnevnik.bg/rss/",
+      "lang": "bg"
+    },
+    {
+      "id": "wm-kathimerini",
+      "category": "europe",
+      "name": "Kathimerini",
+      "url": "https://news.google.com/rss/search?q=site:kathimerini.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-naftemporiki",
+      "category": "europe",
+      "name": "Naftemporiki",
+      "url": "https://www.naftemporiki.gr/feed/",
+      "lang": "el"
+    },
+    {
+      "id": "wm-in-gr",
+      "category": "europe",
+      "name": "in.gr",
+      "url": "https://www.in.gr/feed/",
+      "lang": "el"
+    },
+    {
+      "id": "wm-iefimerida",
+      "category": "europe",
+      "name": "iefimerida",
+      "url": "https://www.iefimerida.gr/rss.xml",
+      "lang": "el"
+    },
+    {
+      "id": "wm-proto-thema",
+      "category": "europe",
+      "name": "Proto Thema",
+      "url": "https://news.google.com/rss/search?q=site:protothema.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-ert",
+      "category": "europe",
+      "name": "ERT",
+      "url": "https://news.google.com/rss/search?q=site:ert.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-amna",
+      "category": "europe",
+      "name": "AMNA",
+      "url": "https://news.google.com/rss/search?q=site:amna.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-ta-nea",
+      "category": "europe",
+      "name": "Ta Nea",
+      "url": "https://www.tanea.gr/feed/",
+      "lang": "el"
+    },
+    {
+      "id": "wm-liberal-gr",
+      "category": "europe",
+      "name": "Liberal GR",
+      "url": "https://news.google.com/rss/search?q=site:liberal.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-cnn-greece",
+      "category": "europe",
+      "name": "CNN Greece",
+      "url": "https://news.google.com/rss/search?q=site:cnn.gr+when:2d&hl=el&gl=GR&ceid=GR:el",
+      "lang": "el"
+    },
+    {
+      "id": "wm-err-news",
+      "category": "europe",
+      "name": "ERR News",
+      "url": "https://news.err.ee/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-lrt-english",
+      "category": "europe",
+      "name": "LRT English",
+      "url": "https://www.lrt.lt/en/news-in-english?rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-lsm-english",
+      "category": "europe",
+      "name": "LSM English",
+      "url": "https://eng.lsm.lv/rss/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-bbc-russian",
+      "category": "europe",
+      "name": "BBC Russian",
+      "url": "https://feeds.bbci.co.uk/russian/rss.xml",
+      "lang": "ru"
+    },
+    {
+      "id": "wm-interfax-ru",
+      "category": "europe",
+      "name": "Interfax RU",
+      "url": "https://www.interfax.ru/rss.asp",
+      "lang": "ru"
+    },
+    {
+      "id": "wm-novaya-gazeta-europe",
+      "category": "europe",
+      "name": "Novaya Gazeta Europe",
+      "url": "https://novayagazeta.eu/feed/rss",
+      "lang": "ru"
+    },
+    {
+      "id": "wm-tass",
+      "category": "europe",
+      "name": "TASS",
+      "url": "https://news.google.com/rss/search?q=site:tass.com+OR+TASS+Russia+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-rt",
+      "category": "europe",
+      "name": "RT",
+      "url": "https://www.rt.com/rss/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-rt-russia",
+      "category": "europe",
+      "name": "RT Russia",
+      "url": "https://www.rt.com/rss/russia/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-kyiv-independent",
+      "category": "europe",
+      "name": "Kyiv Independent",
+      "url": "https://news.google.com/rss/search?q=site:kyivindependent.com+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-ukrainska-pravda-en",
+      "category": "europe",
+      "name": "Ukrainska Pravda EN",
+      "url": "https://news.google.com/rss/search?q=site:euromaidanpress.com+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-nv-en",
+      "category": "europe",
+      "name": "NV EN",
+      "url": "https://news.google.com/rss/search?q=site:english.nv.ua+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-hromadske-en",
+      "category": "europe",
+      "name": "Hromadske EN",
+      "url": "https://news.google.com/rss/search?q=site:hromadske.ua+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-ukrainska-pravda",
+      "category": "europe",
+      "name": "Ukrainska Pravda",
+      "url": "https://news.google.com/rss/search?q=site:pravda.com.ua+when:2d&hl=uk&gl=UA&ceid=UA:uk",
+      "lang": "uk"
+    },
+    {
+      "id": "wm-hromadske",
+      "category": "europe",
+      "name": "Hromadske",
+      "url": "https://news.google.com/rss/search?q=site:hromadske.ua+when:3d&hl=uk&gl=UA&ceid=UA:uk",
+      "lang": "uk"
+    },
+    {
+      "id": "wm-bihus-info",
+      "category": "europe",
+      "name": "Bihus.Info",
+      "url": "https://news.google.com/rss/search?q=site:bihus.info+when:7d&hl=uk&gl=UA&ceid=UA:uk",
+      "lang": "uk"
+    },
+    {
+      "id": "wm-slidstvo-info",
+      "category": "europe",
+      "name": "Slidstvo.Info",
+      "url": "https://news.google.com/rss/search?q=site:slidstvo.info+when:7d&hl=uk&gl=UA&ceid=UA:uk",
+      "lang": "uk"
+    },
+    {
+      "id": "wm-zn-ua",
+      "category": "europe",
+      "name": "ZN.UA",
+      "url": "https://news.google.com/rss/search?q=site:zn.ua+when:3d&hl=uk&gl=UA&ceid=UA:uk",
+      "lang": "uk"
+    },
+    {
+      "id": "wm-moscow-times",
+      "category": "europe",
+      "name": "Moscow Times",
+      "url": "https://www.themoscowtimes.com/rss/news",
+      "lang": "en"
+    },
+    {
+      "id": "wm-civil-ge",
+      "category": "europe",
+      "name": "Civil.ge",
+      "url": "https://civil.ge/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-oc-media",
+      "category": "europe",
+      "name": "OC Media",
+      "url": "https://oc-media.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-jamnews",
+      "category": "europe",
+      "name": "JAMnews",
+      "url": "https://jam-news.net/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-azertag",
+      "category": "europe",
+      "name": "Azertag",
+      "url": "https://news.google.com/rss/search?q=site:azertag.az+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-armenpress",
+      "category": "europe",
+      "name": "Armenpress",
+      "url": "https://news.google.com/rss/search?q=site:armenpress.am+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-zerkalo",
+      "category": "europe",
+      "name": "Zerkalo",
+      "url": "https://news.google.com/rss/search?q=site:zerkalo.io+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-newsmaker",
+      "category": "europe",
+      "name": "NewsMaker",
+      "url": "https://newsmaker.md/feed",
+      "lang": "ru"
+    },
+    {
+      "id": "wm-ziarul-de-garda",
+      "category": "europe",
+      "name": "Ziarul de Gardă",
+      "url": "https://www.zdg.md/feed/",
+      "lang": "ro"
+    },
+    {
+      "id": "wm-bbc-middle-east",
+      "category": "middleeast",
+      "name": "BBC Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-guardian-me",
+      "category": "middleeast",
+      "name": "Guardian ME",
+      "url": "https://www.theguardian.com/world/middleeast/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-bbc-persian",
+      "category": "middleeast",
+      "name": "BBC Persian",
+      "url": "https://feeds.bbci.co.uk/persian/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-iran-international",
+      "category": "middleeast",
+      "name": "Iran International",
+      "url": "https://news.google.com/rss/search?q=site:iranintl.com+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-fars-news",
+      "category": "middleeast",
+      "name": "Fars News",
+      "url": "https://news.google.com/rss/search?q=site:farsnews.ir+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-irna",
+      "category": "middleeast",
+      "name": "IRNA",
+      "url": "https://en.irna.ir/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-mehr-news",
+      "category": "middleeast",
+      "name": "Mehr News",
+      "url": "https://en.mehrnews.com/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-haaretz",
+      "category": "middleeast",
+      "name": "Haaretz",
+      "url": "https://news.google.com/rss/search?q=site:haaretz.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-jerusalem-post",
+      "category": "middleeast",
+      "name": "Jerusalem Post",
+      "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
+      "lang": "en"
+    },
+    {
+      "id": "wm-ynetnews",
+      "category": "middleeast",
+      "name": "Ynetnews",
+      "url": "https://www.ynetnews.com/Integration/StoryRss3089.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-arab-news",
+      "category": "middleeast",
+      "name": "Arab News",
+      "url": "https://news.google.com/rss/search?q=site:arabnews.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-the-national",
+      "category": "middleeast",
+      "name": "The National",
+      "url": "https://news.google.com/rss/search?q=site:thenationalnews.com+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-oman-observer",
+      "category": "middleeast",
+      "name": "Oman Observer",
+      "url": "https://www.omanobserver.om/rssFeed/1",
+      "lang": "en"
+    },
+    {
+      "id": "wm-asharq-business",
+      "category": "middleeast",
+      "name": "Asharq Business",
+      "url": "https://asharqbusiness.com/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-asharq-news",
+      "category": "middleeast",
+      "name": "Asharq News",
+      "url": "https://asharq.com/snapchat/rss.xml",
+      "lang": "ar"
+    },
+    {
+      "id": "wm-rudaw",
+      "category": "middleeast",
+      "name": "Rudaw",
+      "url": "https://news.google.com/rss/search?q=site:rudaw.net+when:7d&hl=en&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-yemen-online",
+      "category": "middleeast",
+      "name": "Yemen Online",
+      "url": "https://news.google.com/rss/search?q=site%3Ayemenonline.info%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-sana-a-center",
+      "category": "middleeast",
+      "name": "Sana'a Center",
+      "url": "https://sanaacenter.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-syria-direct",
+      "category": "middleeast",
+      "name": "Syria Direct",
+      "url": "https://syriadirect.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-enab-baladi-english",
+      "category": "middleeast",
+      "name": "Enab Baladi English",
+      "url": "https://news.google.com/rss/search?q=site%3Aenglish.enabbaladi.net%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-972-magazine",
+      "category": "middleeast",
+      "name": "+972 Magazine",
+      "url": "https://www.972mag.com/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-wafa-english",
+      "category": "middleeast",
+      "name": "WAFA English",
+      "url": "https://news.google.com/rss/search?q=site%3Aenglish.wafa.ps%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-naharnet-lebanon",
+      "category": "middleeast",
+      "name": "Naharnet Lebanon",
+      "url": "https://www.naharnet.com/tags/lebanon/en/feed.atom",
+      "lang": "en"
+    },
+    {
+      "id": "wm-l-orient-today",
+      "category": "middleeast",
+      "name": "L'Orient Today",
+      "url": "https://news.google.com/rss/search?q=site%3Alorientlejour.com%20Lebanon%20when%3A7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-annahar",
+      "category": "middleeast",
+      "name": "Annahar",
+      "url": "https://news.google.com/rss/search?q=site%3Aannahar.com%2Flebanon%20when%3A7d&hl=ar&gl=LB&ceid=LB:ar",
+      "lang": "ar"
+    },
+    {
+      "id": "wm-libya-herald",
+      "category": "middleeast",
+      "name": "Libya Herald",
+      "url": "https://libyaherald.com/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-egypt-independent",
+      "category": "middleeast",
+      "name": "Egypt Independent",
+      "url": "https://www.egyptindependent.com/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-mada-masr",
+      "category": "middleeast",
+      "name": "Mada Masr",
+      "url": "https://news.google.com/rss/search?q=site%3Amadamasr.com%20when%3A30d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-white-house",
+      "category": "gov",
+      "name": "White House",
+      "url": "https://www.whitehouse.gov/briefings-statements/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-white-house-actions",
+      "category": "gov",
+      "name": "White House Actions",
+      "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-state-dept",
+      "category": "gov",
+      "name": "State Dept",
+      "url": "https://news.google.com/rss/search?q=site:state.gov+OR+\"State+Department\"&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-pentagon",
+      "category": "gov",
+      "name": "Pentagon",
+      "url": "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945",
+      "lang": "en"
+    },
+    {
+      "id": "wm-treasury",
+      "category": "gov",
+      "name": "Treasury",
+      "url": "https://news.google.com/rss/search?q=site:treasury.gov+OR+\"Treasury+Department\"&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-doj",
+      "category": "gov",
+      "name": "DOJ",
+      "url": "https://news.google.com/rss/search?q=site:justice.gov+OR+\"Justice+Department\"+DOJ&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-federal-reserve",
+      "category": "gov",
+      "name": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-sec",
+      "category": "gov",
+      "name": "SEC",
+      "url": "https://www.sec.gov/news/pressreleases.rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-cdc",
+      "category": "gov",
+      "name": "CDC",
+      "url": "https://news.google.com/rss/search?q=site:cdc.gov+OR+CDC+health&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-fema",
+      "category": "gov",
+      "name": "FEMA",
+      "url": "https://news.google.com/rss/search?q=site:fema.gov+OR+FEMA+emergency&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-dhs",
+      "category": "gov",
+      "name": "DHS",
+      "url": "https://news.google.com/rss/search?q=site:dhs.gov+OR+\"Homeland+Security\"&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-u-s-trade-representative",
+      "category": "gov",
+      "name": "U.S. Trade Representative",
+      "url": "https://ustr.gov/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-un-news",
+      "category": "gov",
+      "name": "UN News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-cisa",
+      "category": "gov",
+      "name": "CISA",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-foreign-policy",
+      "category": "thinktanks",
+      "name": "Foreign Policy",
+      "url": "https://foreignpolicy.com/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-atlantic-council",
+      "category": "thinktanks",
+      "name": "Atlantic Council",
+      "url": "https://www.atlanticcouncil.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-foreign-affairs",
+      "category": "thinktanks",
+      "name": "Foreign Affairs",
+      "url": "https://www.foreignaffairs.com/rss.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-csis",
+      "category": "thinktanks",
+      "name": "CSIS",
+      "url": "https://news.google.com/rss/search?q=site:csis.org+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-rand",
+      "category": "thinktanks",
+      "name": "RAND",
+      "url": "https://www.rand.org/pubs/articles.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-brookings",
+      "category": "thinktanks",
+      "name": "Brookings",
+      "url": "https://news.google.com/rss/search?q=site:brookings.edu+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-carnegie",
+      "category": "thinktanks",
+      "name": "Carnegie",
+      "url": "https://news.google.com/rss/search?q=site:carnegieendowment.org+when:7d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-war-on-the-rocks",
+      "category": "thinktanks",
+      "name": "War on the Rocks",
+      "url": "https://warontherocks.com/feed",
+      "lang": "en"
+    },
+    {
+      "id": "wm-responsible-statecraft",
+      "category": "thinktanks",
+      "name": "Responsible Statecraft",
+      "url": "https://responsiblestatecraft.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-rusi",
+      "category": "thinktanks",
+      "name": "RUSI",
+      "url": "https://news.google.com/rss/search?q=site:rusi.org+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-fpri",
+      "category": "thinktanks",
+      "name": "FPRI",
+      "url": "https://www.fpri.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-jamestown",
+      "category": "thinktanks",
+      "name": "Jamestown",
+      "url": "https://jamestown.org/feed/",
+      "lang": "en"
+    },
+    {
+      "id": "wm-isw",
+      "category": "thinktanks",
+      "name": "ISW",
+      "url": "https://news.google.com/rss/search?q=site:understandingwar.org+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    },
+    {
+      "id": "wm-crisiswatch",
+      "category": "crisis",
+      "name": "CrisisWatch",
+      "url": "https://www.crisisgroup.org/rss",
+      "lang": "en"
+    },
+    {
+      "id": "wm-iaea",
+      "category": "crisis",
+      "name": "IAEA",
+      "url": "https://www.iaea.org/feeds/topnews",
+      "lang": "en"
+    },
+    {
+      "id": "wm-who",
+      "category": "crisis",
+      "name": "WHO",
+      "url": "https://www.who.int/rss-feeds/news-english.xml",
+      "lang": "en"
+    },
+    {
+      "id": "wm-unhcr",
+      "category": "crisis",
+      "name": "UNHCR",
+      "url": "https://news.google.com/rss/search?q=site:unhcr.org+OR+UNHCR+refugees+when:3d&hl=en-US&gl=US&ceid=US:en",
+      "lang": "en"
+    }
+  ]
+}

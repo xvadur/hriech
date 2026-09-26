@@ -1,0 +1,30 @@
+{
+  "name": "netopier-zber",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Netopier v2 — cloudový zber verejných zdrojov (Cloudflare Worker + D1 + Queues + R2)",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "check": "wrangler types && tsc --noEmit",
+    "test": "vitest run",
+    "sync:zdroje": "node scripts/sync-media-feeds.mjs && node scripts/sync-worldmonitor-feeds.mjs",
+    "db:migrate:local": "wrangler d1 migrations apply netopier-zber --local",
+    "db:migrate:remote": "wrangler d1 migrations apply netopier-zber --remote",
+    "qa": "pnpm run check && pnpm run test && wrangler deploy --dry-run --outdir .wrangler/dry-run",
+    "deploy": "pnpm run qa && wrangler deploy"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.1",
+    "fflate": "^0.8.3"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.2.7",
+    "esbuild": "0.28.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0",
+    "wrangler": "4.128.0",
+    "yaml": "^2.8.1"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

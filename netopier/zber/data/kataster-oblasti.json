@@ -1,0 +1,15 @@
+{
+  "note": "Pilotné oblasti sledovania parciel (INSPIRE WFS ÚGKK SR). Oblasti určuje Adam; bbox = [min dĺžka, min šírka, max dĺžka, max šírka] v WGS84.",
+  "areas": [
+    {
+      "id": "bratislava-urad-vlady",
+      "name": "Bratislava — Úrad vlády SR a Námestie slobody",
+      "bbox": [17.108, 48.15, 17.114, 48.154]
+    },
+    {
+      "id": "bratislava-hrad-nrsr",
+      "name": "Bratislava — Bratislavský hrad a Národná rada SR",
+      "bbox": [17.098, 48.1395, 17.103, 48.143]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+	<title>Testovací denník</title>
+	<atom:link href="https://example.sk/feed/" rel="self" type="application/rss+xml" />
+	<link>https://example.sk</link>
+	<description>Syntetický kanál v tvare WordPress RSS 2.0</description>
+	<item>
+		<title>Vláda schválila rozpočet &amp; ďalšie body</title>
+		<link>https://example.sk/1001/vlada-schvalila-rozpocet/</link>
+		<dc:creator><![CDATA[Redaktor Testovací]]></dc:creator>
+		<pubDate>Sat, 26 Sep 2026 17:06:25 +0000</pubDate>
+		<category><![CDATA[Domov]]></category>
+		<category><![CDATA[Politika]]></category>
+		<guid isPermaLink="false">https://example.sk/?p=1001</guid>
+		<description><![CDATA[<p>Prvý odsek s <strong>tučným</strong> textom&nbsp;a entitou &#8211; pomlčkou.</p>]]></description>
+	</item>
+	<item>
+		<title><![CDATA[Druhá správa bez guid]]></title>
+		<link>https://example.sk/1002/druha-sprava/</link>
+		<pubDate>Sat, 26 Sep 2026 16:00:00 +0200</pubDate>
+		<description>Krátky popis.</description>
+	</item>
+	<item>
+		<title>Položka bez odkazu a guid sa preskočí</title>
+	</item>
+</channel>
+</rss>

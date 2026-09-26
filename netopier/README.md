@@ -24,6 +24,13 @@ Python 3.12; the system Python 3.9 is insufficient for the application tests.
 
 Architecture and decisions: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
+## Cloud collection
+
+`zber/` is the cloud collector (Cloudflare Worker + Queues + D1 + R2) for Slovak media,
+World Monitor world feeds and source inventory, CRZ contracts, TED procurement,
+cadastral parcels and ŠÚ SR datasets. It is built and tested but not deployed; see
+[`zber/README.md`](zber/README.md) for local runs and the deploy procedure.
+
 ## Runtime
 
 - Miniflux 2.3.3 collects RSS/Atom/JSON Feed.

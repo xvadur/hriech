@@ -1,0 +1,42 @@
+{
+  "source": "netopier/sources/slovak-core.yaml",
+  "reviewed_at": "2026-09-03",
+  "feeds": [
+    {
+      "id": "dennikn_minuty_all",
+      "name": "Denník N Minúta po minúte",
+      "url": "https://dennikn.sk/minuta/feed/?cat=2386",
+      "site_url": "https://dennikn.sk/minuta/",
+      "family": "dennikn",
+      "lang": "sk",
+      "country": "SK"
+    },
+    {
+      "id": "dennikn",
+      "name": "Denník N",
+      "url": "https://dennikn.sk/feed/",
+      "site_url": "https://dennikn.sk/",
+      "family": "dennikn",
+      "lang": "sk",
+      "country": "SK"
+    },
+    {
+      "id": "aktuality",
+      "name": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/rss/",
+      "site_url": "https://www.aktuality.sk/",
+      "family": "aktuality",
+      "lang": "sk",
+      "country": "SK"
+    },
+    {
+      "id": "pravda_spravy",
+      "name": "Pravda Správy",
+      "url": "https://www.pravda.sk/spravy/rss/xml",
+      "site_url": "https://spravy.pravda.sk/",
+      "family": "pravda",
+      "lang": "sk",
+      "country": "SK"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED_PARTS = {".git", ".pytest_cache", "__pycache__", "var", "data", "private"}
+EXCLUDED_PARTS = {".git", ".pytest_cache", "__pycache__", "var", "data", "private", "node_modules", ".wrangler"}
 PATTERNS = {
     "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     "OpenAI-style key": re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b"),
@@ -23,7 +23,7 @@ def main() -> None:
     for path in ROOT.rglob("*"):
         if not path.is_file() or any(part in EXCLUDED_PARTS for part in path.parts):
             continue
-        if path.name == ".env":
+        if path.name in {".env", ".dev.vars"}:
             continue
         try:
             text = path.read_text(encoding="utf-8")

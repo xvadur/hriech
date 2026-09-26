@@ -48,3 +48,25 @@ mode. Continuous mode uses a 20-entry batch, a five-minute interval, one CPU and
 The runtime is assembled from maintained open-source components and keeps their
 notices. Netopier v2 itself has no public license grant. Publishing its source or
 choosing an OSS license requires Adam's separate decision.
+
+## ADR-008: cloud collection runs on Cloudflare Workers (proposal, 2026-09-26, XDR-228)
+
+Status: proposed — awaits Adam's confirmation together with the deploy.
+
+Netopier must collect without the Mac. The collection layer moves to a Cloudflare
+Worker (`zber/`): Cron Triggers enqueue jobs into Cloudflare Queues, one consumer
+invocation runs one connector, raw payloads go to R2 and normalized, versioned
+records go to D1 (`records`, `runs`, `source_state`). Retries and a dead-letter queue
+replace the local worker loop.
+
+Consequences:
+
+- For the cloud, the Worker's RSS connector replaces Miniflux as the feed poller
+  (ADR-002 still holds for the local Python stack). State sources (CRZ, TED, kataster,
+  ŠÚ SR, World Monitor) have no RSS and are collected only by the Worker.
+- D1 is the cloud system of record for raw collected records. PostgreSQL/pgvector
+  (ADR-003) stays the store for embeddings, stories and events; the Python pipeline
+  reads the D1 archive in a later step instead of Miniflux.
+- No text leaves for cloud processing: the Worker only fetches, parses and stores
+  public records. Embeddings stay local (ADR-004).
+- Requires the Workers Paid plan (CPU time for the CRZ export, D1 write volume).

@@ -1,0 +1,56 @@
+{
+ "version": "2.0",
+ "class": "collection",
+ "label": "JSON-stat Dataset Collection",
+ "href": "http://datacube.statistics.sk/#!/lang/sk",
+ "link": {
+  "item": [
+   {
+    "class": "dataset",
+    "href": "https://data.statistics.sk/api/v2/dataset/as1001rs/as1001rs_rok/as1001rs_ukaz/as1001rs_poh?lang=sk",
+    "label": "Obyvateľstvo a charakteristiky veku",
+    "update": "2025-12-19",
+    "dimension": {
+     "as1001rs_rok": {
+      "label": "as1001rs_rok",
+      "note": "Rok",
+      "href": "https://data.statistics.sk/api/v2/dimension/as1001rs/as1001rs_rok?lang=sk"
+     },
+     "as1001rs_ukaz": {
+      "label": "as1001rs_ukaz",
+      "note": "Ukazovateľ",
+      "href": "https://data.statistics.sk/api/v2/dimension/as1001rs/as1001rs_ukaz?lang=sk"
+     },
+     "as1001rs_poh": {
+      "label": "as1001rs_poh",
+      "note": "Pohlavie",
+      "href": "https://data.statistics.sk/api/v2/dimension/as1001rs/as1001rs_poh?lang=sk"
+     }
+    }
+   },
+   {
+    "class": "dataset",
+    "href": "https://data.statistics.sk/api/v2/dataset/nu1061qs/nu1061qs_rok/nu1061qs_stv/nu1061qs_ukaz?lang=sk",
+    "label": "Maastrichtský dlh verejnej správy - Stavy pasíva - S13K",
+    "update": "2026-07-21",
+    "dimension": {
+     "nu1061qs_rok": {
+      "label": "nu1061qs_rok",
+      "note": "Rok",
+      "href": "https://data.statistics.sk/api/v2/dimension/nu1061qs/nu1061qs_rok?lang=sk"
+     },
+     "nu1061qs_stv": {
+      "label": "nu1061qs_stv",
+      "note": "Štvrťrok",
+      "href": "https://data.statistics.sk/api/v2/dimension/nu1061qs/nu1061qs_stv?lang=sk"
+     },
+     "nu1061qs_ukaz": {
+      "label": "nu1061qs_ukaz",
+      "note": "Liabilities",
+      "href": "https://data.statistics.sk/api/v2/dimension/nu1061qs/nu1061qs_ukaz?lang=sk"
+     }
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "notices": [
+  {
+   "place-of-performance": [
+    "SK010",
+    "SVK",
+    "SK010",
+    "SVK"
+   ],
+   "notice-type": "can-standard",
+   "publication-number": "657425-2026",
+   "total-value-cur": [
+    "EUR"
+   ],
+   "total-value": 169751,
+   "winner-identifier": [
+    "35683546",
+    "2020339255"
+   ],
+   "procedure-type": "open",
+   "classification-cpv": [
+    "38434510",
+    "33696500",
+    "38434510",
+    "33696500"
+   ],
+   "buyer-name": {
+    "slk": [
+     "Národný ústav detských chorôb"
+    ]
+   },
+   "publication-date": "2026-09-24+02:00",
+   "links": {
+    "xml": {
+     "MUL": "https://ted.europa.eu/en/notice/657425-2026/xml"
+    },
+    "pdf": {
+     "BUL": "https://ted.europa.eu/bg/notice/657425-2026/pdf",
+     "SPA": "https://ted.europa.eu/es/notice/657425-2026/pdf",
+     "CES": "https://ted.europa.eu/cs/notice/657425-2026/pdf",
+     "DAN": "https://ted.europa.eu/da/notice/657425-2026/pdf",
+     "DEU": "https://ted.europa.eu/de/notice/657425-2026/pdf",
+     "EST": "https://ted.europa.eu/et/notice/657425-2026/pdf",
+     "ELL": "https://ted.europa.eu/el/notice/657425-2026/pdf",
+     "ENG": "https://ted.europa.eu/en/notice/657425-2026/pdf",
+     "FRA": "https://ted.europa.eu/fr/notice/657425-2026/pdf",
+     "GLE": "https://ted.europa.eu/ga/notice/657425-2026/pdf",
+     "HRV": "https://ted.europa.eu/hr/notice/657425-2026/pdf",
+     "ITA": "https://ted.europa.eu/it/notice/657425-2026/pdf",
+     "LAV": "https://ted.europa.eu/lv/notice/657425-2026/pdf",
+     "LIT": "https://ted.europa.eu/lt/notice/657425-2026/pdf",
+     "HUN": "https://ted.europa.eu/hu/notice/657425-2026/pdf",
+     "MLT": "https://ted.europa.eu/mt/notice/657425-2026/pdf",
+     "NLD": "https://ted.europa.eu/nl/notice/657425-2026/pdf",
+     "POL": "https://ted.europa.eu/pl/notice/657425-2026/pdf",
+     "POR": "https://ted.europa.eu/pt/notice/657425-2026/pdf",
+     "RON": "https://ted.europa.eu/ro/notice/657425-2026/pdf",
+     "SLK": "https://ted.europa.eu/sk/notice/657425-2026/pdf",
+     "SLV": "https://ted.europa.eu/sl/notice/657425-2026/pdf",
+     "FIN": "https://ted.europa.eu/fi/notice/657425-2026/pdf",
+     "SWE": "https://ted.europa.eu/sv/notice/657425-2026/pdf"
+    },
+    "pdfs": {
+     "SLK": "https://ted.europa.eu/sk/notice/657425-2026/pdfs"
+    },
+    "html": {
+     "BUL": "https://ted.europa.eu/bg/notice/-/detail/657425-2026",
+     "SPA": "https://ted.europa.eu/es/notice/-/detail/657425-2026",
+     "CES": "https://ted.europa.eu/cs/notice/-/detail/657425-2026",
+     "DAN": "https://ted.europa.eu/da/notice/-/detail/657425-2026",
+     "DEU": "https://ted.europa.eu/de/notice/-/detail/657425-2026",
+     "EST": "https://ted.europa.eu/et/notice/-/detail/657425-2026",
+     "ELL": "https://ted.europa.eu/el/notice/-/detail/657425-2026",
+     "ENG": "https://ted.europa.eu/en/notice/-/detail/657425-2026",
+     "FRA": "https://ted.europa.eu/fr/notice/-/detail/657425-2026",
+     "GLE": "https://ted.europa.eu/ga/notice/-/detail/657425-2026",
+     "HRV": "https://ted.europa.eu/hr/notice/-/detail/657425-2026",
+     "ITA": "https://ted.europa.eu/it/notice/-/detail/657425-2026",
+     "LAV": "https://ted.europa.eu/lv/notice/-/detail/657425-2026",
+     "LIT": "https://ted.europa.eu/lt/notice/-/detail/657425-2026",
+     "HUN": "https://ted.europa.eu/hu/notice/-/detail/657425-2026",
+     "MLT": "https://ted.europa.eu/mt/notice/-/detail/657425-2026",
+     "NLD": "https://ted.europa.eu/nl/notice/-/detail/657425-2026",
+     "POL": "https://ted.europa.eu/pl/notice/-/detail/657425-2026",
+     "POR": "https://ted.europa.eu/pt/notice/-/detail/657425-2026",
+     "RON": "https://ted.europa.eu/ro/notice/-/detail/657425-2026",
+     "SLK": "https://ted.europa.eu/sk/notice/-/detail/657425-2026",
+     "SLV": "https://ted.europa.eu/sl/notice/-/detail/657425-2026",
+     "FIN": "https://ted.europa.eu/fi/notice/-/detail/657425-2026",
+     "SWE": "https://ted.europa.eu/sv/notice/-/detail/657425-2026"
+    },
+    "htmlDirect": {
+     "BUL": "https://ted.europa.eu/bg/notice/657425-2026/html",
+     "SPA": "https://ted.europa.eu/es/notice/657425-2026/html",
+     "CES": "https://ted.europa.eu/cs/notice/657425-2026/html",
+     "DAN": "https://ted.europa.eu/da/notice/657425-2026/html",
+     "DEU": "https://ted.europa.eu/de/notice/657425-2026/html",
+     "EST": "https://ted.europa.eu/et/notice/657425-2026/html",
+     "ELL": "https://ted.europa.eu/el/notice/657425-2026/html",
+     "ENG": "https://ted.europa.eu/en/notice/657425-2026/html",
+     "FRA": "https://ted.europa.eu/fr/notice/657425-2026/html",
+     "GLE": "https://ted.europa.eu/ga/notice/657425-2026/html",
+     "HRV": "https://ted.europa.eu/hr/notice/657425-2026/html",
+     "ITA": "https://ted.europa.eu/it/notice/657425-2026/html",
+     "LAV": "https://ted.europa.eu/lv/notice/657425-2026/html",
+     "LIT": "https://ted.europa.eu/lt/notice/657425-2026/html",
+     "HUN": "https://ted.europa.eu/hu/notice/657425-2026/html",
+     "MLT": "https://ted.europa.eu/mt/notice/657425-2026/html",
+     "NLD": "https://ted.europa.eu/nl/notice/657425-2026/html",
+     "POL": "https://ted.europa.eu/pl/notice/657425-2026/html",
+     "POR": "https://ted.europa.eu/pt/notice/657425-2026/html",
+     "RON": "https://ted.europa.eu/ro/notice/657425-2026/html",
+     "SLK": "https://ted.europa.eu/sk/notice/657425-2026/html",
+     "SLV": "https://ted.europa.eu/sl/notice/657425-2026/html",
+     "FIN": "https://ted.europa.eu/fi/notice/657425-2026/html",
+     "SWE": "https://ted.europa.eu/sv/notice/657425-2026/html"
+    }
+   },
+   "winner-name": {
+    "slk": [
+     "Beckman Coulter Slovenská republika s. r. o."
+    ]
+   },
+   "notice-title": {
+    "hun": "Szlovákia – Citométerek – Prenájom cytometrov a dodávka protilátok",
+    "lav": "Slovākija – Citometri – Prenájom cytometrov a dodávka protilátok",
+    "swe": "Slovakien – Cytometrar – Prenájom cytometrov a dodávka protilátok",
+    "gle": "An tSlóvaic – Cytometers – Prenájom cytometrov a dodávka protilátok",
+    "ell": "Σλοβακία – Κυτταρόμετρα – Prenájom cytometrov a dodávka protilátok",
+    "spa": "Eslovaquia – Citómetros – Prenájom cytometrov a dodávka protilátok",
+    "est": "Slovakkia – Tsütomeetrid – Prenájom cytometrov a dodávka protilátok",
+    "nld": "Slowakije – Cytometers – Prenájom cytometrov a dodávka protilátok",
+    "fin": "Slovakia – Solumittauslaitteet – Prenájom cytometrov a dodávka protilátok",
+    "pol": "Słowacja – Cytometry – Prenájom cytometrov a dodávka protilátok",
+    "hrv": "Slovačka – Citometri – Prenájom cytometrov a dodávka protilátok",
+    "ces": "Slovensko – Citometry – Prenájom cytometrov a dodávka protilátok",
+    "dan": "Slovakiet – Cytometre – Prenájom cytometrov a dodávka protilátok",
+    "ron": "Slovacia – Citometre – Prenájom cytometrov a dodávka protilátok",
+    "por": "Eslováquia – Citómetros – Prenájom cytometrov a dodávka protilátok",
+    "slk": "Slovensko – Cytometre – Prenájom cytometrov a dodávka protilátok",
+    "fra": "Slovaquie – Cytomètres – Prenájom cytometrov a dodávka protilátok",
+    "mlt": "Is-Slovakkja – Ċitometri – Prenájom cytometrov a dodávka protilátok",
+    "deu": "Slowakei – Zytometer – Prenájom cytometrov a dodávka protilátok",
+    "lit": "Slovakija – Citometrai – Prenájom cytometrov a dodávka protilátok",
+    "ita": "Slovacchia – Citometri – Prenájom cytometrov a dodávka protilátok",
+    "bul": "Словакия – Цитометри – Prenájom cytometrov a dodávka protilátok",
+    "slv": "Slovaška – Citometri – Prenájom cytometrov a dodávka protilátok",
+    "eng": "Slovakia – Cytometers – Prenájom cytometrov a dodávka protilátok"
+   },
+   "buyer-identifier": [
+    "00607231",
+    "2020848368"
+   ]
+  },
+  {
+   "place-of-performance": [
+    "SK032",
+    "SVK",
+    "SK032",
+    "SVK"
+   ],
+   "notice-type": "can-standard",
+   "publication-number": "657502-2026",
+   "total-value-cur": [
+    "EUR"
+   ],
+   "total-value": 658344.21,
+   "winner-identifier": [
+    "50228455",
+    "2120221499"
+   ],
+   "procedure-type": "open",
+   "classification-cpv": [
+    "45000000",
+    "45000000"
+   ],
+   "buyer-name": {
+    "slk": [
+     "Mesto Banská Bystrica"
+    ]
+   },
+   "publication-date": "2026-09-24+02:00",
+   "links": {
+    "xml": {
+     "MUL": "https://ted.europa.eu/en/notice/657502-2026/xml"
+    },
+    "pdf": {
+     "BUL": "https://ted.europa.eu/bg/notice/657502-2026/pdf",
+     "SPA": "https://ted.europa.eu/es/notice/657502-2026/pdf",
+     "CES": "https://ted.europa.eu/cs/notice/657502-2026/pdf",
+     "DAN": "https://ted.europa.eu/da/notice/657502-2026/pdf",
+     "DEU": "https://ted.europa.eu/de/notice/657502-2026/pdf",
+     "EST": "https://ted.europa.eu/et/notice/657502-2026/pdf",
+     "ELL": "https://ted.europa.eu/el/notice/657502-2026/pdf",
+     "ENG": "https://ted.europa.eu/en/notice/657502-2026/pdf",
+     "FRA": "https://ted.europa.eu/fr/notice/657502-2026/pdf",
+     "GLE": "https://ted.europa.eu/ga/notice/657502-2026/pdf",
+     "HRV": "https://ted.europa.eu/hr/notice/657502-2026/pdf",
+     "ITA": "https://ted.europa.eu/it/notice/657502-2026/pdf",
+     "LAV": "https://ted.europa.eu/lv/notice/657502-2026/pdf",
+     "LIT": "https://ted.europa.eu/lt/notice/657502-2026/pdf",
+     "HUN": "https://ted.europa.eu/hu/notice/657502-2026/pdf",
+     "MLT": "https://ted.europa.eu/mt/notice/657502-2026/pdf",
+     "NLD": "https://ted.europa.eu/nl/notice/657502-2026/pdf",
+     "POL": "https://ted.europa.eu/pl/notice/657502-2026/pdf",
+     "POR": "https://ted.europa.eu/pt/notice/657502-2026/pdf",
+     "RON": "https://ted.europa.eu/ro/notice/657502-2026/pdf",
+     "SLK": "https://ted.europa.eu/sk/notice/657502-2026/pdf",
+     "SLV": "https://ted.europa.eu/sl/notice/657502-2026/pdf",
+     "FIN": "https://ted.europa.eu/fi/notice/657502-2026/pdf",
+     "SWE": "https://ted.europa.eu/sv/notice/657502-2026/pdf"
+    },
+    "pdfs": {
+     "SLK": "https://ted.europa.eu/sk/notice/657502-2026/pdfs"
+    },
+    "html": {
+     "BUL": "https://ted.europa.eu/bg/notice/-/detail/657502-2026",
+     "SPA": "https://ted.europa.eu/es/notice/-/detail/657502-2026",
+     "CES": "https://ted.europa.eu/cs/notice/-/detail/657502-2026",
+     "DAN": "https://ted.europa.eu/da/notice/-/detail/657502-2026",
+     "DEU": "https://ted.europa.eu/de/notice/-/detail/657502-2026",
+     "EST": "https://ted.europa.eu/et/notice/-/detail/657502-2026",
+     "ELL": "https://ted.europa.eu/el/notice/-/detail/657502-2026",
+     "ENG": "https://ted.europa.eu/en/notice/-/detail/657502-2026",
+     "FRA": "https://ted.europa.eu/fr/notice/-/detail/657502-2026",
+     "GLE": "https://ted.europa.eu/ga/notice/-/detail/657502-2026",
+     "HRV": "https://ted.europa.eu/hr/notice/-/detail/657502-2026",
+     "ITA": "https://ted.europa.eu/it/notice/-/detail/657502-2026",
+     "LAV": "https://ted.europa.eu/lv/notice/-/detail/657502-2026",
+     "LIT": "https://ted.europa.eu/lt/notice/-/detail/657502-2026",
+     "HUN": "https://ted.europa.eu/hu/notice/-/detail/657502-2026",
+     "MLT": "https://ted.europa.eu/mt/notice/-/detail/657502-2026",
+     "NLD": "https://ted.europa.eu/nl/notice/-/detail/657502-2026",
+     "POL": "https://ted.europa.eu/pl/notice/-/detail/657502-2026",
+     "POR": "https://ted.europa.eu/pt/notice/-/detail/657502-2026",
+     "RON": "https://ted.europa.eu/ro/notice/-/detail/657502-2026",
+     "SLK": "https://ted.europa.eu/sk/notice/-/detail/657502-2026",
+     "SLV": "https://ted.europa.eu/sl/notice/-/detail/657502-2026",
+     "FIN": "https://ted.europa.eu/fi/notice/-/detail/657502-2026",
+     "SWE": "https://ted.europa.eu/sv/notice/-/detail/657502-2026"
+    },
+    "htmlDirect": {
+     "BUL": "https://ted.europa.eu/bg/notice/657502-2026/html",
+     "SPA": "https://ted.europa.eu/es/notice/657502-2026/html",
+     "CES": "https://ted.europa.eu/cs/notice/657502-2026/html",
+     "DAN": "https://ted.europa.eu/da/notice/657502-2026/html",
+     "DEU": "https://ted.europa.eu/de/notice/657502-2026/html",
+     "EST": "https://ted.europa.eu/et/notice/657502-2026/html",
+     "ELL": "https://ted.europa.eu/el/notice/657502-2026/html",
+     "ENG": "https://ted.europa.eu/en/notice/657502-2026/html",
+     "FRA": "https://ted.europa.eu/fr/notice/657502-2026/html",
+     "GLE": "https://ted.europa.eu/ga/notice/657502-2026/html",
+     "HRV": "https://ted.europa.eu/hr/notice/657502-2026/html",
+     "ITA": "https://ted.europa.eu/it/notice/657502-2026/html",
+     "LAV": "https://ted.europa.eu/lv/notice/657502-2026/html",
+     "LIT": "https://ted.europa.eu/lt/notice/657502-2026/html",
+     "HUN": "https://ted.europa.eu/hu/notice/657502-2026/html",
+     "MLT": "https://ted.europa.eu/mt/notice/657502-2026/html",
+     "NLD": "https://ted.europa.eu/nl/notice/657502-2026/html",
+     "POL": "https://ted.europa.eu/pl/notice/657502-2026/html",
+     "POR": "https://ted.europa.eu/pt/notice/657502-2026/html",
+     "RON": "https://ted.europa.eu/ro/notice/657502-2026/html",
+     "SLK": "https://ted.europa.eu/sk/notice/657502-2026/html",
+     "SLV": "https://ted.europa.eu/sl/notice/657502-2026/html",
+     "FIN": "https://ted.europa.eu/fi/notice/657502-2026/html",
+     "SWE": "https://ted.europa.eu/sv/notice/657502-2026/html"
+    }
+   },
+   "winner-name": {
+    "slk": [
+     "VIAKORP, s.r.o."
+    ]
+   },
+   "notice-title": {
+    "hun": "Szlovákia – Építési munkák – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "lav": "Slovākija – Celtniecības darbi – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "swe": "Slovakien – Anläggningsarbete – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "gle": "An tSlóvaic – Construction work – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "ell": "Σλοβακία – Κατασκευαστικές εργασίες – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "spa": "Eslovaquia – Trabajos de construcción – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "est": "Slovakkia – Ehitustööd – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "nld": "Slowakije – Bouwwerkzaamheden – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "fin": "Slovakia – Rakennustyöt – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "pol": "Słowacja – Roboty budowlane – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "hrv": "Slovačka – Građevinski radovi – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "ces": "Slovensko – Stavební práce – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "dan": "Slovakiet – Bygge- og anlægsarbejder – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "ron": "Slovacia – Lucrări de construcţii – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "por": "Eslováquia – Construção – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "slk": "Slovensko – Stavebné práce – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "fra": "Slovaquie – Travaux de construction – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "mlt": "Is-Slovakkja – Xogħol tal-kostruzzjoni – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "deu": "Slowakei – Bauarbeiten – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "lit": "Slovakija – Statybos darbai – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "ita": "Slovacchia – Lavori di costruzione – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "bul": "Словакия – Строителни и монтажни работи – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "slv": "Slovaška – Gradbena dela – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA",
+    "eng": "Slovakia – Construction work – REKONŠTRUKCIA MLÁDEŽNÍCKEJ ULICE 1. ETAPA"
+   },
+   "buyer-identifier": [
+    "00313271",
+    "2020451587"
+   ]
+  }
+ ],
+ "totalNoticeCount": 2,
+ "iterationNextToken": null,
+ "timedOut": false
+}

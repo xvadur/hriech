@@ -1,0 +1,11 @@
+{
+  "note": "Sledované datasety ŠÚ SR (DATAcube, data.statistics.sk). Celý katalóg (~680 datasetov) sa ukladá denne ako zoznam s dátumom aktualizácie; tieto datasety sa sťahujú celé vždy, keď ŠÚ SR zmení ich dátum aktualizácie.",
+  "datasets": [
+    { "code": "nu1061qs", "name": "Maastrichtský dlh verejnej správy — štvrťročne" },
+    { "code": "nu1049rs", "name": "Deficit, prebytok a úroveň dlhu verejnej správy" },
+    { "code": "nu2028qs", "name": "Hrubý domáci produkt na obyvateľa" },
+    { "code": "kz1020rs", "name": "Miera nezamestnanosti" },
+    { "code": "om2019rs", "name": "Stav obyvateľstva" },
+    { "code": "om2801ms", "name": "Pohyb obyvateľstva SR — mesačne" }
+  ]
+}

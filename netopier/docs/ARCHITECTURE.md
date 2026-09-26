@@ -37,3 +37,17 @@ source IDs, timestamps, content hashes, decision features and Netopier-native fi
 `/feed` pagination creates an immutable PostgreSQL snapshot. Its opaque cursor binds
 subsequent pages to a snapshot ID and position for 24 hours, so live score changes
 cannot duplicate or hide a story during traversal.
+
+## Cloud collection (`zber/`)
+
+```text
+Cron Trigger ──► Queue netopier-zber-jobs ──► consumer: connector(job)
+ */30, 05:20 UTC        retry ×3, DLQ            ├─ R2 netopier-archiv  (raw payload, sha256)
+                                                 └─ D1 netopier-zber    (records, runs, source_state)
+```
+
+Connectors: `rss` (Slovak media register + World Monitor world feeds), `worldmonitor`
+(source inventory), `crz`, `ted`, `kataster`, `statistika`. Each connector gets an
+injected `fetch`, clock and cursor reader, so tests run without network. A record
+version is identified by `(source, external_id, content_hash)`; unchanged content is
+not written twice. Details and deploy steps: [`zber/README.md`](../zber/README.md).
