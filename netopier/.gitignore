@@ -14,6 +14,7 @@ data/*
 data/fiki/*
 !data/fiki/README.md
 !data/fiki/videos.json
+!data/fiki/vystupenia.txt
 private/
 var/
 models/

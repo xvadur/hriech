@@ -1,0 +1,154 @@
+# Vystúpenia Fikiho (Filip Sulík) mimo kanála Fiki Unchained.
+# Formát: <id alebo URL>  <kanál> | <názov>. Načíta sa prvé slovo riadku, `#` je komentár.
+# Načítanie: python3 fiki/fiki.py vystupenia   (pridanie: python3 fiki/fiki.py vystupenia <id|url>)
+#
+# Berie sa iba originálny zdroj, kde je Fiki na obraze ako hosť alebo moderátor.
+# Nie: reuploady a kompilácie, reakcie a reportáže o ňom, zámena s Richardom Sulíkom (SaS).
+# Nie (pravidlá programu pre kliperov): BarZaBar, Samuel Galovič / Fiki a Galovič, Menučko, Speed,
+# OSKISHOW a čokoľvek o Oskarovi (Oski, Barami) a Kiare Fujakovej. Príkaz tieto aj sám odmietne.
+# Zoznam zostavený 26. 9. 2026 (XDR-265) cez vyhľadávanie YouTube a vyhľadávanie v kanáloch.
+
+X7BdSW8Fd6s  Národná Televízia | Pofel s Filipom Sulíkom: Robert Kaliňák
+hzDi1IGx7VE  Národná Televízia | Pofel s Filipom Sulíkom: Roman Brenčič
+fTNAcyeYPTU  Národná Televízia | Pofel s Filipom Sulíkom: Danny Kollár a Marián Magát
+ECr3Jz4YyIQ  Národná Televízia | Pofel s Filipom Sulíkom: David Lindtner
+Xs0rdwjOYDI  Národná Televízia | Pofel s Filipom Sulíkom: Martina Šimkovičová
+LkfjfPwxdRQ  CC SPACE | FIKI SULÍK vs. 10 LIBERÁLOV | Vojna Názorov #001
+vIEPIp12H1A  Rozhovory so Šimonom | Duel Fiki vs. Šnídl: Muž vie lepšie, čo žena chce, než ona!
+asKgsXRZfpU  Rozhovory so Šimonom | Fiki Sulík: Občania sú čajočka a Fico je chlap čo ju facká pri sexe!
+1dfRRctvlMM  Rozhovory so Šimonom | Fiki Sulík: Žena je za ku**u, keď mala mnohých mužov a muž za pána pretože...
+YJaxORFY-Q8  Janka Bitto Ciganikova | Cigániková vs. Filip Sulík: Ženy nie sú chodiaci inkubátor
+U-FalOUDWE4  Celebrity Combat | Rawords #8 - Filip "Fiki" Sulík
+rf0AI-4FhYo  Startitup | Fiki Sulík: Danny Kollár je preceňovaný, ja mám 30-krát väčšie dosahy
+60jSxISd-sc  Startitup | Filip Sulík: Zoro Kollár je jediný, kto nikomu neslúži, peniaze ho nezaujímajú
+tcy00At5rqE  ESENCIE | 206# FILIP SULÍK: Keby som povedal, čo je najväčší problém sveta, išiel by som do basy - ESENCIE
+OpGieB3zu6w  PLUS 7 DNÍ | FIKI SULÍK: NECHÁPEM, AKO SLOVÁCI FUNGUJÚ Z 1500 EUR MESAČNE | PLUS 7 DNÍ
+9a4yRRD1-sI  PLUS 7 DNÍ | FILIP SULÍK MIERI DO POLITIKY: KEBY SOM SI MAL VYBRAŤ MEDZI SAS-KOU A SMEROM, VYBERIEM SI SMER
+AY26dn3fmiE  PLUS 7 DNÍ | Filip Sulík: Mám rád iniciatívne ženy, ale Ráchel je promiskuitná!
+cLg76AQ0fPA  TVOTV | FIKI SULÍK  ODHAĽUJE: Drucker ako agent, Ostrihoňová, Sajfa, Cigániková a zvyšok politickej džungle?
+ArWHR6TruT4  TVOTV | NAŽIVO :Diskusia za slobodu slova. Filip "Fiki" Sulík a Richard "Riki" Krištofovič | TVOTV
+EaVax43i5Qs  Temné Kecy | Yeah - Filip Sulík (13.Diel)
+_UInovptEdM  DONFANTASTICKYPESS | Rytmus a Fiki Sulik - Navštevy slovenských väznic a stretnutie s Mikulašom Černakom
+eqtNev0gRYo  Diskusia na palete | Filip Sulík: Protest proti Netrebko? Mám chuť vyvesiť si na dom ruskú vlajku
+WQ3zeqAnq9s  Diskusia na palete | Erik Kaliňák & Filip Sulík: Za vlády PS možno obaja skončíme v base
+TbbctmcAZFw  Rozhovory s Mimi Šramovou | Filip Sulík: Otec mi poďakoval, že som sa ho zastal
+QxsofzAeldE  Kanal1 | „Keby mi moja žena povedala, aby som namiesto nej umyl riady, tak to neurobím.“ | Filip Sulík
+jvjVR_KPul0  Nový Čas | Filip Sulík o možnom vstupe do politiky Jediní, ktorí majú gule, sú…
+1BQ2yhZQKwM  Magazin Pohofka | POHOFKA #41 Filip Sulík | PODCAST
+VsCZ2-MeHuI  Magazin Pohofka | POHOFKA #47 - Fiki Sulík 2 | Zostrih | PODCAST
+NoaksTKsQKw  OFAck | OFAck EP3 - Fiki Sulík | ZOSTRIH
+y23uTBrZQd4  Pirát Krištofič | Mojim motorom bol hnev a nenavist! Fightcast 44 Filip Sulík
+I6vd6UyldbA  Strýco Filip | @fikiunchained : Podľa mňa, by ženy nemali byť vo funkciách moci! | JEDEL BYCH 1
+BPQTxJ25-SQ  ODAJE ČKORY | #1 Slovenskí Avengeri - Filip Sulík - Celý diel
+Ri5jwoI84sQ  MOLOCH VLAVO | S A T A N I R A  E92 Fiki Sulík
+O8E1Nv8_Cfc  MOLOCH VLAVO | SATANIRA LIVE STREAM #95 Naživo s Fikim
+IWI0_86cz4Y  Baridemamba LIVE | Baridemamba x Fiki Sulík FULLSTREAM
+FpZJaxj3Xi0  Baridemamba LIVE | Baridemamba x Fiki Sulík SK TIER LIST
+p5-90SNVfKs  Slobodný vysielač Archív (oficiálny) | V prvej línii
+OmpsfNsxC5A  Slobodný vysielač Archív (oficiálny) | hovory 173 Zoroslav Kollár a Filip Sulík
+nTOR6-ZRf1c  Slobodný vysielač Archív (oficiálny) | S Erikou o živote 235 Filip Sulík
+vpZDJNi80nU  KĽÚČ OD... - portál Michala Alberta | Fiki Sulík mal vzťah s Gröhlingom? Celý šokujúci rozhovor. Užíva lieky?
+B-XpWBtDOCA  Richard K - RKX Media | Fiki Sulík a Henry Tóth na pódiu
+_OssPQq_iy4  Vlasto Čepo official | Filip Sulík: Ja nemám 50 000 eur na zaplatenie pokuty.
+LqyQokzIHVc  squadyno | Fiki Sulík: “Cynthia ma Zradila.” | TEMNÁ PRAVDA #1
+V7rXYuVNO1U  Odzadu official | Fiki Sulík reaguje na vyjadrenia Anet. Má slabú výdrž?
+EzahYxDuNLk  Comedy centrála jednoduchej zábavy obyvateľstva | Fiki Sulík - Rudolf Vaský prvá skúška na spoločné zábavné a komediálne show
+ycNxrn9gjI8  Comedy centrála jednoduchej zábavy obyvateľstva | Fiki a Rudolf Vaský - history in making
+68MfN7cGNec  Fight Night Challenge | FACE-OFF #2– FIGHT NIGHT CHALLENGE 5 (Priscilla vs. Tereza, Sulík vs. Strýco Filip)
+SX7SRW4yd-s  Fight Night Challenge | FIKI SULÍK, TY NIE SI TAKÝ KO**T, AKO SA ZDÁŠ (FACE-OFF #4)
+6T3sxC6AoCM  Fight Night Challenge | Filip Sulík: Chcem mať najväčší vplyv na Slovensku. Je mi jedno, ako to dosiahnem (FNC 10 Interview)
+sKowjIKmdZU  Fight Night Challenge | PARÍŽSKÝ ŠALÁT – JEDLO RAPEROV 😂 ČO ROBÍ SULÍK V LESE 😳 (VLOG #1)
+Oldg1Ud_tho  Azet | Sulíkov syn Filip prekvapil: Som absolútne nemateriálny! Mne sa najviac páči na ženách, keď...
+Jo810xDLK98  Azet | 💍 Mladoženáč Fiki Sulík s manželkou opustili Slovensko: Máme dohodu, že po svadbe sa začneme...
+fwHajqy3js8  Plus JEDEN DEŇ | Filip Sulík prehovoril o blížiacej sa svadbe: Prečo sa so snúbenicou Viktóriou tak poponáhľali
+
+# ---- Vylúčené (zdokumentované, nenačítavajú sa) ----
+#
+# Pravidlá programu (BarZaBar, Galovič, Menučko, Oskar):
+#   YcI7J4bc7yA  BarZaBar | Fiki o Rytmusovi, Separovi, Rachelke a viac... | BarZaBar
+#   YEDD84TeM6k  BarZaBar | Fiki o vzťahoch a rozchodoch v dnešnej dobe | BarZaBar
+#   0CIcJH8h0ws  BarZaBar | Filip “Fiki” Sulík má prvý normálny rozhovor!? | BarZaBar
+#   mVYW9R2D0I4  Samuel Galovič | TOTO VÁM O VALLOVI NIKTO NEPOVIE | Fiki Sulík & Galovič
+#   MN2KFduJgEg  REFRESHER SK | KOĽKO MÁŠ ROKOV?? Paula otázkou v MENUČKU šokovala Filipa 😲
+#   kpthH8w2DGU  OSKISHOW | Môj svadobný dar pre Filipa Sulíka.
+#   -8wFk5BGfdM  OSKISHOW | CITÍM HANBU ZA SVOJHO SYNA - RICHARD SULÍK
+#   9PEvloG0e1E  OSKISHOW | RICHARD SULÍK POZVAL OSKARA A IGORA RATTAJA NA SVOJU KANDIDÁTKU?
+#   nBIyxaTzgQM  Dev1 | Oski VS Sulík junior - BOMBY INCOMING
+#   Aif3fxPdIfo  Dev1 | Oski VS Sulík junior - ROUND 2
+#   -mH3P0Xon-A  Halishko | Oski Barami vs. Fiki Sulík. Oski vracia úder
+#   GLT54Kg0clo  Politický Archív | FIKI vs OSKI 2
+#   jyggPJWyLe8  nijousTV | FIKI SULÍK vs OSKI BARÁMI: Celý konflikt, BMW aj Viktória
+#   ARa9xipoN0g  TYBLAHO EXTRA | NEJHLOUPĚJŠÍ HÁDKA!? / REAKCE NA FILIP SULÍK VS OSKISHOW
+#
+# Reupload, kompilácia alebo výrez z cudzieho zdroja:
+#   jVbXXOOB_zQ  Fiki Klipy | Celá kauza Separ vs Cynthia vs Teri + Fiki Sulík [#1]
+#   3n8XdqzDhMI  Fiki Klipy | Filip FIKI Sulík vs Patrik Lakatoš (fight night challenge post fight interview)
+#   yWB9AOTE8bo  Fiki Klipy | Pofel s Filipom Sulíkom: Martina Šimkovičová (highlights) #comedy #joke #standupcomedy
+#   Mi3Rc_4WU8o  Fiki Fanclub | Úchylák Šnídl reupload
+#   CyFHiFnl3WE  Fiki Fanclub | Dnešní "muži" 2 reupload
+#   1dNffP0MwsE  DoubleJ | OFAck EP3 - Fiki Sulík | ZOSTRIH
+#   3oNdiXv3riQ  Romanica | Filip „Fiki“ Sulík prekvapil: Želá si, aby bol Erik Kaliňák raz premiérom!
+#   8TXu0tHeSyQ  Spravodajca | InfoVojna - Filip Sulík 26.01.2026 VIDEO
+#   qqJ3D2c8MTE  Slobodný Vysielač | S Erikou o živote 235 Filip Sulík (duplikát, berie sa Archív)
+#   qgVayJ9djQQ  Slobodný Vysielač | hovory 173 Zoroslav Kollár a Filip Sulík (duplikát, berie sa Archív)
+#   cNHHPKc10RY  hovory, hovory M | hovory 173 - 2026-07-24 Zoroslav Kollár a Filip Sulík (duplikát)
+#   MFf-1uwk-L0  Martin Daňo / GINN | Vymazané video: Fiki Sulík a Zoroslav Kollár komentujú Love Island. Zorov relax v mučiarni #md17x192
+#   PBBLuvQf9EU  SATanIRA | Moloch & Fiki - Prevrátené cecky
+#   zDbXd1P39PA  Informácie pravdy | Potupa pred Slovenskom! Fiki Sulik ostro reagoval na progresívca Dubéciho! #politika #slovensko
+#   AlYPfhaSpHk  Politický Priestor | Pravda o 23-tisícovom luxusnom víkende Šimkovičovej! Fiki Sulík usvedčil médiá z hrubej manipulácie!
+#   5os7abJ-V5U  Politika NA ROVINU | Fiki Sulík pomstil otca, Grohlinga rozmetal na prach, Zaklincoval to advokát Para
+#   WdCBWhXkXgg  Politika Online | Fiki Sulík rozoberá SaSku na súčiastky, Gröhlinga skoro VYSTRELO
+#   t1u3w47nFXc  Informácie pravdy | Vystrieda Fica? Filip Sulik prekvapil otca! ...
+#
+# Fiki nie je hosť ani moderátor: reakcie, reportáže a videá o ňom:
+#   TbyWlxZOu0M  Adamasus | Zlyhal som v debate s Fikim Sulíkom😱?!!! Reakcia/rozbor debaty 10 liberálov w/ Fiki Unchained
+#   aeb4iHgFaEg  ETSTUD1OS | FIKI SULÍK a  Jana Cigániková  | ETSTUD1OS | REAKCIA
+#   5vDBkMHa5F0  ETSTUD1OS | FIKI SULÍK a Romana Tabák  | ETSTUD1OS | REAKCIA
+#   iGvV_8V1asM  IbaMarcusYT | Pravá tvár Filipa Sulíka 1 | Ženy, muži a feminizmus @fikiunchained
+#   d7UzpBuW5jc  Termix blog | FIKI VS ŠNÍDL AKO SIMP VS CASANOVA - REAKCIA ŽENY
+#   Mx2Pcw2o_fg  Termix blog | ČOŽE?! FIKI SULÍK NA MŇA REAGOVAL?
+#   MGo07EvEKm8  Termix blog | LÍVIA A FIKI = PAT A MAT
+#   PiIy8eK2Enk  Martin Buček - Reakcie and Martin Buček - PodkastClub | Sú ženy po 35-ke „vyžité“? Odpovedám Fikimu Sulíkovi
+#   rx4LtCVvdVI  Starší Mladší | Starší Mladší podcast: MIKELA A MIRI: "FIKI SULÍK je postihnutý..." (Epizóda 5)
+#   1GyvM0MVIlE  MojaHuba | Ponížený Vasky, neprajný Daňo a takmer poškodený Sulik
+#   hKXM_IUENUk  BIG Čhedar | Patrí Fiki Sulík do Basy ?
+#   fmTjuNALb2A  Tajred Witch | FIKI SULÍK je v ⚠️ NEBEZPEČENSTVE ❗ Toto NIE JE  clickbait ❗
+#   E2OUJFPud8k  Rozhovory so Šimonom | Vzťahový kouč Shorf: Fiki Sulík trepe, muži ženám nerozumejú!
+#   h66yWGCsD5Q  Diskusný klub so Šimonom Žďárským | Madro: Fiki Sulík či Andrew Tate majú fatálne následky na životy mladých ľudí!
+#   kEKNpz7OuxE  Nový Čas | Psychológ Madro: Názory ľudí ako Fiki Sulík majú fatálne následky na životy mladých ľudí
+#   GmEVrBkRlSo  Denník N | Vladimír Šnídl: Svet Filipa Sulíka
+#   3d59dlNStwg  Denník N | Komentátori: Bez klasických médií ostane na internete iba to, komu Fiki Sulík vynadal
+#   OCB5FS8iGUc  SME | Petush Nasklee: Dlho som o Fikim Sulíkovi mlčala, no myslím si, že sa mu treba postaviť na odpor
+#   8omY-bKZlFI  Startitup and Odzadu official | Petush Nasklee o vyhrážkach Filipa Sulíka: Daj mi rozhovor a nechám ťa na pokoji
+#   2gYK_Vtw_uA  Startitup | Káčer: Fiki Sulík je niktoš, je neúcta prirovnávať k nemu Charlieho Kirka
+#   BZUWWkKnzrU  Startitup | Sulík: Fiki by mal kandidovať, jeho sláva môže rýchlo skončiť
+#   sUR2awcDJuY  Nový Čas | Sulík ostro o synovi Filipovi a jeho podpore extrémistu: Bombic patrí do blázinca, ale...
+#   6WrbrPY0MXw  Nový Čas | Anet Slotová: Fiki Sulík útočí na každého | PRETTY RAW najsurovejšia talkshow s Laurou Raczovou
+#   fLo0ajQTHm8  Odzadu official | Drsný život: Anet sa prvýkrát vyjadrila ku kauze s Fikim Sulíkom
+#   uTy1GFb7o3A  Odzadu official | Rebeka z Ruže pre nevestu: Takto reagovala, keď jej napísal Fiki Sulík
+#   Kg_SQcGyHXY  TVOTV | Danny Kollár, Ľuboš Blaha a Fiki Sulík: David Lindtner o politizácii súdov | TVOTV | Lenka Zlatev
+#   nWHFKOoFEPs  TERAZ TAKTO s Ankou Žitnou | TERAZ TAKTO: “Fico síce prehral, ale Fiki Sulík vyhral. Pánbožko je spravodlivý,” hovorí D. Lindtner
+#   tNhMo-e9_Uw  Progresívne Slovensko | Ženský faktor #02 so Samom Marcom | Filip Sulík nevie nič o ženách
+#   rClsOGClPPU  Plus JEDEN DEŇ | Svadba Fikiho Sulíka: Odkiaľ mala nevesta šaty a čo sa dialo na párty s Rytmusom?
+#   ijlKLCCD_Uk  Plus JEDEN DEŇ | TU A TERAZ: Ako to vyzeralo na svadbe Fikiho Sulíka? "A vláda pripravuje zrušenie transakčnej dane“
+#   _ois1cdnbLU  Startitup | EXKLUZÍVNE: Bombic ide za mreže, podporiť ho prišli aj Laššáková a Fiki Sulík
+#   ehGBTqDEJ4o  iDen | Fiki Sulík, Erik Kaliňák a Richard Glück na DOD NR SR
+#   OxoiyPDrDhQ  Martin Daňo / GINN | DOD 2025 u Prezidenta a v Národnej rade. Diel 3 - Fiki Filip Sulík, masturbátor a chirurg #md17x168
+#   qCZG2fnUcXw  Martin Daňo / GINN | DOD 2025 u Prezidenta a v Národnej rade. Diel 4 - Erik čo je aj Tomáš, Fiki a SMER-áci #md17x169
+#   P9BUsCvFnUk  Martin Daňo / GINN | Filip "Fiki" Sulík užíva liky a vyvoláva bitky?! Film venovaný jeho obetiam  #md17x254
+#   7HYg3dJ88cA  Martin Daňo / GINN | Kde zmizlo video zo svadby Fiki Sulíka? Exkluzívne priznanie autora. Existuje kópia?! #md18x174
+#   o9AO3L9omxU  Martin Daňo / GINN | Extrémista Bombic a jeho priatelia: Fiki Sulík, Zoroslav, Slota a ďalší. Zábery zo súdu #md17x103
+#   rtcBcFV4M-4  Martin Daňo / GINN | Live: 10. zasadnutie Súdnej rady 2025 - 1. deň - Filip Sulik a utoky na sudcov #md17x205
+#   rtXLP1seMuI  Comedy centrála jednoduchej zábavy obyvateľstva | Dnes má meniny Filipko Sulík naša stúpajúca hviezda, tak oslavujeme Live from New York 23.8.2025
+#   jpdD_PPqWIo  Comedy centrála jednoduchej zábavy obyvateľstva | Zajtra sa tvorí história - Fiki a Zoro debata - Live from New York  je sobota večer 9. August 2025
+#   ssI1NIc3lk8  Comedy centrála jednoduchej zábavy obyvateľstva | Dnes ideme - Fiki Sulík,Zuza Hanzelová, Mimi Šramová a Martin Daňo - Live from New York 30. Máj 2026
+#   _9j0GMSyyWw  Comedy centrála (Rudolf Vaský) | Oslavujeme Dandúšikové a Fikinkové narodeninky - Live from New York 25.10.2025
+#
+# Celé zápasy FNC: hovorí komentátor, nie Fiki:
+#   TKzI7KibHm0  Fight Night Challenge | SULÍK VS. FARKAŠ (CELÝ ZÁPAS FNC 10)
+#   3aJ1SwQfKA0  Fight Night Challenge | SULÍK VS. PALKOVIČ (CELÝ ZÁPAS FNC 7)
+#   rSb12xS3_8o  Fight Night Challenge | SULÍK vs. VLČEK (CELÝ ZÁPAS FNC 6)
+#   gTovUM3Mu4A  Fight Night Challenge | ŠOKUJÚCI VÝSLEDOK SULÍK VS. PATRICKSTV (CELÝ ZÁPAS FNC 11)
+#
+# Nejasné, či ide o Fikiho, a bez titulkov:
+#   l96Cb6zQqYw  Televízia JOJ | Filipov trapas so špekačkami (BEZ SERVÍTKY)

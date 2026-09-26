@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Korpus videí YouTube kanála Fiki Unchained s časovými značkami.
+"""Korpus Fikiho (Filip Sulík) s časovými značkami: kanál Fiki Unchained + vystúpenia inde.
 
 Použitie:
-  python3 netopier/fiki/fiki.py sync            # zoznam videí, nové titulky, načítanie do DB
-  python3 netopier/fiki/fiki.py search liberáli # fulltext s časmi a odkazmi
-  python3 netopier/fiki/fiki.py stats           # pokrytie
+  python3 netopier/fiki/fiki.py sync            # zoznam videí kanála, nové titulky, načítanie do DB
+  python3 netopier/fiki/fiki.py vystupenia      # vystúpenia z data/fiki/vystupenia.txt → titulky → DB
+  python3 netopier/fiki/fiki.py vystupenia <id|url> ...  # pridá do zoznamu a načíta
+  python3 netopier/fiki/fiki.py search liberáli # fulltext s časmi, kanálom a odkazmi
+  python3 netopier/fiki/fiki.py stats           # pokrytie, aj podľa kanála
 
 Iba stdlib + yt-dlp v PATH. Videá sa nesťahujú, iba titulky (VTT).
-Opakované spustenie `sync` stiahne a načíta iba videá, ktoré ešte nemá.
+Opakované spustenie `sync` / `vystupenia` stiahne a načíta iba videá, ktoré ešte nemá.
 """
 from __future__ import annotations
 
@@ -19,9 +21,11 @@ import sqlite3
 import subprocess
 import sys
 import time
+import unicodedata
 from pathlib import Path
 
 CHANNEL_ID = "UC8SC3sB2-FNRc3awzVJu_jA"
+CHANNEL_NAME = "Fiki Unchained"
 CHANNEL_URL = f"https://www.youtube.com/channel/{CHANNEL_ID}/videos"
 
 ROOT = Path(__file__).resolve().parents[1]  # netopier/
@@ -29,9 +33,22 @@ DATA = ROOT / "data" / "fiki"
 RAW = DATA / "raw"
 DB_PATH = DATA / "fiki.sqlite"
 VIDEOS_JSON = DATA / "videos.json"
+VYSTUPENIA = DATA / "vystupenia.txt"
 
-# poradie pokusov o jazyk titulkov; prvý úspešný vyhráva
-LANG_ATTEMPTS = ["sk-orig", "sk", "cs-orig,cs", "en-orig,en"]
+# poradie pokusov o jazyk titulkov; prvý úspešný vyhráva.
+# Pôvodný prepis (-orig) má prednosť pred strojovým prekladom (napr. české video → „sk“).
+LANG_ATTEMPTS = ["sk-orig", "cs-orig", "sk", "cs", "en-orig,en"]
+
+# Pravidlá Fikiho programu pre kliperov: tieto zdroje a témy sa do korpusu vystúpení neberú.
+# Kontroluje sa názov videa a kanál (bez diakritiky, malé písmená).
+VYLUCENE = {
+    "BarZaBar": r"bar ?za ?bar",
+    "Samuel Galovič / Fiki a Galovič": r"galovic",
+    "Menučko": r"menuck",
+    "Speed": r"\bspeed\b",
+    "OSKISHOW / Oskar (Oski, Barami)": r"oskishow|\boski\b|\bosk(ar|ara|arovi|arom|iho)\b|barami",
+    "Kiara Fujaková": r"\bkiar|fujak",
+}
 
 PARA_MIN = 20.0  # s
 PARA_MAX = 40.0  # s
@@ -40,6 +57,9 @@ SCHEMA = """
 CREATE TABLE IF NOT EXISTS videos (
   id TEXT PRIMARY KEY,
   title TEXT NOT NULL,
+  channel TEXT,                -- názov kanála zdroja (Fiki Unchained alebo cudzí kanál)
+  channel_id TEXT,
+  source TEXT NOT NULL DEFAULT 'kanal',  -- kanal | vystupenie
   upload_date TEXT,            -- YYYY-MM-DD
   duration INTEGER,            -- s, reálna dĺžka YouTube verzie
   view_count INTEGER,
@@ -81,11 +101,27 @@ END;
 """
 
 
+MIGRATIONS = [  # stĺpce pridané po prvej verzii DB
+    ("channel", "ALTER TABLE videos ADD COLUMN channel TEXT"),
+    ("channel_id", "ALTER TABLE videos ADD COLUMN channel_id TEXT"),
+    ("source", "ALTER TABLE videos ADD COLUMN source TEXT NOT NULL DEFAULT 'kanal'"),
+]
+
+
 def db() -> sqlite3.Connection:
     DATA.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    cols = {r["name"] for r in con.execute("PRAGMA table_info(videos)")}
+    for col, sql in MIGRATIONS:
+        if col not in cols:
+            con.execute(sql)
+    con.execute(
+        "UPDATE videos SET channel=?, channel_id=? WHERE source='kanal' AND channel IS NULL",
+        (CHANNEL_NAME, CHANNEL_ID),
+    )
+    con.commit()
     return con
 
 
@@ -110,8 +146,10 @@ def upsert_videos(con: sqlite3.Connection, entries: list[dict]) -> int:
             )
         else:
             con.execute(
-                "INSERT INTO videos(id, title, duration, view_count) VALUES (?,?,?,?)",
-                (e["id"], e.get("title") or "", e.get("duration"), e.get("view_count")),
+                "INSERT INTO videos(id, title, duration, view_count, channel, channel_id, source) "
+                "VALUES (?,?,?,?,?,?,'kanal')",
+                (e["id"], e.get("title") or "", e.get("duration"), e.get("view_count"),
+                 CHANNEL_NAME, CHANNEL_ID),
             )
             new += 1
     con.commit()
@@ -132,7 +170,7 @@ def fetch_subs(video_id: str) -> dict | None:
                 "--sub-langs", langs, "--sub-format", "vtt",
                 "--sleep-subtitles", "1",
                 "-o", str(RAW / "%(id)s.%(ext)s"),
-                "--print", "%(.{upload_date,duration})j",
+                "--print", "%(.{upload_date,duration,title,channel,channel_id,view_count})j",
                 "--print", "%(requested_subtitles)j",
                 f"https://www.youtube.com/watch?v={video_id}",
             ],
@@ -240,6 +278,12 @@ def load_video(con: sqlite3.Connection, vid: str, info: dict) -> None:
     ud = info.get("upload_date")
     if ud and len(ud) == 8:
         ud = f"{ud[:4]}-{ud[4:6]}-{ud[6:]}"
+    con.execute(  # metadáta z yt-dlp: názov (ak chýba), kanál
+        "UPDATE videos SET title=CASE WHEN title='' THEN COALESCE(?, '') ELSE title END, "
+        "channel=COALESCE(channel, ?), channel_id=COALESCE(channel_id, ?), "
+        "view_count=COALESCE(?, view_count) WHERE id=?",
+        (info.get("title"), info.get("channel"), info.get("channel_id"), info.get("view_count"), vid),
+    )
     if not info.get("file"):
         con.execute(
             f"UPDATE videos SET subs_status='{info.get('blocked') or 'none'}', upload_date=COALESCE(?, upload_date), "
@@ -285,8 +329,8 @@ def existing_raw(vid: str) -> dict | None:
 
 def write_videos_json(con: sqlite3.Connection) -> None:
     rows = con.execute(
-        "SELECT id, title, upload_date, duration, subs_status, subs_lang, subs_kind, covered_seconds "
-        "FROM videos ORDER BY upload_date DESC, id"
+        "SELECT id, title, channel, source, upload_date, duration, subs_status, subs_lang, subs_kind, "
+        "covered_seconds FROM videos ORDER BY source, upload_date DESC, id"
     ).fetchall()
     VIDEOS_JSON.write_text(
         json.dumps([dict(r) for r in rows], ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
@@ -299,10 +343,15 @@ def cmd_sync(args) -> None:
     new = upsert_videos(con, entries)
     print(f"kanál: {len(entries)} videí, nových v DB: {new}")
     todo = [r["id"] for r in con.execute(
-        "SELECT id FROM videos WHERE subs_status IN ('pending','error') "
+        "SELECT id FROM videos WHERE source='kanal' AND (subs_status IN ('pending','error') "
         + ("" if not args.retry_none else "OR subs_status IN ('none','age_restricted') ")
-        + "ORDER BY id"
+        + ") ORDER BY id"
     )]
+    load_todo(con, todo, args)
+
+
+def load_todo(con: sqlite3.Connection, todo: list[str], args) -> None:
+    """Spoločná cesta titulkov pre kanál aj vystúpenia: raw/ → alebo yt-dlp → lines/segments/FTS."""
     if args.limit:
         todo = todo[: args.limit]
     for n, vid in enumerate(todo, 1):
@@ -330,6 +379,110 @@ def cmd_sync(args) -> None:
             con.commit()
     write_videos_json(con)
     cmd_stats(args, con)
+
+
+# ---------- vystúpenia mimo kanála ----------
+
+VID_RE = re.compile(r"(?:v=|youtu\.be/|shorts/|live/)([\w-]{11})|^([\w-]{11})$")
+
+
+def video_id(token: str) -> str | None:
+    m = VID_RE.search(token.strip())
+    return (m.group(1) or m.group(2)) if m else None
+
+
+def read_vystupenia() -> list[str]:
+    """Id zo zoznamu: prvé slovo riadku (id alebo URL); `#` začína komentár."""
+    if not VYSTUPENIA.exists():
+        return []
+    ids: list[str] = []
+    for line in VYSTUPENIA.read_text(encoding="utf-8").splitlines():
+        line = line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        vid = video_id(line.split()[0])
+        if vid and vid not in ids:
+            ids.append(vid)
+    return ids
+
+
+def norm(s: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFD", (s or "").lower()) if unicodedata.category(c) != "Mn")
+
+
+def vylucene(title: str, channel: str) -> str | None:
+    text = norm(f"{title} {channel}")
+    for meno, vzor in VYLUCENE.items():
+        if re.search(vzor, text):
+            return meno
+    return None
+
+
+def video_meta(vid: str) -> dict | None:
+    proc = subprocess.run(
+        ["yt-dlp", "--skip-download", "--print",
+         "%(.{id,title,channel,channel_id,upload_date,duration,view_count})j",
+         f"https://www.youtube.com/watch?v={vid}"],
+        capture_output=True, text=True,
+    )
+    lines = [l for l in proc.stdout.splitlines() if l.strip()]
+    if not lines:
+        print(f"{vid}: metadáta nedostupné ({proc.stderr.strip()[-200:]})", file=sys.stderr)
+        return None
+    return json.loads(lines[0])
+
+
+def cmd_vystupenia(args) -> None:
+    con = db()
+    if args.ids:  # pridanie do zoznamu
+        have = set(read_vystupenia())
+        new_lines = []
+        for tok in args.ids:
+            vid = video_id(tok)
+            if not vid:
+                print(f"neznáme id/URL: {tok}", file=sys.stderr)
+                continue
+            if vid in have:
+                continue
+            meta = video_meta(vid)
+            if not meta:
+                continue
+            why = vylucene(meta.get("title", ""), meta.get("channel", ""))
+            if why:
+                print(f"{vid}: vylúčené pravidlami programu ({why}) — {meta.get('title')}", file=sys.stderr)
+                continue
+            new_lines.append(f"{vid}  {meta.get('channel')} | {meta.get('title')}")
+            have.add(vid)
+        if new_lines:
+            with VYSTUPENIA.open("a", encoding="utf-8") as f:
+                f.write("\n".join(new_lines) + "\n")
+            print(f"pridané do {VYSTUPENIA.name}: {len(new_lines)}")
+    ids = read_vystupenia()
+    known = {r["id"] for r in con.execute("SELECT id FROM videos")}
+    for vid in ids:
+        if vid in known:
+            continue
+        meta = video_meta(vid)
+        if not meta:
+            continue
+        why = vylucene(meta.get("title", ""), meta.get("channel", ""))
+        if why:
+            print(f"{vid}: vylúčené pravidlami programu ({why}), preskakujem", file=sys.stderr)
+            continue
+        con.execute(
+            "INSERT INTO videos(id, title, channel, channel_id, source, duration, view_count) "
+            "VALUES (?,?,?,?,'vystupenie',?,?)",
+            (vid, meta.get("title") or "", meta.get("channel"), meta.get("channel_id"),
+             meta.get("duration"), meta.get("view_count")),
+        )
+        con.commit()
+    todo = [r["id"] for r in con.execute(
+        "SELECT id FROM videos WHERE source='vystupenie' AND (subs_status IN ('pending','error') "
+        + ("" if not args.retry_none else "OR subs_status IN ('none','age_restricted') ")
+        + ") ORDER BY id"
+    )]
+    print(f"vystúpenia v zozname: {len(ids)}, na načítanie: {len(todo)}")
+    load_todo(con, todo, args)
 
 
 def cmd_reparse(args) -> None:
@@ -369,6 +522,20 @@ def cmd_stats(args, con: sqlite3.Connection | None = None) -> None:
         f"pokryté odsekmi: {h(r['cov'])}\n"
         f"odseky: {segs} | riadky: {lns}"
     )
+    rows = con.execute(
+        "SELECT COALESCE(channel, '?') channel, source, COUNT(*) n, SUM(subs_status='ok') ok, "
+        "SUM(CASE WHEN subs_status='ok' THEN duration END) dur_ok, SUM(covered_seconds) cov, "
+        "MIN(upload_date) od, MAX(upload_date) do "
+        "FROM videos GROUP BY channel, source ORDER BY source, cov DESC"
+    ).fetchall()
+    print("\npodľa kanála (videá s titulkami / všetky, pokryté odsekmi, obdobie):")
+    w = max(len(x["channel"]) for x in rows) if rows else 10
+    for x in rows:
+        mark = "" if x["source"] == "kanal" else "  [vystúpenie]"
+        print(
+            f"  {x['channel']:<{w}}  {x['ok'] or 0:>3}/{x['n']:<3}  {h(x['cov']):>7}  "
+            f"{x['od'] or '?'} – {x['do'] or '?'}{mark}"
+        )
 
 
 def fts_query(q: str) -> str:
@@ -382,11 +549,14 @@ def cmd_search(args) -> None:
     con = db()
     q = " ".join(args.query)
     rows = con.execute(
-        "SELECT s.id, s.video_id, s.start, s.end, s.text, v.title, v.upload_date, "
+        "SELECT s.id, s.video_id, s.start, s.end, s.text, v.title, v.upload_date, v.channel, "
         "snippet(segments_fts, 0, '[', ']', '…', 24) snip "
         "FROM segments_fts JOIN segments s ON s.id = segments_fts.rowid "
         "JOIN videos v ON v.id = s.video_id "
-        "WHERE segments_fts MATCH ? ORDER BY rank LIMIT ?",
+        "WHERE segments_fts MATCH ? "
+        + ("AND v.source='kanal' " if args.iba_kanal else "")
+        + ("AND v.source='vystupenie' " if args.iba_vystupenia else "")
+        + "ORDER BY rank LIMIT ?",
         (fts_query(q), args.limit),
     ).fetchall()
     terms = [w.strip('"*()').lower() for w in q.split() if w not in ("AND", "OR", "NOT")]
@@ -402,7 +572,7 @@ def cmd_search(args) -> None:
                 break
         t0 = max(0, int(hit) - 2)
         print(
-            f"— {r['title']} ({r['upload_date'] or '?'})\n"
+            f"— {r['title']} ({r['upload_date'] or '?'}) · {r['channel'] or '?'}\n"
             f"  {fmt(r['start'])}–{fmt(r['end'])}  zásah {fmt(hit)}  https://youtu.be/{r['video_id']}?t={t0}\n"
             f"  {r['snip'] if args.snippet else r['text']}\n"
         )
@@ -418,6 +588,13 @@ def main() -> None:
     s.add_argument("--retry-none", action="store_true", help="skús znovu aj videá bez titulkov")
     s.add_argument("--refetch", action="store_true", help="stiahni VTT aj keď už je v raw/")
     s.set_defaults(func=cmd_sync)
+    v = sub.add_parser("vystupenia", help="vystúpenia mimo kanála zo zoznamu vystupenia.txt → DB")
+    v.add_argument("ids", nargs="*", help="id alebo URL na pridanie do zoznamu")
+    v.add_argument("--limit", type=int, default=0)
+    v.add_argument("--sleep", type=float, default=2.0, help="pauza medzi videami (s)")
+    v.add_argument("--retry-none", action="store_true", help="skús znovu aj videá bez titulkov")
+    v.add_argument("--refetch", action="store_true", help="stiahni VTT aj keď už je v raw/")
+    v.set_defaults(func=cmd_vystupenia)
     r = sub.add_parser("reparse", help="znovu rozparsuje raw VTT bez siete")
     r.set_defaults(func=cmd_reparse)
     st = sub.add_parser("stats", help="pokrytie korpusu")
@@ -426,6 +603,9 @@ def main() -> None:
     q.add_argument("query", nargs="+")
     q.add_argument("-n", "--limit", type=int, default=10)
     q.add_argument("-s", "--snippet", action="store_true", help="iba výrez okolo zásahu")
+    g = q.add_mutually_exclusive_group()
+    g.add_argument("-k", "--iba-kanal", action="store_true", help="iba videá kanála Fiki Unchained")
+    g.add_argument("-v", "--iba-vystupenia", action="store_true", help="iba vystúpenia mimo kanála")
     q.set_defaults(func=cmd_search)
     args = p.parse_args()
     args.func(args)
