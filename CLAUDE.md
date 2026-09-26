@@ -16,4 +16,6 @@ Kde čo je:
 - `DESIGN.md` — uzamknutý vizuál (ružový, Rubik + Source Sans 3) · `PRODUCT.md` — koncepcia
 - `netopier/` — backend (Netopier v2)
 
-Mimo repozitára: drafty článkov v `xvadur_core/07_texty/drafty/`, case files a výskum v `xvadur_core/zdroje/hriech/`, dokumenty minulých verzií v `xvadur_core/zdroje/hriech/archiv-2026-09/`.
+Nový článok (od 26. 9. 2026): výskum aj draft v `research/<téma>/`, publikácia do `src/content/publications/`. Repozitár je verejný: kým Adam článok neschváli, nič z `research/` sa nepushuje; osobné svedectvo a súkromné podklady ostávajú v `xvadur_core/`.
+
+Mimo repozitára: staršie drafty v `xvadur_core/07_texty/drafty/`, staršie case files a výskum v `xvadur_core/zdroje/hriech/`, dokumenty minulých verzií v `xvadur_core/zdroje/hriech/archiv-2026-09/`.

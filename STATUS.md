@@ -6,6 +6,7 @@
 - Backend: Netopier v2 v `netopier/` — kód hotový, runtime nebeží (pozri `netopier/STATUS.md`)
 
 ## Rozhodnutia
+- 2026-09-26 — nový článok má výskum aj draft v `research/<téma>/` v repozitári Hriechu; osobné podklady ostávajú v jadre [A]
 - 2026-07-02 — mediálna kritika ako línia; 2026-09-01 genéza Hriechu cez Kyseľ/Blaha + Mediaboard [A]
 - 2026-09-03 — Hriech = autorstvo a publikácia; Netopier = monitoring a dôkazy [A]
 - 2026-09-05 — ružový plastický vizuál podľa loga (DESIGN.md), nasadený [A]
@@ -13,6 +14,7 @@
 - 2026-09-25 — Hriech dostane redizajn [A]
 
 ## Ďalší krok
+- Článok **Zeitgeber — kto vlastní hodiny** (cykly, kalendár, globálna kontrola bez sprisahania): výskum v `research/zeitgeber/`, overiť zdroje, potom draft; píše sa cez Vianoce a Nový rok. Main obsahuje nepublikovaný research — push iba po Adamovom schválení.
 - Určiť nový stack a roadmapu pre moduly (mapa s vrstvami, štátny dashboard, voľby a prieskumy, kalendár a odpočet, minúta po minúte, analýza spravodajstva, rebríček redakcií, Chronos, demografia, Opus Major)
 
 ## Blokované
