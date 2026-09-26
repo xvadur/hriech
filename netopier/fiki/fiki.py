@@ -198,9 +198,13 @@ def fetch_subs(video_id: str) -> dict | None:
                 return info
         if "confirm your age" in proc.stderr:
             return {"file": None, "blocked": "age_restricted", **meta}
-        if proc.returncode != 0 and "429" in proc.stderr:
-            raise RuntimeError(f"YouTube 429 pri {video_id}: {proc.stderr.strip()[-300:]}")
+        if proc.returncode != 0 and ("429" in proc.stderr or BOT_CHECK in proc.stderr):
+            raise RuntimeError(f"YouTube blokuje ({video_id}): {proc.stderr.strip()[-300:]}")
     return {"file": None, **meta}
+
+
+# YouTube po väčšom počte požiadaviek z jednej IP žiada prihlásenie; vtedy treba prestať a počkať.
+BOT_CHECK = "confirm you’re not a bot"
 
 
 # ---------- parsovanie VTT ----------
@@ -427,6 +431,8 @@ def video_meta(vid: str) -> dict | None:
     )
     lines = [l for l in proc.stdout.splitlines() if l.strip()]
     if not lines:
+        if BOT_CHECK in proc.stderr or "429" in proc.stderr:
+            raise RuntimeError(f"YouTube blokuje ({vid}) — skús neskôr: {proc.stderr.strip()[-160:]}")
         print(f"{vid}: metadáta nedostupné ({proc.stderr.strip()[-200:]})", file=sys.stderr)
         return None
     return json.loads(lines[0])
@@ -462,20 +468,27 @@ def cmd_vystupenia(args) -> None:
     for vid in ids:
         if vid in known:
             continue
-        meta = video_meta(vid)
+        try:
+            meta = video_meta(vid)
+        except RuntimeError as e:
+            print(f"STOP: {e}", file=sys.stderr)
+            return
         if not meta:
             continue
         why = vylucene(meta.get("title", ""), meta.get("channel", ""))
         if why:
             print(f"{vid}: vylúčené pravidlami programu ({why}), preskakujem", file=sys.stderr)
             continue
+        ud = meta.get("upload_date") or ""
         con.execute(
-            "INSERT INTO videos(id, title, channel, channel_id, source, duration, view_count) "
-            "VALUES (?,?,?,?,'vystupenie',?,?)",
+            "INSERT INTO videos(id, title, channel, channel_id, source, upload_date, duration, view_count) "
+            "VALUES (?,?,?,?,'vystupenie',?,?,?)",
             (vid, meta.get("title") or "", meta.get("channel"), meta.get("channel_id"),
+             f"{ud[:4]}-{ud[4:6]}-{ud[6:]}" if len(ud) == 8 else None,
              meta.get("duration"), meta.get("view_count")),
         )
         con.commit()
+        time.sleep(args.sleep)
     todo = [r["id"] for r in con.execute(
         "SELECT id FROM videos WHERE source='vystupenie' AND (subs_status IN ('pending','error') "
         + ("" if not args.retry_none else "OR subs_status IN ('none','age_restricted') ")
