@@ -10,6 +10,8 @@
 - Lokálny zber 26. 9. z každého zdroja: 14 299 záznamov — RSS 9 109, CRZ 3 026, World Monitor 742, ŠÚ SR 684, kataster 533, TED 205 (ŠÚ SR cez `scripts/zber-node.mjs`, lokálny workerd s `data.statistics.sk` nenadviaže TLS)
 
 ## Rozhodnutia
+- 2026-09-27 — Netopier ostáva lokálne na Macu (zber, odvodenie, EKG, redakčná linka, terminál na localhost); do cloudu zadarmo iba verejné riadky pre web; Workers Paid a nasadenie zberu odložené, kým to nie je zabehnuté (XDR-258) [A]
+- 2026-09-27 — Python vrstva sa neoživuje; čisté moduly (events.py, text.py) sa portujú do TypeScriptu, embeddingy odpadajú; návrh v `../docs/redakcia/` [návrh]
 - 2026-09-26 — zber v cloude na Cloudflare Workers/Queues/D1/R2 (ADR-008, návrh — potvrdí sa nasadením) [návrh]
 - 2026-08-30 — teardown „Minút po minúte“ a HotInfo; v2 na OSS komponentoch [A]
 - 2026-09-01 — AI autorstvo sa nemaskuje, robí sa kvalitným [A]
@@ -17,6 +19,7 @@
 - 2026-09-25 — Netopier je backend Hriechu vo workspace; v0 zmazaný; minulé koncepcie a mock „Vydanie“ archivované do `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/` [A]
 
 ## Ďalší krok
+- Krok I0 z `../docs/redakcia/ROZHODNUTIE.md`: balík `@netopier/redakcia` (skóre, paritný test proti openclaw), migrácia 0002 (dátumy, entity, fulltext, zdroje) nad lokálnou D1, lokálny plánovač
 - Nasadiť `zber/` na Adamov pokyn (postup v `zber/README.md`, časť Nasadenie), potom 48 h sledovať `/health`
 - Python vrstvu (embeddingy, príbehy, udalosti) napojiť na archív v D1 namiesto Miniflux
 

@@ -6,6 +6,7 @@
 - Backend: Netopier v2 v `netopier/` — kód hotový, runtime nebeží; cloudový zber `netopier/zber/` (médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR) postavený a lokálne overený, nenasadený (pozri `netopier/STATUS.md`)
 
 ## Rozhodnutia
+- 2026-09-27 — AI redakcia: návrh architektúry, register 124 funkcií a medzery v `docs/redakcia/`; beží lokálne na Macu, na Cloudflare zadarmo iba zobrazovacia D1 a web, Minúta bez meškania, bez GitHub Actions, bez platených služieb; meno Hriech dočasné; jadro pred Živé: kalendár a anticipácia, filter relevancie, kauzy, prepisy, aktéri a sociálne siete, meranie médií [A]
 - 2026-09-26 — nový článok má výskum aj draft v `research/<téma>/` v repozitári Hriechu; osobné podklady ostávajú v jadre [A]
 - 2026-07-02 — mediálna kritika ako línia; 2026-09-01 genéza Hriechu cez Kyseľ/Blaha + Mediaboard [A]
 - 2026-09-03 — Hriech = autorstvo a publikácia; Netopier = monitoring a dôkazy [A]
@@ -14,6 +15,7 @@
 - 2026-09-25 — Hriech dostane redizajn [A]
 
 ## Ďalší krok
+- AI redakcia: podľa `docs/redakcia/ROZHODNUTIE.md` prepísať návrh na lokálny režim, založiť úlohy v Lineari pod XDR-230 a začať krok I0 (balík skóre, migrácia základu nad lokálnou D1)
 - Článok **Zeitgeber — kto vlastní hodiny** (cykly, kalendár, globálna kontrola bez sprisahania): výskum v `research/zeitgeber/`, overiť zdroje, potom draft; píše sa cez Vianoce a Nový rok. Main obsahuje nepublikovaný research — push iba po Adamovom schválení.
 - Určiť nový stack a roadmapu pre moduly (mapa s vrstvami, štátny dashboard, voľby a prieskumy, kalendár a odpočet, minúta po minúte, analýza spravodajstva, rebríček redakcií, Chronos, demografia, Opus Major)
 
