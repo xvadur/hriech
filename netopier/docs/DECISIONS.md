@@ -70,3 +70,32 @@ Consequences:
 - No text leaves for cloud processing: the Worker only fetches, parses and stores
   public records. Embeddings stay local (ADR-004).
 - Requires the Workers Paid plan (CPU time for the CRZ export, D1 write volume).
+
+## ADR-009: Netopier runs locally on the Mac; cloud holds only public rows (2026-09-27, accepted)
+
+Adam's decision of 2026-09-27 (`../docs/redakcia/ROZHODNUTIE.md`) supersedes ADR-008 as the
+runtime target: collection, derivation, scoring, media measurement, the editorial line and the
+terminal run on the Mac against a local D1 (SQLite in `zber/.wrangler/state`, same schema and
+migrations as the Worker). The Cloudflare Free tier holds only a display D1 with public rows for
+hriech.xvadur.com. No paid services, no GitHub Actions, no cloud routine. The Worker code stays
+deployable; deployment is deferred (XDR-258). Step I0 (XDR-275) delivered migration 0002,
+`zber/src/derive/` and the `@netopier/redakcia` package over the 14 299 local records.
+
+## ADR-010: openclaw is a control, not the definition of the score (2026-09-28, finding)
+
+The prediction scoring of openclaw.sk (`scoring.js`, `status.js`) is ported 1:1 into
+`redakcia/src/skore.ts` and covered by a parity test on 20 articles. The server side of openclaw
+(`api.openclaw.lu/api/scores`, `realization_score` in `/api/prediction-scores`, which the site
+displays) yields different numbers than `scoring.js` over the same signals (0 of 43 predictions
+equal on 2026-09-28, 220 signal days), so parity is claimed only for the client formula. Netopier's
+own score is media measurement per the function register (lexicon, headline structure, coverage vs
+what happened, questions, narratives, sentiment, filler, inaccuracies, alarmism) plus the three
+separate event scores (B10); the openclaw formula remains the EKG mechanics for hypotheses (zvody).
+
+## ADR-011: Claude may read public media texts in full (2026-09-28, accepted)
+
+Adam decided on 2026-09-28 that Claude may read public media texts (RSS, full articles at public
+URLs, public transcripts) in full. Transcripts are not read wholesale: an entity and full-text
+filter (known people, topics, cases) marks what is discussed and who is present; only marked
+segments are read in full. The ban stays for cloud text processing of private data (Fiki raw
+transcripts, `xvadur_core`, real-estate data, health) and for publishing whole protected texts.

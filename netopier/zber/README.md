@@ -1,9 +1,11 @@
-# netopier-zber — cloudový zber Netopiera v2
+# netopier-zber — zber a odvodenie Netopiera v2
 
-Cloudflare Worker, ktorý bez Macu pravidelne zbiera verejné zdroje do archívu.
-Surová vrstva Netopiera v cloude: každý záznam nesie zdroj, kanál, zdrojovú URL,
-čas publikácie, čas zberu, hash obsahu a odkaz na surový payload v R2.
-Príbehy, embeddingy a udalosti (Python v `../src/netopier/`) sa sem nepresúvajú.
+Zber verejných zdrojov do archívu a odvodenie nad ním. Od 27. 9. 2026 beží **lokálne na Macu**
+(rozhodnutie v `../../docs/redakcia/ROZHODNUTIE.md`): rovnaký TypeScript kód ako Cloudflare Worker,
+ale pracovná databáza je lokálna D1 (SQLite v `.wrangler/state`) a surové payloady lokálne R2.
+Worker sa do cloudu nenasadzuje, kým lokálny režim nie je zabehnutý (postup nižšie ostáva pre ten deň).
+Surová vrstva: každý záznam nesie zdroj, kanál, zdrojovú URL, čas publikácie, čas zberu, hash obsahu
+a odkaz na surový payload. Odvodené vrstvy (`derive/`) sú oddelené a dajú sa prepočítať.
 
 ```text
 cron (*/30, denne 05:20 UTC) ─► fronta netopier-zber-jobs ─► konzument (1 správa = 1 úloha)
@@ -55,12 +57,43 @@ node scripts/zber-node.mjs statistika                      # ten istý kód mimo
 npx wrangler d1 execute netopier-zber --local --command "SELECT source, COUNT(*) FROM records GROUP BY source"
 ```
 
+## Odvodenie nad lokálnou D1 (krok I0, XDR-275)
+
+Migrácia `migrations/0002_zaklad.sql` pridáva `records.published_at_utc`, `zdroje`, `zdroj_kanaly`,
+`zdroj_pokrytie_denne`, `entity`, `entity_alias`, `record_entity`, fulltext `records_fts` (FTS5 s externým
+obsahom cez pohľad `records_text`, triggery na INSERT/UPDATE/DELETE), `pocty`, `crz_ciselniky`, `meranie`.
+Kroky v `src/derive/` (čisté funkcie sú v `../redakcia/`, balík `@netopier/redakcia`):
+
+| Krok | Čo robí |
+|---|---|
+| `normalize` | `published_at` (5 formátov) → `published_at_utc`; bez dátumu ostáva NULL |
+| `entity` | IČO z CRZ (strana_a, strana_b) a TED (obstarávateľ, víťaz) → `entity`, `record_entity` |
+| `zdroje` | kartičky zdrojov zo seedov (`data/media-feeds.json`, `data/worldmonitor-feeds.json`, registre) a mapovanie kanál → redakcia |
+| `fts` | `rebuild` + `integrity-check` fulltextu |
+| `pocty` | počty riadkov per zdroj a kanál |
+| `pokrytie` | záznamov per SK redakcia a deň (Bratislava), podiel z dňa |
+| `zmienky` | aliasy entít so `sledovane = 1` → fulltext → `record_entity` (zmienka); entitný filter z rozhodnutia 28. 9. |
+| `meranie` | meranie médií nad SK RSS: lexika, stavba titulkov, poplašné a vatové slová, per redakcia × deň a autor |
+
+```bash
+pnpm run db:migrate:local                                  # 0001 + 0002
+pnpm run derive                                            # všetky kroky v poradí
+node scripts/derive-node.mjs normalize                     # jeden krok
+node scripts/derive-node.mjs hladaj '"Robert Fico"'        # fulltext (FTS5: slovo, "fráza", prefix*)
+pnpm run db:pocty
+npx wrangler d1 execute netopier-zber --local --command "SELECT rozsah, kluc, metrika, hodnota FROM meranie WHERE den = '*' AND metrika = 'poplasne_podiel'"
+```
+
+Stav po behu 28. 9. 2026 nad 14 299 záznamami: 13 479 `published_at_utc`, 2 024 entít, 4 700 väzieb,
+`MATCH 'zmluva'` = 2 296, 163 zdrojov, meranie 3 SK redakcií a 18 autorov (55 SK záznamov z 26. 9.).
+Každý beh kroku je riadok v `runs` (`source = 'derive'`).
+
 Lokálny workerd nenadviaže TLS s `data.statistics.sk` (Apache so starým TLS 1.2, reťazec
 Sectigo R46) — `fetch` padá na „internal error“. Node aj curl fungujú, preto
 `scripts/zber-node.mjs` spustí rovnaké konektory a archív nad rovnakým lokálnym D1/R2
 cez Node. Či to prejde v produkcii, sa overí hneď po nasadení (krok 8).
 
-## Nasadenie (iba na Adamov pokyn)
+## Nasadenie do cloudu (odložené — iba na Adamov pokyn, XDR-258)
 
 Predpoklad: **Workers Paid** (5 $/mes.) na účte. Na Free pláne má cron a konzument 10 ms CPU
 (export CRZ má 3,4 MB XML) a D1 100 tis. zapísaných riadkov denne (svetové kanály ich pri

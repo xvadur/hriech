@@ -31,10 +31,14 @@ Adamove rozhodnutia z 27. 9. 2026, ktoré prebíjajú `navrh-architektury.md` (c
 
 Slovensko prvé; CZ, PL, HU a vojna na Ukrajine ako samostatné prúdy s vlastnými zdrojmi; svetové kanály iba ako kontext (World Monitor katalóg, kategórie europe a gov).
 
-## Prvý krok (lokálne, bez rozhodnutí)
+## Prvý krok (lokálne, bez rozhodnutí) — hotové 28. 9. 2026 (XDR-275)
 
-Balík `@netopier/redakcia` so skóre (paritný test proti openclaw `scoring.js`), migrácia základu (normalizácia dátumov, entity podľa IČO, fulltext, kartičky zdrojov) nad lokálnymi 14 299 záznamami; lokálny plánovač namiesto cloudového cronu. Dôkaz: testy zelené, ≥ 13 400 normalizovaných dátumov, ≥ 4 000 väzieb entít, fulltext funguje.
+Balík `@netopier/redakcia` so skóre (paritný test proti openclaw `scoring.js`), migrácia základu (normalizácia dátumov, entity podľa IČO, fulltext, kartičky zdrojov) nad lokálnymi 14 299 záznamami; lokálny plánovač namiesto cloudového cronu (samostatne XDR-279). Dôkaz splnený: testy zelené (redakcia 23, zber 34), 13 479 normalizovaných dátumov, 4 700 väzieb entít, fulltext funguje (`MATCH 'zmluva'` = 2 296); navyše meranie médií (lexika, titulky, poplašné slová) nad 3 SK redakciami. Stav v `netopier/STATUS.md`.
+
+## Spresnenie 28. 9. 2026
+
+„Skóre“ nie je jedno číslo, ale meranie médií podľa registra funkcií: lexika a skladba slov každej redakcie a autora, stavba titulkov, čomu sa venujú verzus čo sa stalo, aké otázky kladú, naratívy, sentiment, vata, nepresnosti, poplašné správy. Openclaw je jedna kontrola (mechanika zvodov), nie definícia; serverové skóre openclaw.sk sa z verejných dát nedá reprodukovať, parita platí pre klientsky `scoring.js`. Zdroje sú texty akéhokoľvek druhu vrátane prepisov (YouTube, podcasty): prepis sa nečíta celý, entitný a fulltextový filter (známe osoby, témy, kauzy) označí, o čom sa hovorí a kto tam je; celé sa číta iba označené. Claude smie čítať verejné texty médií celé (rozhodnuté 28. 9., `netopier/STACK.md`).
 
 ## Otvorené pre Adama
 
-Prvá sada zvodov (agent navrhne, Adam škrtne a zamkne), rozšírenie slovenských zdrojov (SME, TASR, HN, TA3, Markíza, JOJ, STVR, Postoj, Štandard, Refresher, Startitup, Trend), či Claude smie čítať verejné texty médií (STACK Netopiera to zatiaľ zakazuje), nové meno, Paperclip (XDR-226: navrhnuté pozastaviť).
+Prvá sada zvodov (agent navrhne, Adam škrtne a zamkne), rozšírenie slovenských zdrojov (SME, TASR, HN, TA3, Markíza, JOJ, STVR, Postoj, Štandard, Refresher, Startitup, Trend), nové meno, Paperclip (XDR-226: navrhnuté pozastaviť), či stačí parita s klientskym `scoring.js` openclaw (serverové čísla sa nedajú reprodukovať), politika merania v1 (`netopier/redakcia/data/politika-merania.json`: stop slová, poplašné, vata — Adam škrtá a dopĺňa), ktoré funkcie registra idú do I2–I4 (B9 filter relevancie, B10 tri skóre, C1–C5 meranie po udalostiach).

@@ -4,17 +4,17 @@
 @STATUS.md
 @STACK.md
 
-Netopier v2 je backend Hriechu: monitoring verejných zdrojov, archív článkov, príbehy a udalosti, korpusy. Frontend a publikácia sú v nadradenom `../` (Hriech).
+Netopier v2 je backend Hriechu: zber verejných zdrojov, archív, odvodenie (entity, fulltext, meranie médií, skóre zvodov), korpusy. Beží lokálne na Macu nad lokálnou D1 (rozhodnutie 27. 9. 2026, `../docs/redakcia/ROZHODNUTIE.md`). Frontend a publikácia sú v nadradenom `../` (Hriech).
 
-Príkazy: runtime `docker compose up` (`compose.yaml`) · testy `pytest` (Python 3.12) · migrácie `alembic` · CLI `bin/netopier` · korpus Fikiho `python3 fiki/fiki.py search|sync|stats`.
+Príkazy: testy `cd redakcia && pnpm run qa` a `cd zber && pnpm run qa` · migrácie `cd zber && pnpm run db:migrate:local` · zber `cd zber && node scripts/zber-node.mjs <zdroj>` · odvodenie `cd zber && pnpm run derive` · fulltext `node scripts/derive-node.mjs hladaj '…'` · korpus Fikiho `python3 fiki/fiki.py search|sync|stats` (pnpm: `npx -y pnpm@11.19.0`).
 
 Kde čo je:
-- `src/netopier/` — Miniflux ingest, archív, príbehy, udalosti, feed, FastAPI, CLI
-- `migrations/` + `alembic.ini` — schéma Postgres · `ops/` — init databáz · `compose.yaml`, `Dockerfile`
-- `sources/slovak-core.yaml` — register zdrojov · `contracts/` — API kontrakty
-- `zber/` — cloudový zber (Cloudflare Worker + Queues + D1 + R2): médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR; príkazy a nasadenie v `zber/README.md`
+- `zber/` — zber (médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR) a odvodenie `zber/src/derive/` nad lokálnou D1 (`zber/.wrangler/state`); migrácie `zber/migrations/`; príkazy v `zber/README.md`
+- `redakcia/` — balík `@netopier/redakcia`: skóre zvodov (port openclaw ako kontrola), normalizácia, entity, meranie médií; politika merania `redakcia/data/politika-merania.json`
+- `sources/slovak-core.yaml` — register zdrojov · `contracts/` — API kontrakty (events-v1, historická referencia)
+- `src/netopier/`, `migrations/` (Alembic), `compose.yaml`, `Dockerfile`, `ops/` — Python vrstva, nebeží a neoživuje sa (port čistých modulov v I3, archív v I10)
 - `fiki/` + `data/fiki/` — korpus Fiki Unchained (titulky s časmi, FTS)
 - `data/realitny-trh/` — dáta o realitnom trhu (mimo gitu)
 - `docs/ARCHITECTURE.md`, `docs/DECISIONS.md`
 
-Spustenie trvalého workera aj deploy `zber/` = externá mutácia, iba na pokyn.
+Spustenie trvalej služby (LaunchAgent), deploy `zber/` aj založenie zobrazovacej D1 = externá mutácia, iba na pokyn.

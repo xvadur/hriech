@@ -1,6 +1,41 @@
 # AI redakcia XVADUR — výsledný návrh (Hriech + Netopier ako jeden celok)
-> **Stav 27. 9. 2026:** tento návrh je cloudový variant (Workers Paid, Access, cloud routine, GitHub Actions). Adam rozhodol inak: všetko beží lokálne na Macu, na Cloudflare zadarmo je iba zobrazovacia databáza a web hriech.xvadur.com, Minúta nesmie meškať, GitHub Actions nie, meno Hriech je dočasné. Platné rozhodnutie je v `ROZHODNUTIE.md`; dátový model, EKG, desk, tvrdenia, plochy a print vzhľad z tohto návrhu platia ďalej. Čo v návrhu chýba oproti registru funkcií, je v `medzery-navrhu.md`.
+> **Stav 28. 9. 2026 — lokálny režim.** Tento dokument vznikol ako cloudový variant (Workers Paid, Access, cloud routine, GitHub Actions, dva Workery). Adam 27. 9. rozhodol inak (`ROZHODNUTIE.md`): **celý backend beží lokálne na Macu** (zber, odvodenie, skóre, meranie, redakčná linka, terminál na `localhost`), pracovná databáza je lokálna D1 (SQLite v `netopier/zber/.wrangler/state`, tá istá schéma a migrácie), do cloudu zadarmo idú iba verejné riadky pre web hriech.xvadur.com. Žiadne platené služby, žiadny GitHub Actions, žiadna cloud routine.
+>
+> **Čo z návrhu platí ďalej:** dátový model (časť 2: migrácie 0002–0005, EKG, desk, tvrdenia, archív), spoločný balík `@netopier/redakcia` (3.1), redakčná linka (4), plochy a print vzhľad (5), poradie modulov (7), čo sa použije a zahodí (8).
+> **Čo je neplatné (história, nemazať):** časť 1 v cloudovej podobe (tabuľka stacku, Access, fronty, crony, Service Tokeny, adaptér SSR čítajúci pracovnú D1), rozhodnutia D1, D3, D4, D9 (Access časť), D12, D18, kroky I1, I6, I9, I12 a všetko, čo predpokladá `api.hriech.xvadur.com`, `netopier.hriech.xvadur.com` alebo routine. Náhrada je v časti **1L Lokálny režim** nižšie.
+> **Čo je hotové (I0, XDR-275, 28. 9.):** balík `netopier/redakcia/` (skóre zvodov = port openclaw `scoring.js` + `status.js` s paritným testom na 20 článkoch; normalizácia dátumov; entity z registrov; meranie médií: lexika, stavba titulkov, poplašné a vatové slová podľa verzovanej politiky), migrácia `0002_zaklad.sql` (published_at_utc, zdroje, zdroj_kanaly, zdroj_pokrytie_denne, entity, entity_alias, record_entity, records_fts s externým obsahom cez pohľad `records_text`, pocty, crz_ciselniky, meranie), odvodenie `netopier/zber/src/derive/` a `scripts/derive-node.mjs` nad lokálnou D1: 13 479 normalizovaných dátumov, 2 024 entít, 4 700 väzieb, fulltext (`MATCH 'zmluva'` = 2 296), 163 kartičiek zdrojov, meranie 3 SK redakcií a 18 autorov (55 SK záznamov z 26. 9.). Testy: redakcia 23, zber 34 (vrátane DELETE z FTS a `integrity-check` v miniflare).
+> **Parita s openclaw:** platí iba pre klientsky `scoring.js`. Server `api.openclaw.lu/api/scores` aj `realization_score` z `/api/prediction-scores` (to, čo openclaw.sk zobrazuje) dávajú iné čísla než `scoring.js` nad tými istými signálmi (overené 28. 9. nad 220 dňami: 0 zo 43 predikcií zhodných). Openclaw je kontrola mechaniky zvodov, nie definícia skóre; vlastné skóre je meranie médií podľa registra (C) a tri oddelené skóre udalostí (B10, ešte nepostavené).
+>
+> Čo v návrhu chýba oproti registru funkcií, je v `medzery-navrhu.md`.
 
+## 1L. Lokálny režim (platí od 27. 9. 2026)
+
+| Vrstva | Kde beží | Čo | Cena |
+|---|---|---|---|
+| Zber | Mac, `netopier/zber/` (rovnaký TypeScript ako Worker; lokálne cez `scripts/zber-node.mjs` alebo `wrangler dev`) | 6 konektorov (RSS SK médiá, World Monitor katalóg, CRZ, TED, kataster, ŠÚ SR) do lokálnej D1 a lokálneho R2 v `.wrangler/state` | 0 € |
+| Pracovná databáza | Mac, lokálna D1 (SQLite) | migrácie `netopier/zber/migrations/` (0001 archív, 0002 základ; 0003–0005 podľa časti 2) | 0 € |
+| Odvodenie | Mac, `netopier/zber/src/derive/` + `scripts/derive-node.mjs` | normalize, entity, zdroje, fts, pocty, pokrytie, zmienky, meranie; neskôr udalosti (I3), registre, rollup, nálezy (I4) | 0 € |
+| Skóre a meranie | Mac, balík `@netopier/redakcia` (`netopier/redakcia/`) | čisté funkcie: skóre zvodov (EKG), normalizácia, entity, text, meranie médií; politika merania verzovaná v `data/politika-merania.json` | 0 € |
+| Plánovač | Mac (XDR-279, samostatný tiket) | zber každých 2–5 min, odvodenie po zbere, denný rollup; LaunchAgent iba na pokyn | 0 € |
+| Redakčná linka | Mac, Claude Code (agent `hriech` + subagenti), skill `/redakcia` | číta a píše lokálnu D1 priamo (bez API hostu, bez Access, bez tokenov) | v predplatnom |
+| Terminál | Mac, `localhost` (Astro dev alebo samostatný lokálny server nad lokálnou D1) | desk, záznamy, entity, zvody, behy; bez Access, iba lokálne | 0 € |
+| Web | Cloudflare Free: Worker `hriech-web` + **zobrazovacia D1 Free** (iná DB než pracovná) | Mac po schválení zapíše verejné riadky (posty, udalosti, zvody, skóre, vydania) cez `wrangler d1 execute --remote` alebo HTTP API D1; Minúta bez buildu a bez edge cache | 0 € (Free: 5 mil. čítaní riadkov/deň, 100 tis. zápisov/deň) |
+| Zálohy | Mac (Time Machine) + na pokyn `wrangler d1 export` lokálnej D1 do `netopier/data/zalohy/` (mimo gitu) | | 0 € |
+| Notifikácie | Telegram bot (token mimo repozitára) | prahy `priorita`, `ohlasenie` | 0 € |
+
+Čo z cloudového variantu odpadá: Workers Paid, fronty, cron triggers, Access, Service Tokeny, `api.hriech.xvadur.com`, `netopier.hriech.xvadur.com`, GitHub Actions, cloud routine, adaptér SSR čítajúci pracovnú D1. Web číta iba zobrazovaciu D1 (verejné riadky), takže hranica „nič nejde von bez Adamovho slova“ je fyzická: pracovná DB nikdy nie je online.
+
+Príkazy (lokálne):
+```bash
+cd netopier/redakcia && npx -y pnpm@11.19.0 install && pnpm run qa      # skóre, normalizácia, entity, meranie: 23 testov
+cd netopier/zber && npx -y pnpm@11.19.0 install && pnpm run qa          # zber + odvodenie: 34 testov vo workerd
+cd netopier/zber && pnpm run db:migrate:local                           # migrácie nad lokálnou D1
+cd netopier/zber && node scripts/zber-node.mjs crz                      # zber jedného zdroja
+cd netopier/zber && pnpm run derive                                     # všetky kroky odvodenia
+cd netopier/zber && node scripts/derive-node.mjs hladaj '"Robert Fico"'  # fulltext
+```
+
+---
 
 Základ: backend **B1-cloudflare** (víťaz všetkých troch porôt), frontend **F2-astro-ssr** (víťaz dvoch porôt) s graftmi z F3-two-surfaces (víťaz tretej), B2, B3 a F1 presne podľa zoznamov poroty. Rozpory vyriešené takto:
 
@@ -20,6 +55,8 @@ Revízia 27. 9. (večer): zapracované námietky štyroch porôt (technické lim
 ---
 
 ## A. Rozhodnutia, ktoré musí urobiť Adam (východisková voľba tučne)
+
+> Lokálny režim (27. 9.): **D1, D3, D4, D18 neplatia** (žiadny Paid, žiadna routine, žiadne domény API a terminálu, žiadny GitHub Actions); **D9** platí bez Access (schvaľuje iba Adam, lokálne); **D12 nie** ostáva; **D2 rozhodnuté 28. 9.: áno** — Claude smie čítať verejné texty médií celé (zapísané v `netopier/STACK.md`). Ostatné rozhodnutia ostávajú otvorené alebo platia.
 
 | # | Rozhodnutie | Východisko | Blokuje |
 |---|---|---|---|
@@ -46,6 +83,8 @@ D1 blokuje všetko okrem prvého kroku. D2 a D3 sú potrebné do Z4/Z8 (november
 
 ## B. Prvý krok, ktorý sa dá začať hneď lokálne, a jeho dôkaz
 
+> **Hotové 28. 9. 2026 (XDR-275)** s odchýlkami: balík `netopier/redakcia` je samostatný pnpm balík (zber ho berie cez `link:../redakcia`, koreňový workspace sa nemenil); fixtures openclaw stiahnuté z `openclaw.sk/js/` a `api.openclaw.lu` (20 článkov, katalóg predikcií, serverové skóre); `records_fts` má externý obsah cez pohľad `records_text` (records nemá stĺpec summary); `check-d1-id.mjs` a `overit-kanaly.mjs` (D7) nie sú v I0 — web číta zobrazovaciu D1, nie pracovnú, a D7 je samostatné rozhodnutie. Dôkaz: `SELECT count(*) FROM records WHERE published_at_utc IS NOT NULL` = 13 479; `record_entity` = 4 700; `MATCH 'zmluva'` = 2 296 (`školstv*` = 0: v 55 SK záznamoch z 26. 9. sa slovo nevyskytuje); DELETE a `integrity-check` overené v teste `derive.test.ts`.
+
 **Scope:** základná migrácia a deterministická normalizácia nad lokálnou D1 (14 299 záznamov z 26. 9.), bez Paid, bez rozhodnutí Adama.
 
 Kroky:
@@ -65,7 +104,7 @@ Kroky:
 
 ---
 
-## 1. Stack a kde čo beží
+## 1. Stack a kde čo beží (cloudový variant — NEPLATNÝ od 27. 9. 2026, ostáva ako história; platí časť 1L)
 
 | Vrstva | Služba | Názov / súbor | Plán, cena (mesačne) |
 |---|---|---|---|
@@ -739,6 +778,8 @@ Každý krok = úloha v Lineari (projekt **„Hriech + Netopier“** (P-XDR-6), 
 
 ### Míľnik Infra — 31. 10. 2026
 
+> Lokálny režim: **I0 hotové (XDR-275)**; **I1, I6, I9, I12 neplatia** (cloud); I2–I5, I8, I10, I11 platia s tým, že „remote“, „Access“, „JWT“, „fronta“ a „cron“ znamenajú lokálnu D1, lokálny plánovač (XDR-279) a priamy zápis; I7 sa mení: web číta iba zobrazovaciu D1 Free s verejnými riadkami, terminál beží na `localhost`.
+
 | # | Krok | Kto | Hotové keď | Dôkaz |
 |---|---|---|---|---|
 | I0 | Prvý krok (časť B): workspace, `@netopier/redakcia` + `skore.ts` parity, `0002_zaklad.sql` s FTS5 externým obsahom a triggermi, normalize + entity nad lokálnou D1, `check-d1-id.mjs`, `overit-kanaly.mjs` | Agent | testy zelené, počty podľa B, DELETE odstráni riadok z FTS | výstup `pnpm -r test`, `wrangler d1 execute --local` |
@@ -756,6 +797,8 @@ Každý krok = úloha v Lineari (projekt **„Hriech + Netopier“** (P-XDR-6), 
 | I12 [A] | `.github/workflows/deploy.yml` (`workflow_dispatch`: `migrate` → `deploy-zber` → `deploy-web`; job `rollback` s parametrom Workera a verzie), secret `CLOUDFLARE_API_TOKEN` (D18); `docs/PUBLISHING.md` s alternatívou k Macu; skúška: `rollback` na `hriech-web` z GitHubu a späť | Adam vytvorí API token a secret, agent workflow | jeden deploy oboch Workerov a jeden rollback prešli z GitHubu bez Macu | log workflow, `wrangler deployments list` |
 
 ### Míľnik Živé — 30. 11. 2026
+
+> Lokálny režim: Z1 bez Service Tokenu (schválenie lokálne, `schvalenia.kto='adam'`); Z2 a Z9 zapisujú verejné riadky do zobrazovacej D1 z Macu; Z4 bez routine (ručne `/redakcia` z hlavnej session alebo lokálny plánovač); Z8 bez routín.
 
 | # | Krok | Termín | Hotové keď | Dôkaz |
 |---|---|---|---|---|
