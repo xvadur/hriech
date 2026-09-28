@@ -11,9 +11,10 @@ Všetko beží lokálne na Macu (rozhodnutie 27. 9., `../docs/redakcia/ROZHODNUT
 - Python vrstva (`src/netopier/`, FastAPI, PostgreSQL + pgvector, Miniflux, Docker) sa neoživuje; čisté moduly sa portujú do TypeScriptu (I3), zvyšok ide do archívu v jadre (I10).
 
 ## Príkazy
-test: `cd redakcia && pnpm run qa` (23 testov, node) · `cd zber && pnpm run qa` (34 testov vo workerd + `wrangler deploy --dry-run`)
+test: `cd redakcia && pnpm run qa` (23 testov, node) · `cd zber && pnpm run qa` (40 testov vo workerd + `wrangler deploy --dry-run`)
 migrácie: `cd zber && pnpm run db:migrate:local`
 zber: `cd zber && node scripts/zber-node.mjs <zdroj>` (crz, ted, kataster, statistika, rss, worldmonitor)
+voľby: `cd zber && pnpm run volby` (územie, kalendár, kandidáti z oficiálnych zoznamov a médií, prieskumy, entity; idempotentné)
 odvodenie: `cd zber && pnpm run derive` (všetky kroky) · `node scripts/derive-node.mjs <krok>` · fulltext `node scripts/derive-node.mjs hladaj '"Robert Fico"'`
 počty: `cd zber && pnpm run db:pocty` · `npx wrangler d1 execute netopier-zber --local --command "…"`
 deploy: `cd zber && pnpm run deploy` (externá mutácia — iba na pokyn; zatiaľ sa nenasadzuje)

@@ -15,6 +15,7 @@
     "deploy": "pnpm run qa && wrangler deploy",
     "derive": "node scripts/derive-node.mjs all",
     "hladaj": "node scripts/derive-node.mjs hladaj",
+    "volby": "node scripts/volby-node.mjs all",
     "db:pocty": "wrangler d1 execute netopier-zber --local --command \"SELECT source, channel, riadkov FROM pocty ORDER BY riadkov DESC\""
   },
   "dependencies": {

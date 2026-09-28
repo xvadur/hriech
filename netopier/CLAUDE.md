@@ -6,7 +6,7 @@
 
 Netopier v2 je backend Hriechu: zber verejných zdrojov, archív, odvodenie (entity, fulltext, meranie médií, skóre zvodov), korpusy. Beží lokálne na Macu nad lokálnou D1 (rozhodnutie 27. 9. 2026, `../docs/redakcia/ROZHODNUTIE.md`). Frontend a publikácia sú v nadradenom `../` (Hriech).
 
-Príkazy: testy `cd redakcia && pnpm run qa` a `cd zber && pnpm run qa` · migrácie `cd zber && pnpm run db:migrate:local` · zber `cd zber && node scripts/zber-node.mjs <zdroj>` · odvodenie `cd zber && pnpm run derive` · fulltext `node scripts/derive-node.mjs hladaj '…'` · korpus Fikiho `python3 fiki/fiki.py search|sync|stats` (pnpm: `npx -y pnpm@11.19.0`).
+Príkazy: testy `cd redakcia && pnpm run qa` a `cd zber && pnpm run qa` · migrácie `cd zber && pnpm run db:migrate:local` · zber `cd zber && node scripts/zber-node.mjs <zdroj>` · odvodenie `cd zber && pnpm run derive` · voľby `cd zber && pnpm run volby` · fulltext `node scripts/derive-node.mjs hladaj '…'` · korpus Fikiho `python3 fiki/fiki.py search|sync|stats` (pnpm: `npx -y pnpm@11.19.0`).
 
 Kde čo je:
 - `zber/` — zber (médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR) a odvodenie `zber/src/derive/` nad lokálnou D1 (`zber/.wrangler/state`); migrácie `zber/migrations/`; príkazy v `zber/README.md`

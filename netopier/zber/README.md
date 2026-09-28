@@ -93,6 +93,35 @@ Sectigo R46) — `fetch` padá na „internal error“. Node aj curl fungujú, p
 `scripts/zber-node.mjs` spustí rovnaké konektory a archív nad rovnakým lokálnym D1/R2
 cez Node. Či to prejde v produkcii, sa overí hneď po nasadení (krok 8).
 
+## Voľby 24. 10. 2026 (XDR-276)
+
+Migrácia `0003_volby.sql`: `volby_kraje`, `volby_okresy`, `volby_obce` (krajské mestá + mestské časti
+Bratislavy a Košíc), `volby_strany`, `volby_kandidati` + `volby_kandidat_strany`, `volby_prieskumy` +
+`volby_prieskum_hodnoty`, `volby_kalendar`, `volby_zdroje`; `entity_alias` dostal zdroj `'volby'`.
+Geo hranice krajov a okresov (ZBGIS cez drakh/slovakia-gps-data, EPSG:4326, 5 desatinných miest)
+sú v `data/volby/geo/*.geo.json`, kódy krajov (IDN4) a okresov (IDN3) sú kódy ŠÚ SR.
+
+```sh
+pnpm run volby                          # všetky kroky: uzemie, kalendar, kandidati, prieskumy, entity + počty
+node scripts/volby-node.mjs kandidati   # iba jeden krok; `pocty` vypíše počty bez zápisu
+```
+
+Kroky (`src/volby/index.ts`, každý idempotentný, riadok v `runs` so `source = 'volby'`; log hovorí, čo pribudlo):
+- `uzemie` — 8 krajov a 47 obcí z `data/volby/uzemie.json`, 79 okresov z GeoJSON, slovník 40 strán (`STRANY` v `parse.ts`).
+- `kalendar` — zákonné termíny z `data/volby/kalendar.json` (zákon 180/2014, 181/2014, rozhodnutie 145/2026, harmonogram MV SR); debaty a tlačovky sa dopisujú do toho istého súboru.
+- `kandidati` — stiahne oficiálne zoznamy z `data/volby/zdroje.json` (PDF → text cez PDFKit/osascript na Macu, pri neúplnom
+  certifikačnom reťazci úradu padá na `curl`), rozparsuje jednotný vzor MV SR (`src/volby/parse.ts`: „1. Meno PRIEZVISKO,
+  tituly, NN r., zamestnanie, [obec,] navrhovateľ“) a upsertne; potom kandidáti z médií (`data/volby/kandidati-media.json`).
+  Oficiálny zdroj prepíše mediálny riadok, mediálny nikdy neprepíše oficiálny. Id kandidatúry
+  `<volba>:<územie>:<slug mena>` je stabilné, preto druhý beh nič nezdvojí.
+- `prieskumy` — `data/volby/prieskumy.json`; hodnoty sa priradia ku kandidátom podľa mena v území (mená bez kandidatúry ostanú bez väzby).
+- `entity` — každý kandidát dostane `entity` riadok `osoba:<slug>` (`fyzicka_osoba`, `verejne = 0`) a alias so zdrojom `volby`
+  pre `derive:zmienky` a sledované osoby (XDR-277); `volby_kandidati.entity_id` naň ukazuje.
+
+Po 29. 9. 2026 (zverejnenie zoznamov MV SR) sa do `zdroje.json` doplnia URL ostatných krajov a miest (aj poslanci
+s `obvod`), `pnpm run volby` ich stiahne a mediálne riadky nahradí oficiálnymi. Bratislavský zoznam primátora je sken
+bez textovej vrstvy — parser vráti 0 a riadok v `volby_zdroje` nesie chybu; kandidáti ostávajú z médií.
+
 ## Nasadenie do cloudu (odložené — iba na Adamov pokyn, XDR-258)
 
 Predpoklad: **Workers Paid** (5 $/mes.) na účte. Na Free pláne má cron a konzument 10 ms CPU

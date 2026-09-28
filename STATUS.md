@@ -3,7 +3,7 @@
 ## Živé
 - `hriech.xvadur.com` live (Cloudflare Worker `hriech-web`, Astro statický): publikácie, prípady, mapa redakcií (10 médií, 558 osôb, 586 rolí), RSS, vyhľadávanie
 - Frontend v gite je bajt po bajte zhodný so živým webom (overené 25. 9. 2026: CSS aj úvodná stránka, `pnpm qa` 59 stránok bez chyby)
-- Backend: Netopier v2 v `netopier/` beží lokálne na Macu nad lokálnou D1 (28. 9., XDR-275, krok I0): 14 299 záznamov, 13 479 normalizovaných dátumov, 2 024 entít, 4 700 väzieb, fulltext, meranie 3 SK redakcií; balík `@netopier/redakcia` (skóre zvodov s paritou proti openclaw `scoring.js`, meranie médií); cloudový Worker nenasadený (pozri `netopier/STATUS.md`)
+- Backend: Netopier v2 v `netopier/` beží lokálne na Macu nad lokálnou D1 (28. 9., XDR-275, krok I0): 14 299 záznamov, 13 479 normalizovaných dátumov, 2 024 entít, 4 700 väzieb, fulltext, meranie 3 SK redakcií; balík `@netopier/redakcia` (skóre zvodov s paritou proti openclaw `scoring.js`, meranie médií); voľby 24. 10. v lokálnej D1 (28. 9., XDR-276: 8 krajov, 79 okresov, 47 obcí, 104 kandidatúr, 16 prieskumov, 14 termínov, geo hranice; `pnpm run volby`); cloudový Worker nenasadený (pozri `netopier/STATUS.md`)
 
 ## Rozhodnutia
 - 2026-09-28 — Claude smie čítať verejné texty médií celé; prepisy cez entitný a fulltextový filter; „skóre“ = meranie médií podľa registra, openclaw iba kontrola [A]
