@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Netopier v2 — cloudový zber verejných zdrojov (Cloudflare Worker + D1 + Queues + R2)",
+  "description": "Netopier v2 — zber verejných zdrojov a odvodenie nad archívom (lokálne na Macu: D1 v .wrangler/state; rovnaký kód beží aj ako Cloudflare Worker)",
   "scripts": {
     "dev": "wrangler dev --test-scheduled",
     "check": "wrangler types && tsc --noEmit",
@@ -12,11 +12,15 @@
     "db:migrate:local": "wrangler d1 migrations apply netopier-zber --local",
     "db:migrate:remote": "wrangler d1 migrations apply netopier-zber --remote",
     "qa": "pnpm run check && pnpm run test && wrangler deploy --dry-run --outdir .wrangler/dry-run",
-    "deploy": "pnpm run qa && wrangler deploy"
+    "deploy": "pnpm run qa && wrangler deploy",
+    "derive": "node scripts/derive-node.mjs all",
+    "hladaj": "node scripts/derive-node.mjs hladaj",
+    "db:pocty": "wrangler d1 execute netopier-zber --local --command \"SELECT source, channel, riadkov FROM pocty ORDER BY riadkov DESC\""
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.1",
-    "fflate": "^0.8.3"
+    "fflate": "^0.8.3",
+    "@netopier/redakcia": "link:../redakcia"
   },
   "devDependencies": {
     "@cloudflare/vitest-plugin": "^1.2.7",

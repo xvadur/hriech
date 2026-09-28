@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@netopier/redakcia':
+        specifier: link:../redakcia
+        version: link:../redakcia
       fast-xml-parser:
         specifier: ^5.11.1
         version: 5.11.1

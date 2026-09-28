@@ -87,7 +87,8 @@ export async function archiveChannel(env: Env, source: SourceId, result: Channel
       ),
     );
     const outcomes = await env.DB.batch(statements);
-    inserted += outcomes.reduce((sum, outcome) => sum + (outcome.meta.changes ?? 0), 0);
+    // changes počíta aj zápisy triggerov (FTS), preto na príkaz najviac 1
+    inserted += outcomes.reduce((sum, outcome) => sum + ((outcome.meta.changes ?? 0) > 0 ? 1 : 0), 0);
   }
 
   const status = result.error ? 'error' : 'ok';
