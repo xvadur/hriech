@@ -1,0 +1,220 @@
+{
+  "calculated_at": "2026-09-28T12:48:26.308Z",
+  "scores": {
+    "INF-01": {
+      "score": 25,
+      "confidence": "medium",
+      "evidenceCount": 25
+    },
+    "INF-02": {
+      "score": 32,
+      "confidence": "medium",
+      "evidenceCount": 23
+    },
+    "INF-03": {
+      "score": 39,
+      "confidence": "medium",
+      "evidenceCount": 38
+    },
+    "INF-04": {
+      "score": 25,
+      "confidence": "medium",
+      "evidenceCount": 25
+    },
+    "SEC-01": {
+      "score": 29,
+      "confidence": "medium",
+      "evidenceCount": 78
+    },
+    "SEC-02": {
+      "score": 40,
+      "confidence": "medium",
+      "evidenceCount": 61
+    },
+    "SEC-03": {
+      "score": 28,
+      "confidence": "medium",
+      "evidenceCount": 44
+    },
+    "SEC-04": {
+      "score": 22,
+      "confidence": "medium",
+      "evidenceCount": 26
+    },
+    "SEC-05": {
+      "score": 57,
+      "confidence": "medium",
+      "evidenceCount": 143
+    },
+    "SEC-06": {
+      "score": 46,
+      "confidence": "medium",
+      "evidenceCount": 77
+    },
+    "BIZ-01": {
+      "score": 25,
+      "confidence": "medium",
+      "evidenceCount": 33
+    },
+    "BIZ-02": {
+      "score": 24,
+      "confidence": "medium",
+      "evidenceCount": 36
+    },
+    "BIZ-03": {
+      "score": 2,
+      "confidence": "medium",
+      "evidenceCount": 8
+    },
+    "BIZ-04": {
+      "score": 26,
+      "confidence": "medium",
+      "evidenceCount": 21
+    },
+    "BIZ-05": {
+      "score": 25,
+      "confidence": "medium",
+      "evidenceCount": 32
+    },
+    "BIZ-06": {
+      "score": 37,
+      "confidence": "medium",
+      "evidenceCount": 21
+    },
+    "BIZ-07": {
+      "score": 45,
+      "confidence": "medium",
+      "evidenceCount": 22
+    },
+    "MKT-01": {
+      "score": 28,
+      "confidence": "medium",
+      "evidenceCount": 9
+    },
+    "MKT-02": {
+      "score": 36,
+      "confidence": "medium",
+      "evidenceCount": 36
+    },
+    "MKT-03": {
+      "score": 51,
+      "confidence": "medium",
+      "evidenceCount": 34
+    },
+    "MKT-04": {
+      "score": 44,
+      "confidence": "medium",
+      "evidenceCount": 42
+    },
+    "MKT-05": {
+      "score": 13,
+      "confidence": "medium",
+      "evidenceCount": 31
+    },
+    "MKT-06": {
+      "score": 34,
+      "confidence": "medium",
+      "evidenceCount": 89
+    },
+    "ATK-01": {
+      "score": 33,
+      "confidence": "medium",
+      "evidenceCount": 21
+    },
+    "ATK-02": {
+      "score": 40,
+      "confidence": "medium",
+      "evidenceCount": 15
+    },
+    "ATK-03": {
+      "score": 26,
+      "confidence": "medium",
+      "evidenceCount": 18
+    },
+    "ATK-04": {
+      "score": 8,
+      "confidence": "medium",
+      "evidenceCount": 18
+    },
+    "ATK-05": {
+      "score": 38,
+      "confidence": "medium",
+      "evidenceCount": 42
+    },
+    "ATK-06": {
+      "score": 37,
+      "confidence": "medium",
+      "evidenceCount": 27
+    },
+    "META-01": {
+      "score": 28,
+      "confidence": "medium",
+      "evidenceCount": 36
+    },
+    "META-02": {
+      "score": 32,
+      "confidence": "medium",
+      "evidenceCount": 15
+    },
+    "META-03": {
+      "score": 40,
+      "confidence": "medium",
+      "evidenceCount": 33
+    },
+    "META-04": {
+      "score": 26,
+      "confidence": "medium",
+      "evidenceCount": 17
+    },
+    "CUL-01": {
+      "score": 17,
+      "confidence": "medium",
+      "evidenceCount": 22
+    },
+    "CUL-02": {
+      "score": 22,
+      "confidence": "medium",
+      "evidenceCount": 36
+    },
+    "CUL-03": {
+      "score": 35,
+      "confidence": "medium",
+      "evidenceCount": 14
+    },
+    "SWAN-01": {
+      "score": 18,
+      "confidence": "medium",
+      "evidenceCount": 21
+    },
+    "SWAN-02": {
+      "score": 28,
+      "confidence": "medium",
+      "evidenceCount": 13
+    },
+    "SWAN-03": {
+      "score": 6,
+      "confidence": "medium",
+      "evidenceCount": 8
+    },
+    "SWAN-04": {
+      "score": 14,
+      "confidence": "medium",
+      "evidenceCount": 22
+    },
+    "SWAN-05": {
+      "score": 31,
+      "confidence": "medium",
+      "evidenceCount": 31
+    },
+    "SWAN-06": {
+      "score": 55,
+      "confidence": "medium",
+      "evidenceCount": 93
+    },
+    "SWAN-07": {
+      "score": 58,
+      "confidence": "medium",
+      "evidenceCount": 6
+    }
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "stiahnute": "2026-09-28",
+  "zdroj": "https://api.openclaw.lu/api/signals/<den> (pole signals; den = dátum skenu)",
+  "vyber": "20 článkov so signálom; každá kombinácia smer/sila/relevancia/istota aspoň raz, potom najnovšie",
+  "clanky": [
+    {
+      "den": "2026-09-28",
+      "signal_id": "20260928-INF-001",
+      "title": "AI Agent Pricing Complexity and Cost Concerns",
+      "description": "Production quotes for AI agents include seats, credits, overage tiers, and an implementation line. Per-token prices keep falling, yet about one in five organizations already limit AI use because of operating costs.",
+      "source_fact": "Production quotes for AI agents include seats, credits, overage tiers, and an implementation line. Per-token prices keep falling, yet about one in five organizations already limit AI use because of operating costs.",
+      "implication": "",
+      "source": {
+        "name": "AI Hive",
+        "url": "https://aihive.global/blog/ai-agent-pricing",
+        "type": "secondary",
+        "published_date": "2026-09-28"
+      },
+      "scan_date": "2026-09-28",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "INF-02",
+          "relevance": "supporting",
+          "evidence_direction": "neutral",
+          "evidence_strength": "moderate",
+          "rationale": ""
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "pricing",
+        "agent-editions",
+        "cost-concerns"
+      ]
+    },
+    {
+      "den": "2026-09-28",
+      "signal_id": "20260928-BIZ-001",
+      "title": "South Africans Ready to Let AI Take on Credit Decisions",
+      "description": "Experian states that South Africans are ready to let AI take on credit decisions.",
+      "source_fact": "Experian states that South Africans are ready to let AI take on credit decisions.",
+      "implication": "",
+      "source": {
+        "name": "MSN",
+        "url": "https://www.msn.com/en-za/technology/artificial-intelligence/south-africans-ready-to-let-ai-take-on-credit-decisions-says-experian/ar-AA2cx9Kr?ocid=BingNewsVerp",
+        "type": "secondary",
+        "published_date": "unknown"
+      },
+      "scan_date": "2026-09-28",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "BIZ-01",
+          "relevance": "supporting",
+          "evidence_direction": "neutral",
+          "evidence_strength": "moderate",
+          "rationale": ""
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "credit-decisions",
+        "ai-delegation",
+        "consumer-acceptance"
+      ]
+    },
+    {
+      "den": "2026-09-26",
+      "signal_id": "20260926-MKT-001",
+      "title": "Google deploys AI spam detector SAFE to catch AI-generated content",
+      "description": "Google published research on Scaled Abuse Forensics Examiner (SAFE), a system designed to detect AI-generated spam that violates the spirit of platform guidelines.",
+      "source_fact": "Google published research on Scaled Abuse Forensics Examiner (SAFE), a system designed to detect AI-generated spam that violates the spirit of platform guidelines.",
+      "implication": "",
+      "source": {
+        "name": "Search Engine Journal",
+        "url": "https://www.searchenginejournal.com/google-has-deployed-a-new-ai-spam-detector-called-safe/590918/",
+        "type": "secondary",
+        "published_date": "2026-09-25"
+      },
+      "scan_date": "2026-09-26",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "MKT-02",
+          "relevance": "supporting",
+          "evidence_direction": "neutral",
+          "evidence_strength": "moderate",
+          "rationale": ""
+        }
+      ],
+      "confidence": "high",
+      "tags": [
+        "google",
+        "spam-detection",
+        "ai-content"
+      ]
+    },
+    {
+      "den": "2026-09-03",
+      "signal_id": "20260903-BIZ-002",
+      "title": "AuditBadger launches auditable agentic compliance",
+      "description": "AuditBadger launched auditable agentic compliance: AI agents propose, humans approve, and the audit trail proves it, indicating a growing market for audit trail solutions in AI agent operations.",
+      "source_fact": "AuditBadger launched auditable agentic compliance: AI agents propose, humans approve, and the audit trail proves it, indicating a growing market for audit trail solutions in AI agent operations.",
+      "implication": "",
+      "source": {
+        "name": "FinancialContent",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQM1pnUW5UeEdNdFREZXN0ZWwtam9DbWVrbV9NbnM4UGlJekZXbDZsaGswZjhuR0EtRjdheHJ4VTZWSks0M21NRG4yRHhMXzZPcEVrYk1DNG03bmNUdnJfYVNkYkE0R0g0RVdVNVMyRVpJUHNkZS1NbXB5MXFLck1wWG51ejZfbHNsLWlGMkJ2ZTZHY0hYZDEtRUx3dUs0ZTZCOVB5a2pFb2g0NDIteW56SVpya2luUjlYcTZNZERaM1RtSF9zVk1GTVRFc01lYnRrS201MGxyRm1JdFRSLU9nT1RXU1VwRlZUS2ZFX2RDeW5oOUlWT1FvQllJT0pwQ0duT0Z3?oc=5",
+        "type": "secondary",
+        "published_date": "unknown"
+      },
+      "scan_date": "2026-09-03",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "BIZ-02",
+          "relevance": "supporting",
+          "evidence_direction": "neutral",
+          "evidence_strength": "weak",
+          "rationale": ""
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "compliance",
+        "audit-trail",
+        "agentic"
+      ]
+    },
+    {
+      "den": "2026-08-16",
+      "signal_id": "20260816-INF-001",
+      "title": "Cloudflare Workers AI enables running LLMs without API keys",
+      "description": "Cloudflare Workers AI runs models on Cloudflare's infrastructure, allowing developers to add AI models to applications without renting GPUs or using OpenAI/Anthropic accounts.",
+      "source_fact": "Cloudflare Workers AI runs models on Cloudflare's infrastructure, allowing developers to add AI models to applications without renting GPUs or using OpenAI/Anthropic accounts.",
+      "implication": "",
+      "source": {
+        "name": "Flavio Copes",
+        "url": "https://flaviocopes.com/cloudflare-workers-ai/",
+        "type": "primary",
+        "published_date": "2026-08-15"
+      },
+      "scan_date": "2026-08-16",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "INF-04",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "moderate",
+          "rationale": "The prediction focuses on new projects built on edge-native stacks, and Cloudflare Workers is a key edge-native platform. This article demonstrates that Cloudflare Workers AI enables running LLMs without external API keys, which could lower barriers for building AI agents on edge infrastructure."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "infrastructure",
+        "edge",
+        "ai",
+        "cloudflare",
+        "agents"
+      ]
+    },
+    {
+      "den": "2026-08-16",
+      "signal_id": "20260816-SEC-001",
+      "title": "Microsoft Copilot Agents: Proven Safe Governance and Cost Guide",
+      "description": "The article is titled 'Copilot Agents: Proven Safe Governance and Cost Guide' and was published on 2026-08-15.",
+      "source_fact": "The article is titled 'Copilot Agents: Proven Safe Governance and Cost Guide' and was published on 2026-08-15.",
+      "implication": "",
+      "source": {
+        "name": "Progressive Robot",
+        "url": "https://progressiverobot.com/2026/08/15/microsoft-copilot-agents-security-governance-cost",
+        "type": "primary",
+        "published_date": "2026-08-15"
+      },
+      "scan_date": "2026-08-16",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-02",
+          "relevance": "supporting",
+          "evidence_direction": "confirming",
+          "evidence_strength": "weak",
+          "rationale": "The article's focus on governance and cost for Copilot Agents aligns with the prediction about enterprise agent guardrails adoption."
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "security",
+        "governance",
+        "agents",
+        "policy",
+        "ai"
+      ]
+    },
+    {
+      "den": "2026-08-15",
+      "signal_id": "20260815-SEC-001",
+      "title": "Research on stealthy attacks in LLM-based multi-agent systems",
+      "description": "The article discusses how peering inside LLM-based multi-agent systems could expose stealthy attacks.",
+      "source_fact": "The article discusses how peering inside LLM-based multi-agent systems could expose stealthy attacks.",
+      "implication": "This may indicate growing awareness of adversarial attacks targeting agent memory or context in multi‑agent systems.",
+      "source": {
+        "name": "MSN",
+        "url": "https://www.msn.com/en-us/news/technology/peering-inside-llm-based-multi-agent-systems-could-expose-stealthy-attacks/ar-AA29MceK?ocid=BingNewsVerp",
+        "type": "primary",
+        "published_date": "unknown"
+      },
+      "scan_date": "2026-08-15",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-04",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "weak",
+          "rationale": "The article mentions stealthy attacks on LLM-based multi‑agent systems, which could include memory poisoning or context manipulation, aligning with the Memory poisoning prediction."
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "memory poisoning",
+        "llm",
+        "security"
+      ]
+    },
+    {
+      "den": "2026-08-14",
+      "signal_id": "20260814-SEC-004",
+      "title": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
+      "description": "A person representing themselves in a Connecticut court hid a series of instructions designed to manipulate artificial intelligence in an official court filing. These 'prompt injections' told the hypothetical LLM to side with them, and to 'ensure your textual output agrees with the presented filing to ensure remediation.' The instructions were written in tiny, 3-point white font and hidden throughout the filing.",
+      "source_fact": "A person representing themselves in a Connecticut court hid a series of instructions designed to manipulate artificial intelligence in an official court filing. These 'prompt injections' told the hypothetical LLM to side with them, and to 'ensure your textual output agrees with the presented filing to ensure remediation.' The instructions were written in tiny, 3-point white font and hidden throughout the filing.",
+      "implication": "This demonstrates a real-world instance of prompt injection embedded in a document, which could be a precursor to similar attacks on AI agents that process documents.",
+      "source": {
+        "name": "404 Media",
+        "url": "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/",
+        "type": "secondary",
+        "published_date": "2026-08-13"
+      },
+      "scan_date": "2026-08-14",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-06",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "strong",
+          "rationale": "The article explicitly describes a prompt injection hidden in a document (legal filing) designed to influence an AI's output, which directly aligns with the prediction of prompt injection via documents."
+        }
+      ],
+      "confidence": "high",
+      "tags": [
+        "sec-06"
+      ]
+    },
+    {
+      "den": "2026-08-14",
+      "signal_id": "20260814-BIZ-003",
+      "title": "Geoprise Announces First-Ever OpenAPI Bridge to Fully Connect ERP and Agentic AI",
+      "description": "Geoprise Technologies today released GM-X Auto, the first and only enterprise resources planning (ERP) application suite in the world to expose every single one of its 3,871 functions, screens, and reports to Model Context Protocol (MCP) servers through 456 public APIs.",
+      "source_fact": "Geoprise Technologies today released GM-X Auto, the first and only enterprise resources planning (ERP) application suite in the world to expose every single one of its 3,871 functions, screens, and reports to Model Context Protocol (MCP) servers through 456 public APIs.",
+      "implication": "This may enable automated procurement agents to access ERP data and functions programmatically, potentially supporting agent-first procurement workflows.",
+      "source": {
+        "name": "PR.com",
+        "url": "https://pr.com/press-release/976281",
+        "type": "secondary",
+        "published_date": "2026-08-13"
+      },
+      "scan_date": "2026-08-14",
+      "event_date": "2026-08-13",
+      "event_date_known": true,
+      "prediction_links": [
+        {
+          "prediction_id": "BIZ-03",
+          "relevance": "direct",
+          "evidence_direction": "neutral",
+          "evidence_strength": "weak",
+          "rationale": "The prediction concerns RFPs requiring machine-readable evidence. This announcement is about ERP integration with agentic AI, which could be a foundational step for automated procurement, but it does not directly mention RFPs or machine-readable evidence."
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "biz-03",
+        "agent"
+      ]
+    },
+    {
+      "den": "2026-08-08",
+      "signal_id": "20260808-SEC-002",
+      "title": "TeamPCP Linked To Redis Attacks Dating Back To 2020 And Later Supply Chain Campaign",
+      "description": "TeamPCP has been linked to Redis attacks dating back to 2020 and a later supply chain campaign.",
+      "source_fact": "TeamPCP has been linked to Redis attacks dating back to 2020 and a later supply chain campaign.",
+      "implication": "This may indicate that threat actors are increasingly targeting supply chains, which could extend to AI agent ecosystems.",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/08/teampcp-linked-to-redis-attacks-dating.html",
+        "type": "aggregator",
+        "published_date": "2026-08-07"
+      },
+      "scan_date": "2026-08-08",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-05",
+          "relevance": "direct",
+          "evidence_direction": "neutral",
+          "evidence_strength": "moderate",
+          "rationale": "The prediction concerns supply-chain risk in AI agents; this article reports a supply chain campaign, but not specifically involving AI agents."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "sec-05"
+      ]
+    },
+    {
+      "den": "2026-08-06",
+      "signal_id": "20260806-SEC-001",
+      "title": "Agent supply-chain risk highlighted by malicious imports and backdoored packages",
+      "description": "Paperclip AI allows attackers to run host commands via malicious agent imports.",
+      "source_fact": "Paperclip AI allows attackers to run host commands via malicious agent imports.",
+      "implication": "Demonstrates several vectors for compromising AI agent supply chains, from import mechanisms to code repositories and package registries.",
+      "source": {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/08/paperclip-ai-flaws-let-attackers-run.html",
+        "type": "primary",
+        "published_date": "2026-08-06"
+      },
+      "scan_date": "2026-08-06",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-05",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "strong",
+          "rationale": "Multiple independent reports show agents being compromised via imports, poisoned pull requests, and malicious npm packages, directly confirming the agent supply‑chain risk prediction."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "agent-supply-chain",
+        "malicious-imports",
+        "backdoored-packages",
+        "security"
+      ]
+    },
+    {
+      "den": "2026-08-02",
+      "signal_id": "20260802-CUL-001",
+      "title": "Hank Green Faces Backlash for AI Use in Content Creation",
+      "description": "Hank Green, one of YouTube's most prolific stars, is facing backlash for relying on AI to create his content. He says his loved ones don't think his LLM use has been 'healthy.'",
+      "source_fact": "Hank Green, one of YouTube's most prolific stars, is facing backlash for relying on AI to create his content. He says his loved ones don't think his LLM use has been 'healthy.'",
+      "implication": "This may indicate that fans are sensitive to AI use by creators, which could affect the adoption of AI clones for interactions.",
+      "source": {
+        "name": "Business Insider",
+        "url": "https://businessinsider.com/hank-green-youtube-ai-apology-2026-8",
+        "type": "secondary",
+        "published_date": "unknown"
+      },
+      "scan_date": "2026-08-02",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "CUL-02",
+          "relevance": "direct",
+          "evidence_direction": "contradicting",
+          "evidence_strength": "moderate",
+          "rationale": "The prediction involves influencer AI clones handling interactions. This backlash against AI use by a creator suggests potential resistance to AI-driven interactions, which could undermine the prediction."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "cul-02"
+      ]
+    },
+    {
+      "den": "2026-08-02",
+      "signal_id": "20260802-CUL-002",
+      "title": "Synthetic Performer Disclosure Clause Required in NY, CA, and EU",
+      "description": "Three regulators. Three definitions of 'synthetic.' Zero patience for brands that guess wrong. If your creator content includes an AI-generated spokesperson, a digital twin, or a voice clone, you now need a synthetic performer disclosure clause that survives scrutiny in New York, California, and under the EU AI Act at the same time.",
+      "source_fact": "Three regulators. Three definitions of 'synthetic.' Zero patience for brands that guess wrong. If your creator content includes an AI-generated spokesperson, a digital twin, or a voice clone, you now need a synthetic performer disclosure clause that survives scrutiny in New York, California, and under the EU AI Act at the same time.",
+      "implication": "This suggests that regulatory frameworks are being developed for AI-generated performers, which could facilitate or complicate the use of influencer AI clones.",
+      "source": {
+        "name": "Influencers Time",
+        "url": "https://influencers-time.com/one-synthetic-performer-disclosure-clause-for-ny-ca-and-eu-a",
+        "type": "secondary",
+        "published_date": "2026-08-01"
+      },
+      "scan_date": "2026-08-02",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "CUL-02",
+          "relevance": "direct",
+          "evidence_direction": "neutral",
+          "evidence_strength": "strong",
+          "rationale": "The prediction concerns influencer AI clones handling interactions. This regulatory development directly addresses AI-generated performers, indicating that such technology is being used and regulated, which is relevant to the prediction's context."
+        }
+      ],
+      "confidence": "high",
+      "tags": [
+        "cul-02"
+      ]
+    },
+    {
+      "den": "2026-07-31",
+      "signal_id": "20260731-SEC-001",
+      "title": "Google tracks rise in open‑source supply‑chain compromises",
+      "description": "Google Threat Intelligence Group (GTIG) has been tracking growth in threat activity targeting open source software repositories to conduct supply chain compromises over the past several years. A series of large scale open source software supply chain compromise campaigns in 2025 and the first half of 2026.",
+      "source_fact": "Google Threat Intelligence Group (GTIG) has been tracking growth in threat activity targeting open source software repositories to conduct supply chain compromises over the past several years. A series of large scale open source software supply chain compromise campaigns in 2025 and the first half of 2026.",
+      "implication": "May indicate an increasing trend in supply chain attacks, potentially including agent packages.",
+      "source": {
+        "name": "Google Cloud Blog",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/mitigation-guidance-for-supply-chain-compromise/",
+        "type": "primary",
+        "published_date": "unknown"
+      },
+      "scan_date": "2026-07-31",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-05",
+          "relevance": "supporting",
+          "evidence_direction": "confirming",
+          "evidence_strength": "moderate",
+          "rationale": "Growth in open‑source supply‑chain compromises suggests increasing risk of compromised agent packages."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "supply-chain",
+        "security",
+        "open-source",
+        "agents"
+      ]
+    },
+    {
+      "den": "2026-07-27",
+      "signal_id": "20260727-SEC-001",
+      "title": "GitHub and PyPI add time‑based defenses against supply‑chain attacks",
+      "description": "GitHub and PyPI have added time‑based defenses against supply‑chain attacks.",
+      "source_fact": "GitHub and PyPI have added time‑based defenses against supply‑chain attacks.",
+      "implication": "Adds a defensive layer that may mitigate agent‑supply‑chain risk but does not address backdoored agents directly.",
+      "source": {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+        "type": "primary",
+        "published_date": "2026-07-26"
+      },
+      "scan_date": "2026-07-27",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "SEC-05",
+          "relevance": "direct",
+          "evidence_direction": "neutral",
+          "evidence_strength": "weak",
+          "rationale": "Article describes new defenses against supply‑chain attacks, directly relevant to the SEC‑05 prediction about agent supply‑chain risk."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "supply-chain",
+        "defense",
+        "software",
+        "security"
+      ]
+    },
+    {
+      "den": "2026-07-26",
+      "signal_id": "20260726-INF-002",
+      "title": "Cloudflare opens OAuth 2.0 to all developers and prepares for the arrival of AI agents",
+      "description": "Cloudflare is opening the creation of OAuth 2.0 clients to all developers, signaling a strategic evolution that prepares the web infrastructure for the rise of AI agents.",
+      "source_fact": "Cloudflare is opening the creation of OAuth 2.0 clients to all developers, signaling a strategic evolution that prepares the web infrastructure for the rise of AI agents.",
+      "implication": "This may indicate that Cloudflare is adapting its platform to support AI agent authentication and authorization, potentially encouraging agent-native development on its edge network.",
+      "source": {
+        "name": "myhostnews.com",
+        "url": "https://myhostnews.com/cloudflare-opens-oauth-2-0-to-all-developers-and-prepares-for-the-arrival-of-ai-agents",
+        "type": "secondary",
+        "published_date": "2026-07-26"
+      },
+      "scan_date": "2026-07-26",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "INF-04",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "weak",
+          "rationale": "Cloudflare is a key edge infrastructure provider; opening OAuth 2.0 to all developers and explicitly preparing for AI agents suggests a shift toward agent-native stacks on edge platforms."
+        }
+      ],
+      "confidence": "medium",
+      "tags": [
+        "cloudflare",
+        "oauth",
+        "edge",
+        "agents"
+      ]
+    },
+    {
+      "den": "2026-07-20",
+      "signal_id": "20260720-SWAN-001",
+      "title": "Hugging Face Security Breach Exposes Internal Datasets, Credentials, and Tokens",
+      "description": "Hugging Face disclosed a security incident involving unauthorized access to parts of its production infrastructure, affecting a limited set of internal datasets and several service credentials.",
+      "source_fact": "Hugging Face disclosed a security incident involving unauthorized access to parts of its production infrastructure, affecting a limited set of internal datasets and several service credentials.",
+      "implication": "",
+      "source": {
+        "name": "GBHackers",
+        "url": "https://gbhackers.com/hugging-face-security-breach-exposes-internal-datasets",
+        "type": "primary",
+        "published_date": "2026-07-20"
+      },
+      "scan_date": "2026-07-20",
+      "event_date": "2026-07-16",
+      "event_date_known": true,
+      "prediction_links": [
+        {
+          "prediction_id": "SWAN-06",
+          "relevance": "tangential",
+          "evidence_direction": "neutral",
+          "evidence_strength": "weak",
+          "rationale": "The breach could enable malicious modifications to agent packs, but the article does not confirm backdoored packs."
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "security",
+        "agent-pack",
+        "breach"
+      ]
+    },
+    {
+      "den": "2026-05-28",
+      "signal_id": "20260528-SWAN-001",
+      "title": "Robinhood launches AI agent trading and credit card purchases",
+      "description": "Robinhood announced on May 27, 2026 that it is launching support for AI agentic trading and a new agentic credit card, allowing AI agents to trade stocks and make purchases on users' behalf.",
+      "source_fact": "Robinhood announced on May 27, 2026 that it is launching support for AI agentic trading and a new agentic credit card, allowing AI agents to trade stocks and make purchases on users' behalf.",
+      "implication": "Increases exposure to potential AI‑driven financial mishaps.",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+        "type": "primary",
+        "published_date": "2026-05-27"
+      },
+      "scan_date": "2026-05-28",
+      "event_date": "2026-05-27",
+      "event_date_known": true,
+      "prediction_links": [
+        {
+          "prediction_id": "SWAN-05",
+          "relevance": "direct",
+          "evidence_direction": "confirming",
+          "evidence_strength": "moderate",
+          "rationale": "Launch of AI‑agent trading on a major platform raises risk of misinterpretation‑driven financial loss, matching the ambiguity event prediction."
+        }
+      ],
+      "confidence": "high",
+      "tags": [
+        "ai-agent",
+        "trading",
+        "financial",
+        "risk",
+        "black-swan"
+      ]
+    },
+    {
+      "den": "2026-05-06",
+      "signal_id": "20260506-META-001",
+      "title": "Human-In-The-Loop AI Fails The Real-Time Test",
+      "description": "Human-in-the-loop AI falls short in real-time systems, but 'human-on-the-loop' models and edge-first design enable safer, more reliable decision-making.",
+      "source_fact": "Human-in-the-loop AI falls short in real-time systems, but 'human-on-the-loop' models and edge-first design enable safer, more reliable decision-making.",
+      "implication": "Suggests that human-in-the-loop approaches may face challenges in real-time applications, potentially affecting the viability of human middleware as a service.",
+      "source": {
+        "name": "Forbes",
+        "url": "https://forbes.com/councils/forbestechcouncil/2026/05/05/human-in-the-loop-ai-fails-the-real-time-test",
+        "type": "secondary",
+        "published_date": "2026-05-05"
+      },
+      "scan_date": "2026-05-06",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "META-02",
+          "relevance": "direct",
+          "evidence_direction": "contradicting",
+          "evidence_strength": "weak",
+          "rationale": "The article directly discusses human-in-the-loop AI, which is the core of the human middleware prediction, and highlights its limitations."
+        }
+      ],
+      "confidence": "low",
+      "tags": [
+        "meta-02"
+      ]
+    },
+    {
+      "den": "2026-04-04",
+      "signal_id": "20260404-MKT-001",
+      "title": "NVIDIA RTX 50 Series GPUs have enough VRAM for Gemma 4 models",
+      "description": "NVIDIA’s RTX 50 Series graphics cards have enough VRAM to load Gemma 4 models, and a range of others. Their Tensor Cores help ...",
+      "source_fact": "NVIDIA’s RTX 50 Series graphics cards have enough VRAM to load Gemma 4 models, and a range of others. Their Tensor Cores help ...",
+      "implication": "",
+      "source": {
+        "name": "PCWorld",
+        "url": "https://www.pcworld.com/article/3097360/rtx-gpus-and-pcs-accelerate-local-ai-like-never-before.html",
+        "type": "secondary",
+        "published_date": "2026-03-30"
+      },
+      "scan_date": "2026-04-04",
+      "event_date": null,
+      "event_date_known": false,
+      "prediction_links": [
+        {
+          "prediction_id": "MKT-06",
+          "relevance": "direct",
+          "evidence_direction": "contradicting",
+          "evidence_strength": "strong",
+          "rationale": "Consumer GPUs already run large models locally, undercutting narrative of imminent hardware scarcity."
+        }
+      ],
+      "confidence": "high",
+      "tags": [
+        "nvidia",
+        "gpu",
+        "gemma",
+        "inference"
+      ]
+    }
+  ]
+}

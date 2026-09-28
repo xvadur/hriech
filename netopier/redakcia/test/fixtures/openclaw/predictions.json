@@ -1,0 +1,2734 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generated": "2026-02-27",
+    "description": "AI Roundtable Predictions for Closed-Loop Agent Acceleration",
+    "models": {
+      "opus": {
+        "id": "opus",
+        "name": "Claude Opus 4.5",
+        "provider": "Anthropic",
+        "color": "#FF6B35"
+      },
+      "gemini": {
+        "id": "gemini",
+        "name": "Gemini 3 Pro",
+        "provider": "Google",
+        "color": "#4285F4"
+      },
+      "grok": {
+        "id": "grok",
+        "name": "Grok 4.1",
+        "provider": "xAI",
+        "color": "#1DA1F2"
+      },
+      "kimi": {
+        "id": "kimi",
+        "name": "Kimi K2.5",
+        "provider": "Moonshot",
+        "color": "#9333EA"
+      },
+      "gpt": {
+        "id": "gpt",
+        "name": "GPT 5.2",
+        "provider": "OpenAI",
+        "color": "#10A37F"
+      },
+      "deepseek": {
+        "id": "deepseek",
+        "name": "DeepSeek 3.2",
+        "provider": "DeepSeek",
+        "color": "#F59E0B"
+      }
+    }
+  },
+  "categories": [
+    {
+      "id": "INF",
+      "name": "Infrastructure & Death of Frontend",
+      "description": "How AI agents are reshaping the software stack — from APIs displacing interfaces, to compute constraints, to new deployment patterns. Signals here track infrastructure shifts that make autonomous agents possible or impose limits on them.",
+      "icon": "server",
+      "insights": [
+        {
+          "id": "INF-01",
+          "title": "Compute Denial of Service (CDoS)",
+          "description": "Agent traffic causing 'bill shock' bankruptcies",
+          "plain_description": "AI agents can generate enormous amounts of automated traffic to cloud services, resulting in unexpected bills that can bankrupt a company overnight — the same way a burst pipe can flood a house before anyone notices. This watch item tracks incidents where AI-driven usage caused sudden, severe financial damage.",
+          "predictions": {
+            "opus": {
+              "m3": 65,
+              "m6": 85,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            },
+            "gemini": {
+              "m3": 75,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            },
+            "grok": {
+              "m3": 85,
+              "m6": 98,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            },
+            "kimi": {
+              "m3": 80,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            },
+            "gpt": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            },
+            "deepseek": {
+              "m3": 40,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI agent API costs bill shock startup"
+            }
+          },
+          "consensus": {
+            "m3_avg": 69,
+            "m6_avg": 89,
+            "m12_avg": 97,
+            "spread_m3": 45,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "INF-02",
+          "title": "API Re-monopolization / Agent Editions",
+          "description": "SaaS launching Agent Tier APIs with different pricing",
+          "plain_description": "Major software providers are creating separate, more expensive access tiers specifically for AI agents. If your business runs AI automation, this is about the extra toll roads being built for that traffic — and what it means for your software costs.",
+          "predictions": {
+            "opus": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            },
+            "gemini": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            },
+            "grok": {
+              "m3": 45,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            },
+            "kimi": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            },
+            "gpt": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            },
+            "deepseek": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "API agent tier pricing announcement"
+            }
+          },
+          "consensus": {
+            "m3_avg": 28,
+            "m6_avg": 57,
+            "m12_avg": 82,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "INF-03",
+          "title": "Rate Limit → Economic Limit",
+          "description": "Shift from rate limits to credits/prepaid wallets",
+          "plain_description": "Software APIs are moving from fixed access limits to prepaid credit systems. This changes AI automation from a predictable subscription expense to a variable, consumption-based bill — similar to how electricity costs work versus a flat monthly fee.",
+          "predictions": {
+            "opus": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            },
+            "gemini": {
+              "m3": 45,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            },
+            "grok": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            },
+            "kimi": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            },
+            "gpt": {
+              "m3": 55,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            },
+            "deepseek": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "API credits prepaid wallet launch"
+            }
+          },
+          "consensus": {
+            "m3_avg": 50,
+            "m6_avg": 77,
+            "m12_avg": 95,
+            "spread_m3": 40,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "INF-04",
+          "title": "Agent-native stack shift",
+          "description": "New projects built on edge-native stacks",
+          "plain_description": "A new generation of software infrastructure is being built from the ground up for AI agents — similar to how smartphones required entirely new apps rather than shrunken desktop software. This tracks how quickly that architectural shift is happening and which companies are building on it.",
+          "predictions": {
+            "opus": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            },
+            "gemini": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            },
+            "grok": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            },
+            "kimi": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            },
+            "gpt": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "Cloudflare Workers edge native startup"
+            }
+          },
+          "consensus": {
+            "m3_avg": 14,
+            "m6_avg": 34,
+            "m12_avg": 63,
+            "spread_m3": 25,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "SEC",
+      "name": "Security, Identity & Trust",
+      "description": "How agents expand the attack surface — credential risks, automated exploitation, trust frameworks for AI acting on behalf of humans. Signals track the security landscape adapting to agents operating without direct human oversight.",
+      "icon": "shield",
+      "insights": [
+        {
+          "id": "SEC-01",
+          "title": "Internet Bifurcation (Verified vs Wild)",
+          "description": "Split between authenticated web and open bot ghetto",
+          "plain_description": "The internet is dividing into two zones: a trusted layer where verified humans and authorized systems can operate, and an open layer increasingly dominated by automated bots. This affects how your business authenticates customers and which digital services remain reliable.",
+          "predictions": {
+            "opus": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            },
+            "gemini": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            },
+            "grok": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            },
+            "kimi": {
+              "m3": 45,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            },
+            "gpt": {
+              "m3": 35,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            },
+            "deepseek": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "mandatory login wall platform"
+            }
+          },
+          "consensus": {
+            "m3_avg": 38,
+            "m6_avg": 68,
+            "m12_avg": 91,
+            "spread_m3": 25,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SEC-02",
+          "title": "Permissions stack / Policy-as-code",
+          "description": "Enterprise agent guardrails adoption",
+          "plain_description": "Companies are building digital rulebooks that specify exactly what AI agents are allowed to do — how much they can spend, which systems they can access, and when a human must approve. This tracks how fast those guardrails are being adopted across industries, particularly in finance and healthcare.",
+          "predictions": {
+            "opus": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            },
+            "gemini": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            },
+            "grok": {
+              "m3": 40,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            },
+            "kimi": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            },
+            "gpt": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            },
+            "deepseek": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "AI agent guardrails enterprise"
+            }
+          },
+          "consensus": {
+            "m3_avg": 23,
+            "m6_avg": 50,
+            "m12_avg": 79,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SEC-03",
+          "title": "Ambient authentication collapse",
+          "description": "Breach via long-lived agent sessions triggers policy shift",
+          "plain_description": "AI agents need long-running access credentials to do their work — but those same credentials are valuable targets for attackers. This tracks incidents where stolen agent credentials led to major security breaches that then forced companies to redesign their security policies.",
+          "predictions": {
+            "opus": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            },
+            "gemini": {
+              "m3": 10,
+              "m6": 35,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            },
+            "grok": {
+              "m3": 30,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            },
+            "kimi": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            },
+            "gpt": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 25,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "agent session hijack breach"
+            }
+          },
+          "consensus": {
+            "m3_avg": 14,
+            "m6_avg": 39,
+            "m12_avg": 70,
+            "spread_m3": 25,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SEC-04",
+          "title": "Memory poisoning",
+          "description": "Adversarial poisoning of agent memory/context",
+          "plain_description": "Attackers can subtly corrupt what an AI agent \"remembers\" or has been told, causing it to behave incorrectly — possibly without anyone noticing for days or weeks. Think of it like someone secretly rewriting the notes an employee relies on to make decisions.",
+          "predictions": {
+            "opus": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 40,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            },
+            "gemini": {
+              "m3": 5,
+              "m6": 10,
+              "m12": 30,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            },
+            "grok": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            },
+            "kimi": {
+              "m3": 2,
+              "m6": 8,
+              "m12": 25,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            },
+            "gpt": {
+              "m3": 5,
+              "m6": 12,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            },
+            "deepseek": {
+              "m3": 1,
+              "m6": 5,
+              "m12": 20,
+              "confidence": "medium",
+              "commentary": "LLM memory poisoning attack"
+            }
+          },
+          "consensus": {
+            "m3_avg": 6,
+            "m6_avg": 15,
+            "m12_avg": 37,
+            "spread_m3": 14,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SEC-05",
+          "title": "Agent supply-chain risk",
+          "description": "Backdoored agent pack scandal",
+          "plain_description": "AI agent tools are often downloaded from public repositories, just like mobile apps from an app store. This tracks cases where someone hid malicious code inside a popular AI tool — silently infecting every organization that installed it, including enterprises that trust their software vendors.",
+          "predictions": {
+            "opus": {
+              "m3": 35,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            },
+            "gemini": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            },
+            "grok": {
+              "m3": 60,
+              "m6": 90,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            },
+            "kimi": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            },
+            "gpt": {
+              "m3": 45,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            },
+            "deepseek": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "malicious AI agent package NPM PyPI"
+            }
+          },
+          "consensus": {
+            "m3_avg": 48,
+            "m6_avg": 78,
+            "m12_avg": 96,
+            "spread_m3": 25,
+            "most_bullish": "grok",
+            "most_bearish": "opus"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SEC-06",
+          "title": "Prompt injection via documents",
+          "description": "Invoice/PDF injection triggering agent actions",
+          "plain_description": "Malicious instructions can be hidden inside ordinary-looking documents — an invoice, a contract, a PDF — that cause an AI agent to take harmful actions when it reads them. This technique is already being used for financial fraud, targeting automated systems the same way phishing targets people.",
+          "predictions": {
+            "opus": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            },
+            "gemini": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            },
+            "grok": {
+              "m3": 75,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            },
+            "kimi": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            },
+            "gpt": {
+              "m3": 65,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            },
+            "deepseek": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "prompt injection PDF invoice attack"
+            }
+          },
+          "consensus": {
+            "m3_avg": 60,
+            "m6_avg": 83,
+            "m12_avg": 97,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "BIZ",
+      "name": "Business Operations & Governance",
+      "description": "How organizations restructure around AI — procurement changes, liability frameworks, workforce transformation, and regulatory moves. Signals track adoption velocity, friction points, and governance responses.",
+      "icon": "briefcase",
+      "insights": [
+        {
+          "id": "BIZ-01",
+          "title": "Executive Cognition Outsourcing",
+          "description": "Formal delegation of decision authority to agents",
+          "plain_description": "Companies are beginning to officially hand certain business decisions over to AI agents — from scheduling and procurement to customer pricing. This tracks where legal and corporate governance frameworks are catching up with, or pushing back against, that delegation of authority.",
+          "predictions": {
+            "opus": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            },
+            "gemini": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            },
+            "grok": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            },
+            "kimi": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 40,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            },
+            "gpt": {
+              "m3": 8,
+              "m6": 22,
+              "m12": 45,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            },
+            "deepseek": {
+              "m3": 2,
+              "m6": 10,
+              "m12": 30,
+              "confidence": "medium",
+              "commentary": "AI agent decision making authority company"
+            }
+          },
+          "consensus": {
+            "m3_avg": 9,
+            "m6_avg": 25,
+            "m12_avg": 48,
+            "spread_m3": 23,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-02",
+          "title": "Algorithmic Liability / Safe Execution",
+          "description": "AI malpractice insurance and safe mode requirements",
+          "plain_description": "When an AI agent makes a costly mistake, who is legally responsible? This tracks the emerging market for AI liability insurance and new regulations requiring AI systems to maintain auditable logs — similar to how aviation requires flight recorders in every aircraft.",
+          "predictions": {
+            "opus": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            },
+            "gemini": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            },
+            "grok": {
+              "m3": 20,
+              "m6": 50,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            },
+            "kimi": {
+              "m3": 10,
+              "m6": 35,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            },
+            "gpt": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            },
+            "deepseek": {
+              "m3": 10,
+              "m6": 35,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI malpractice insurance product launch"
+            }
+          },
+          "consensus": {
+            "m3_avg": 16,
+            "m6_avg": 41,
+            "m12_avg": 69,
+            "spread_m3": 10,
+            "most_bullish": "gemini",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-03",
+          "title": "Procurement Flips to Agent-First",
+          "description": "RFPs requiring machine-readable evidence",
+          "plain_description": "Enterprise purchasing processes are beginning to require that vendor responses and supporting evidence be submitted in structured formats that AI systems can read and evaluate automatically. This signals a shift in how major contracts are competed for and won.",
+          "predictions": {
+            "opus": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            },
+            "gemini": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            },
+            "grok": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            },
+            "kimi": {
+              "m3": 5,
+              "m6": 25,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            },
+            "gpt": {
+              "m3": 12,
+              "m6": 35,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 25,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "enterprise RFP JSON machine readable"
+            }
+          },
+          "consensus": {
+            "m3_avg": 13,
+            "m6_avg": 36,
+            "m12_avg": 67,
+            "spread_m3": 25,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-04",
+          "title": "Civic & Bureaucratic DDoS",
+          "description": "Government portals overwhelmed by agent volume",
+          "plain_description": "AI agents are beginning to flood government digital services — permit applications, public comment portals, benefits systems — with volumes those platforms were never designed to handle. This tracks when that pressure causes public services to fail, slow down, or close to automated access.",
+          "predictions": {
+            "opus": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            },
+            "gemini": {
+              "m3": 35,
+              "m6": 65,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            },
+            "grok": {
+              "m3": 60,
+              "m6": 90,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            },
+            "kimi": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            },
+            "gpt": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            },
+            "deepseek": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "FOIA flooding AI bots government"
+            }
+          },
+          "consensus": {
+            "m3_avg": 40,
+            "m6_avg": 69,
+            "m12_avg": 88,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "opus"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-05",
+          "title": "Litigation at Scale",
+          "description": "Mass automated filings",
+          "plain_description": "Legal AI tools can now automate the filing of thousands of claims, complaints, or arbitration requests with minimal human effort. This tracks whether that capability is being used to overwhelm courts, regulators, or businesses with coordinated legal volume as a deliberate tactic.",
+          "predictions": {
+            "opus": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            },
+            "gemini": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            },
+            "grok": {
+              "m3": 40,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            },
+            "kimi": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            },
+            "gpt": {
+              "m3": 12,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "mass arbitration AI generated filings"
+            }
+          },
+          "consensus": {
+            "m3_avg": 16,
+            "m6_avg": 38,
+            "m12_avg": 64,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-06",
+          "title": "Jurisdictional Fluidity / Sovereign Agents",
+          "description": "Agents operating across jurisdictions via crypto/DAOs",
+          "plain_description": "AI agents can be structured as legal entities in crypto-friendly jurisdictions, allowing them to operate and hold assets across borders with limited traditional oversight. This tracks whether that model is being used to sidestep regulation, taxation, or legal accountability.",
+          "predictions": {
+            "opus": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            },
+            "gemini": {
+              "m3": 2,
+              "m6": 10,
+              "m12": 25,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            },
+            "grok": {
+              "m3": 20,
+              "m6": 50,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            },
+            "kimi": {
+              "m3": 1,
+              "m6": 5,
+              "m12": 20,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            },
+            "gpt": {
+              "m3": 3,
+              "m6": 10,
+              "m12": 25,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 3,
+              "m12": 15,
+              "confidence": "medium",
+              "commentary": "Wyoming DAO AI agent LLC"
+            }
+          },
+          "consensus": {
+            "m3_avg": 5,
+            "m6_avg": 16,
+            "m12_avg": 33,
+            "spread_m3": 20,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "BIZ-07",
+          "title": "IP / Prompt Inheritance Doctrine",
+          "description": "Legal precedent on prompt/output ownership",
+          "plain_description": "Courts have not yet decided who owns the output of an AI agent — the person who wrote the instructions, the company that built the AI, or nobody. This tracks the legal cases that will establish those ownership rules, with major implications for creative, legal, and financial industries.",
+          "predictions": {
+            "opus": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 40,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            },
+            "gemini": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 45,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            },
+            "grok": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            },
+            "kimi": {
+              "m3": 1,
+              "m6": 10,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            },
+            "gpt": {
+              "m3": 5,
+              "m6": 18,
+              "m12": 45,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 5,
+              "m12": 25,
+              "confidence": "medium",
+              "commentary": "prompt copyright lawsuit filed"
+            }
+          },
+          "consensus": {
+            "m3_avg": 4,
+            "m6_avg": 15,
+            "m12_avg": 40,
+            "spread_m3": 5,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "MKT",
+      "name": "Market Dynamics",
+      "description": "Capital flows, consolidation, new entrants, and valuation signals in the AI agent ecosystem. Who is funding what, which bets are paying off, and what the money is signaling about near-term direction.",
+      "icon": "trending-up",
+      "insights": [
+        {
+          "id": "MKT-01",
+          "title": "Correlated Failure Stampedes",
+          "description": "Flash crash from synchronized agents",
+          "plain_description": "When many AI agents follow similar strategies, they can all act at the same moment — causing prices, inventory, or asset values to collapse suddenly. This tracks episodes where automated systems moving in lockstep caused visible, rapid market disruption affecting real businesses.",
+          "predictions": {
+            "opus": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            },
+            "gemini": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            },
+            "grok": {
+              "m3": 40,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            },
+            "kimi": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            },
+            "gpt": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            },
+            "deepseek": {
+              "m3": 10,
+              "m6": 35,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "AI agent flash crash crypto"
+            }
+          },
+          "consensus": {
+            "m3_avg": 21,
+            "m6_avg": 48,
+            "m12_avg": 75,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "MKT-02",
+          "title": "Micro-Optimization Death Spirals",
+          "description": "SEO/ads/pricing gaming outpaces platforms",
+          "plain_description": "AI tools are being used to game search rankings, advertising auctions, and pricing algorithms faster than platforms can defend against them. This tracks when that arms race degrades the quality of online markets or search results to a point of visible, public breakdown.",
+          "predictions": {
+            "opus": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            },
+            "gemini": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            },
+            "grok": {
+              "m3": 70,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            },
+            "kimi": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            },
+            "gpt": {
+              "m3": 55,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            },
+            "deepseek": {
+              "m3": 30,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "Google search quality AI spam collapse"
+            }
+          },
+          "consensus": {
+            "m3_avg": 52,
+            "m6_avg": 78,
+            "m12_avg": 95,
+            "spread_m3": 40,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "MKT-03",
+          "title": "Clean Data Liquidity Crisis",
+          "description": "Verified data feeds become premium",
+          "plain_description": "As AI bots flood the internet, reliable data becomes scarce and expensive. Websites are blocking automated access, and only those who pay for verified data sources get trustworthy information. This tracks how quickly quality data is becoming a premium, gated resource with real cost implications.",
+          "predictions": {
+            "opus": {
+              "m3": 35,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            },
+            "gemini": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            },
+            "grok": {
+              "m3": 60,
+              "m6": 90,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            },
+            "kimi": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            },
+            "gpt": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 92,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            },
+            "deepseek": {
+              "m3": 25,
+              "m6": 60,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "website blocks AI bot scraping"
+            }
+          },
+          "consensus": {
+            "m3_avg": 43,
+            "m6_avg": 72,
+            "m12_avg": 92,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "MKT-04",
+          "title": "Labor Compression (Agent Operator)",
+          "description": "Solo operators achieving massive scale",
+          "plain_description": "AI agents now allow a single person to run operations that previously required a full team. This tracks how quickly that capability is compressing headcounts and reshaping what organizations actually need to hire people for — with direct implications for workforce planning.",
+          "predictions": {
+            "opus": {
+              "m3": 30,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            },
+            "gemini": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            },
+            "grok": {
+              "m3": 50,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            },
+            "kimi": {
+              "m3": 20,
+              "m6": 50,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            },
+            "gpt": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            },
+            "deepseek": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "solo founder AI agent millions ARR"
+            }
+          },
+          "consensus": {
+            "m3_avg": 25,
+            "m6_avg": 51,
+            "m12_avg": 77,
+            "spread_m3": 40,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "MKT-05",
+          "title": "Existential Minimum Wage",
+          "description": "Commodity digital labor reprices to near-zero",
+          "plain_description": "Routine digital work — writing, data entry, basic design, customer emails — is being repriced toward zero as AI tools replace freelance workers. This tracks how quickly that price collapse is reaching different categories of professional services, with implications for outsourcing costs and supplier markets.",
+          "predictions": {
+            "opus": {
+              "m3": 20,
+              "m6": 40,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            },
+            "gemini": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            },
+            "grok": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            },
+            "kimi": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            },
+            "gpt": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            },
+            "deepseek": {
+              "m3": 15,
+              "m6": 45,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "Upwork Fiverr rates collapse AI"
+            }
+          },
+          "consensus": {
+            "m3_avg": 28,
+            "m6_avg": 54,
+            "m12_avg": 79,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "MKT-06",
+          "title": "Energy / Hardware Reality",
+          "description": "Physical infrastructure constraints become visible",
+          "plain_description": "Running AI at scale requires enormous amounts of electricity and specialized computer chips. This tracks when those physical limits — power grid constraints, chip shortages, data center capacity — begin to visibly shape what AI services are available, where, and at what cost.",
+          "predictions": {
+            "opus": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            },
+            "gemini": {
+              "m3": 10,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            },
+            "grok": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            },
+            "kimi": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            },
+            "gpt": {
+              "m3": 10,
+              "m6": 28,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "GPU shortage AI agents local"
+            }
+          },
+          "consensus": {
+            "m3_avg": 11,
+            "m6_avg": 31,
+            "m12_avg": 59,
+            "spread_m3": 20,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "ATK",
+      "name": "Agentic Attack Surface",
+      "description": "Prompt injection, agent manipulation, and supply chain risks unique to autonomous AI agents. Distinct from general security — these are attack patterns that emerge specifically when agents act without a human in the loop.",
+      "icon": "crosshair",
+      "insights": [
+        {
+          "id": "ATK-01",
+          "title": "Operational Spam",
+          "description": "Support/refund queues flooded by agents",
+          "plain_description": "Automated bots are flooding customer service systems, refund processes, and complaint channels — creating artificial workload that costs businesses money and delays legitimate customers. This tracks the scale and frequency of those attacks, which are now a documented form of competitive sabotage.",
+          "predictions": {
+            "opus": {
+              "m3": 55,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            },
+            "gemini": {
+              "m3": 65,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            },
+            "grok": {
+              "m3": 80,
+              "m6": 98,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            },
+            "kimi": {
+              "m3": 75,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            },
+            "gpt": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            },
+            "deepseek": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "AI bot support ticket flooding attack"
+            }
+          },
+          "consensus": {
+            "m3_avg": 66,
+            "m6_avg": 88,
+            "m12_avg": 97,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "ATK-02",
+          "title": "Temporal Attacks (Weekend Warfare)",
+          "description": "Attacks timed for off-hours",
+          "plain_description": "Automated attacks are increasingly timed to strike on Friday afternoons, holiday weekends, or overnight — when fewer staff are monitoring and response times are slowest. This tracks whether that timing strategy is becoming deliberate and systematic rather than coincidental.",
+          "predictions": {
+            "opus": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            },
+            "gemini": {
+              "m3": 30,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            },
+            "grok": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            },
+            "kimi": {
+              "m3": 30,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            },
+            "gpt": {
+              "m3": 28,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            },
+            "deepseek": {
+              "m3": 20,
+              "m6": 50,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "Friday 5pm cyberattack pattern"
+            }
+          },
+          "consensus": {
+            "m3_avg": 31,
+            "m6_avg": 58,
+            "m12_avg": 83,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "ATK-03",
+          "title": "Resource Exhaustion via Legitimate Flows",
+          "description": "Cart holds, slot reservations weaponized",
+          "plain_description": "AI bots can tie up online shopping carts, appointment slots, and reservations using perfectly ordinary-looking actions — making inventory unavailable to real customers without triggering traditional fraud detection. This tracks deliberate capacity exhaustion used as a competitive or sabotage tactic.",
+          "predictions": {
+            "opus": {
+              "m3": 40,
+              "m6": 65,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            },
+            "gemini": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            },
+            "grok": {
+              "m3": 70,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            },
+            "kimi": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            },
+            "gpt": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 92,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            },
+            "deepseek": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "cart holding bot attack ecommerce"
+            }
+          },
+          "consensus": {
+            "m3_avg": 52,
+            "m6_avg": 78,
+            "m12_avg": 92,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "ATK-04",
+          "title": "Changelog Arms Race",
+          "description": "Competitive intelligence loops compress",
+          "plain_description": "Businesses are using AI to monitor every change a competitor makes — to prices, features, or job listings — and automatically respond within minutes. This tracks how tightly those competitive loops are compressing, and the point where the speed of automated response creates visible market instability.",
+          "predictions": {
+            "opus": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            },
+            "gemini": {
+              "m3": 40,
+              "m6": 65,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            },
+            "grok": {
+              "m3": 65,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            },
+            "kimi": {
+              "m3": 30,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            },
+            "gpt": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            },
+            "deepseek": {
+              "m3": 25,
+              "m6": 55,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "competitor monitoring AI automated"
+            }
+          },
+          "consensus": {
+            "m3_avg": 42,
+            "m6_avg": 68,
+            "m12_avg": 89,
+            "spread_m3": 40,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "ATK-05",
+          "title": "Review/Identity Fraud Networks",
+          "description": "Cross-platform synthetic personas",
+          "plain_description": "Coordinated networks of AI-generated fake identities are being used to manipulate ratings, reviews, and trust signals across multiple platforms at once. This tracks major exposures of those networks and whether platforms are gaining or losing the ability to detect and remove synthetic personas.",
+          "predictions": {
+            "opus": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            },
+            "gemini": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            },
+            "grok": {
+              "m3": 80,
+              "m6": 98,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            },
+            "kimi": {
+              "m3": 80,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            },
+            "gpt": {
+              "m3": 70,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            },
+            "deepseek": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "fake review network AI generated"
+            }
+          },
+          "consensus": {
+            "m3_avg": 70,
+            "m6_avg": 91,
+            "m12_avg": 97,
+            "spread_m3": 20,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "ATK-06",
+          "title": "Social Norm Exploits",
+          "description": "Agents exploiting ambiguity in instructions",
+          "plain_description": "AI agents can be manipulated by requests that exploit vague or polite phrasing — the way a con artist exploits social conventions. This tracks cases where that ambiguity was deliberately used to make an AI system take actions its operators did not intend or authorize.",
+          "predictions": {
+            "opus": {
+              "m3": 20,
+              "m6": 40,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            },
+            "gemini": {
+              "m3": 25,
+              "m6": 50,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            },
+            "grok": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            },
+            "kimi": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 75,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            },
+            "gpt": {
+              "m3": 20,
+              "m6": 42,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "AI agent social engineering exploit"
+            }
+          },
+          "consensus": {
+            "m3_avg": 22,
+            "m6_avg": 45,
+            "m12_avg": 73,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "META",
+      "name": "Meta Coordination & Infrastructure",
+      "description": "Standards bodies, interoperability protocols, open-source coordination, and the governance layer of the agentic web. The plumbing that determines whether agents from different vendors can work together — or can't.",
+      "icon": "layers",
+      "insights": [
+        {
+          "id": "META-01",
+          "title": "Reputation-Portable Agent Identity",
+          "description": "Cross-platform agent reputation standards",
+          "plain_description": "Right now, AI agents are effectively anonymous when they move between systems — there is no universal way to know if an agent is trusted or verified. This tracks efforts to create standardized digital passports for AI agents, allowing them to carry a trust record across platforms the way a credit score travels with a person.",
+          "predictions": {
+            "opus": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            },
+            "gemini": {
+              "m3": 5,
+              "m6": 20,
+              "m12": 45,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            },
+            "grok": {
+              "m3": 30,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            },
+            "kimi": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 40,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            },
+            "gpt": {
+              "m3": 8,
+              "m6": 22,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 10,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "agent identity standard protocol"
+            }
+          },
+          "consensus": {
+            "m3_avg": 10,
+            "m6_avg": 26,
+            "m12_avg": 52,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "META-02",
+          "title": "Human Middleware",
+          "description": "Human-in-the-loop as a service",
+          "plain_description": "Businesses are emerging that provide human judgment on demand — people who step in to handle tasks that AI agents cannot manage alone, such as verifying identities or handling edge cases. This tracks the growth of that human-as-a-service market and which sectors are adopting it.",
+          "predictions": {
+            "opus": {
+              "m3": 35,
+              "m6": 60,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            },
+            "gemini": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            },
+            "grok": {
+              "m3": 60,
+              "m6": 90,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            },
+            "kimi": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            },
+            "gpt": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            },
+            "deepseek": {
+              "m3": 30,
+              "m6": 65,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "CAPTCHA solving service AI agents"
+            }
+          },
+          "consensus": {
+            "m3_avg": 44,
+            "m6_avg": 73,
+            "m12_avg": 91,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "META-03",
+          "title": "AgentOps / Observability",
+          "description": "Tracing, debugging, eval become mandatory",
+          "plain_description": "Monitoring and auditing AI agents in production — understanding what they did, why, and whether it was correct — is becoming essential infrastructure for any regulated industry. This tracks how quickly those oversight tools are maturing and what compliance frameworks are beginning to require.",
+          "predictions": {
+            "opus": {
+              "m3": 45,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            },
+            "gemini": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            },
+            "grok": {
+              "m3": 70,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            },
+            "kimi": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            },
+            "gpt": {
+              "m3": 55,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            },
+            "deepseek": {
+              "m3": 40,
+              "m6": 75,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "LangSmith agent observability growth"
+            }
+          },
+          "consensus": {
+            "m3_avg": 53,
+            "m6_avg": 81,
+            "m12_avg": 95,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "META-04",
+          "title": "Agent Ecology / Dependency Collapse",
+          "description": "Keystone agent/API outage causes cascade",
+          "plain_description": "Modern AI workflows depend on a small number of critical services. If any one of them goes down, thousands of businesses built on top of it can fail simultaneously. This tracks the risk and early signs of those cascade failures, which have no equivalent in traditional software infrastructure.",
+          "predictions": {
+            "opus": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            },
+            "gemini": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 35,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            },
+            "grok": {
+              "m3": 15,
+              "m6": 40,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            },
+            "kimi": {
+              "m3": 5,
+              "m6": 15,
+              "m12": 40,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            },
+            "gpt": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            },
+            "deepseek": {
+              "m3": 5,
+              "m6": 25,
+              "m12": 65,
+              "confidence": "medium",
+              "commentary": "OpenAI outage startup cascade failure"
+            }
+          },
+          "consensus": {
+            "m3_avg": 8,
+            "m6_avg": 24,
+            "m12_avg": 52,
+            "spread_m3": 10,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "CUL",
+      "name": "Culture & Social Adaptation",
+      "description": "How people are actually integrating agents into work and daily life — adoption patterns, resistance, new norms, skills shifts. Leading indicators of real-world penetration versus hype cycles.",
+      "icon": "users",
+      "insights": [
+        {
+          "id": "CUL-01",
+          "title": "Commoditization of Intimacy",
+          "description": "Dating apps become majority bot traffic",
+          "plain_description": "Dating and social platforms are being flooded with AI-generated profiles and automated conversation bots — making it increasingly difficult for real users to find authentic human connections. This tracks how far that erosion of trust has progressed on major platforms and how companies are responding.",
+          "predictions": {
+            "opus": {
+              "m3": 40,
+              "m6": 65,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            },
+            "gemini": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            },
+            "grok": {
+              "m3": 70,
+              "m6": 95,
+              "m12": 99,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            },
+            "kimi": {
+              "m3": 60,
+              "m6": 85,
+              "m12": 98,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            },
+            "gpt": {
+              "m3": 50,
+              "m6": 75,
+              "m12": 92,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            },
+            "deepseek": {
+              "m3": 35,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "dating app bot percentage increase"
+            }
+          },
+          "consensus": {
+            "m3_avg": 51,
+            "m6_avg": 78,
+            "m12_avg": 92,
+            "spread_m3": 35,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "CUL-02",
+          "title": "Parasocial Shield (Creator Agents)",
+          "description": "Influencer AI clones handling interactions",
+          "plain_description": "Online creators and public figures are deploying AI versions of themselves to handle fan interactions, sell advice, and manage communities at scale — blurring the line between a real person and an automated replica. This tracks how widespread that practice is becoming and how audiences are responding.",
+          "predictions": {
+            "opus": {
+              "m3": 30,
+              "m6": 55,
+              "m12": 80,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            },
+            "gemini": {
+              "m3": 35,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            },
+            "grok": {
+              "m3": 50,
+              "m6": 80,
+              "m12": 95,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            },
+            "kimi": {
+              "m3": 40,
+              "m6": 70,
+              "m12": 90,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            },
+            "gpt": {
+              "m3": 35,
+              "m6": 60,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            },
+            "deepseek": {
+              "m3": 20,
+              "m6": 55,
+              "m12": 85,
+              "confidence": "medium",
+              "commentary": "influencer AI clone fan interaction"
+            }
+          },
+          "consensus": {
+            "m3_avg": 35,
+            "m6_avg": 63,
+            "m12_avg": 87,
+            "spread_m3": 30,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "CUL-03",
+          "title": "Anti-Agent Backlash",
+          "description": "Human-only premium offerings",
+          "plain_description": "A counter-movement is emerging where businesses and platforms explicitly advertise human-only services as a premium feature — authentic, unautomated experiences in a world of AI. This tracks whether that backlash is translating into real purchasing behavior and viable business models.",
+          "predictions": {
+            "opus": {
+              "m3": 15,
+              "m6": 35,
+              "m12": 60,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            },
+            "gemini": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            },
+            "grok": {
+              "m3": 20,
+              "m6": 45,
+              "m12": 70,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            },
+            "kimi": {
+              "m3": 10,
+              "m6": 25,
+              "m12": 50,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            },
+            "gpt": {
+              "m3": 12,
+              "m6": 30,
+              "m12": 55,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            },
+            "deepseek": {
+              "m3": 3,
+              "m6": 15,
+              "m12": 45,
+              "confidence": "medium",
+              "commentary": "human-only premium service trend"
+            }
+          },
+          "consensus": {
+            "m3_avg": 12,
+            "m6_avg": 29,
+            "m12_avg": 55,
+            "spread_m3": 17,
+            "most_bullish": "grok",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "id": "SWAN",
+      "name": "High-Impact Black Swans",
+      "description": "Low-probability, high-consequence events that could reshape the trajectory — regulatory shocks, capability breakthroughs, safety incidents. The needle-movements worth watching most carefully.",
+      "icon": "alert-triangle",
+      "insights": [
+        {
+          "id": "SWAN-01",
+          "title": "Correlated Stampede",
+          "description": "Major flash crash from synchronized agents",
+          "plain_description": "The concentrated version of synchronized agent failure — a dramatic, sudden market collapse caused by thousands of AI systems making the same move at the same moment. A tail-risk scenario: low probability on any given day, but capable of causing losses comparable in scale to the 2010 Flash Crash.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 25,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 30,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 80,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 40,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 35,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 25,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "crypto flash crash AI trading bots"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 39,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-02",
+          "title": "Prompt Injection ($1M+ loss)",
+          "description": "Document injection redirecting major payments",
+          "plain_description": "A confirmed, publicly disclosed financial fraud where hidden instructions in a document caused an AI agent to redirect payments above one million dollars. This is already technically possible; this item tracks when it first becomes a headline event that forces organizations to change how they treat AI-handled financial flows.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 50,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 60,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 85,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 75,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 65,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 50,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "prompt injection payment redirect million"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 64,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-03",
+          "title": "Gov Function Paralyzed",
+          "description": "City/agency suspends digital intake",
+          "plain_description": "A government agency shuts down its online systems because automated bots have made them unusable — forcing citizens back to paper or phone. This tracks the first high-profile case where an official body publicly acknowledges and declares defeat against automated volume.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 35,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 45,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 75,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 60,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 45,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 40,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "government portal shutdown bot traffic"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 50,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-04",
+          "title": "Session Hijack Breach",
+          "description": "Fortune 500 breach via agent sessions",
+          "plain_description": "A major corporation suffers a significant data breach specifically because an AI agent's access credentials were stolen and misused. This is the bellwether event — the incident that forces board-level reckoning with AI security, the way high-profile email breaches forced action on phishing.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 40,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 30,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 0,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 35,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 35,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 20,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "Fortune 500 breach AI agent session"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 27,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-05",
+          "title": "Ambiguity Event",
+          "description": "Agent misinterpretation causes major damage",
+          "plain_description": "An AI agent misunderstands its instructions and takes an action at scale that causes severe, hard-to-reverse damage — mass cancellations, erroneous deletions, or incorrect communications sent to thousands of customers. This tracks when that scenario first becomes a major public incident with regulatory consequences.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 25,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 15,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 0,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 20,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 20,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 10,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "AI agent error mass cancellation"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 15,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-06",
+          "title": "Backdoored Agent Pack",
+          "description": "Popular pack exfiltrating across thousands",
+          "plain_description": "A widely-used AI agent plugin or framework is found to contain hidden malicious code that has been silently stealing data from every organization that installed it — analogous to the SolarWinds breach but targeting the AI tooling running inside enterprises.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 45,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 55,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 90,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 75,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 60,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 70,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "malicious AI agent pack discovered"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 66,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        },
+        {
+          "id": "SWAN-07",
+          "title": "Data Poisoning (Caught)",
+          "description": "Company caught poisoning competitor data",
+          "plain_description": "A company is publicly exposed for deliberately corrupting the data that a competitor's AI systems learn from — industrial sabotage targeting AI training pipelines. This would be the first confirmed case of deliberate AI data sabotage between commercial rivals, with significant legal and regulatory consequences.",
+          "predictions": {
+            "opus": {
+              "m3": 0,
+              "m6": 35,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            },
+            "gemini": {
+              "m3": 0,
+              "m6": 25,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            },
+            "grok": {
+              "m3": 0,
+              "m6": 60,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            },
+            "kimi": {
+              "m3": 0,
+              "m6": 30,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            },
+            "gpt": {
+              "m3": 0,
+              "m6": 30,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            },
+            "deepseek": {
+              "m3": 0,
+              "m6": 15,
+              "m12": 0,
+              "confidence": "medium",
+              "commentary": "data poisoning competitor caught"
+            }
+          },
+          "consensus": {
+            "m3_avg": 0,
+            "m6_avg": 33,
+            "m12_avg": 0,
+            "spread_m3": 0,
+            "most_bullish": "opus",
+            "most_bearish": "deepseek"
+          },
+          "status": "unconfirmed",
+          "status_updated": null,
+          "evidence": []
+        }
+      ]
+    }
+  ]
+}

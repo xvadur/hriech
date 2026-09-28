@@ -1,0 +1,19 @@
+{
+  "verzia": "2026-09-28.1",
+  "poznamka": "Verzovaná politika merania médií (register E3): čitateľné zoznamy, ktoré meranie používa. Zmena = nová verzia a commit; meranie ju zapíše do stĺpca algoritmus. Zoznamy sú prvý návrh agenta, Adam škrtá a dopĺňa.",
+  "stop_slova": [
+    "a", "aby", "aj", "ak", "ako", "ale", "alebo", "ani", "asi", "až", "bez", "bol", "bola", "boli", "bolo", "bude", "budú", "by", "byť",
+    "cez", "či", "čo", "do", "ešte", "ho", "i", "iba", "ich", "im", "ja", "je", "jeho", "jej", "jú", "k", "kam", "kde", "keď", "kto", "ktorá", "ktoré", "ktorí", "ktorý", "ku",
+    "lebo", "len", "ma", "má", "majú", "mal", "mala", "mali", "mať", "me", "mi", "mu", "my", "na", "nad", "nám", "nás", "ne", "nie", "nič", "nich", "nim", "ním", "no", "o", "od", "on", "ona", "oni", "po", "pod", "podľa", "pre", "pred", "preto", "pri", "s", "sa", "si", "so", "som", "sme", "sú", "ste", "svoj", "svoje", "svojich", "ta", "tá", "tak", "také", "takže", "tam", "te", "tej", "ten", "tento", "tie", "tiež", "to", "toho", "tom", "tomu", "toto", "tu", "tú", "ty", "u", "už", "v", "vám", "vás", "však", "vo", "vy", "z", "za", "zo", "že",
+    "the", "a", "an", "and", "of", "to", "in", "on", "for", "is", "are", "with", "as", "at", "by", "from", "that", "this", "it", "be", "or", "was", "were", "has", "have"
+  ],
+  "poplasne": [
+    "šok", "šokujúc", "hrozba", "hrozí", "hrozivý", "katastrofa", "kolaps", "panika", "desivý", "desivé", "des", "alarm", "alarmujúc", "kríza", "chaos", "dráma", "tragédia", "tragický",
+    "výbuch", "masaker", "apokalypsa", "nočná mora", "zúfal", "brutáln", "krvav", "smrteľn", "varuje", "varovanie", "varujú", "peklo", "hrôza", "hrozn", "škandál", "škandalózn"
+  ],
+  "vata": [
+    "neuveríte", "toto", "tu je", "pozrite", "prekvapí", "prekvapenie", "tajomstvo", "trik", "musíte vidieť", "nebudete veriť", "takto", "prečo", "čo sa stalo", "video", "foto", "galéria", "top", "najlepš", "najhorš", "zoznam", "tip", "tento", "tieto"
+  ],
+  "otazka": ["?"],
+  "citacia": ["„", "“", "\"", "‚", "‘", "’"]
+}

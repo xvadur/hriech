@@ -1,0 +1,27 @@
+{
+  "name": "@netopier/redakcia",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Netopier v2 — čisté funkcie redakcie: skóre zvodov (EKG, port openclaw scoring.js ako kontrola), normalizácia dátumov, entity z registrov, meranie médií (lexika, titulky, poplašné slová). Beží lokálne na Macu, bez siete a bez LLM.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./skore": "./src/skore.ts",
+    "./normalize": "./src/normalize.ts",
+    "./entity": "./src/entity.ts",
+    "./text": "./src/text.ts",
+    "./meranie": "./src/meranie.ts",
+    "./politika": "./data/politika-merania.json"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "qa": "pnpm run check && pnpm run test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  },
+  "packageManager": "pnpm@11.19.0"
+}
