@@ -2,7 +2,9 @@
 
 Zber verejných zdrojov do archívu a odvodenie nad ním. Od 27. 9. 2026 beží **lokálne na Macu**
 (rozhodnutie v `../../docs/redakcia/ROZHODNUTIE.md`): rovnaký TypeScript kód ako Cloudflare Worker,
-ale pracovná databáza je lokálna D1 (SQLite v `.wrangler/state`) a surové payloady lokálne R2.
+ale pracovná databáza je od 29. 9. jeden SQLite súbor `../data/netopier.sqlite` (mimo gitu) s rozhraním D1
+(`scripts/lib/db.mjs`, `node:sqlite`) a surové payloady sú v `../data/raw/` (zdôvodnenie v `../STACK.md`).
+Pôvodná lokálna D1 v `.wrangler/state` ostáva ako záloha; `pnpm run db:z-d1` ju raz skopíruje do súboru.
 Worker sa do cloudu nenasadzuje, kým lokálny režim nie je zabehnutý (postup nižšie ostáva pre ten deň).
 Surová vrstva: každý záznam nesie zdroj, kanál, zdrojovú URL, čas publikácie, čas zberu, hash obsahu
 a odkaz na surový payload. Odvodené vrstvy (`derive/`) sú oddelené a dajú sa prepočítať.
@@ -44,20 +46,20 @@ pnpm run qa                        # check + test + wrangler deploy --dry-run
 pnpm run sync:zdroje               # obnoví data/*-feeds.json z registra a z World Monitor
 ```
 
-Lokálny zber (reálne zdroje, lokálne D1/R2/Queues v `.wrangler/state`):
+Lokálny zber (reálne zdroje; `pnpm dev` beží nad lokálnou D1/R2/Queues v `.wrangler/state`, `scripts/*-node.mjs` nad `../data/netopier.sqlite`):
 
 ```bash
 printf 'ZBER_TOKEN=lokalny-test-token\n' > .dev.vars
-pnpm run db:migrate:local
+pnpm run db:migrate:d1                                     # migrácie lokálnej D1 pre `pnpm dev`
 pnpm dev                                                   # http://localhost:8787
 curl -X POST -H 'Authorization: Bearer lokalny-test-token' 'http://localhost:8787/run/crz?sync=1'
 curl -X POST -H 'Authorization: Bearer lokalny-test-token' http://localhost:8787/run   # všetko cez frontu
 curl 'http://localhost:8787/__scheduled?cron=*/30+*+*+*+*'                            # simulácia cronu
 node scripts/zber-node.mjs statistika                      # ten istý kód mimo workerd (pozri nižšie)
-npx wrangler d1 execute netopier-zber --local --command "SELECT source, COUNT(*) FROM records GROUP BY source"
+sqlite3 ../data/netopier.sqlite "SELECT source, COUNT(*) FROM records GROUP BY source"
 ```
 
-## Odvodenie nad lokálnou D1 (krok I0, XDR-275)
+## Odvodenie nad lokálnou databázou (krok I0, XDR-275)
 
 Migrácia `migrations/0002_zaklad.sql` pridáva `records.published_at_utc`, `zdroje`, `zdroj_kanaly`,
 `zdroj_pokrytie_denne`, `entity`, `entity_alias`, `record_entity`, fulltext `records_fts` (FTS5 s externým
@@ -76,7 +78,7 @@ Kroky v `src/derive/` (čisté funkcie sú v `../redakcia/`, balík `@netopier/r
 | `meranie` | meranie médií nad SK RSS: lexika, stavba titulkov, poplašné a vatové slová, per redakcia × deň a autor |
 
 ```bash
-pnpm run db:migrate:local                                  # 0001 + 0002
+pnpm run db:migrate:local                                  # všetky migrácie nad ../data/netopier.sqlite
 pnpm run derive                                            # všetky kroky v poradí
 node scripts/derive-node.mjs normalize                     # jeden krok
 node scripts/derive-node.mjs hladaj '"Robert Fico"'        # fulltext (FTS5: slovo, "fráza", prefix*)
@@ -92,6 +94,43 @@ Lokálny workerd nenadviaže TLS s `data.statistics.sk` (Apache so starým TLS 1
 Sectigo R46) — `fetch` padá na „internal error“. Node aj curl fungujú, preto
 `scripts/zber-node.mjs` spustí rovnaké konektory a archív nad rovnakým lokálnym D1/R2
 cez Node. Či to prejde v produkcii, sa overí hneď po nasadení (krok 8).
+
+## Príjem RSS s celými textmi (XDR-299)
+
+Príkaz pre službu (každých 2–5 minút; LaunchAgent iba na pokyn, XDR-279):
+
+```sh
+pnpm run db:migrate:local            # raz: schéma 0004 (jednotná schéma)
+pnpm run prijem                      # kanály + celé texty; log na výstup a do ../data/log/prijem.jsonl
+node scripts/prijem-node.mjs --bez-textov            # iba kanály
+node scripts/prijem-node.mjs --max-textov 300 --max-na-host 40 --rozostup 1500 --hosty 6
+pnpm run prijem:stav                 # počty: dokumenty, texty podľa stavu, po zdrojoch, duplicity
+sqlite3 ../data/netopier.sqlite "SELECT d.titulok, d.url FROM dokumenty_fts f JOIN dokumenty d ON d.id = f.rowid WHERE dokumenty_fts MATCH 'skolstvo' LIMIT 20"
+```
+
+Register zdrojov: `data/zdroje/register.json` (XDR-296, pole `{id, nazov, typ, url_web, rss:[url], api, cely_text_v_rss,
+jazyk, kategoria, overene_at, poznamka}`). Záloha `data/prijem-zaloha.json` (19 SK zdrojov, 27 kanálov overených 29. 9.)
+dopĺňa zdroje, ktoré register nemá, a RSS tam, kde ho register pri rovnakom id nemá; po dokončení registra sa zmaže.
+
+Beh (`src/prijem/index.ts`):
+1. **Zdroje** z registra → `zdroje`, `zdroj_kanaly` (id kanála: existujúce z `media-feeds.json`, inak id zdroja / `<id>_<n>`).
+2. **Kanály** po hostoch (rôzne hosty paralelne, jeden host sekvenčne s rozostupom), podmienený GET (ETag / Last-Modified
+   v `source_state.cursor`, 304 = nič nové), znaková sada z hlavičky alebo XML.
+3. **Surový archív** `records` (ako doteraz: rovnaký obsah sa nezapíše druhýkrát) + `runs` po kanáloch.
+4. **Dokumenty**: kanonická URL (bez `www.`, fragmentu, `utm_*`, `fbclid`…, koncovej lomky) je UNIQUE; ten istý článok
+   z ďalšieho kanála pridá iba riadok `dokument_vyskyty`. Titulok a perex mení iba kanál, kde sa dokument objavil prvý.
+5. **Celé texty**: ak RSS dáva celý text (`content:encoded` ≥ 1 500 znakov, alebo `cely_text_v_rss`), berie sa z RSS;
+   inak sa stiahne stránka: `robots.txt` (cache 24 h v `hostitelia`, Crawl-delay predĺži rozostup), JSON-LD `articleBody`,
+   inak Readability (linkedom). Stavy: `ok` (≥ 600 znakov; minúta po minúte hocijako krátka), `kratky` (kratší alebo
+   platená stena podľa JSON-LD `isAccessibleForFree = false`, vtedy `data.platene = 1`), `bez_textu`, `zakazane` (robots),
+   `nedostupne` (4xx), `chyba` (sieť, 429, 5xx: opakuje sa s odkladom 10, 20, 40… min, najviac 4 pokusy; 429 zastaví host
+   do ďalšieho behu). Najviac 300 textov za beh, 40 z jedného hosta.
+6. **Obsahová deduplikácia**: `obsah_hash` = sha256 normalizovaného textu; rovnaký text pod inou URL (preberaná agentúrna
+   správa) dostane `duplikat_of` = najstarší dokument.
+7. Beh je riadok v `runs` (`source = 'prijem'`, počty v `detail`). Zámok `../data/prijem.lock` bráni prekrytiu behov.
+
+Fulltext `dokumenty_fts` (titulok, perex, celý text; bez diakritiky) je externý obsah nad pohľadom — text sa neukladá dvakrát,
+triggery na `dokumenty` a `dokument_texty` ho udržiavajú, `INSERT INTO dokumenty_fts(dokumenty_fts) VALUES ('rebuild')` ho prepočíta.
 
 ## Voľby 24. 10. 2026 (XDR-276)
 

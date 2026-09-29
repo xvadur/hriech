@@ -1,0 +1,295 @@
+[
+  {
+    "id": "dennikn",
+    "nazov": "Denník N",
+    "typ": "medium",
+    "url_web": "https://dennikn.sk/",
+    "rss": [
+      "https://dennikn.sk/minuta/feed/?cat=2386",
+      "https://dennikn.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "aktuality",
+    "nazov": "Aktuality.sk",
+    "typ": "medium",
+    "url_web": "https://www.aktuality.sk/",
+    "rss": [
+      "https://www.aktuality.sk/rss/",
+      "https://www.aktuality.sk/rss/domace/",
+      "https://www.aktuality.sk/rss/ekonomika/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "pravda",
+    "nazov": "Pravda",
+    "typ": "medium",
+    "url_web": "https://www.pravda.sk/",
+    "rss": [
+      "https://www.pravda.sk/spravy/rss/xml",
+      "https://www.pravda.sk/rss/xml/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "tasr",
+    "nazov": "TASR (teraz.sk)",
+    "typ": "agentura",
+    "url_web": "https://www.teraz.sk/",
+    "rss": [
+      "https://www.teraz.sk/rss/vsetky-spravy.rss",
+      "https://www.teraz.sk/rss/slovensko.rss",
+      "https://www.teraz.sk/rss/zahranicie.rss",
+      "https://www.teraz.sk/rss/ekonomika.rss",
+      "https://www.teraz.sk/rss/regiony.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tlačová agentúra",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "sita",
+    "nazov": "SITA (sita.sk, webnoviny)",
+    "typ": "agentura",
+    "url_web": "https://sita.sk/",
+    "rss": [
+      "https://sita.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tlačová agentúra",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "stvr",
+    "nazov": "STVR Správy",
+    "typ": "medium",
+    "url_web": "https://spravy.stvr.sk/",
+    "rss": [
+      "https://spravy.stvr.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "verejnoprávne médium",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "hn",
+    "nazov": "Hospodárske noviny",
+    "typ": "medium",
+    "url_web": "https://hnonline.sk/",
+    "rss": [
+      "https://hnonline.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomika",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "postoj",
+    "nazov": "Postoj",
+    "typ": "medium",
+    "url_web": "https://www.postoj.sk/",
+    "rss": [
+      "https://www.postoj.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "standard",
+    "nazov": "Štandard",
+    "typ": "medium",
+    "url_web": "https://standard.sk/",
+    "rss": [
+      "https://standard.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "refresher",
+    "nazov": "Refresher",
+    "typ": "medium",
+    "url_web": "https://refresher.sk/",
+    "rss": [
+      "https://refresher.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "mladé publikum",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "startitup",
+    "nazov": "Startitup",
+    "typ": "medium",
+    "url_web": "https://www.startitup.sk/",
+    "rss": [
+      "https://www.startitup.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "mladé publikum",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "topky",
+    "nazov": "Topky",
+    "typ": "medium",
+    "url_web": "https://www.topky.sk/",
+    "rss": [
+      "https://www.topky.sk/rss/8/Spravy_-_Domace.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvár a spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "tyzden",
+    "nazov": "Týždeň",
+    "typ": "medium",
+    "url_web": "https://www.tyzden.sk/",
+    "rss": [
+      "https://www.tyzden.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "týždenník",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "forbes",
+    "nazov": "Forbes Slovensko",
+    "typ": "medium",
+    "url_web": "https://www.forbes.sk/",
+    "rss": [
+      "https://www.forbes.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomika",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "info",
+    "nazov": "Info.sk",
+    "typ": "medium",
+    "url_web": "https://www.info.sk/",
+    "rss": [
+      "https://www.info.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celoštátne spravodajstvo",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "hlavnespravy",
+    "nazov": "Hlavné správy",
+    "typ": "medium",
+    "url_web": "https://www.hlavnespravy.sk/",
+    "rss": [
+      "https://www.hlavnespravy.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternatívne médium",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "parlamentnelisty",
+    "nazov": "Parlamentné listy",
+    "typ": "medium",
+    "url_web": "https://www.parlamentnelisty.sk/",
+    "rss": [
+      "https://www.parlamentnelisty.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternatívne médium",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "dobrenoviny",
+    "nazov": "Dobré noviny",
+    "typ": "medium",
+    "url_web": "https://www.dobrenoviny.sk/",
+    "rss": [
+      "https://www.dobrenoviny.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "pozitívne správy",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  },
+  {
+    "id": "vlada",
+    "nazov": "Úrad vlády SR",
+    "typ": "institucia",
+    "url_web": "https://www.vlada.gov.sk/",
+    "rss": [
+      "https://www.vlada.gov.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tlačové správy vlády",
+    "overene_at": "2026-09-29",
+    "poznamka": null
+  }
+]

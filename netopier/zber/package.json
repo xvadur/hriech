@@ -3,25 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Netopier v2 — zber verejných zdrojov a odvodenie nad archívom (lokálne na Macu: D1 v .wrangler/state; rovnaký kód beží aj ako Cloudflare Worker)",
+  "description": "Netopier v2 — zber verejných zdrojov, príjem RSS s celými textmi a odvodenie (lokálne na Macu: SQLite súbor netopier/data/netopier.sqlite s rozhraním D1; rovnaký kód beží aj ako Cloudflare Worker)",
   "scripts": {
     "dev": "wrangler dev --test-scheduled",
     "check": "wrangler types && tsc --noEmit",
     "test": "vitest run",
     "sync:zdroje": "node scripts/sync-media-feeds.mjs && node scripts/sync-worldmonitor-feeds.mjs",
-    "db:migrate:local": "wrangler d1 migrations apply netopier-zber --local",
+    "db:migrate:local": "node scripts/migrate-node.mjs",
+    "db:migrate:d1": "wrangler d1 migrations apply netopier-zber --local",
+    "db:z-d1": "node scripts/db-z-d1.mjs",
     "db:migrate:remote": "wrangler d1 migrations apply netopier-zber --remote",
     "qa": "pnpm run check && pnpm run test && wrangler deploy --dry-run --outdir .wrangler/dry-run",
     "deploy": "pnpm run qa && wrangler deploy",
     "derive": "node scripts/derive-node.mjs all",
     "hladaj": "node scripts/derive-node.mjs hladaj",
     "volby": "node scripts/volby-node.mjs all",
-    "db:pocty": "wrangler d1 execute netopier-zber --local --command \"SELECT source, channel, riadkov FROM pocty ORDER BY riadkov DESC\""
+    "prijem": "node scripts/prijem-node.mjs",
+    "prijem:stav": "node scripts/prijem-node.mjs --stav",
+    "db:pocty": "sqlite3 ../data/netopier.sqlite \"SELECT source, channel, riadkov FROM pocty ORDER BY riadkov DESC\""
   },
   "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "@netopier/redakcia": "link:../redakcia",
     "fast-xml-parser": "^5.11.1",
     "fflate": "^0.8.3",
-    "@netopier/redakcia": "link:../redakcia"
+    "linkedom": "^0.18.13"
   },
   "devDependencies": {
     "@cloudflare/vitest-plugin": "^1.2.7",

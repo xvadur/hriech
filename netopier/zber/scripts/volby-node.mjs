@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Voľby 24. 10. 2026 nad lokálnou D1: seed územia a kalendára, stiahnutie oficiálnych zoznamov kandidátov,
+// Voľby 24. 10. 2026 nad lokálnou databázou (netopier/data/netopier.sqlite): seed územia a kalendára, stiahnutie oficiálnych zoznamov kandidátov,
 // prieskumy, väzba na entity. Idempotentné — druhý beh nič nezdvojí, log hovorí, čo pribudlo.
 // Použitie:
 //   pnpm run volby                    # všetky kroky + počty
@@ -9,7 +9,7 @@ import { execFile } from 'node:child_process';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { promisify } from 'node:util';
 import { build } from 'esbuild';
-import { getPlatformProxy } from 'wrangler';
+import { lokalneEnv } from './lib/db.mjs';
 
 const run = promisify(execFile);
 const [krok = 'all'] = process.argv.slice(2);
@@ -54,7 +54,7 @@ async function fetchAleboCurl(url, init) {
   }
 }
 
-const { env, dispose } = await getPlatformProxy({ persist: true });
+const { env, dispose } = lokalneEnv();
 try {
   const ctx = defaultCtx(env, { fetch: fetchAleboCurl, pdfText: process.platform === 'darwin' ? pdfText : null });
   if (krok !== 'pocty') {

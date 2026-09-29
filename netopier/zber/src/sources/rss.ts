@@ -32,6 +32,8 @@ export interface FeedItem {
   published: string | null;
   author: string | null;
   categories: string[];
+  /** celý obsah položky (content:encoded, Atom content) ako HTML; do archívu `records` sa neukladá */
+  content: string | null;
 }
 
 const parser = new XMLParser({
@@ -111,6 +113,7 @@ export function parseFeed(xml: string): FeedItem[] {
       published: toIso(text(item.pubDate) ?? text(item['dc:date']) ?? text(item.published)),
       author: text(item['dc:creator']) ?? text(item.author),
       categories: categories(item.category),
+      content: text(item['content:encoded']),
     }));
   }
   if (atom) {
@@ -123,6 +126,7 @@ export function parseFeed(xml: string): FeedItem[] {
       published: toIso(text(entry.published) ?? text(entry.updated)),
       author: text(entry.author?.name) ?? text(entry.author),
       categories: categories(entry.category),
+      content: text(entry.content),
     }));
   }
   throw new Error('Neznámy formát kanála (nie je RSS ani Atom)');

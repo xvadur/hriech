@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Odvodenie nad lokálnou D1 mimo workerd: rovnaký kód ako vo Workeri, D1 z .wrangler/state.
+// Odvodenie nad lokálnou databázou mimo workerd: rovnaký kód ako vo Workeri, SQLite súbor netopier/data/netopier.sqlite (rozhranie D1).
 // Použitie:
 //   node scripts/derive-node.mjs all                 # všetky kroky v poradí
 //   node scripts/derive-node.mjs normalize|entity|zdroje|fts|pocty|pokrytie|zmienky|meranie
 //   node scripts/derive-node.mjs hladaj "zmluva"     # fulltext (FTS5: slovo, "fráza", prefix*)
 import { build } from 'esbuild';
-import { getPlatformProxy } from 'wrangler';
+import { lokalneEnv } from './lib/db.mjs';
 
 const [krok, ...rest] = process.argv.slice(2);
 if (!krok) {
@@ -15,7 +15,7 @@ if (!krok) {
 const outfile = new URL('../.wrangler/tmp/derive-node.mjs', import.meta.url).pathname;
 await build({ entryPoints: [new URL('../src/derive/index.ts', import.meta.url).pathname], bundle: true, format: 'esm', platform: 'node', outfile, logLevel: 'warning' });
 const { DERIVE_KROKY, hladaj, runDerive } = await import(outfile);
-const { env, dispose } = await getPlatformProxy({ persist: true });
+const { env, dispose } = lokalneEnv();
 try {
   if (krok === 'hladaj') {
     const dopyt = rest.join(' ');
