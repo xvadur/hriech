@@ -247,11 +247,11 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
       .bind(record.externalId)
       .first<{ id: number }>();
     const recordId = rec?.id ?? null;
-    type Existujuci = { id: number; titulok: string | null; perex: string | null; kanal: string | null };
-    let dok = kanon ? await db.prepare(`SELECT id, titulok, perex, kanal FROM dokumenty WHERE url_kanon = ?`).bind(kanon).first<Existujuci>() : null;
+    type Existujuci = { id: number; titulok: string | null; perex: string | null; kanal: string | null; typ: string };
+    let dok = kanon ? await db.prepare(`SELECT id, titulok, perex, kanal, typ FROM dokumenty WHERE url_kanon = ?`).bind(kanon).first<Existujuci>() : null;
     if (!dok && externalId) {
       dok = await db
-        .prepare(`SELECT id, titulok, perex, kanal FROM dokumenty WHERE zdroj_id = ? AND external_id = ? ORDER BY id LIMIT 1`)
+        .prepare(`SELECT id, titulok, perex, kanal, typ FROM dokumenty WHERE zdroj_id = ? AND external_id = ? ORDER BY id LIMIT 1`)
         .bind(k.zdrojId, externalId)
         .first<Existujuci>();
     }
@@ -275,6 +275,9 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
           .bind(item.title, item.summary, recordId, nowIso, dok.id)
           .run();
         s.dokumenty_zmenene++;
+        // epizóda a video: text je popis z kanála, zmena popisu = nová verzia textu
+        const popis = htmlNaText(item.content) || item.summary;
+        if (BEZ_STRANKY.has(dok.typ) && popis) await ulozText(db, dok.id, popis, 'rss', item.link, nowIso, { minOk: 1, dedup: false });
       } else {
         s.dokumenty_uz_boli++;
       }

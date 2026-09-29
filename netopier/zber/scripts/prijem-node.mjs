@@ -7,6 +7,7 @@
 //   node scripts/prijem-node.mjs --bez-textov        # iba kanály
 //   node scripts/prijem-node.mjs --max-textov 300 --max-na-host 40 --rozostup 1500
 //   node scripts/prijem-node.mjs --stav              # iba počty v databáze
+//   node scripts/prijem-node.mjs --register <súbor>  # iný register (napr. zmrazená kópia)
 import { appendFileSync, existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { build } from 'esbuild';
@@ -23,7 +24,8 @@ const zamok = join(dataDir, 'prijem.lock');
 const logSubor = join(dataDir, 'log', 'prijem.jsonl');
 
 function nacitajRegister(overRegister, zlucRegister) {
-  const registerCesta = join(zber, 'data/zdroje/register.json');
+  const i = args.indexOf('--register');
+  const registerCesta = i >= 0 && args[i + 1] ? args[i + 1] : join(zber, 'data/zdroje/register.json');
   const zalohaCesta = join(zber, 'data/prijem-zaloha.json');
   const nacitaj = (cesta) => {
     if (!existsSync(cesta)) return [];
