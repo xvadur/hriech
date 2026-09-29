@@ -24,26 +24,26 @@ Stav: 2026-09-29. „RSS“ = zdroj má aspoň jeden živý feed overený dotazo
 
 | typ | zdrojov | s RSS | celý text v RSS | s API | overené živým dotazom |
 |---|---|---|---|---|---|
-| medium | 140 | 99 | 30 | 40 | 123 |
-| agentura | 2 | 1 | 0 | 1 | 2 |
+| medium | 137 | 96 | 30 | 38 | 120 |
+| agentura | 5 | 4 | 0 | 3 | 5 |
 | tv | 11 | 5 | 2 | 1 | 10 |
 | radio | 9 | 3 | 0 | 0 | 8 |
 | podcast | 62 | 50 | 0 | 0 | 62 |
-| statny_zdroj | 56 | 25 | 4 | 8 | 50 |
+| statny_zdroj | 83 | 41 | 5 | 12 | 77 |
 | register | 14 | 0 | 0 | 9 | 12 |
 | ine | 9 | 6 | 0 | 0 | 9 |
-| **spolu** | 303 | 189 | 36 | 59 | 276 |
+| **spolu** | 330 | 205 | 37 | 63 | 303 |
 
 Podľa kategórie:
 
 | kategória | zdrojov | s RSS |
 |---|---|---|
+| samsprava | 43 | 26 |
 | podcast_relacia | 37 | 26 |
 | alternativne | 35 | 29 |
 | regionalne | 26 | 15 |
 | youtube_kanal | 25 | 24 |
 | celostatne | 18 | 12 |
-| samsprava | 16 | 10 |
 | ministerstvo | 15 | 6 |
 | zahranicne | 11 | 11 |
 | tv | 10 | 2 |
@@ -182,6 +182,7 @@ Zdroje zo zmluvy s RSS: 43 z 55 položiek zaradených do registra.
 - **bystricoviny.sk** (`k-bystricoviny`) — https://www.bystricoviny.sk/feed/
 - **institutisop.sk** (`k-institutisop`) — https://www.institutisop.sk/rss/
 - **veci-verejne.sk** (`k-veci-verejne`) — https://veci-verejne.sk/feed/
+- **Mesto Poprad** (`mesto-poprad`) — https://www.poprad.sk/rss/news
 - **STVR Správy** (`stvr-spravy`) — https://spravy.stvr.sk/feed/
 - **Rada pre rozpočtovú zodpovednosť** (`rrz`) — https://www.rrz.sk/rss
 - **Žilinský samosprávny kraj** (`kraj-zsk`) — https://www.zilinskazupa.sk/rss
@@ -231,6 +232,10 @@ Zdroje zo zmluvy s RSS: 43 z 55 položiek zaradených do registra.
 - **dennikvv.sk** (`k-dennikvv`) — https://www.dennikvv.sk/wp-json/wp/v2/posts
 - **slovenskoaktualne.sk** (`k-slovenskoaktualne`) — https://slovenskoaktualne.sk/wp-json/wp/v2/posts
 - **veci-verejne.sk** (`k-veci-verejne`) — https://veci-verejne.sk/wp-json/wp/v2/posts
+- **Mesto Prievidza** (`mesto-prievidza`) — https://prievidza.sk/wp-json/wp/v2/posts
+- **Mesto Komárno** (`mesto-komarno`) — https://www.komarno.sk/wp-json/wp/v2/posts
+- **Mesto Ružomberok** (`mesto-ruzomberok`) — https://www.ruzomberok.sk/wp-json/wp/v2/posts
+- **Mesto Senec** (`mesto-senec`) — https://www.senec.sk/wp-json/wp/v2/posts
 - **STVR Správy** (`stvr-spravy`) — https://spravy.stvr.sk/wp-json/wp/v2/posts
 - **SITA – Slovenská informačná a tlačová agentúra** (`sita-agentura`) — https://sita.sk/wp-json/wp/v2/posts
 - **Súdy SR – Občan a justícia (obcan.justice.sk)** (`justice-sudy`) — https://obcan.justice.sk/pilot/api/ress-isu-service/v1 (JSON: rozhodnutie, sudca, sud; stránkovanie page/size)
@@ -307,6 +312,17 @@ Zdroje zo zmluvy s RSS: 43 z 55 položiek zaradených do registra.
 - **Vasárnap** (`vasarnap`) — RSS nenájdený
 - **Regionpress** (`regionpress`) — RSS nenájdený
 - **Netky (regióny)** (`netky`) — RSS nenájdený
+- **Mesto Zvolen** (`mesto-zvolen`) — RSS nenájdený
+- **Mesto Spišská Nová Ves** (`mesto-snv`) — RSS nenájdený
+- **Mesto Levice** (`mesto-levice`) — RSS nenájdený
+- **Mesto Liptovský Mikuláš** (`mesto-lm`) — RSS nenájdený
+- **Mesto Lučenec** (`mesto-lucenec`) — RSS nenájdený
+- **Mesto Topoľčany** (`mesto-topolcany`) — RSS nenájdený
+- **Mesto Trebišov** (`mesto-trebisov`) — RSS nenájdený
+- **Mesto Rimavská Sobota** (`mesto-rimavskasobota`) — RSS nenájdený
+- **Mesto Partizánske** (`mesto-partizanske`) — RSS nenájdený
+- **Mesto Pezinok** (`mesto-pezinok`) — RSS nenájdený
+- **Mesto Hlohovec** (`mesto-hlohovec`) — RSS nenájdený
 - **STVR (Slovenská televízia a rozhlas)** (`stvr`) — RSS nenájdený
 - **Rádio Slovensko / Rádiožurnál (STVR)** (`stvr-slovensko`) — RSS nenájdený
 - **Rádio Regina (STVR)** (`stvr-regina`) — RSS nenájdený

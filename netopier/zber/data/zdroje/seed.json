@@ -276,7 +276,7 @@
  {
   "id": "webnoviny",
   "nazov": "Webnoviny.sk (SITA)",
-  "typ": "medium",
+  "typ": "agentura",
   "url_web": "https://www.webnoviny.sk/",
   "kategoria": "agentury",
   "poznamka": "Portál tlačovej agentúry SITA."
@@ -284,7 +284,7 @@
  {
   "id": "teraz",
   "nazov": "Teraz.sk (TASR)",
-  "typ": "medium",
+  "typ": "agentura",
   "url_web": "https://www.teraz.sk/",
   "kategoria": "agentury",
   "poznamka": "Portál tlačovej agentúry TASR; feedy vypísané na teraz.sk/rss.",
@@ -300,7 +300,7 @@
  {
   "id": "sita",
   "nazov": "SITA.sk",
-  "typ": "medium",
+  "typ": "agentura",
   "url_web": "https://sita.sk/",
   "kategoria": "agentury",
   "poznamka": "Portál agentúry SITA."
@@ -1123,6 +1123,222 @@
   "url_web": "https://veci-verejne.sk/",
   "kategoria": "alternativne",
   "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "mesto-martin",
+  "nazov": "Mesto Martin",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.martin.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-poprad",
+  "nazov": "Mesto Poprad",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.poprad.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-prievidza",
+  "nazov": "Mesto Prievidza",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.prievidza.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-zvolen",
+  "nazov": "Mesto Zvolen",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.zvolen.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-novezamky",
+  "nazov": "Mesto Nové Zámky",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.novezamky.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-michalovce",
+  "nazov": "Mesto Michalovce",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.michalovce.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-snv",
+  "nazov": "Mesto Spišská Nová Ves",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.spisskanovaves.eu/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-komarno",
+  "nazov": "Mesto Komárno",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.komarno.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-levice",
+  "nazov": "Mesto Levice",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.levice.eu/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-humenne",
+  "nazov": "Mesto Humenné",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.humenne.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-bardejov",
+  "nazov": "Mesto Bardejov",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.bardejov.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-lm",
+  "nazov": "Mesto Liptovský Mikuláš",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mikulas.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-ruzomberok",
+  "nazov": "Mesto Ružomberok",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.ruzomberok.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-lucenec",
+  "nazov": "Mesto Lučenec",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.lucenec.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-piestany",
+  "nazov": "Mesto Piešťany",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.piestany.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-topolcany",
+  "nazov": "Mesto Topoľčany",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.topolcany.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-trebisov",
+  "nazov": "Mesto Trebišov",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.trebisov.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-cadca",
+  "nazov": "Mesto Čadca",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.cadca.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-dubnica",
+  "nazov": "Mesto Dubnica nad Váhom",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.dubnica.eu/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-rimavskasobota",
+  "nazov": "Mesto Rimavská Sobota",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.rimavskasobota.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-partizanske",
+  "nazov": "Mesto Partizánske",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.partizanske.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-pezinok",
+  "nazov": "Mesto Pezinok",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.pezinok.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-dunstreda",
+  "nazov": "Mesto Dunajská Streda",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.dunstreda.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-vranov",
+  "nazov": "Mesto Vranov nad Topľou",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.vranov.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-sala",
+  "nazov": "Mesto Šaľa",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.sala.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-hlohovec",
+  "nazov": "Mesto Hlohovec",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.hlohovec.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
+ },
+ {
+  "id": "mesto-senec",
+  "nazov": "Mesto Senec",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.senec.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026."
  },
  {
   "id": "stvr-spravy",

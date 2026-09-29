@@ -464,7 +464,7 @@
   {
     "id": "webnoviny",
     "nazov": "Webnoviny.sk (SITA)",
-    "typ": "medium",
+    "typ": "agentura",
     "url_web": "https://www.webnoviny.sk/",
     "rss": [
       "https://sita.sk/rss"
@@ -473,13 +473,13 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "agentury",
-    "overene_at": "2026-09-29T21:39:09.452Z",
+    "overene_at": "2026-09-29T22:03:09.016Z",
     "poznamka": "Portál tlačovej agentúry SITA. Feed rss: 20 pol., 114/deň, posledná 2026-09-29. text v RSS: medián 157 zn., 40 % položiek ≥ 1000 zn.; oproti článku 5363/5005, 3777/3649, 3202/3106 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1278 zn. v content.rendered)."
   },
   {
     "id": "teraz",
     "nazov": "Teraz.sk (TASR)",
-    "typ": "medium",
+    "typ": "agentura",
     "url_web": "https://www.teraz.sk/",
     "rss": [
       "http://www.teraz.sk/rss/vsetky-spravy.rss",
@@ -493,13 +493,13 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "agentury",
-    "overene_at": "2026-09-29T21:39:09.452Z",
+    "overene_at": "2026-09-29T22:03:09.016Z",
     "poznamka": "Portál tlačovej agentúry TASR; feedy vypísané na teraz.sk/rss. Feed rss: 15 pol., 160/deň, posledná 2026-09-29, feedov 6. text v RSS: medián 77 zn., 0 % položiek ≥ 1000 zn.; oproti článku 61/61, 115/115. paywall: nezistený (0/2 článkov)."
   },
   {
     "id": "sita",
     "nazov": "SITA.sk",
-    "typ": "medium",
+    "typ": "agentura",
     "url_web": "https://sita.sk/",
     "rss": [
       "https://sita.sk/rss"
@@ -508,7 +508,7 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "agentury",
-    "overene_at": "2026-09-29T21:39:09.452Z",
+    "overene_at": "2026-09-29T22:03:09.016Z",
     "poznamka": "Portál agentúry SITA. Feed rss: 20 pol., 114/deň, posledná 2026-09-29. text v RSS: medián 157 zn., 40 % položiek ≥ 1000 zn.; oproti článku 5363/5005, 3777/3649, 3202/3106 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1278 zn. v content.rendered)."
   },
   {
@@ -1975,6 +1975,397 @@
     "kategoria": "alternativne",
     "overene_at": "2026-09-29T21:53:18.016Z",
     "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 9.9/deň, posledná 2026-09-29. text v RSS: medián 3024 zn., 100 % položiek ≥ 1000 zn.; oproti článku 2769/2765, 3443/3404, 3451/3376. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3443 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-martin",
+    "nazov": "Mesto Martin",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.martin.sk/",
+    "rss": [
+      "https://www.martin.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 50 pol., 12/deň, posledná 2026-09-29. text v RSS: medián 14 zn., 0 % položiek ≥ 1000 zn.; oproti článku 174/677, 111/870, 0/677. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-poprad",
+    "nazov": "Mesto Poprad",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.poprad.sk/",
+    "rss": [
+      "https://www.poprad.sk/rss/news",
+      "https://www.poprad.sk/rss/announcement",
+      "https://www.poprad.sk/rss/events"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 60 pol., 0.4/deň, posledná 2026-09-21, feedov 3. text v RSS: medián 1120 zn., 55 % položiek ≥ 1000 zn.; oproti článku 1159/1159, 1542/1542, 871/871. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-prievidza",
+    "nazov": "Mesto Prievidza",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.prievidza.sk/",
+    "rss": [
+      "https://prievidza.sk/rss"
+    ],
+    "api": "https://prievidza.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 10 pol., frekvencia nezistená, posledná ?. text v RSS: medián 266 zn., 0 % položiek ≥ 1000 zn.; oproti článku 299/3616, 249/2567, 246/1699. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1976 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-zvolen",
+    "nazov": "Mesto Zvolen",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.zvolen.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.zvolen.sk/rss → HTTP 404; www.zvolen.sk/rss/ → HTTP 404; www.zvolen.sk/feed → HTTP 404; www.zvolen.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-novezamky",
+    "nazov": "Mesto Nové Zámky",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.novezamky.sk/",
+    "rss": [
+      "https://www.novezamky.sk/rss/",
+      "https://www.novezamky.sk/rss/?2",
+      "https://www.novezamky.sk/rss/?3",
+      "https://www.novezamky.sk/rss/?4",
+      "https://www.novezamky.sk/rss/?5"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 50 pol., 16/deň, posledná 2026-09-29, feedov 5. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/4464, 221/683, 0/486. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-michalovce",
+    "nazov": "Mesto Michalovce",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.michalovce.sk/",
+    "rss": [
+      "https://www.michalovce.sk/sk/rss/aktuality",
+      "https://www.michalovce.sk/sk/rss/uradne-oznamy",
+      "https://www.michalovce.sk/sk/rss/podujatia"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 60 pol., 0.6/deň, posledná 2026-09-23, feedov 3. text v RSS: medián 1148 zn., 58 % položiek ≥ 1000 zn.; oproti článku 1588/2305, 687/1353, 606/1324. paywall: nezistený (0/3 článkov). neaktívny feed: https://www.michalovce.sk/sk/rss/vseobecne-zavazne-nariadenia (posledná položka 2026-03-23)."
+  },
+  {
+    "id": "mesto-snv",
+    "nazov": "Mesto Spišská Nová Ves",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.spisskanovaves.eu/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.spisskanovaves.eu/rss → HTTP 404; www.spisskanovaves.eu/rss/ → HTTP 404; www.spisskanovaves.eu/feed → HTTP 404; www.spisskanovaves.eu/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-komarno",
+    "nazov": "Mesto Komárno",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.komarno.sk/",
+    "rss": [
+      "https://www.komarno.sk/rss"
+    ],
+    "api": "https://www.komarno.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 10 pol., frekvencia nezistená, posledná ?. text v RSS: medián 434 zn., 0 % položiek ≥ 1000 zn.; oproti článku 435/3973, 418/3619, 404/3290. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2533 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-levice",
+    "nazov": "Mesto Levice",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.levice.eu/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (levice.eu/rss → nie je feed (text/html); levice.eu/rss/ → nie je feed (text/html); levice.eu/feed → nie je feed (text/html); levice.eu/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "mesto-humenne",
+    "nazov": "Mesto Humenné",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.humenne.sk/",
+    "rss": [
+      "https://www.humenne.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 20 pol., 2.5/deň, posledná 2026-09-29. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/2584, 0/2378, 0/3380. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-bardejov",
+    "nazov": "Mesto Bardejov",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.bardejov.sk/",
+    "rss": [
+      "https://www.bardejov.sk/?format=feed&type=rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 6 pol., 0.2/deň, posledná 2026-09-29. text v RSS: medián 317 zn., 0 % položiek ≥ 1000 zn.; oproti článku 390/2864, 225/745, 336/1792. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-lm",
+    "nazov": "Mesto Liptovský Mikuláš",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mikulas.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.mikulas.sk/rss → HTTP 403; www.mikulas.sk/rss/ → HTTP 403; www.mikulas.sk/feed → nie je feed (text/html); www.mikulas.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "mesto-ruzomberok",
+    "nazov": "Mesto Ružomberok",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.ruzomberok.sk/",
+    "rss": [
+      "https://www.ruzomberok.sk/feed/"
+    ],
+    "api": "https://www.ruzomberok.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 18 pol., 5.8/deň, posledná 2026-09-29. text v RSS: medián 366 zn., 0 % položiek ≥ 1000 zn.; oproti článku 360/771, 399/2490, 347/304. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 0 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-lucenec",
+    "nazov": "Mesto Lučenec",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.lucenec.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.lucenec.sk/rss/mid/197473/md0/8/md1/2026/.html#m_197473 → nie je feed (text/html); www.lucenec.sk/rss/mid/197473/md0/10/md1/2026/.html#m_197473 → nie je feed (text/html); www.lucenec.sk/rss → HTTP 404; www.lucenec.sk/rss/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-piestany",
+    "nazov": "Mesto Piešťany",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.piestany.sk/",
+    "rss": [
+      "https://www.piestany.sk/?rss=200"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 60 pol., 3.3/deň, posledná 2026-09-28. text v RSS: medián 208 zn., 12 % položiek ≥ 1000 zn.; oproti článku 113/510, 1154/1339, 102/3313 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-topolcany",
+    "nazov": "Mesto Topoľčany",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.topolcany.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.topolcany.sk/rss → HTTP 404; www.topolcany.sk/rss/ → HTTP 404; www.topolcany.sk/feed → HTTP 404; www.topolcany.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-trebisov",
+    "nazov": "Mesto Trebišov",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.trebisov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.trebisov.sk/rss → HTTP 404; www.trebisov.sk/rss/ → HTTP 404; www.trebisov.sk/feed → HTTP 404; www.trebisov.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-cadca",
+    "nazov": "Mesto Čadca",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.cadca.sk/",
+    "rss": [
+      "https://www.info.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 30 pol., 30/deň, posledná 2026-09-29. text v RSS: medián 158 zn., 0 % položiek ≥ 1000 zn.; oproti článku 130/1577, 230/2760, 158/2694. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-dubnica",
+    "nazov": "Mesto Dubnica nad Váhom",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.dubnica.eu/",
+    "rss": [
+      "https://www.dubnica.eu/?rss=200"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 60 pol., 0.4/deň, posledná 2026-09-29. text v RSS: medián 247 zn., 20 % položiek ≥ 1000 zn.; oproti článku 126/1743, 152/493. paywall: nezistený (0/2 článkov)."
+  },
+  {
+    "id": "mesto-rimavskasobota",
+    "nazov": "Mesto Rimavská Sobota",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.rimavskasobota.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.rimavskasobota.sk/rss → HTTP 404; www.rimavskasobota.sk/rss/ → HTTP 404; www.rimavskasobota.sk/feed → HTTP 404; www.rimavskasobota.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-partizanske",
+    "nazov": "Mesto Partizánske",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.partizanske.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.partizanske.sk/rss → HTTP 404; www.partizanske.sk/rss/ → HTTP 404; www.partizanske.sk/feed → HTTP 404; www.partizanske.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-pezinok",
+    "nazov": "Mesto Pezinok",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.pezinok.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.pezinok.sk/rss → nie je feed (text/html); www.pezinok.sk/rss/ → nie je feed (text/html); www.pezinok.sk/feed → HTTP 404; www.pezinok.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-dunstreda",
+    "nazov": "Mesto Dunajská Streda",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.dunstreda.sk/",
+    "rss": [
+      "https://www.dunstreda.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 10 pol., 1.5/deň, posledná 2026-09-29. text v RSS: medián 398 zn., 30 % položiek ≥ 1000 zn.; oproti článku 3453/3312, 1186/46, 398/46 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-vranov",
+    "nazov": "Mesto Vranov nad Topľou",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.vranov.sk/",
+    "rss": [
+      "https://www.vranov.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 20 pol., 1.6/deň, posledná 2026-09-29. text v RSS: medián 199 zn. (článok sa nepodarilo stiahnuť) — celý text nepotvrdený."
+  },
+  {
+    "id": "mesto-sala",
+    "nazov": "Mesto Šaľa",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.sala.sk/",
+    "rss": [
+      "https://www.sala.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 30 pol., 2.3/deň, posledná 2026-09-30. text v RSS: medián 59 zn., 0 % položiek ≥ 1000 zn.; oproti článku 71/97, 54/52, 98/2773. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-hlohovec",
+    "nazov": "Mesto Hlohovec",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.hlohovec.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. RSS: nenájdený platný feed (www.hlohovec.sk/rss → HTTP 404; www.hlohovec.sk/rss/ → HTTP 404; www.hlohovec.sk/feed → HTTP 404; www.hlohovec.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-senec",
+    "nazov": "Mesto Senec",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.senec.sk/",
+    "rss": [
+      "https://www.senec.sk/feed/"
+    ],
+    "api": "https://www.senec.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T22:03:09.016Z",
+    "poznamka": "Mesto nad 20 000 obyvateľov; komunálne voľby 24. 10. 2026. Feed rss: 18 pol., 3.8/deň, posledná 2026-09-29. text v RSS: medián 369 zn., 0 % položiek ≥ 1000 zn.; oproti článku 300/162, 375/958, 0/254. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 0 zn. v content.rendered)."
   },
   {
     "id": "stvr-spravy",
