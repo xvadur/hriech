@@ -407,7 +407,14 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
       return;
     }
     let prvy = true;
+    let odmietnutiZaSebou = 0;
     for (const d of docs) {
+      // host, ktorý 3× za sebou odmietne (401/403/451), sa v tomto behu už nežiada; zvyšok bez požiadavky
+      if (odmietnutiZaSebou >= 3) {
+        await chybaTextu(db, d.id, 'nedostupne', 'host odmieta sťahovanie (3× 401/403/451 za sebou)', now);
+        pripocitaj('nedostupne');
+        continue;
+      }
       if (!robotsPovoluje(h.robots, d.url)) {
         await chybaTextu(db, d.id, 'zakazane', 'robots.txt zakazuje', now);
         pripocitaj('zakazane');
@@ -434,8 +441,10 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
           await res.body?.cancel().catch(() => {});
           await chybaTextu(db, d.id, 'nedostupne', `HTTP ${res.status}`, now);
           pripocitaj('nedostupne');
+          odmietnutiZaSebou = [401, 403, 451].includes(res.status) ? odmietnutiZaSebou + 1 : 0;
           continue;
         }
+        odmietnutiZaSebou = 0;
         const typ = res.headers.get('content-type') ?? '';
         if (typ && !/html|xml/i.test(typ)) {
           await res.body?.cancel().catch(() => {}); // audio, PDF…: telo sa nesťahuje

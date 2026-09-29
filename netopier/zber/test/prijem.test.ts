@@ -299,6 +299,20 @@ describe('príjem: beh nad kanálmi', () => {
     await db.prepare(`INSERT INTO dokumenty_fts(dokumenty_fts) VALUES ('integrity-check')`).run();
   });
 
+  it('host, ktorý 3× za sebou odmietne, sa v behu ďalej nežiada', async () => {
+    const volania: string[] = [];
+    const fetcher = (async (input: RequestInfo | URL) => {
+      const url = String(input instanceof Request ? input.url : input);
+      volania.push(url);
+      if (url === 'https://alfa.test/feed') return new Response(rss([1, 2, 3, 4, 5].map((i) => ({ link: `https://alfa.test/c${i}`, title: `Č${i}` }))), { headers: { 'content-type': 'application/xml' } });
+      if (url.endsWith('robots.txt')) return new Response('', { status: 404 });
+      return new Response('zakázané', { status: 403 });
+    }) as typeof fetch;
+    const s = await runPrijem(db, { ...moznosti(fetcher), register: [REGISTER[0]!] });
+    expect(s.texty).toMatchObject({ nedostupne: 5 });
+    expect(volania.filter((u) => /\/c\d$/.test(u))).toHaveLength(3);
+  });
+
   it('chyba kanála a sieťová chyba článku: záznam chyby, opakovanie až po odklade', async () => {
     let padaj = true;
     const fetcher = (async (input: RequestInfo | URL) => {
