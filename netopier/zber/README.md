@@ -161,6 +161,20 @@ Po 29. 9. 2026 (zverejnenie zoznamov MV SR) sa do `zdroje.json` doplnia URL osta
 s `obvod`), `pnpm run volby` ich stiahne a mediálne riadky nahradí oficiálnymi. Bratislavský zoznam primátora je sken
 bez textovej vrstvy — parser vráti 0 a riadok v `volby_zdroje` nesie chybu; kandidáti ostávajú z médií.
 
+## Národná rada SR (XDR-297)
+
+Migrácia `0005_nrsr.sql`: `nrsr_poslanci` (+ `entity` `osoba:<slug>`, `verejne = 1`), `nrsr_mandaty`, `nrsr_funkcie` (história klubov a výborov s dátumami) a pohľad `nrsr_clenstvo_aktualne`, `nrsr_organy`, `nrsr_zmeny`, `nrsr_schodze`, `nrsr_hlasovania`, `nrsr_hlasy` (hlas každého poslanca a jeho klub v čase hlasovania), `nrsr_kluby`, pohľad `nrsr_klub_historia`, `nrsr_tlace`, `nrsr_vystupenia` (prepis, video) s fulltextom `nrsr_vystupenia_fts`. Popis zdrojov, formátov, období a stability: `data/zdroje/nrsr.md`.
+
+```sh
+pnpm run nrsr                                       # poslanci, funkcie, organy, zmeny, schodze, tlace, hlasovania (aktuálne obdobie)
+node scripts/nrsr-node.mjs hlasovania --schodza 61 --limit 20
+node scripts/nrsr-node.mjs rozprava --schodza 61    # prepisy a video vystúpení (veľké: ~0,9 MB na stranu po 20 vystúpeniach)
+node scripts/nrsr-node.mjs pocty                    # iba počty
+```
+
+Voľby: `--obdobie N` (predvolene 9) · `--schodza a,b` · `--limit N` (strop nových záznamov) · `--znova` · `--pauza ms` (500) · `--paralelne N` (4).
+Kroky (`src/nrsr/index.ts`; každý idempotentný, riadok v `runs` so `source = 'nrsr'`): `poslanci`, `funkcie`, `organy` a `schodze`, `tlace`, zoznam `hlasovania` idú z oficiálneho JSON API (`api.ts`, `www.nrsr.sk/opendata/1/sk`), hlasy poslancov v hlasovaní, `zmeny` a `rozprava` z HTML stránok (`parse.ts`, stránkovanie postbackom). Hlasy sa sťahujú iba pre hlasovania, ktoré ich ešte nemajú (najnovšie prvé); tajné voľby hlasy po poslancoch nemajú.
+
 ## Nasadenie do cloudu (odložené — iba na Adamov pokyn, XDR-258)
 
 Predpoklad: **Workers Paid** (5 $/mes.) na účte. Na Free pláne má cron a konzument 10 ms CPU

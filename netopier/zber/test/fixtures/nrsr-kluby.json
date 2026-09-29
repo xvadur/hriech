@@ -1,0 +1,34 @@
+[
+ {
+  "id": 59,
+  "departmentKey": "NRSR.Kluby.HLAS-SD",
+  "dateFinished": null,
+  "termNr": 9,
+  "name": "Klub HLAS - sociálna demokracia",
+  "validFrom": "2023-10-25T13:25:00",
+  "modificationDate": "2023-11-03T23:52:53.427",
+  "phone": "č.m.159a-1398, č.m.159z-1399",
+  "fax": "",
+  "email": "klub.HLAS@nrsr.sk",
+  "logoUrl": "http://www.nrsr.sk/web/Dynamic/Picture.aspx?ClubId=59",
+  "membersCount": 40,
+  "currentMembersCount": 25,
+  "colorRgb": "#C33090"
+ },
+ {
+  "id": 57,
+  "departmentKey": "NRSR.Kluby.KDH",
+  "dateFinished": null,
+  "termNr": 9,
+  "name": "Klub KDH",
+  "validFrom": "2023-10-25T13:26:00",
+  "modificationDate": "2023-11-30T16:47:48.413",
+  "phone": "č.m.45-1348, č.m.70-1790",
+  "fax": "02/5972 - 1347",
+  "email": "klub.KDH@nrsr.sk",
+  "logoUrl": "http://www.nrsr.sk/web/Dynamic/Picture.aspx?ClubId=57",
+  "membersCount": 15,
+  "currentMembersCount": 12,
+  "colorRgb": "#F58634"
+ }
+]

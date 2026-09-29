@@ -1,0 +1,52 @@
+[
+ {
+  "id": 9911,
+  "termNr": 9,
+  "deliveryDate": "2023-10-12T00:00:00",
+  "assignmentDate": "2023-10-12T00:00:00",
+  "billNr": "19",
+  "description": "Návrh rozpočtu Exportno-importnej banky Slovenskej republiky na rok 2024",
+  "typeId": 4,
+  "typeName": "Iný typ"
+ },
+ {
+  "id": 9912,
+  "termNr": 9,
+  "deliveryDate": "2023-10-13T00:00:00",
+  "assignmentDate": "2023-10-13T00:00:00",
+  "billNr": "18",
+  "description": "Vládny návrh zákona o štátnom rozpočte na rok 2024 (Vládny návrh rozpočtu verejnej správy na roky 2024 až 2026) - (Vláda SR svojim uznesením č. 712 z 12. decembra 2023 vzala svoj návrh späť.)",
+  "typeId": 4,
+  "typeName": "Iný typ"
+ },
+ {
+  "id": 9935,
+  "termNr": 9,
+  "deliveryDate": "2023-11-10T00:00:00",
+  "assignmentDate": "2023-11-10T00:00:00",
+  "billNr": "22",
+  "description": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 89/2016 Z. z. o výrobe, označovaní a predaji tabakových výrobkov a súvisiacich výrobkov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+  "typeId": 1,
+  "typeName": "Návrh zákona"
+ },
+ {
+  "id": 9939,
+  "termNr": 9,
+  "deliveryDate": "2023-11-13T00:00:00",
+  "assignmentDate": "2023-11-13T00:00:00",
+  "billNr": "29",
+  "description": "Vládny návrh zákona, ktorým sa dopĺňa zákon č. 296/2020 Z. z. o 13. dôchodku a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+  "typeId": 1,
+  "typeName": "Návrh zákona"
+ },
+ {
+  "id": 9961,
+  "termNr": 9,
+  "deliveryDate": "2023-11-20T00:00:00",
+  "assignmentDate": "2023-11-20T00:00:00",
+  "billNr": "36",
+  "description": "Návrh na vyslovenie súhlasu Národnej rady Slovenskej republiky so Zmluvou medzi Slovenskou republikou a Saudskoarabským kráľovstvom o zamedzení dvojitého zdanenia v oblasti daní z príjmov a zabránení daňovému úniku",
+  "typeId": 5,
+  "typeName": "Medzinárodná zmluva"
+ }
+]

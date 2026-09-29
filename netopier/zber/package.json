@@ -18,6 +18,7 @@
     "derive": "node scripts/derive-node.mjs all",
     "hladaj": "node scripts/derive-node.mjs hladaj",
     "volby": "node scripts/volby-node.mjs all",
+    "nrsr": "node scripts/nrsr-node.mjs all",
     "prijem": "node scripts/prijem-node.mjs",
     "prijem:stav": "node scripts/prijem-node.mjs --stav",
     "db:pocty": "sqlite3 ../data/netopier.sqlite \"SELECT source, channel, riadkov FROM pocty ORDER BY riadkov DESC\""

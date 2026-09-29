@@ -1,0 +1,47 @@
+[
+ {
+  "termNr": 9,
+  "meetingNr": 1,
+  "beginDate": "2023-10-25T10:00:00",
+  "endDate": "2023-10-25T00:00:00",
+  "meetingProgramId": 502,
+  "description": "1. schôdza",
+  "stateId": null
+ },
+ {
+  "termNr": 9,
+  "meetingNr": 2,
+  "beginDate": "2023-11-14T12:00:00",
+  "endDate": null,
+  "meetingProgramId": 512,
+  "description": "2. schôdza",
+  "stateId": null
+ },
+ {
+  "termNr": 9,
+  "meetingNr": 3,
+  "beginDate": "2023-11-14T13:00:00",
+  "endDate": "2023-11-22T00:00:00",
+  "meetingProgramId": 513,
+  "description": "3. schôdza",
+  "stateId": null
+ },
+ {
+  "termNr": 9,
+  "meetingNr": 62,
+  "beginDate": "2026-09-16T12:15:00",
+  "endDate": null,
+  "meetingProgramId": 578,
+  "description": "62. schôdza",
+  "stateId": null
+ },
+ {
+  "termNr": 9,
+  "meetingNr": 63,
+  "beginDate": "2026-09-16T12:30:00",
+  "endDate": null,
+  "meetingProgramId": 579,
+  "description": "63. schôdza",
+  "stateId": null
+ }
+]
