@@ -55,6 +55,8 @@ export interface PrijemSuhrn {
   texty_z_rss: number;
   texty: Record<string, number>;
   duplikaty_obsahu: number;
+  /** dokumenty, ktorým sa text zmazal ako šablóna (rovnaký text pod rôznymi titulkami v jednom zdroji) */
+  sablony: number;
   po_zdrojoch: Record<string, ZdrojSuhrn>;
   chyby: Array<{ kanal?: string; dokument?: number; chyba: string }>;
 }
@@ -101,6 +103,7 @@ function prazdnySuhrn(zaciatok: string): PrijemSuhrn {
     texty_z_rss: 0,
     texty: {},
     duplikaty_obsahu: 0,
+    sablony: 0,
     po_zdrojoch: {},
     chyby: [],
   };
@@ -187,7 +190,7 @@ export async function ulozText(
   zdrojUrl: string | null,
   nowIso: string,
   /** minimálna dĺžka pre stav ok (minúta po minúte je krátka celá); neuplny = platená stena */
-  moznosti: { minOk?: number; neuplny?: boolean } = {},
+  moznosti: { minOk?: number; neuplny?: boolean; dedup?: boolean } = {},
 ): Promise<{ stav: 'ok' | 'kratky' | 'bez_textu'; duplikatOf: number | null }> {
   if (!text) {
     await db.prepare(`UPDATE dokumenty SET text_stav = 'bez_textu', text_chyba = NULL, aktualizovane_at = ? WHERE id = ?`).bind(nowIso, dokumentId).run();
@@ -209,7 +212,7 @@ export async function ulozText(
   }
   // Originál je najstarší dokument (najnižšie id) s rovnakým textom; ostatné naň ukazujú cez duplikat_of.
   let duplikatOf: number | null = null;
-  if (stav === 'ok') {
+  if (stav === 'ok' && text.length >= TEXT_MIN_OK && moznosti.dedup !== false) {
     const prvy = await db
       .prepare(`SELECT MIN(id) AS id FROM dokumenty WHERE obsah_hash = ? AND id <> ? AND text_stav = 'ok'`)
       .bind(hash, dokumentId)
@@ -231,7 +234,7 @@ export async function ulozText(
 }
 
 /** Položky kanála → `dokumenty` (+ výskyty, text z RSS, ak je celý). */
-async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: string, nowIso: string, s: PrijemSuhrn) {
+async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: string, nowIso: string, s: PrijemSuhrn, videneVBehu: Set<number>) {
   const k = v.kanal;
   const zs = s.po_zdrojoch[k.zdrojId]!;
   for (const item of v.polozky) {
@@ -258,6 +261,12 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
         .bind(dok.id, k.feedId, recordId, nowIso)
         .run();
       if ((vyskyt.meta.changes ?? 0) > 0) s.vyskyty_nove++;
+      // tá istá URL viackrát v jednom behu (aj v tom istom kanáli) mení titulok najviac raz
+      if (videneVBehu.has(dok.id)) {
+        s.dokumenty_uz_boli++;
+        continue;
+      }
+      videneVBehu.add(dok.id);
       // Titulok a perex drží kanál, v ktorom sa dokument objavil prvýkrát; ostatné kanály iba pridajú výskyt
       // (rubriky tej istej redakcie mávajú iný perex a prepisovali by sa navzájom pri každom behu).
       if (dok.kanal === k.feedId && (!rovnake(dok.titulok, item.title) || !rovnake(dok.perex, item.summary))) {
@@ -292,10 +301,11 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
     }
     s.dokumenty_novych++;
     zs.novych++;
+    videneVBehu.add(novy.id);
     await db.prepare(`INSERT OR IGNORE INTO dokument_vyskyty (dokument_id, kanal, record_id, prvy_at) VALUES (?, ?, ?, ?)`).bind(novy.id, k.feedId, recordId, nowIso).run();
     s.vyskyty_nove++;
     if (celyZRss) {
-      const r = await ulozText(db, novy.id, celyZRss, 'rss', item.link, nowIso, bezStranky ? { minOk: 1 } : {});
+      const r = await ulozText(db, novy.id, celyZRss, 'rss', item.link, nowIso, bezStranky ? { minOk: 1, dedup: false } : {});
       s.texty_z_rss++;
       zs.texty_ok += r.stav === 'ok' ? 1 : 0;
       if (r.duplikatOf) s.duplikaty_obsahu++;
@@ -461,6 +471,47 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
   });
 }
 
+/**
+ * Šablóny: rovnaký text pod rôznymi titulkami v jednom zdroji nie je článok, ale stránka okolo neho
+ * (súhlas s cookies, podmienky, platená stena). Text sa zmaže, dokument dostane `bez_textu`.
+ * Obsahové duplikáty platia iba pre články (nie epizódy a videá) s textom aspoň TEXT_MIN_OK znakov.
+ * Vráti počet dokumentov, ktorým sa text zmazal.
+ */
+export async function vycistiSablony(db: D1Database, nowIso: string): Promise<number> {
+  const sablony = await db
+    .prepare(
+      `SELECT d.id FROM dokumenty d JOIN (
+         SELECT zdroj_id, obsah_hash FROM dokumenty WHERE obsah_hash IS NOT NULL
+         GROUP BY zdroj_id, obsah_hash HAVING COUNT(DISTINCT COALESCE(titulok, '')) > 1
+       ) s ON s.zdroj_id = d.zdroj_id AND s.obsah_hash = d.obsah_hash
+       WHERE d.typ NOT IN ('epizoda', 'video')`,
+    )
+    .all<{ id: number }>();
+  const ids = sablony.results.map((r) => r.id);
+  for (let i = 0; i < ids.length; i += 50) {
+    const cast = ids.slice(i, i + 50);
+    const miesta = cast.map(() => '?').join(',');
+    await db.batch([
+      db.prepare(`DELETE FROM dokument_texty WHERE dokument_id IN (${miesta})`).bind(...cast),
+      db.prepare(`UPDATE dokumenty SET duplikat_of = NULL WHERE duplikat_of IN (${miesta})`).bind(...cast),
+      db
+        .prepare(
+          `UPDATE dokumenty SET text_stav = 'bez_textu', obsah_hash = NULL, duplikat_of = NULL, aktualizovane_at = ?,
+             text_chyba = 'šablóna: rovnaký text ako iné dokumenty zdroja' WHERE id IN (${miesta})`,
+        )
+        .bind(nowIso, ...cast),
+    ]);
+  }
+  await db
+    .prepare(
+      `UPDATE dokumenty SET duplikat_of = NULL WHERE duplikat_of IS NOT NULL AND (typ IN ('epizoda', 'video')
+         OR id IN (SELECT dokument_id FROM dokument_texty WHERE znakov < ?))`,
+    )
+    .bind(TEXT_MIN_OK)
+    .run();
+  return ids.length;
+}
+
 /** Jeden beh príjmu: kanály → archív → dokumenty → celé texty. Zapíše beh do `runs` (source='prijem'). */
 export async function runPrijem(db: D1Database, o: PrijemMoznosti): Promise<PrijemSuhrn> {
   const now = (o.now ?? (() => new Date()))();
@@ -487,6 +538,7 @@ export async function runPrijem(db: D1Database, o: PrijemMoznosti): Promise<Prij
 
   // 2. Surový archív (records, runs, source_state) a dokumenty — zapisuje sa sekvenčne.
   const env = { DB: db } as unknown as Env;
+  const videneVBehu = new Set<number>();
   for (const v of vysledky) {
     const zs = s.po_zdrojoch[v.kanal.zdrojId]!;
     zs.kanalov++;
@@ -508,13 +560,14 @@ export async function runPrijem(db: D1Database, o: PrijemMoznosti): Promise<Prij
     s.records_novych += a.inserted;
     s.poloziek += v.polozky.length;
     zs.poloziek += v.polozky.length;
-    await zapisDokumenty(db, v, nazov, nowIso, s);
+    await zapisDokumenty(db, v, nazov, nowIso, s, videneVBehu);
   }
 
   // 3. Celé texty.
   if (!o.bezTextov) {
     await stiahniTexty(db, o, s);
   }
+  s.sablony = await vycistiSablony(db, new Date().toISOString());
 
   s.koniec = new Date().toISOString();
   await db

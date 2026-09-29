@@ -284,6 +284,21 @@ describe('príjem: beh nad kanálmi', () => {
     expect(volania).toEqual(['https://p.test/rss']);
   });
 
+  it('šablóna: rovnaký text pod rôznymi titulkami jedného zdroja sa zmaže, krátke a epizódy nie sú duplikáty', async () => {
+    const sablona = `<html><body><article>${Array.from({ length: 8 }, (_, i) => `<p>Podmienky používania osobných údajov, bod ${i}: spracúvame údaje podľa nariadenia a zákona o ochrane osobných údajov.</p>`).join('')}</article></body></html>`;
+    const fetcher = (async (input: RequestInfo | URL) => {
+      const url = String(input instanceof Request ? input.url : input);
+      if (url === 'https://alfa.test/feed') return new Response(rss([{ link: 'https://alfa.test/p1', title: 'Prvý' }, { link: 'https://alfa.test/p2', title: 'Druhý' }]), { headers: { 'content-type': 'application/xml' } });
+      if (url.endsWith('robots.txt')) return new Response('', { status: 404 });
+      return new Response(sablona, { headers: { 'content-type': 'text/html' } });
+    }) as typeof fetch;
+    const s = await runPrijem(db, { ...moznosti(fetcher), register: [REGISTER[0]!] });
+    expect(s.sablony).toBe(2);
+    expect(await n(`SELECT COUNT(*) AS n FROM dokumenty WHERE text_stav = 'bez_textu' AND duplikat_of IS NULL AND obsah_hash IS NULL`)).toBe(2);
+    expect(await n(`SELECT COUNT(*) AS n FROM dokument_texty`)).toBe(0);
+    await db.prepare(`INSERT INTO dokumenty_fts(dokumenty_fts) VALUES ('integrity-check')`).run();
+  });
+
   it('chyba kanála a sieťová chyba článku: záznam chyby, opakovanie až po odklade', async () => {
     let padaj = true;
     const fetcher = (async (input: RequestInfo | URL) => {

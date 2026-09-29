@@ -83,7 +83,7 @@ try {
       console.log(
         `${s.koniec} príjem (${popis}): kanály ${s.kanalov_ok}/${s.kanalov} ok, 304 ${s.kanalov_304}, chyba ${s.kanalov_chyba} · ` +
           `položiek ${s.poloziek} · nové records ${s.records_novych} · dokumenty nové ${s.dokumenty_novych}, už boli ${s.dokumenty_uz_boli}, zmenené ${s.dokumenty_zmenene} · ` +
-          `texty z RSS ${s.texty_z_rss}, stiahnuté ${JSON.stringify(s.texty)} · obsahové duplikáty ${s.duplikaty_obsahu} · ${trvanie} s`,
+          `texty z RSS ${s.texty_z_rss}, stiahnuté ${JSON.stringify(s.texty)} · obsahové duplikáty ${s.duplikaty_obsahu}, šablóny ${s.sablony} · ${trvanie} s`,
       );
       console.log(`databáza: ${JSON.stringify(stav.spolu)} · duplicity ${JSON.stringify(stav.duplicity)}`);
       appendFileSync(logSubor, `${JSON.stringify({ ...s, databaza: stav.spolu, duplicity: stav.duplicity })}\n`);
