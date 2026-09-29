@@ -1,0 +1,3902 @@
+[
+  {
+    "id": "sme",
+    "nazov": "SME",
+    "typ": "medium",
+    "url_web": "https://www.sme.sk/",
+    "rss": [
+      "https://svet.sme.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "Petit Press. Cloudflare „Security Verification“ (403/429) pre časť dotazov. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 20 pol., 81/deň, posledná 2026-09-29. text v RSS: medián 59 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "dennikn",
+    "nazov": "Denník N",
+    "typ": "medium",
+    "url_web": "https://dennikn.sk/",
+    "rss": [
+      "https://dennikn.sk/feed/",
+      "https://dennikn.sk/minuta/feed/?cat=2386"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 66/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 385 zn., 0 % položiek ≥ 1000 zn.; oproti článku 100/1701, 391/952, 134/1239. paywall: signály u 3/3 článkov (ld+json isAccessibleForFree=false; text o predplatnom). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "pravda",
+    "nazov": "Pravda",
+    "typ": "medium",
+    "url_web": "https://www.pravda.sk/",
+    "rss": [
+      "https://www.pravda.sk/spravy/rss/xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 62/deň, posledná 2026-09-29. text v RSS: medián 279 zn., 0 % položiek ≥ 1000 zn.; oproti článku 370/552, 284/552, 227/552. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "hnonline",
+    "nazov": "Hospodárske noviny (HNonline)",
+    "typ": "medium",
+    "url_web": "https://hnonline.sk/",
+    "rss": [
+      "https://hnonline.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Mafra Slovakia / Zoznam. Feed rss: 50 pol., 131/deň, posledná 2026-09-29. text v RSS: medián 1685 zn., 86 % položiek ≥ 1000 zn.; oproti článku 1920/2107, 2201/2306, 1674/1826. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "cas",
+    "nazov": "Nový Čas",
+    "typ": "medium",
+    "url_web": "https://www.cas.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Ringier Axel Springer. RSS: nenájdený platný feed (www.cas.sk/rss → HTTP 404; www.cas.sk/rss/ → HTTP 404; www.cas.sk/feed → HTTP 404; www.cas.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "pluska",
+    "nazov": "Pluska.sk (Plus jeden deň)",
+    "typ": "medium",
+    "url_web": "https://www.pluska.sk/",
+    "rss": [
+      "https://www1.pluska.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., frekvencia nezistená, posledná 2026-09-28. text v RSS: medián 249 zn., 0 % položiek ≥ 1000 zn.; oproti článku 193/5536, 290/2374, 327/1922. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+  },
+  {
+    "id": "aktuality",
+    "nazov": "Aktuality.sk",
+    "typ": "medium",
+    "url_web": "https://www.aktuality.sk/",
+    "rss": [
+      "https://www.aktuality.sk/rss/",
+      "https://www.aktuality.sk/rss/domace/",
+      "https://www.aktuality.sk/rss/zahranicne/",
+      "https://www.aktuality.sk/rss/krimi/",
+      "https://www.aktuality.sk/rss/ekonomika/",
+      "https://www.aktuality.sk/rss-articles.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Ringier Axel Springer. Feed rss: 15 pol., 79/deň, posledná 2026-09-29, feedov 6. text v RSS: medián 158 zn., 0 % položiek ≥ 1000 zn.; oproti článku 154/2108, 149/2922, 69/925. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "topky",
+    "nazov": "Topky.sk",
+    "typ": "medium",
+    "url_web": "https://www.topky.sk/",
+    "rss": [
+      "https://www.topky.sk/rss/8/TOPKY"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 133/deň, posledná 2026-09-29. text v RSS: medián 336 zn., 0 % položiek ≥ 1000 zn.; oproti článku 97/2256, 336/2307, 429/5781. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "zoznam-spravy",
+    "nazov": "Zoznam Správy",
+    "typ": "medium",
+    "url_web": "https://spravy.zoznam.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zoznam.sk (skupina Zoznam / Mafra). RSS: nenájdený platný feed (www.zoznam.sk/rss → nie je feed (text/html); www.zoznam.sk/rss/ → nie je feed (text/html); www.zoznam.sk/feed → nie je feed (text/html); www.zoznam.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "dnes24",
+    "nazov": "Dnes24.sk",
+    "typ": "medium",
+    "url_web": "https://www.dnes24.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.dnes24.sk/rss/ (posledná položka 2020-01-06)."
+  },
+  {
+    "id": "24hod",
+    "nazov": "24hod.sk",
+    "typ": "medium",
+    "url_web": "https://www.24hod.sk/",
+    "rss": [
+      "https://www.24hod.sk/rss/24hod.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 60 pol., 134/deň, posledná 2026-09-29. text v RSS: medián 168 zn., 0 % položiek ≥ 1000 zn.; oproti článku 118/170, 134/245. paywall: nezistený (0/2 článkov)."
+  },
+  {
+    "id": "aktualne",
+    "nazov": "Aktuálne.sk",
+    "typ": "medium",
+    "url_web": "https://www.aktualne.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": null,
+    "poznamka": "web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "dolezite",
+    "nazov": "Dôležité.sk",
+    "typ": "medium",
+    "url_web": "https://www.dolezite.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.dolezite.sk/rss → HTTP 404; www.dolezite.sk/rss/ → HTTP 404; www.dolezite.sk/feed → HTTP 404; www.dolezite.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "bratislavskenoviny",
+    "nazov": "Bratislavské noviny",
+    "typ": "medium",
+    "url_web": "https://www.bratislavskenoviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.bratislavskenoviny.sk/o-nas/rss/5-rss-kanal-banoviny-sk → HTTP 404; www.bratislavskenoviny.sk/feed/rss2?category=banoviny-1 → HTTP 404; www.bratislavskenoviny.sk/feed/rss2?category=banoviny-2 → HTTP 404; www.bratislavskenoviny.sk/feed/rss2?category=banoviny-3 → HTTP 404)."
+  },
+  {
+    "id": "postoj",
+    "nazov": "Postoj",
+    "typ": "medium",
+    "url_web": "https://www.postoj.sk/",
+    "rss": [
+      "https://www.postoj.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "nazorove",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Konzervatívno-kresťanské médium. Feed rss: 10 pol., 8.3/deň, posledná 2026-09-29. text v RSS: medián 103 zn., 0 % položiek ≥ 1000 zn.; oproti článku 83/3022, 103/6582, 106/2316. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "standard",
+    "nazov": "Štandard",
+    "typ": "medium",
+    "url_web": "https://standard.sk/",
+    "rss": [
+      "https://standard.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "nazorove",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Denník Štandard. Feed rss: 28 pol., 6.9/deň, posledná 2026-09-29. text v RSS: medián 113 zn., 0 % položiek ≥ 1000 zn.; oproti článku 124/14051, 72/8583, 125/5868. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "startitup",
+    "nazov": "Startitup",
+    "typ": "medium",
+    "url_web": "https://www.startitup.sk/",
+    "rss": [
+      "https://www.startitup.sk/feed/",
+      "https://www.startitup.sk/videa/feed/",
+      "https://www.startitup.sk/kategoria/ruska-invazia-na-ukrajinu/feed/",
+      "https://www.startitup.sk/kategoria/biznis-startupy/feed/",
+      "https://www.startitup.sk/kategoria/rozhovory/feed/",
+      "https://www.startitup.sk/kategoria/zo-slovenska/feed/",
+      "https://www.startitup.sk/kategoria/biznis-startupy/foodbiznis/feed/"
+    ],
+    "api": "https://www.startitup.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "technologie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Startupy a technológie. Feed rss: 30 pol., 57/deň, posledná 2026-09-29, feedov 7. text v RSS: medián 274 zn., 0 % položiek ≥ 1000 zn.; oproti článku 228/4274, 268/7947, 239/2564. paywall: nezistený (0/3 článkov). neaktívny feed: https://www.startitup.sk/kategoria/koronavirus-sr/feed/ (posledná položka 2026-04-06). WordPress REST otvorené (medián 4489 zn. v content.rendered)."
+  },
+  {
+    "id": "refresher",
+    "nazov": "Refresher",
+    "typ": "medium",
+    "url_web": "https://refresher.sk/",
+    "rss": [
+      "https://refresher.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Mladé publikum, lifestyle a spoločnosť. Feed rss: 20 pol., 58/deň, posledná 2026-09-29. text v RSS: medián 84 zn., 0 % položiek ≥ 1000 zn.; oproti článku 72/141, 54/141, 80/141. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "zive",
+    "nazov": "Živé.sk",
+    "typ": "medium",
+    "url_web": "https://www.zive.sk/",
+    "rss": [
+      "https://zive.aktuality.sk/rss/najnovsie/",
+      "https://zive.aktuality.sk/rss/mobilmania/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "technologie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 15/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 146 zn., 0 % položiek ≥ 1000 zn.; oproti článku 59/6564, 164/2808, 152/2391. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "vosveteit",
+    "nazov": "Vosveteit.sk",
+    "typ": "medium",
+    "url_web": "https://vosveteit.zoznam.sk/",
+    "rss": [
+      "https://vosveteit.zoznam.sk/feed/"
+    ],
+    "api": "https://vosveteit.zoznam.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "technologie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 44 pol., 9.6/deň, posledná 2026-09-29. text v RSS: medián 164 zn., 0 % položiek ≥ 1000 zn.; oproti článku 179/1232, 188/1490, 154/1748. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 5096 zn. v content.rendered)."
+  },
+  {
+    "id": "techbox",
+    "nazov": "Techbox.sk",
+    "typ": "medium",
+    "url_web": "https://www.techbox.sk/",
+    "rss": [
+      "https://www.techbox.sk/rss"
+    ],
+    "api": "https://www.techbox.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "technologie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 9.4/deň, posledná 2026-09-29. text v RSS: medián 251 zn., 0 % položiek ≥ 1000 zn.; oproti článku 251/17260, 231/3148, 247/9519. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 10060 zn. v content.rendered)."
+  },
+  {
+    "id": "hlavnespravy",
+    "nazov": "Hlavné správy",
+    "typ": "medium",
+    "url_web": "https://www.hlavnespravy.sk/",
+    "rss": [
+      "https://www.hlavnespravy.sk/feed/"
+    ],
+    "api": "https://www.hlavnespravy.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Uvedené v zozname konspiratori.sk (podľa verejných správ); v zmluve Mediaboardu ako sledovaný web. Feed rss: 24 pol., 346/deň, posledná 2026-09-29. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/939, 0/945, 345/11257. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 670 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "hlavnydennik",
+    "nazov": "Hlavný denník",
+    "typ": "medium",
+    "url_web": "https://www.hlavnydennik.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.hlavnydennik.sk/rss → HTTP 404; www.hlavnydennik.sk/rss/ → HTTP 404; www.hlavnydennik.sk/feed → HTTP 404; www.hlavnydennik.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "dennike",
+    "nazov": "Denník E (dennike.sk)",
+    "typ": "medium",
+    "url_web": "https://dennike.sk/",
+    "rss": [
+      "https://dennikn.sk/feed/",
+      "https://dennikn.sk/ekonomika/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Súčasť monitoringu Denníka N (v zmluve „vrátane dennike.sk“). Feed rss: 10 pol., 66/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 385 zn., 0 % položiek ≥ 1000 zn.; oproti článku 100/1701, 391/952, 134/1239. paywall: signály u 3/3 článkov (ld+json isAccessibleForFree=false; text o predplatnom). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "ereport",
+    "nazov": "eReport",
+    "typ": "medium",
+    "url_web": "https://www.ereport.sk/",
+    "rss": [
+      "https://ereport.sk/feed/"
+    ],
+    "api": "https://ereport.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 1 pol., frekvencia nezistená, posledná 2026-09-29. text v RSS: medián 791 zn., 0 % položiek ≥ 1000 zn.; oproti článku 791/1231. paywall: nezistený (0/1 článkov). WordPress REST otvorené (medián 1024 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "iden",
+    "nazov": "iDEN",
+    "typ": "medium",
+    "url_web": "https://www.iden.sk/",
+    "rss": [
+      "https://iden.sk/rss"
+    ],
+    "api": "https://iden.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 14/deň, posledná 2026-09-29. text v RSS: medián 2401 zn., 95 % položiek ≥ 1000 zn.; oproti článku 1132/1280, 6128/6290, 6026/6176. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 6019 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "marker",
+    "nazov": "Marker",
+    "typ": "medium",
+    "url_web": "https://www.marker.sk/",
+    "rss": [
+      "https://www.marker.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 50 pol., 3.7/deň, posledná 2026-09-29. text v RSS: medián 110 zn., 0 % položiek ≥ 1000 zn.; oproti článku 96/1638, 99/6513, 104/9218. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "extraplus",
+    "nazov": "Extra plus",
+    "typ": "medium",
+    "url_web": "https://www.extraplus.sk/",
+    "rss": [
+      "https://www.extraplus.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Mesačník + web. Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 504 zn., 0 % položiek ≥ 1000 zn.; oproti článku 370/2426, 561/2741, 520/3148. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Extra plus); 5 weby)."
+  },
+  {
+    "id": "noviny",
+    "nazov": "Noviny.sk (TV JOJ)",
+    "typ": "medium",
+    "url_web": "https://www.noviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Spravodajský web TV JOJ. RSS: nenájdený platný feed (www.noviny.sk/rss → HTTP 404; www.noviny.sk/rss/ → HTTP 404; www.noviny.sk/feed → HTTP 404; www.noviny.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "tvnoviny",
+    "nazov": "TN LIVE / TVNoviny.sk (Markíza)",
+    "typ": "medium",
+    "url_web": "https://tnlive.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "Spravodajský web TV Markíza; tvnoviny.sk sa presmeruje na tnlive.sk. RSS: nenájdený platný feed (tnlive.sk/rss → HTTP 404; tnlive.sk/rss/ → HTTP 404; tnlive.sk/feed → HTTP 404; tnlive.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+  },
+  {
+    "id": "ta3",
+    "nazov": "TA3.com",
+    "typ": "tv",
+    "url_web": "https://www.ta3.com/",
+    "rss": [
+      "https://www.ta3.com/rss/top-spravy"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Spravodajská televízia + web. Feed rss: 4 pol., 6.0/deň, posledná 2026-09-29. text v RSS: medián 428 zn., 0 % položiek ≥ 1000 zn.; oproti článku 428/4332, 460/26248, 265/31481. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Hlavné správy 18.30); 3.1 (V politike, Téma dňa); 5 weby)."
+  },
+  {
+    "id": "webnoviny",
+    "nazov": "Webnoviny.sk (SITA)",
+    "typ": "medium",
+    "url_web": "https://www.webnoviny.sk/",
+    "rss": [
+      "https://sita.sk/rss"
+    ],
+    "api": "https://sita.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "agentury",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Portál tlačovej agentúry SITA. Feed rss: 20 pol., 114/deň, posledná 2026-09-29. text v RSS: medián 157 zn., 40 % položiek ≥ 1000 zn.; oproti článku 5363/5005, 3777/3649, 3202/3106 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1278 zn. v content.rendered)."
+  },
+  {
+    "id": "teraz",
+    "nazov": "Teraz.sk (TASR)",
+    "typ": "medium",
+    "url_web": "https://www.teraz.sk/",
+    "rss": [
+      "http://www.teraz.sk/rss/vsetky-spravy.rss",
+      "http://www.teraz.sk/rss/slovensko.rss",
+      "http://www.teraz.sk/rss/ekonomika.rss",
+      "http://www.teraz.sk/rss/regiony.rss",
+      "http://www.teraz.sk/rss/sport.rss",
+      "http://www.teraz.sk/rss/kultura.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "agentury",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Portál tlačovej agentúry TASR; feedy vypísané na teraz.sk/rss. Feed rss: 15 pol., 160/deň, posledná 2026-09-29, feedov 6. text v RSS: medián 77 zn., 0 % položiek ≥ 1000 zn.; oproti článku 61/61, 115/115. paywall: nezistený (0/2 článkov)."
+  },
+  {
+    "id": "sita",
+    "nazov": "SITA.sk",
+    "typ": "medium",
+    "url_web": "https://sita.sk/",
+    "rss": [
+      "https://sita.sk/rss"
+    ],
+    "api": "https://sita.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "agentury",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Portál agentúry SITA. Feed rss: 20 pol., 114/deň, posledná 2026-09-29. text v RSS: medián 157 zn., 40 % položiek ≥ 1000 zn.; oproti článku 5363/5005, 3777/3649, 3202/3106 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1278 zn. v content.rendered)."
+  },
+  {
+    "id": "tyzden",
+    "nazov": "Týždeň",
+    "typ": "medium",
+    "url_web": "https://www.tyzden.sk/",
+    "rss": [
+      "https://www.tyzden.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 60 pol., 0.6/deň, posledná 2026-09-29. text v RSS: medián 229 zn., 0 % položiek ≥ 1000 zn.; oproti článku 209/846, 168/168, 85/9591. paywall: signály u 3/3 článkov (trieda paywall/locked). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky; 5 weby)."
+  },
+  {
+    "id": "plus7dni",
+    "nazov": "Plus 7 dní",
+    "typ": "medium",
+    "url_web": "https://plus7dni.pluska.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "RSS: nenájdený platný feed (plus7dni.pluska.sk/rss.xml → feed bez položiek; plus7dni.pluska.sk/rss → HTTP 404; plus7dni.pluska.sk/rss/ → HTTP 404; plus7dni.pluska.sk/feed → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky)."
+  },
+  {
+    "id": "index",
+    "nazov": "Index (týždenník)",
+    "typ": "medium",
+    "url_web": "https://www.index.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "V zmluve je uvedený iba názov týždenníka „Index“, doménu zmluva neuvádza; index.sk je kandidát, nepotvrdené. RSS: nenájdený platný feed (www.index.sk/rss → HTTP 404; www.index.sk/rss/ → HTTP 404; www.index.sk/feed → HTTP 404; www.index.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Index))."
+  },
+  {
+    "id": "etrend",
+    "nazov": "Trend (etrend.sk / trend.sk)",
+    "typ": "medium",
+    "url_web": "https://www.trend.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Týždenník Trend; etrend.sk a trend.sk vracajú ten istý web (News and Media Holding). RSS: nenájdený platný feed (www.trend.sk/rss → HTTP 404; www.trend.sk/rss/ → HTTP 404; www.trend.sk/feed → HTTP 404; www.trend.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Trend); 5 weby)."
+  },
+  {
+    "id": "zivot",
+    "nazov": "Život (týždenník)",
+    "typ": "medium",
+    "url_web": "https://zivot.pluska.sk/",
+    "rss": [
+      "https://zivot.pluska.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 19/deň, posledná 2026-09-28. text v RSS: medián 198 zn., 0 % položiek ≥ 1000 zn.; oproti článku 116/1127, 219/2412, 164/558. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Život))."
+  },
+  {
+    "id": "slovenka",
+    "nazov": "Slovenka",
+    "typ": "medium",
+    "url_web": "https://www.slovenka.sk/",
+    "rss": [
+      "https://zenskyweb.sk/feed/"
+    ],
+    "api": "https://zenskyweb.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 6.5/deň, posledná 2026-09-29. text v RSS: medián 3656 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3656/3098, 3290/3125, 2664/2230. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3174 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Slovenka))."
+  },
+  {
+    "id": "zemavek",
+    "nazov": "Zem a vek",
+    "typ": "medium",
+    "url_web": "https://www.zemavek.sk/",
+    "rss": [
+      "https://zemavek.sk/feed/"
+    ],
+    "api": "https://zemavek.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Týždenník. Feed rss: 10 pol., 6.6/deň, posledná 2026-09-29. text v RSS: medián 406 zn., 0 % položiek ≥ 1000 zn.; oproti článku 309/1731, 409/2059, 381/2426. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3232 zn. v content.rendered)."
+  },
+  {
+    "id": "literarnytyzdennik",
+    "nazov": "Literárny týždenník",
+    "typ": "medium",
+    "url_web": "https://www.literarnytyzdennik.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": null,
+    "poznamka": "web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "katolickenoviny",
+    "nazov": "Katolícke noviny",
+    "typ": "medium",
+    "url_web": "https://www.katolickenoviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.katolickenoviny.sk/rss → HTTP 404; www.katolickenoviny.sk/rss/ → HTTP 404; www.katolickenoviny.sk/feed → HTTP 404; www.katolickenoviny.sk/feed/ → HTTP 404). neaktívny feed: https://www.katolickenoviny.sk/rss.xml (posledná položka 2023-01-30)."
+  },
+  {
+    "id": "forbes",
+    "nazov": "Forbes Slovensko",
+    "typ": "medium",
+    "url_web": "https://www.forbes.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": null,
+    "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "finweb",
+    "nazov": "Finweb (HN)",
+    "typ": "medium",
+    "url_web": "https://finweb.hnonline.sk/",
+    "rss": [
+      "https://hnonline.sk/finweb/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 50 pol., 37/deň, posledná 2026-09-29. text v RSS: medián 1890 zn., 94 % položiek ≥ 1000 zn.; oproti článku 1920/2107, 3775/3461, 1175/983. paywall: signály u 2/3 článkov (ld+json isAccessibleForFree=false)."
+  },
+  {
+    "id": "podnikajte",
+    "nazov": "Podnikajte.sk",
+    "typ": "medium",
+    "url_web": "https://www.podnikajte.sk/",
+    "rss": [
+      "https://www.podnikajte.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 50 pol., 1.0/deň, posledná 2026-09-29. text v RSS: medián 225 zn., 0 % položiek ≥ 1000 zn.; oproti článku 220/7120, 229/7277, 223/9445. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "ekonomika-sme",
+    "nazov": "Ekonomika SME",
+    "typ": "medium",
+    "url_web": "https://ekonomika.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": null,
+    "poznamka": "Sekcia SME. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (ekonomika.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "energie-portal",
+    "nazov": "Energie-portal.sk",
+    "typ": "medium",
+    "url_web": "https://www.energie-portal.sk/",
+    "rss": [
+      "https://www.energie-portal.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 30 pol., 2.2/deň, posledná 2026-09-29. text v RSS: medián 120 zn., 0 % položiek ≥ 1000 zn.; oproti článku 120/2552, 105/3148, 177/2755. paywall: signály u 3/3 článkov (trieda paywall/locked; text o predplatnom)."
+  },
+  {
+    "id": "podnikam",
+    "nazov": "Podnikam.sk (SITA)",
+    "typ": "medium",
+    "url_web": "https://www.podnikam.sk/",
+    "rss": [
+      "https://podnikam.sk/rss"
+    ],
+    "api": "https://podnikam.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "ekonomicke",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 1.5/deň, posledná 2026-09-29. text v RSS: medián 15268 zn., 100 % položiek ≥ 1000 zn.; oproti článku 11505/11875, 3439/5113, 17338/18572. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 11505 zn. v content.rendered)."
+  },
+  {
+    "id": "zdravotnickenoviny",
+    "nazov": "Zdravotnícke noviny",
+    "typ": "medium",
+    "url_web": "https://www.zdravotnickenoviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "odborne",
+    "overene_at": null,
+    "poznamka": "web nedostupný (ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "ucitelskenoviny",
+    "nazov": "Učiteľské noviny",
+    "typ": "medium",
+    "url_web": "https://www.ucitelskenoviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "odborne",
+    "overene_at": null,
+    "poznamka": "web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "polnoinfo",
+    "nazov": "Poľnoinfo",
+    "typ": "medium",
+    "url_web": "https://www.polnoinfo.sk/",
+    "rss": [
+      "https://polnoinfo.sk/rss"
+    ],
+    "api": "https://polnoinfo.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "odborne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Pôdohospodárstvo. Feed rss: 10 pol., 2.0/deň, posledná 2026-09-29. text v RSS: medián 398 zn., 0 % položiek ≥ 1000 zn.; oproti článku 398/2019, 394/2121, 459/4306. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1935 zn. v content.rendered)."
+  },
+  {
+    "id": "euractiv",
+    "nazov": "Euractiv Slovensko",
+    "typ": "medium",
+    "url_web": "https://euractiv.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "odborne",
+    "overene_at": null,
+    "poznamka": "Európska únia. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "sport",
+    "nazov": "Šport.sk",
+    "typ": "medium",
+    "url_web": "https://www.sport.sk/",
+    "rss": [
+      "https://sport.aktuality.sk/api/rss",
+      "https://sport.aktuality.sk/api/rss/futbal",
+      "https://sport.aktuality.sk/api/rss/hokej",
+      "https://sport.aktuality.sk/api/rss/tenis",
+      "https://sport.aktuality.sk/api/rss/cyklistika",
+      "https://sport.aktuality.sk/api/rss/motosport",
+      "https://sport.aktuality.sk/api/rss/ostatne-sporty"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sport",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 174/deň, posledná 2026-09-29, feedov 7. text v RSS: medián 324 zn., 0 % položiek ≥ 1000 zn.; oproti článku 398/1522, 365/458, 195/458. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "denniksport",
+    "nazov": "Denník Šport",
+    "typ": "medium",
+    "url_web": "https://www.denniksport.sk/",
+    "rss": [
+      "https://www.denniksport.sk/rss",
+      "https://www.denniksport.sk/rss-title"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sport",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 69/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 47 zn., 0 % položiek ≥ 1000 zn.; oproti článku 50/3322, 42/3370, 40/1650. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "sportnet",
+    "nazov": "Sportnet (SME)",
+    "typ": "medium",
+    "url_web": "https://sportnet.sme.sk/",
+    "rss": [
+      "https://sport.sme.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sport",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "Feed rss: 60 pol., 101/deň, posledná 2026-09-29. text v RSS: medián 77 zn., 0 % položiek ≥ 1000 zn.; oproti článku 86/545, 77/323, 50/2847. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "vsieti",
+    "nazov": "Vsieti.sk",
+    "typ": "medium",
+    "url_web": "https://www.vsieti.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "nazorove",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.vsieti.sk/rss.xml (posledná položka 2015-04-25)."
+  },
+  {
+    "id": "infovojna",
+    "nazov": "Infovojna",
+    "typ": "medium",
+    "url_web": "https://infovojna.bz/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť. RSS: nenájdený platný feed (www.infovojna.com/rss → nie je feed (text/html); www.infovojna.com/rss/ → nie je feed (text/html); www.infovojna.com/feed → nie je feed (text/html); www.infovojna.com/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "slobodnyvysielac",
+    "nazov": "Slobodný vysielač",
+    "typ": "medium",
+    "url_web": "https://www.slobodnyvysielac.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": null,
+    "poznamka": "Internetové rádio + web. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "zvtv",
+    "nazov": "ZVTV",
+    "typ": "medium",
+    "url_web": "https://zvtv.sk/",
+    "rss": [],
+    "api": "https://zvtv.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://zvtv.sk/feed/ (posledná položka 2025-03-28). WordPress REST otvorené (medián 64 zn. v content.rendered)."
+  },
+  {
+    "id": "armadnymagazin",
+    "nazov": "Armádny magazín",
+    "typ": "medium",
+    "url_web": "https://www.armadnymagazin.sk/",
+    "rss": [
+      "https://www.armadnymagazin.sk/rss"
+    ],
+    "api": "https://www.armadnymagazin.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 7487 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1528/5297, 5703/7820, 3704/5905. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3590 zn. v content.rendered)."
+  },
+  {
+    "id": "bajecnezeny",
+    "nazov": "Báječné ženy",
+    "typ": "medium",
+    "url_web": "https://www.bajecnezeny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (bajecnezeny.sk/rss → HTTP 404; bajecnezeny.sk/rss/ → HTTP 404; bajecnezeny.sk/feed → HTTP 404; bajecnezeny.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "demagog",
+    "nazov": "Demagog.sk",
+    "typ": "medium",
+    "url_web": "https://demagog.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "overovanie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Overovanie výrokov politikov. RSS: nenájdený platný feed (demagog.sk/rss → nie je feed (text/html); demagog.sk/rss/ → nie je feed (text/html); demagog.sk/feed → nie je feed (text/html); demagog.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "konspiratori",
+    "nazov": "Konšpirátori.sk",
+    "typ": "ine",
+    "url_web": "https://konspiratori.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "overovanie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Verejná databáza webov s nedôveryhodným obsahom; sledovací zoznam, nie spravodajstvo."
+  },
+  {
+    "id": "icjk",
+    "nazov": "Investigatívne centrum Jána Kuciaka",
+    "typ": "medium",
+    "url_web": "https://icjk.sk/",
+    "rss": [
+      "https://icjk.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "investigativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 5 pol., 0.2/deň, posledná 2026-09-17. text v RSS: medián 0 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "transparency",
+    "nazov": "Transparency International Slovensko",
+    "typ": "medium",
+    "url_web": "https://transparency.sk/",
+    "rss": [
+      "https://transparency.sk/sk/feed/"
+    ],
+    "api": "https://transparency.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "investigativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 7 pol., 0.1/deň, posledná 2026-09-29. text v RSS: medián 4306 zn., 86 % položiek ≥ 1000 zn.; oproti článku 8183/7770, 2306/2138, 5545/5094. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 5274 zn. v content.rendered)."
+  },
+  {
+    "id": "slovensko-digital",
+    "nazov": "Slovensko.Digital",
+    "typ": "medium",
+    "url_web": "https://slovensko.digital/",
+    "rss": [
+      "https://slovensko.digital/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "investigativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Občianska iniciatíva; blogy, otvorené dáta. Feed rss: 10 pol., 0.1/deň, posledná 2026-09-14. text v RSS: medián 5400 zn., 100 % položiek ≥ 1000 zn.; oproti článku 5558/2558, 6684/5012, 2258/427. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "ineko",
+    "nazov": "INEKO",
+    "typ": "medium",
+    "url_web": "https://www.ineko.sk/",
+    "rss": [
+      "https://www.ineko.sk/?rss=1"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "investigativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Think-tank. Feed rss: 15 pol., 0.0/deň, posledná 2026-09-21. text v RSS: medián 549 zn., 7 % položiek ≥ 1000 zn.; oproti článku 567/13555, 183/1083, 561/295 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "globsec",
+    "nazov": "GLOBSEC",
+    "typ": "medium",
+    "url_web": "https://www.globsec.org/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "investigativa",
+    "overene_at": null,
+    "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "viaiuris",
+    "nazov": "Via Iuris",
+    "typ": "medium",
+    "url_web": "https://www.viaiuris.sk/",
+    "rss": [
+      "https://viaiuris.sk/feed/"
+    ],
+    "api": "https://viaiuris.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "investigativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 6 pol., 0.0/deň, posledná 2026-09-23. text v RSS: medián 12654 zn., 100 % položiek ≥ 1000 zn.; oproti článku 5358/4428, 19582/18130, 16592/14872. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 19446 zn. v content.rendered)."
+  },
+  {
+    "id": "spectator",
+    "nazov": "The Slovak Spectator",
+    "typ": "medium",
+    "url_web": "https://spectator.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "anglicke",
+    "overene_at": null,
+    "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "slobodnaeuropa",
+    "nazov": "Slobodná Európa (RFE/RL)",
+    "typ": "medium",
+    "url_web": "https://www.slobodnaeuropa.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.slobodnaeuropa.sk/rss → nie je feed (text/html); www.slobodnaeuropa.sk/rss/ → nie je feed (text/html); www.slobodnaeuropa.sk/feed → nie je feed (text/html); www.slobodnaeuropa.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "dennikn-blog",
+    "nazov": "Blog N (Denník N)",
+    "typ": "medium",
+    "url_web": "https://dennikn.sk/blog/",
+    "rss": [
+      "https://dennikn.sk/blog/feed/",
+      "https://dennikn.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "blogy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 9.0/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 291 zn., 0 % položiek ≥ 1000 zn.; oproti článku 291/6696, 288/7484, 196/8183. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "blog-sme",
+    "nazov": "Blog SME",
+    "typ": "medium",
+    "url_web": "https://blog.sme.sk/",
+    "rss": [
+      "https://blog.sme.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "blogy",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 50 pol., 14/deň, posledná 2026-09-29. text v RSS: medián 143 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "pravda-blog",
+    "nazov": "Blogy Pravda",
+    "typ": "medium",
+    "url_web": "https://blog.pravda.sk/",
+    "rss": [
+      "https://blog.pravda.sk/wp-content/recent-global-posts-feed.php"
+    ],
+    "api": "https://blog.pravda.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "blogy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 40/deň, posledná 2026-09-29. text v RSS: medián 359 zn., 0 % položiek ≥ 1000 zn.; oproti článku 369/2965, 359/3328, 0/838. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1242 zn. v content.rendered)."
+  },
+  {
+    "id": "korzar",
+    "nazov": "Korzár (Košice, Prešov a východ)",
+    "typ": "medium",
+    "url_web": "https://korzar.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (korzar.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "mynitra",
+    "nazov": "MY Nitrianske noviny",
+    "typ": "medium",
+    "url_web": "https://mynitra.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mynitra.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "myzilina",
+    "nazov": "MY Žilina",
+    "typ": "medium",
+    "url_web": "https://myzilina.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (myzilina.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "mytrencin",
+    "nazov": "MY Trenčianske noviny",
+    "typ": "medium",
+    "url_web": "https://mytrencin.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrencin.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "mytrnava",
+    "nazov": "MY Trnava",
+    "typ": "medium",
+    "url_web": "https://mytrnava.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrnava.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "mybystrica",
+    "nazov": "MY Banská Bystrica",
+    "typ": "medium",
+    "url_web": "https://mybystrica.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mybystrica.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "bratislavaden",
+    "nazov": "Bratislavaden.sk",
+    "typ": "medium",
+    "url_web": "https://bratislavaden.sk/",
+    "rss": [
+      "https://bratislavaden.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "SITA. Feed rss: 20 pol., 2.7/deň, posledná 2026-09-29. text v RSS: medián 3439 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3986/4061, 3439/3349, 3889/3887. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "nitraden",
+    "nazov": "Nitraden.sk",
+    "typ": "medium",
+    "url_web": "https://nitraden.sk/",
+    "rss": [
+      "https://nitraden.iden.sk/rss"
+    ],
+    "api": "https://nitraden.iden.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "SITA. Feed rss: 12 pol., 2.0/deň, posledná 2026-09-29. text v RSS: medián 1582 zn., 92 % položiek ≥ 1000 zn.; oproti článku 1175/1412, 2161/2264, 1026/1263. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1175 zn. v content.rendered)."
+  },
+  {
+    "id": "regiony-zoznam",
+    "nazov": "Zoznam Regióny",
+    "typ": "medium",
+    "url_web": "https://regiony.zoznam.sk/",
+    "rss": [
+      "https://regiony.zoznam.sk/rss"
+    ],
+    "api": "https://regiony.zoznam.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 100/deň, posledná 2026-09-29. text v RSS: medián 203 zn., 0 % položiek ≥ 1000 zn.; oproti článku 231/1255, 182/2038, 196/2577. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2106 zn. v content.rendered)."
+  },
+  {
+    "id": "kosicednes",
+    "nazov": "Košice Dnes",
+    "typ": "medium",
+    "url_web": "https://kosicednes.sk/",
+    "rss": [
+      "https://kosicednes.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 5.7/deň, posledná 2026-09-29. text v RSS: medián 1815 zn., 95 % položiek ≥ 1000 zn.; oproti článku 5793/6143, 1638/2265, 2089/2546. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "trnavskyhlas",
+    "nazov": "Trnavský hlas",
+    "typ": "medium",
+    "url_web": "https://www.trnavskyhlas.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.trnavskyhlas.sk/rss/rss-trnavsky-hlas.php → nie je feed (text/html); www.trnavskyhlas.sk/rss/rss-trnavsky-hlas-sport.php → nie je feed (text/html); www.trnavskyhlas.sk/rss → nie je feed (text/html); www.trnavskyhlas.sk/rss/ → nie je feed (text/html))."
+  },
+  {
+    "id": "trnava-live",
+    "nazov": "Trnava LIVE",
+    "typ": "medium",
+    "url_web": "https://www.trnava-live.sk/",
+    "rss": [
+      "https://www.trnava-live.sk/feed/"
+    ],
+    "api": "https://www.trnava-live.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 15 pol., 2.3/deň, posledná 2026-09-29. text v RSS: medián 399 zn., 0 % položiek ≥ 1000 zn.; oproti článku 424/2470, 368/2719, 406/2467. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2623 zn. v content.rendered)."
+  },
+  {
+    "id": "presovak",
+    "nazov": "Prešovák.sk",
+    "typ": "medium",
+    "url_web": "https://www.presovak.sk/",
+    "rss": [
+      "https://www.presovak.sk/rss",
+      "https://www.presovak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 8 pol., 1.7/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 124 zn., 0 % položiek ≥ 1000 zn.; oproti článku 119/1090, 123/1791, 125/650. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "zilinak",
+    "nazov": "Žilinak.sk",
+    "typ": "medium",
+    "url_web": "https://www.zilinak.sk/",
+    "rss": [
+      "https://www.zilinak.sk/rss",
+      "https://www.zilinak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 8 pol., 1.4/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 123 zn., 0 % položiek ≥ 1000 zn.; oproti článku 254/2209, 123/3929, 123/9906. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "bystricak",
+    "nazov": "Bystričák.sk",
+    "typ": "medium",
+    "url_web": "https://www.bystricak.sk/",
+    "rss": [
+      "https://www.bystricak.sk/rss",
+      "https://www.bystricak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 8 pol., 5.3/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 121 zn., 0 % položiek ≥ 1000 zn.; oproti článku 124/2123, 119/5562, 128/2404. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "azet",
+    "nazov": "Azet.sk",
+    "typ": "medium",
+    "url_web": "https://www.azet.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Ringier Slovakia Media; v IAB top 10 (2025). RSS: nenájdený platný feed (www.azet.sk/rss → ECONNRESET; www.azet.sk/rss/ → ECONNRESET; www.azet.sk/feed → HTTP 404; www.azet.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "koktejl",
+    "nazov": "Koktejl (azet.sk)",
+    "typ": "medium",
+    "url_web": "https://koktejl.azet.sk/",
+    "rss": [
+      "https://koktejl.azet.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "bulvar",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 15 pol., 125/deň, posledná 2026-09-29. text v RSS: medián 134 zn., 0 % položiek ≥ 1000 zn.; oproti článku 159/2423, 419/1787, 169/1796. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "interez",
+    "nazov": "Interez",
+    "typ": "medium",
+    "url_web": "https://interez.sk/",
+    "rss": [
+      "https://www.interez.sk/feed/"
+    ],
+    "api": "https://www.interez.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Startitup; v IAB top (2025). Feed rss: 24 pol., 21/deň, posledná 2026-09-29. text v RSS: medián 232 zn., 0 % položiek ≥ 1000 zn.; oproti článku 262/3226, 237/2915, 261/2513. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3140 zn. v content.rendered)."
+  },
+  {
+    "id": "emefka",
+    "nazov": "Emefka",
+    "typ": "medium",
+    "url_web": "https://emefka.sk/",
+    "rss": [
+      "https://emefka.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Startitup. Feed rss: 10 pol., 23/deň, posledná 2026-09-29. text v RSS: medián 4681 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3788/3276, 2774/1929, 9786/8457. paywall: signály u 1/3 článkov (ld+json isAccessibleForFree=false; trieda paywall/locked)."
+  },
+  {
+    "id": "odzadu",
+    "nazov": "Odzadu",
+    "typ": "medium",
+    "url_web": "https://odzadu.sk/",
+    "rss": [
+      "https://www.odzadu.sk/feed/"
+    ],
+    "api": "https://www.odzadu.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Startitup. Feed rss: 10 pol., 22/deň, posledná 2026-09-29. text v RSS: medián 3670 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3430/1971, 3399/3022, 4080/3749. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3315 zn. v content.rendered)."
+  },
+  {
+    "id": "mediaklik",
+    "nazov": "Mediaklik",
+    "typ": "medium",
+    "url_web": "https://www.mediaklik.sk/",
+    "rss": [
+      "https://www.mediaklik.sk/rss/xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "OUR Media. Feed rss: 20 pol., 9.0/deň, posledná 2026-09-29. text v RSS: medián 152 zn., 0 % položiek ≥ 1000 zn.; oproti článku 196/201, 162/201, 61/201. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "defencenews",
+    "nazov": "Defence News",
+    "typ": "medium",
+    "url_web": "https://www.defencenews.sk/",
+    "rss": [
+      "https://www.defencenews.sk/rss/xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "odborne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "OUR Media; obrana. Feed rss: 20 pol., 3.7/deň, posledná 2026-09-29. text v RSS: medián 260 zn., 0 % položiek ≥ 1000 zn.; oproti článku 256/433, 260/433, 230/433. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "ujszo",
+    "nazov": "Új Szó",
+    "typ": "medium",
+    "url_web": "https://www.ujszo.com/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "hu",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Maďarský denník na Slovensku. RSS: nenájdený platný feed (ujszo.com/rss → nie je feed (text/html); ujszo.com/rss/ → nie je feed (text/html); ujszo.com/feed → HTTP 404; ujszo.com/feed/ → HTTP 404)."
+  },
+  {
+    "id": "vasarnap",
+    "nazov": "Vasárnap",
+    "typ": "medium",
+    "url_web": "https://vasarnap.com/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "hu",
+    "kategoria": "tyzdennik",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Maďarský týždenník na Slovensku. RSS: nenájdený platný feed (vasarnap.com/rss → nie je feed (text/html); vasarnap.com/rss/ → nie je feed (text/html); vasarnap.com/feed → HTTP 404; vasarnap.com/feed/ → HTTP 404)."
+  },
+  {
+    "id": "parameter",
+    "nazov": "Paraméter",
+    "typ": "medium",
+    "url_web": "https://www.parameter.sk/",
+    "rss": [
+      "https://parameter.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "hu",
+    "kategoria": "celostatne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Maďarský spravodajský portál na Slovensku. Feed rss: 10 pol., 78/deň, posledná 2026-09-29. text v RSS: medián 2189 zn., 80 % položiek ≥ 1000 zn.; oproti článku 2658/3168, 2189/2095, 1965/1862. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "regionpress",
+    "nazov": "Regionpress",
+    "typ": "medium",
+    "url_web": "https://www.regionpress.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Sieť 34 regionálnych redakcií (Prešovsko, Košicko, Trnavsko, …). RSS: nenájdený platný feed (www.regionpress.sk/rss → HTTP 404; www.regionpress.sk/rss/ → HTTP 404; www.regionpress.sk/feed → HTTP 404; www.regionpress.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "trencinak",
+    "nazov": "Trenčínak.sk",
+    "typ": "medium",
+    "url_web": "https://www.trencinak.sk/",
+    "rss": [
+      "https://www.trencinak.sk/rss",
+      "https://www.trencinak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 8 pol., 3.5/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 121 zn., 0 % položiek ≥ 1000 zn.; oproti článku 119/3658, 128/5053, 119/1460. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "my-sme",
+    "nazov": "MY regionálne noviny (Petit Press, prehľad)",
+    "typ": "medium",
+    "url_web": "https://my.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Sieť 26 titulov MY. web nedostupný (HTTP 403). web odmieta boty (403/výzva)."
+  },
+  {
+    "id": "stvr-spravy",
+    "nazov": "STVR Správy",
+    "typ": "tv",
+    "url_web": "https://spravy.stvr.sk/",
+    "rss": [
+      "https://spravy.stvr.sk/feed/"
+    ],
+    "api": "https://spravy.stvr.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Verejnoprávna televízia (nástupca RTVS). Feed rss: 60 pol., 37/deň, posledná 2026-09-29. text v RSS: medián 3131 zn., 100 % položiek ≥ 1000 zn.; oproti článku 4141/3444, 5652/4836, 2464/1773. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 4013 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (STVR Správy 19.00, STVR 24 Komentáre); 3.1 (O 5 minút 12))."
+  },
+  {
+    "id": "stvr",
+    "nazov": "STVR (Slovenská televízia a rozhlas)",
+    "typ": "tv",
+    "url_web": "https://www.stvr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.stvr.sk/rss → HTTP 404; www.stvr.sk/rss/ → HTTP 404; www.stvr.sk/feed → HTTP 404; www.stvr.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "stvr-slovensko",
+    "nazov": "Rádio Slovensko / Rádiožurnál (STVR)",
+    "typ": "radio",
+    "url_web": "https://slovensko.stvr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Rádiožurnál 12.00 a 18.00, Sobotné dialógy. RSS: nenájdený platný feed (slovensko.stvr.sk/rss → HTTP 404; slovensko.stvr.sk/rss/ → HTTP 404; slovensko.stvr.sk/feed → HTTP 404; slovensko.stvr.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Rádiožurnál 12.00, 18.00); 3.1 (Sobotné dialógy))."
+  },
+  {
+    "id": "stvr-regina",
+    "nazov": "Rádio Regina (STVR)",
+    "typ": "radio",
+    "url_web": "https://regina.stvr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Regionálne vysielanie STVR. RSS: nenájdený platný feed (regina.stvr.sk/rss → HTTP 404; regina.stvr.sk/rss/ → HTTP 404; regina.stvr.sk/feed → HTTP 404; regina.stvr.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "stvr-rsi",
+    "nazov": "Rádio Slovakia International (STVR)",
+    "typ": "radio",
+    "url_web": "https://rsi.stvr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (rsi.stvr.sk/rss → HTTP 404; rsi.stvr.sk/rss/ → HTTP 404; rsi.stvr.sk/feed → HTTP 404; rsi.stvr.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "markiza",
+    "nazov": "TV Markíza",
+    "typ": "tv",
+    "url_web": "https://www.markiza.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Televízne noviny 19.00. RSS: nenájdený platný feed (www.markiza.sk/rss → HTTP 404; www.markiza.sk/rss/ → HTTP 404; www.markiza.sk/feed → HTTP 404; www.markiza.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Televízne noviny 19.00); 3.1 (Na telo))."
+  },
+  {
+    "id": "joj",
+    "nazov": "TV JOJ",
+    "typ": "tv",
+    "url_web": "https://www.joj.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Noviny 19.30. RSS: nenájdený platný feed (www.joj.sk/rss → HTTP 404; www.joj.sk/rss/ → HTTP 404; www.joj.sk/feed → HTTP 404; www.joj.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Noviny 19.30))."
+  },
+  {
+    "id": "joj24",
+    "nazov": "JOJ 24",
+    "typ": "tv",
+    "url_web": "https://joj24.noviny.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Politika 24, Analýzy 24. RSS: nenájdený platný feed (joj24.noviny.sk/rss → HTTP 404; joj24.noviny.sk/rss/ → HTTP 404; joj24.noviny.sk/feed → HTTP 404; joj24.noviny.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Politika 24, Analýzy 24))."
+  },
+  {
+    "id": "expres",
+    "nazov": "Rádio Expres",
+    "typ": "radio",
+    "url_web": "https://expres.sk/",
+    "rss": [
+      "https://www.expres.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Infoexpres, Braňo Závodský Naživo. Feed rss: 10 pol., 2.3/deň, posledná 2026-09-29. text v RSS: medián 188 zn., 0 % položiek ≥ 1000 zn.; oproti článku 64/832, 270/2220, 227/2313. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Infoexpres 12.00, 17.00); 3.1 (Braňo Závodský Naživo))."
+  },
+  {
+    "id": "europa2",
+    "nazov": "Rádio Európa 2",
+    "typ": "radio",
+    "url_web": "https://www.europa2.sk/",
+    "rss": [
+      "https://www.europa2.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 7.0/deň, posledná 2026-09-29. text v RSS: medián 196 zn., 0 % položiek ≥ 1000 zn.; oproti článku 210/1847, 170/2423, 196/1500. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "funradio",
+    "nazov": "Fun Rádio",
+    "typ": "radio",
+    "url_web": "https://www.funradio.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.funradio.sk/rss → HTTP 404; www.funradio.sk/rss/ → HTTP 404; www.funradio.sk/feed → HTTP 404; www.funradio.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "jemne",
+    "nazov": "Rádio Jemné",
+    "typ": "radio",
+    "url_web": "https://www.jemne.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": null,
+    "poznamka": "web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "lumen",
+    "nazov": "Rádio Lumen",
+    "typ": "radio",
+    "url_web": "https://www.lumen.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "radio",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.lumen.sk/rss → HTTP 404; www.lumen.sk/rss/ → HTTP 404; www.lumen.sk/feed → HTTP 404; www.lumen.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "tvlux",
+    "nazov": "TV LUX",
+    "typ": "tv",
+    "url_web": "https://www.tvlux.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Katolícka televízia. RSS: nenájdený platný feed (www.tvlux.sk/rss → nie je feed (text/html); www.tvlux.sk/rss/ → nie je feed (text/html); www.tvlux.sk/feed → nie je feed (text/html); www.tvlux.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "tvnoe",
+    "nazov": "TV Noe",
+    "typ": "tv",
+    "url_web": "https://www.tvnoe.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "tv",
+    "overene_at": null,
+    "poznamka": "web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "tasr",
+    "nazov": "TASR – Tlačová agentúra SR",
+    "typ": "agentura",
+    "url_web": "https://www.tasr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "agentury",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Verejnoprávna agentúra; spravodajské produkty platené, tlačové správy a teraz.sk čiastočne verejné. RSS: nenájdený platný feed (www.tasr.sk/rss → nie je feed (text/html); www.tasr.sk/rss/ → nie je feed (text/html); www.tasr.sk/feed → nie je feed (text/html); www.tasr.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "sita-agentura",
+    "nazov": "SITA – Slovenská informačná a tlačová agentúra",
+    "typ": "agentura",
+    "url_web": "https://sita.sk/",
+    "rss": [
+      "https://sita.sk/rss"
+    ],
+    "api": "https://sita.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "agentury",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Súkromná agentúra; produkty platené. Feed rss: 20 pol., 114/deň, posledná 2026-09-29. text v RSS: medián 157 zn., 40 % položiek ≥ 1000 zn.; oproti článku 5363/5005, 3777/3649, 3202/3106 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1278 zn. v content.rendered)."
+  },
+  {
+    "id": "vlada",
+    "nazov": "Úrad vlády SR – tlačové správy a oznamy",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.vlada.gov.sk/",
+    "rss": [
+      "https://www.vlada.gov.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "vlada",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Tlačové správy a oznamy. Feed rss: 10 pol., 0.4/deň, posledná 2026-09-28. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/4189, 0/4048, 0/2894. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "rokovania-vlady",
+    "nazov": "Rokovania vlády SR (rokovania.gov.sk)",
+    "typ": "statny_zdroj",
+    "url_web": "https://rokovania.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "vlada",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Materiály, zápisnice a uznesenia z rokovaní vlády. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://rokovania.gov.sk/rss?id=rpo_material (posledná položka 2012-06-21)."
+  },
+  {
+    "id": "prezident",
+    "nazov": "Prezident SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.prezident.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "vlada",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.prezident.sk/rss → nie je feed (text/html); www.prezident.sk/rss/ → nie je feed (text/html); www.prezident.sk/feed → nie je feed (text/html); www.prezident.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "nrsr",
+    "nazov": "Národná rada SR (nrsr.sk)",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.nrsr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "parlament",
+    "overene_at": null,
+    "poznamka": "Rieši iný agent (XDR – Národná rada); tu iba zaznačená. RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "mfsr",
+    "nazov": "Ministerstvo financií SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mfsr.sk/",
+    "rss": [
+      "https://www.mfsr.sk/sk/rss.html"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 0.2/deň, posledná 2026-09-29. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/2921, 0/2655, 0/2266. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "minv",
+    "nazov": "Ministerstvo vnútra SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.minv.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.minv.sk/rss → HTTP 404; www.minv.sk/rss/ → HTTP 404; www.minv.sk/feed → HTTP 404; www.minv.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mzv",
+    "nazov": "Ministerstvo zahraničných vecí a európskych záležitostí SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mzv.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": null,
+    "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "mosr",
+    "nazov": "Ministerstvo obrany SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mosr.sk/",
+    "rss": [
+      "https://www.mosr.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 30 pol., 1.2/deň, posledná 2026-09-25. text v RSS: medián 150 zn., 0 % položiek ≥ 1000 zn.; oproti článku 147/242. paywall: nezistený (0/1 článkov)."
+  },
+  {
+    "id": "minedu",
+    "nazov": "Ministerstvo školstva, výskumu, vývoja a mládeže SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.minedu.sk/",
+    "rss": [
+      "https://www.minedu.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 50 pol., 0.5/deň, posledná 2026-09-28. text v RSS: medián 150 zn., 0 % položiek ≥ 1000 zn.; oproti článku 150/1195, 150/3734, 150/3933. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "health",
+    "nazov": "Ministerstvo zdravotníctva SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.health.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.health.gov.sk/RSS → nie je feed (text/html); www.health.gov.sk/rss → nie je feed (text/html); www.health.gov.sk/rss/ → nie je feed (text/html); www.health.gov.sk/feed → HTTP 404)."
+  },
+  {
+    "id": "employment",
+    "nazov": "Ministerstvo práce, sociálnych vecí a rodiny SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.employment.gov.sk/",
+    "rss": [
+      "https://www.employment.gov.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 0.3/deň, posledná 2026-09-25. text v RSS: medián 336 zn., 0 % položiek ≥ 1000 zn.; oproti článku 433/4470, 336/5657, 159/2522. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mhsr",
+    "nazov": "Ministerstvo hospodárstva SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mhsr.sk/",
+    "rss": [
+      "https://www.mhsr.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 50 pol., 0.3/deň, posledná 2026-09-22. text v RSS: medián 468 zn., 0 % položiek ≥ 1000 zn.; oproti článku 373/2362, 603/2407, 229/2475. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mindop",
+    "nazov": "Ministerstvo dopravy SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mindop.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": null,
+    "poznamka": "web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "mpsr",
+    "nazov": "Ministerstvo pôdohospodárstva a rozvoja vidieka SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mpsr.sk/",
+    "rss": [
+      "https://www.mpsr.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 0.7/deň, posledná 2026-09-29. text v RSS: medián 142 zn., 0 % položiek ≥ 1000 zn.; oproti článku 142/6048, 181/6182, 74/1148. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "minzp",
+    "nazov": "Ministerstvo životného prostredia SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://minzp.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (minzp.sk/rss → nie je feed (text/html); minzp.sk/rss/ → nie je feed (text/html); minzp.sk/feed → HTTP 404; minzp.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "culture",
+    "nazov": "Ministerstvo kultúry SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.culture.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.culture.gov.sk/rss → HTTP 404; www.culture.gov.sk/rss/ → HTTP 404; www.culture.gov.sk/feed → HTTP 404; www.culture.gov.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "justice",
+    "nazov": "Ministerstvo spravodlivosti SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.justice.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.justice.gov.sk/?feed=rss2 → feed bez položiek; www.justice.gov.sk/rss → feed bez položiek; www.justice.gov.sk/rss/ → feed bez položiek; www.justice.gov.sk/feed → feed bez položiek)."
+  },
+  {
+    "id": "mirri",
+    "nazov": "Ministerstvo investícií, regionálneho rozvoja a informatizácie SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mirri.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (mirri.gov.sk/rss → feed bez položiek; mirri.gov.sk/rss/ → feed bez položiek; mirri.gov.sk/feed → feed bez položiek; mirri.gov.sk/feed/ → feed bez položiek)."
+  },
+  {
+    "id": "mcrs",
+    "nazov": "Ministerstvo cestovného ruchu a športu SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mcrs.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ministerstvo",
+    "overene_at": null,
+    "poznamka": "web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "policia",
+    "nazov": "Polícia SR (sekcia na minv.sk)",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.minv.sk/?policia=",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "policia",
+    "overene_at": "2026-09-29T21:42:25.353Z",
+    "poznamka": "Web polície je sekcia webu Ministerstva vnútra; samostatný RSS sa nenašiel."
+  },
+  {
+    "id": "genpro",
+    "nazov": "Generálna prokuratúra SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.genpro.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sudy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.genpro.gov.sk/rss → nie je feed (text/html); www.genpro.gov.sk/rss/ → nie je feed (text/html); www.genpro.gov.sk/feed → nie je feed (text/html); www.genpro.gov.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "ustavnysud",
+    "nazov": "Ústavný súd SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.ustavnysud.sk/",
+    "rss": [
+      "https://www.ustavnysud.sk/o/v1/dms/rss/decisions",
+      "https://www.ustavnysud.sk/o/v1/dms/rss/submissions",
+      "https://www.ustavnysud.sk/o/v1/dms/rss/znau"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sudy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 60 pol., frekvencia nezistená, posledná ?, feedov 3. text v RSS: medián 24 zn., 0 % položiek ≥ 1000 zn.; oproti článku 21/1238, 21/1238, 21/1238. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "nsud",
+    "nazov": "Najvyšší súd SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.nsud.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sudy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.nsud.sk/rss → HTTP 404; www.nsud.sk/rss/ → HTTP 404; www.nsud.sk/feed → HTTP 404; www.nsud.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "justice-sudy",
+    "nazov": "Súdy SR – Občan a justícia (obcan.justice.sk)",
+    "typ": "statny_zdroj",
+    "url_web": "https://obcan.justice.sk/",
+    "rss": [],
+    "api": "https://obcan.justice.sk/pilot/api/ress-isu-service/v1 (JSON: rozhodnutie, sudca, sud; stránkovanie page/size)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "sudy",
+    "overene_at": null,
+    "poznamka": "Rozhodnutia súdov, sudcovia, súdy (Ministerstvo spravodlivosti). web nedostupný (HTTP 404). API overené (200, application/json)."
+  },
+  {
+    "id": "nku",
+    "nazov": "Najvyšší kontrolný úrad SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.nku.gov.sk/",
+    "rss": [
+      "https://www.nku.gov.sk/sk/web/nku/aktuality/-/journal/rss/33855/66340"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "kontrola",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 0.2/deň, posledná 2026-09-25. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/4425, 0/4408, 0/4203. paywall: nezistený (0/3 článkov). neaktívny feed: https://www.nku.gov.sk/sk/web/nku/aktuality/-/journal/rss/33855/1300577?refererPlid=59 (posledná položka 2023-11-18)."
+  },
+  {
+    "id": "upn",
+    "nazov": "Ústav pamäti národa",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.upn.gov.sk/",
+    "rss": [
+      "https://www.upn.gov.sk/feed/archiv-aktualit.rss",
+      "https://www.upn.gov.sk/feed/archiv-aktualit.atom"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "kontrola",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 20 pol., 0.2/deň, posledná 2026-09-28, feedov 2. text v RSS: medián 284 zn., 15 % položiek ≥ 1000 zn.; oproti článku 159/1046, 338/2012, 253/1721. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "uvo",
+    "nazov": "Úrad pre verejné obstarávanie",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.uvo.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "obstaravanie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Vestník verejného obstarávania; podlimitné zákazky bez otvoreného API. RSS: nenájdený platný feed (www.uvo.gov.sk/rss → nie je feed (text/html); www.uvo.gov.sk/rss/ → nie je feed (text/html); www.uvo.gov.sk/feed → nie je feed (text/html); www.uvo.gov.sk/feed/ → nie je feed (text/html))."
+  },
+  {
+    "id": "pmu",
+    "nazov": "Protimonopolný úrad SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.antimon.gov.sk/",
+    "rss": [
+      "https://www.antimon.gov.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regulator",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 50 pol., 0.4/deň, posledná 2026-09-28. text v RSS: medián 150 zn., 0 % položiek ≥ 1000 zn.; oproti článku 133/755, 150/876, 150/2055. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "urso",
+    "nazov": "Úrad pre reguláciu sieťových odvetví",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.urso.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regulator",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.urso.gov.sk/rss → HTTP 404; www.urso.gov.sk/rss/ → HTTP 404; www.urso.gov.sk/feed → HTTP 404; www.urso.gov.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "rvr",
+    "nazov": "Rada pre vysielanie a retransmisiu",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.rvr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regulator",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Regulátor vysielania; relevantné pre médiá. RSS: nenájdený platný feed (www.rvr.sk/rss → HTTP 404; www.rvr.sk/rss/ → HTTP 404; www.rvr.sk/feed → HTTP 404; www.rvr.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "dataprotection",
+    "nazov": "Úrad na ochranu osobných údajov",
+    "typ": "statny_zdroj",
+    "url_web": "https://dataprotection.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regulator",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (dataprotection.gov.sk/rss → HTTP 404; dataprotection.gov.sk/rss/ → HTTP 404; dataprotection.gov.sk/feed → HTTP 404; dataprotection.gov.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "nbs",
+    "nazov": "Národná banka Slovenska",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.nbs.sk/",
+    "rss": [
+      "https://www.nbs.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Tlačové správy. Feed rss: 10 pol., frekvencia nezistená, posledná ?. text v RSS: medián 414 zn., 0 % položiek ≥ 1000 zn.; oproti článku 414/1739, 0/1792. paywall: nezistený (0/2 článkov)."
+  },
+  {
+    "id": "financnasprava",
+    "nazov": "Finančná správa SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.financnasprava.sk/",
+    "rss": [
+      "https://www.financnasprava.sk/sk/rss/rss-novinky",
+      "https://www.financnasprava.sk/sk/rss/rss-tlacove-spravy",
+      "https://www.financnasprava.sk/sk/rss/rss-metodika-dane",
+      "https://www.financnasprava.sk/sk/rss/rss-dokumenty"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 1.7/deň, posledná 2026-09-29, feedov 4. text v RSS: medián 393 zn., 0 % položiek ≥ 1000 zn.; oproti článku 282/326, 419/2695, 430/2565. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "rrz",
+    "nazov": "Rada pre rozpočtovú zodpovednosť",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.rozpoctovarada.sk/",
+    "rss": [
+      "https://www.rrz.sk/rss"
+    ],
+    "api": "https://www.rrz.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 0.2/deň, posledná 2026-09-23. text v RSS: medián 3811 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3811/3573, 2140/1935, 3784/3061. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3526 zn. v content.rendered)."
+  },
+  {
+    "id": "ifp",
+    "nazov": "Inštitút finančnej politiky (MF SR)",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.mfsr.sk/sk/financie/institut-financnej-politiky/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": ""
+  },
+  {
+    "id": "socpoist",
+    "nazov": "Sociálna poisťovňa",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.socpoist.sk/",
+    "rss": [
+      "https://www.socpoist.sk/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed rss: 10 pol., 0.2/deň, posledná 2026-09-28. text v RSS: medián 127 zn., 0 % položiek ≥ 1000 zn.; oproti článku 152/906, 99/4134, 117/2843. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "upsvr",
+    "nazov": "ÚPSVR (ústredie práce, sociálnych vecí a rodiny)",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.upsvr.gov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "financie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.upsvr.gov.sk/rss.html?page_id=189 → nie je feed (text/html); www.upsvr.gov.sk/rss → nie je feed (text/html); www.upsvr.gov.sk/rss/ → nie je feed (text/html); www.upsvr.gov.sk/feed → HTTP 404)."
+  },
+  {
+    "id": "uvzsr",
+    "nazov": "Úrad verejného zdravotníctva SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.uvzsr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "zdravotnictvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.uvzsr.sk/rss → HTTP 404; www.uvzsr.sk/rss/ → HTTP 404; www.uvzsr.sk/feed → HTTP 404; www.uvzsr.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "sukl",
+    "nazov": "Štátny ústav pre kontrolu liekov",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.sukl.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "zdravotnictvo",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (www.sukl.sk/rss → HTTP 404; www.sukl.sk/rss/ → HTTP 404; www.sukl.sk/feed → HTTP 404; www.sukl.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "tlacovarada",
+    "nazov": "Tlačová rada SR",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.tlacovarada.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regulator",
+    "overene_at": null,
+    "poznamka": "Samoregulácia tlače (etický kódex). web nedostupný (ENOTFOUND)."
+  },
+  {
+    "id": "statistics",
+    "nazov": "Štatistický úrad SR (DATAcube)",
+    "typ": "register",
+    "url_web": "https://slovak.statistics.sk/",
+    "rss": [],
+    "api": "https://data.statistics.sk/api/v2 (JSON-stat, DATAcube)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "statistika",
+    "overene_at": null,
+    "poznamka": "Využíva existujúci konektor `statistika`. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát). API overené (200, application/json)."
+  },
+  {
+    "id": "crz",
+    "nazov": "Centrálny register zmlúv (CRZ)",
+    "typ": "register",
+    "url_web": "https://www.crz.gov.sk/",
+    "rss": [],
+    "api": "https://www.crz.gov.sk/export/YYYY-MM-DD.zip (XML, denný export)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "zmluvy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Využíva existujúci konektor `crz`. API overené (200, application/zip)."
+  },
+  {
+    "id": "ted",
+    "nazov": "TED – Tenders Electronic Daily (SR)",
+    "typ": "register",
+    "url_web": "https://ted.europa.eu/",
+    "rss": [],
+    "api": "https://api.ted.europa.eu/v3/notices/search (POST, JSON)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "obstaravanie",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Nadlimitné obstarávania; API overené existujúcim konektorom `ted` (zber 26. 9. 2026). Vyhľadávanie je POST, bez GET testu. API podľa dokumentácie, neoverené živým dotazom."
+  },
+  {
+    "id": "rpo",
+    "nazov": "Register právnických osôb (RPO, ŠÚ SR)",
+    "typ": "register",
+    "url_web": "https://rpo.statistics.sk/",
+    "rss": [],
+    "api": "https://api.statistics.sk/rpo/v1 (REST JSON: /search, /entity/{id})",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "API overené (200, application/json)."
+  },
+  {
+    "id": "orsr",
+    "nazov": "Obchodný register SR (ORSR)",
+    "typ": "register",
+    "url_web": "https://www.orsr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Iba HTML (zápisy, výpisy); bez API. Nahrádza ho RPO."
+  },
+  {
+    "id": "registeruz",
+    "nazov": "Register účtovných závierok",
+    "typ": "register",
+    "url_web": "https://www.registeruz.sk/",
+    "rss": [],
+    "api": "https://www.registeruz.sk/cruz-public/api (JSON: uctovne-jednotky, uctovne-zavierky, …)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "API overené (200, application/json)."
+  },
+  {
+    "id": "rpvs",
+    "nazov": "Register partnerov verejného sektora (RPVS)",
+    "typ": "register",
+    "url_web": "https://rpvs.gov.sk/",
+    "rss": [],
+    "api": "https://rpvs.gov.sk/opendatav2 (OData v4)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Koneční užívatelia výhod; OData stránkuje sám (parameter $top je obmedzený). API overené (200, application/json)."
+  },
+  {
+    "id": "zrsr",
+    "nazov": "Živnostenský register",
+    "typ": "register",
+    "url_web": "https://www.zrsr.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": null,
+    "poznamka": "web nedostupný (UNABLE_TO_GET_ISSUER_CERT_LOCALLY)."
+  },
+  {
+    "id": "ru",
+    "nazov": "Register úpadcov",
+    "typ": "register",
+    "url_web": "https://ru.justice.sk/ru-verejnost-web/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Iba HTML."
+  },
+  {
+    "id": "katastera",
+    "nazov": "Kataster nehnuteľností (ÚGKK, INSPIRE WFS)",
+    "typ": "register",
+    "url_web": "https://www.skgeodesy.sk/",
+    "rss": [],
+    "api": "https://inspirews.skgeodesy.sk/geoserver/cp/ows (WFS, parcely CP)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "register",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Využíva existujúci konektor `kataster`; vlastníci parciel (LV) nie sú otvorené dáta. API overené (200, application/xml)."
+  },
+  {
+    "id": "data-slovensko",
+    "nazov": "Národný katalóg otvorených dát (data.slovensko.sk)",
+    "typ": "register",
+    "url_web": "https://data.slovensko.sk/",
+    "rss": [],
+    "api": "https://data.slovensko.sk/api/sparql (SPARQL 1.1)",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "otvorene-data",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Katalóg datasetov štátu; CKAN API nefunguje (vracia HTML), funguje SPARQL. API overené (200, application/sparql-results+json)."
+  },
+  {
+    "id": "slov-lex",
+    "nazov": "Slov-Lex (zbierka zákonov, legislatívne procesy)",
+    "typ": "register",
+    "url_web": "https://www.slov-lex.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "legislativa",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Bez overeného otvoreného API."
+  },
+  {
+    "id": "itms",
+    "nazov": "ITMS21+ (eurofondy, otvorené dáta)",
+    "typ": "register",
+    "url_web": "https://opendata.itms2014.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "eurofondy",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": ""
+  },
+  {
+    "id": "shmu",
+    "nazov": "Slovenský hydrometeorologický ústav (výstrahy)",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.shmu.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "ine",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": ""
+  },
+  {
+    "id": "eurostat",
+    "nazov": "Eurostat (dáta za SR)",
+    "typ": "register",
+    "url_web": "https://ec.europa.eu/eurostat/",
+    "rss": [],
+    "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{dataset}?geo=SK (JSON-stat)",
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "statistika",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Celoeurópsky zdroj; SR je filter. API overené (200, application/json)."
+  },
+  {
+    "id": "kraj-bsk",
+    "nazov": "Bratislavský samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.region-bsk.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": null,
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "kraj-ttsk",
+    "nazov": "Trnavský samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.trnava-vuc.sk/",
+    "rss": [
+      "https://trnava-vuc.sk/feed/"
+    ],
+    "api": "https://trnava-vuc.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). Feed rss: 9 pol., 1.6/deň, posledná 2026-09-28. text v RSS: medián 512 zn., 0 % položiek ≥ 1000 zn.; oproti článku 463/1081, 495/2397, 535/362 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1603 zn. v content.rendered)."
+  },
+  {
+    "id": "kraj-tsk",
+    "nazov": "Trenčiansky samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.tsk.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). RSS: nenájdený platný feed (www.tsk.sk/rss → nie je feed (text/html); www.tsk.sk/rss/ → nie je feed (text/html); www.tsk.sk/feed → HTTP 404; www.tsk.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "kraj-nsk",
+    "nazov": "Nitriansky samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.unsk.sk/",
+    "rss": [
+      "https://www.unsk.sk/rss/index"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). Feed rss: 10 pol., 1.5/deň, posledná 2026-09-29. text v RSS: medián 221 zn., 0 % položiek ≥ 1000 zn.; oproti článku 85/3596, 0/3285, 112/3694. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "kraj-zsk",
+    "nazov": "Žilinský samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.zilinskazupa.sk/",
+    "rss": [
+      "https://www.zilinskazupa.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). Feed rss: 10 pol., 2.4/deň, posledná 2026-09-29. text v RSS: medián 789 zn., 40 % položiek ≥ 1000 zn.; oproti článku 6103/6910. paywall: nezistený (0/1 článkov)."
+  },
+  {
+    "id": "kraj-bbsk",
+    "nazov": "Banskobystrický samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.bbsk.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": null,
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). web nedostupný (UNABLE_TO_VERIFY_LEAF_SIGNATURE). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "kraj-psk",
+    "nazov": "Prešovský samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.po-kraj.sk/",
+    "rss": [
+      "https://cuet.slovensko.sk/sk/Rss/RssFeed?PublisherName=Pre%C5%A1ovsk%C3%BD%20samospr%C3%A1vny%20kraj&PublisherId=ico%3A%2F%2Fsk%2F37870475"
+    ],
+    "api": "https://psk.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). Feed rss: 7 pol., frekvencia nezistená, posledná ?. text v RSS: medián 0 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné). WordPress REST otvorené (medián 1880 zn. v content.rendered)."
+  },
+  {
+    "id": "kraj-ksk",
+    "nazov": "Košický samosprávny kraj",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.vucke.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (predseda kraja). RSS: nenájdený platný feed (www.kosickazupa.sk/rss → HTTP 404; www.kosickazupa.sk/rss/ → HTTP 404; www.kosickazupa.sk/feed → HTTP 404; www.kosickazupa.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-ba",
+    "nazov": "Mesto Bratislava",
+    "typ": "statny_zdroj",
+    "url_web": "https://bratislava.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). RSS: nenájdený platný feed (bratislava.sk/rss → HTTP 404; bratislava.sk/rss/ → HTTP 404; bratislava.sk/feed → HTTP 404; bratislava.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-tt",
+    "nazov": "Mesto Trnava",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.trnava.sk/",
+    "rss": [
+      "https://www.trnava.sk/rss/news",
+      "https://www.trnava.sk/rss/ordinance",
+      "https://www.trnava.sk/rss/events"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 60 pol., 1.2/deň, posledná 2026-09-29, feedov 3. text v RSS: medián 1656 zn., 73 % položiek ≥ 1000 zn.; oproti článku 1110/869, 4317/3214, 171/171. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "mesto-tn",
+    "nazov": "Mesto Trenčín",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.trencin.sk/",
+    "rss": [
+      "https://trencin.sk/feed/"
+    ],
+    "api": "https://trencin.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 20 pol., 2.8/deň, posledná 2026-09-29. text v RSS: medián 1015 zn., 50 % položiek ≥ 1000 zn.; oproti článku 701/2966, 3697/5742, 1025/3205. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1025 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-nr",
+    "nazov": "Mesto Nitra",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.nitra.sk/",
+    "rss": [
+      "https://nitra.sk/rss"
+    ],
+    "api": "https://nitra.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 10 pol., frekvencia nezistená, posledná ?. text v RSS: medián 389 zn., 0 % položiek ≥ 1000 zn.; oproti článku 387/2109, 422/2182, 425/2805. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1459 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-za",
+    "nazov": "Mesto Žilina",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.zilina.sk/",
+    "rss": [
+      "https://zilina.sk/rss"
+    ],
+    "api": "https://zilina.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 10 pol., 1.5/deň, posledná 2026-09-29. text v RSS: medián 1245 zn., 50 % položiek ≥ 1000 zn.; oproti článku 379/308, 377/262, 372/225. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 301 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-bb",
+    "nazov": "Mesto Banská Bystrica",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.banskabystrica.sk/",
+    "rss": [
+      "https://www.banskabystrica.sk/feed/"
+    ],
+    "api": "https://www.banskabystrica.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 18 pol., 2.7/deň, posledná 2026-09-29. text v RSS: medián 380 zn., 0 % položiek ≥ 1000 zn.; oproti článku 380/878, 329/504, 372/2596. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 0 zn. v content.rendered)."
+  },
+  {
+    "id": "mesto-po",
+    "nazov": "Mesto Prešov",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.presov.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). RSS: nenájdený platný feed (www.presov.sk/rss → HTTP 404; www.presov.sk/rss/ → HTTP 404; www.presov.sk/feed → HTTP 404; www.presov.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "mesto-ke",
+    "nazov": "Mesto Košice",
+    "typ": "statny_zdroj",
+    "url_web": "https://www.kosice.sk/",
+    "rss": [
+      "https://www.kosice.sk/rss/aktuality",
+      "https://www.kosice.sk/rss/verejne-sutaze-a-drazby",
+      "https://www.kosice.sk/rss/zivotne-prostredie",
+      "https://www.kosice.sk/rss/vyberove-konania"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "samsprava",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Voľby 24. 10. 2026 (primátor). Feed rss: 15 pol., 0.5/deň, posledná 2026-09-28, feedov 4. text v RSS: medián 4624 zn., 100 % položiek ≥ 1000 zn.; oproti článku 5964/5952, 3533/3322, 8242/8224. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "yt-ta3",
+    "nazov": "TA3 (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCRdWsx3iLG7vwq1cWK26gzA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCRdWsx3iLG7vwq1cWK26gzA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "V politike, Téma dňa a ďalšie relácie. Feed atom: 15 pol., 13/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo; 3.1 (V politike, Téma dňa))."
+  },
+  {
+    "id": "yt-stvr",
+    "nazov": "STVR (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCi9f1eukX2qQDdmn__GcysA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCi9f1eukX2qQDdmn__GcysA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 11/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-stvr-diskusie",
+    "nazov": "STVR – Diskusie a politika (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCVZqPnawsP7epBNZJCp6-qg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCVZqPnawsP7epBNZJCp6-qg"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "O 5 minút 12, Sobotné dialógy, STVR 24 Komentáre a ďalšie diskusné relácie. Feed atom: 15 pol., 3.7/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (O 5 minút 12, Sobotné dialógy); 2 (STVR 24 Komentáre))."
+  },
+  {
+    "id": "yt-joj",
+    "nazov": "Televízia JOJ (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC5zY50gn7Z0-yGSt74dRZXw",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC5zY50gn7Z0-yGSt74dRZXw"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "JOJ 24 (Politika 24, Analýzy 24) vystupuje aj v spoločných kanáloch „Televízia JOJ and JOJ 24“, ktoré nemajú vlastný feed. Feed atom: 15 pol., 46/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Noviny); 3.1 (Politika 24, Analýzy 24))."
+  },
+  {
+    "id": "yt-markiza",
+    "nazov": "Televízia Markíza (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCIAAI5FnphpbEYVdpuB2CHg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCIAAI5FnphpbEYVdpuB2CHg"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Televízne noviny, Na telo. Feed atom: 15 pol., 112/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo; 3.1 (Na telo))."
+  },
+  {
+    "id": "yt-expres",
+    "nazov": "Rádio Expres (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCkwlix5Fv0dg3cQJCz4dO4Q",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCkwlix5Fv0dg3cQJCz4dO4Q"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.4/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-dennikn",
+    "nazov": "Denník N (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCe_VgLz1y99hUF1q5ppQesA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCe_VgLz1y99hUF1q5ppQesA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 6.3/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-sme",
+    "nazov": "SME (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCyda3-VrO_BezqwTrWSjtmw",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCyda3-VrO_BezqwTrWSjtmw"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 8.2/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-aktuality",
+    "nazov": "Aktuality.sk (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC2lCFhJIC4adt_oP1dwSOVg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC2lCFhJIC4adt_oP1dwSOVg"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 12/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-standard",
+    "nazov": "Štandard (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCB0B3N2gqu-EaheNeRLFGbg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCB0B3N2gqu-EaheNeRLFGbg"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.6/deň, posledná 2026-09-28. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-postoj",
+    "nazov": "POSTOJ TV (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC-myj78RmSMJNYkEPtCSB7g",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC-myj78RmSMJNYkEPtCSB7g"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 2.2/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-slobodnyvysielac",
+    "nazov": "Slobodný vysielač – archív (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCKj43efhJ3jazTlenp8EJ0g",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCKj43efhJ3jazTlenp8EJ0g"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Oficiálny archívny kanál. Feed atom: 15 pol., 2.0/deň, posledná 2026-09-28. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-zvtv",
+    "nazov": "ZVTV (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCivFldR8ZAMO5i4DEE53_Bw",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCivFldR8ZAMO5i4DEE53_Bw"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.1/deň, posledná 2026-09-20. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-hlavnespravy",
+    "nazov": "Hlavné správy (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCs3NaeO10RxshJVWdcEN_Iw",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCs3NaeO10RxshJVWdcEN_Iw (posledná položka 2026-08-05)."
+  },
+  {
+    "id": "yt-ereport",
+    "nazov": "eReport (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCpM-t0T57ODqg3Z5oOo-x5A",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCpM-t0T57ODqg3Z5oOo-x5A"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 2.7/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-hn",
+    "nazov": "HNtelevízia (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCWzUV7BBmiE8Sbt8xo89tDA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCWzUV7BBmiE8Sbt8xo89tDA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Hospodárske noviny. Feed atom: 15 pol., 3.5/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-forbes",
+    "nazov": "Forbes Slovensko (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCm3KWuHbScDjr54EI53AnbQ",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCm3KWuHbScDjr54EI53AnbQ"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.6/deň, posledná 2026-09-18. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-refresher",
+    "nazov": "Refresher SK (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCpegYoYUzkTZZWtbyBI5hGA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCpegYoYUzkTZZWtbyBI5hGA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.7/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-startitup",
+    "nazov": "Startitup (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UClbseppdhNj1vZsTgH6T1Og",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UClbseppdhNj1vZsTgH6T1Og"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 10/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-interez",
+    "nazov": "Interez (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCqEwTmcuvDnQrx3nZQ2J7KA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCqEwTmcuvDnQrx3nZQ2J7KA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.3/deň, posledná 2026-09-24. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-pravda",
+    "nazov": "Pravda (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCFwiZDXn2BtsBxNpUm977pg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCFwiZDXn2BtsBxNpUm977pg"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 2.8/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-novycas",
+    "nazov": "Nový Čas (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCVbQJfFCW2xvYqvR-h-Yb3g",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCVbQJfFCW2xvYqvR-h-Yb3g"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 4.9/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-trend",
+    "nazov": "TREND (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCqAk6ZriM5qvhxLgUoFsfvw",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCqAk6ZriM5qvhxLgUoFsfvw"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 1.2/deň, posledná 2026-09-28. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-icjk",
+    "nazov": "Investigatívne centrum Jána Kuciaka (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCPQY77IlYZN_wwSXpfipXHA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCPQY77IlYZN_wwSXpfipXHA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.2/deň, posledná 2026-09-25. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "yt-sita",
+    "nazov": "SITA agentúra (YouTube)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCRq0LCpVbXtkpmCwtDW6svw",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCRq0LCpVbXtkpmCwtDW6svw"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "youtube_kanal",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 1.7/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "pod-branozavodsky",
+    "nazov": "Braňo Závodský Naživo (Rádio Expres)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCW1pHS8ZHpI33xnOhBvSGyQ",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCW1pHS8ZHpI33xnOhBvSGyQ",
+      "https://rss.podplaystudio.com/2460.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Každý pracovný deň 10 minút po 12.00; víťaz Orange Podcast roka 2026 (Rozhľad). Feed atom: 15 pol., 6.7/deň, posledná 2026-09-29, feedov 2. YouTube feed: iba popis videa, prepis cez yt-dlp titulky; zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Braňo Závodský Naživo))."
+  },
+  {
+    "id": "pod-bardy-kacer",
+    "nazov": "Bárdy & Káčer",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC2kzV2zMZxLE1ywlO1e3GTg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC2kzV2zMZxLE1ywlO1e3GTg",
+      "https://feeds.captivate.fm/bardyandkacer/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.1/deň, posledná 2026-09-26, feedov 2. YouTube feed: iba popis videa, prepis cez yt-dlp titulky; zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-datel",
+    "nazov": "Ďateľ k veci",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCS1hDXcZBlU9F8Egrztb30Q",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCS1hDXcZBlU9F8Egrztb30Q",
+      "https://rss.buzzsprout.com/2502209.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 1.0/deň, posledná 2026-09-29, feedov 2. YouTube feed: iba popis videa, prepis cez yt-dlp titulky; zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-360tka",
+    "nazov": "360tka",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UCmrhO5Os8uoGD_YFktVAUrg",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCmrhO5Os8uoGD_YFktVAUrg",
+      "https://anchor.fm/s/105ad270c/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 9.4/deň, posledná 2026-09-29, feedov 2. YouTube feed: iba popis videa, prepis cez yt-dlp titulky; zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-fiki",
+    "nazov": "Fiki Unchained (Richard Sulík)",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC8SC3sB2-FNRc3awzVJu_jA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC8SC3sB2-FNRc3awzVJu_jA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Existujúci korpus: `netopier/fiki/`, `data/fiki/`. Feed atom: 15 pol., 0.1/deň, posledná 2026-09-29. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "pod-politolog",
+    "nazov": "Politológ bez diplomu",
+    "typ": "podcast",
+    "url_web": "https://www.youtube.com/channel/UC9ABe980LZhZkC30T5aowTA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UC9ABe980LZhZkC30T5aowTA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.9/deň, posledná 2026-09-28. YouTube feed: iba popis videa, prepis cez yt-dlp titulky."
+  },
+  {
+    "id": "pod-newsfilter",
+    "nazov": "Denník N Newsfilter",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://dennikn.podbean.com/feed.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 1.8/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-vredakcii",
+    "nazov": "V redakcii (Denník N)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://feed.podbean.com/vredakcii/feed.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 1.0/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-dobre-rano",
+    "nazov": "Dobré ráno (SME)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Denný podcast denníka SME. RSS: nenájdený platný feed (www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd7e-b12201270fe1/1b9163b9-0283-44eb-b3a9-b23d014269d6/f3c26c85-8543-46e4-8ca9-b23d01426a0b/podcast.rss → nie je feed (application/xml))."
+  },
+  {
+    "id": "pod-ranny-brifing",
+    "nazov": "Ranný brífing SME",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd7e-b12201270fe1/fdf64332-de4a-4c0c-902a-b12400e91ffd/201b5e44-a26d-421b-a50d-b12400e92027/podcast.rss → nie je feed (application/xml))."
+  },
+  {
+    "id": "pod-rozhovory-zkh",
+    "nazov": "Rozhovory ZKH (SME)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/78049d90/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-28. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-nahlas",
+    "nazov": "NAHLAS (Aktuality.sk)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (feeds.captivate.fm/nahlas-aktualitysk/ → nie je feed (application/xml))."
+  },
+  {
+    "id": "pod-fair-play",
+    "nazov": "Fair Play Michala Kovačiča (Aktuality.sk)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://anchor.fm/s/114fc3cfc/podcast/rss (posledná položka 2023-04-17)."
+  },
+  {
+    "id": "pod-aktuality",
+    "nazov": "Podcasty Aktuality.sk",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (feeds.captivate.fm/podcasty-aktualitysk/ → nie je feed (application/xml))."
+  },
+  {
+    "id": "pod-ta3",
+    "nazov": "Podcast TA3",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://feeds.transistor.fm/podcast-ta3-c7b7e6f8-0dc5-4390-86f2-adbd14b69a88"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 1.8/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (V politike, Téma dňa))."
+  },
+  {
+    "id": "pod-analyzy24",
+    "nazov": "Analýzy 24 (JOJ 24)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://feed.podbean.com/nahranejoj/feed.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.7/deň, posledná 2026-09-28. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Analýzy 24))."
+  },
+  {
+    "id": "pod-politika24",
+    "nazov": "Politika 24 (JOJ 24)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://feed.podbean.com/politika24/feed.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-27. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Politika 24))."
+  },
+  {
+    "id": "pod-stvr-o5minut",
+    "nazov": "O 5 minút 12 (STVR)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "http://api.stvr.sk/xml/applepodcast_tvarchive.xml?series=14036"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-27. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (O 5 minút 12))."
+  },
+  {
+    "id": "pod-stvr-sobotne-dialogy",
+    "nazov": "Sobotné dialógy (STVR)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "http://api.stvr.sk/xml/applepodcast_archive.xml?series=1134"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-26. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Sobotné dialógy))."
+  },
+  {
+    "id": "pod-stvr-do-krizu",
+    "nazov": "Do kríža (STVR)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "http://api.stvr.sk/xml/applepodcast_tvarchive.xml?series=23280"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-23. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-stvr-otvorene",
+    "nazov": "Otvorene s Annou Vargovou (STVR)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "http://api.stvr.sk/xml/applepodcast_archive.xml?series=11340"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.4/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-stvr-radiozurnal18",
+    "nazov": "Rádiožurnál o 18:00 (STVR)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "http://api.stvr.sk/xml/applepodcast_archive.xml?series=1124"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 1.0/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu. Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 2 spravodajstvo (Rádiožurnál 18.00))."
+  },
+  {
+    "id": "pod-hn-doslova",
+    "nazov": "Doslova s Gogovou (HN)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/d885630c/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.4/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-chmelar",
+    "nazov": "Eduard Chmelár Podcast",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feed.podbean.com/eduardchmelarpodcast/feed.xml (posledná položka 2020-03-25)."
+  },
+  {
+    "id": "pod-sita-rozhovory",
+    "nazov": "Rozhovory Štúdia SITA",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/eef20ba4/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.2/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-tasr",
+    "nazov": "TASR podcasty (Teraz.sk / TASR TV)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/1101391f4/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.6/deň, posledná 2026-09-28. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-postoj",
+    "nazov": "Podcast denníka Postoj",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://feeds.soundcloud.com/users/soundcloud:users:434012961/sounds.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.6/deň, posledná 2026-09-28. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-hlavnespravy",
+    "nazov": "Podcasty a rozhovory Hlavné správy",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feed.podbean.com/hlavnespravy/feed.xml (posledná položka 2026-08-01)."
+  },
+  {
+    "id": "pod-slobodny-vysielac",
+    "nazov": "Slobodný vysielač (zvukový podcast)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://hearthis.at/slobodnyvysielac/podcast.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 3.1/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-infovojna-archiv",
+    "nazov": "Infovojna archív",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/8bf8ced4/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.5/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-na-telo",
+    "nazov": "Na telo s Michalom Kovačičom (Markíza)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feeds.soundcloud.com/users/soundcloud:users:511678815/sounds.rss (posledná položka 2024-05-26). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 3.1 (Na telo))."
+  },
+  {
+    "id": "pod-karty-na-stol",
+    "nazov": "Karty na stôl s Norom Dolinským (Plus 1 deň)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://rss.buzzsprout.com/2020952.rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.3/deň, posledná 2026-09-29. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-1na1-interez",
+    "nazov": "1 na 1 (Interez)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/100dfa4c0/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Feed rss: 60 pol., 0.1/deň, posledná 2026-09-02. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-dnes-vecer-simecka",
+    "nazov": "Dnes večer s Michalom Šimečkom (Štúdio Štúrova)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://anchor.fm/s/1019ef3c0/podcast/rss (posledná položka 2026-07-05)."
+  },
+  {
+    "id": "pod-fakticka-poznamka",
+    "nazov": "Faktická poznámka (Štúdio Štúrova)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [
+      "https://anchor.fm/s/f7954898/podcast/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky. Feed rss: 34 pol., 0.0/deň, posledná 2026-09-18. zvukový feed: zvuk (enclosure) a popis epizódy, bez prepisu."
+  },
+  {
+    "id": "pod-bod-varu",
+    "nazov": "Bod Varu (Štúdio Štúrova)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://anchor.fm/s/fd7d68e4/podcast/rss (posledná položka 2026-05-29)."
+  },
+  {
+    "id": "pod-ps-plan",
+    "nazov": "Plán pre budúcnosť (Progresívne Slovensko)",
+    "typ": "podcast",
+    "url_web": null,
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "podcast_relacia",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Stranícky podcast. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.spreaker.com/show/5943010/episodes/feed (posledná položka 2023-09-25)."
+  },
+  {
+    "id": "yt-smer",
+    "nazov": "SMER – Sociálna demokracia (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCdU1Hed-u-HJky_GNcPABeQ",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCdU1Hed-u-HJky_GNcPABeQ"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 2.3/deň, posledná 2026-09-29. text v RSS: medián 196 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "yt-ps",
+    "nazov": "Progresívne Slovensko (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCLIsT-M9az2qvLb9E8znE-w",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCLIsT-M9az2qvLb9E8znE-w"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 34/deň, posledná 2026-09-29. text v RSS: medián 160 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "yt-hlas",
+    "nazov": "HLAS – sociálna demokracia (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCIXk1BNeVHNsmc68vCIeE9A",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCIXk1BNeVHNsmc68vCIeE9A"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.1/deň, posledná 2026-09-15. text v RSS: medián 49 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "yt-pellegrini",
+    "nazov": "Peter Pellegrini (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCdu0cvg_SvZ0px4-tSrB68g",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCdu0cvg_SvZ0px4-tSrB68g"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 1.2/deň, posledná 2026-09-29. text v RSS: medián 102 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "yt-matovic",
+    "nazov": "Igor Matovič (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCsZbmwDA4qNkIvntsPlYRpg",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCsZbmwDA4qNkIvntsPlYRpg (posledná položka 2024-06-03)."
+  },
+  {
+    "id": "yt-blaha",
+    "nazov": "Ľuboš Blaha (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCQoZFnw0SF-f2aLUPm0V_WQ",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCQoZFnw0SF-f2aLUPm0V_WQ (posledná položka 2022-09-08)."
+  },
+  {
+    "id": "yt-uhrik",
+    "nazov": "Milan Uhrík / Republika (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCA8sTkXwvqalS3s_QcurwrA",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCA8sTkXwvqalS3s_QcurwrA"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 0.6/deň, posledná 2026-09-29. text v RSS: medián 0 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "yt-danko",
+    "nazov": "Andrej Danko / SNS (YouTube)",
+    "typ": "ine",
+    "url_web": "https://www.youtube.com/channel/UCqp7MtE36r2_7upCAwsts0A",
+    "rss": [
+      "https://www.youtube.com/feeds/videos.xml?channel_id=UCqp7MtE36r2_7upCAwsts0A"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "politik_youtube",
+    "overene_at": "2026-09-29T21:39:09.452Z",
+    "poznamka": "Feed atom: 15 pol., 1.9/deň, posledná 2026-09-29. text v RSS: medián 124 zn. (článok sa nepodarilo stiahnuť: , , ) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
+  },
+  {
+    "id": "pravo-cz",
+    "nazov": "Právo (CZ)",
+    "typ": "medium",
+    "url_web": "https://www.novinky.cz/",
+    "rss": [
+      "https://www.novinky.cz/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Právo; web denníka je novinky.cz. Feed rss: 30 pol., 74/deň, posledná 2026-09-29. text v RSS: medián 335 zn., 0 % položiek ≥ 1000 zn.; oproti článku 220/1281, 303/927, 340/1247. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "idnes",
+    "nazov": "iDNES.cz (MF Dnes)",
+    "typ": "medium",
+    "url_web": "https://www.idnes.cz/",
+    "rss": [
+      "https://servis.idnes.cz/rss.aspx?c=zpravodaj",
+      "https://servis.idnes.cz/rss.aspx"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Mladá fronta DNES. Feed rss: 30 pol., 111/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 328 zn., 0 % položiek ≥ 1000 zn.; oproti článku 307/3207, 317/3207, 225/3207. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "lidovky",
+    "nazov": "Lidovky.cz (Lidové noviny)",
+    "typ": "medium",
+    "url_web": "https://www.lidovky.cz/",
+    "rss": [
+      "https://servis.lidovky.cz/rss.aspx"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:25.474Z",
+    "poznamka": "Feed rss: 30 pol., 97/deň, posledná 2026-09-29. text v RSS: medián 315 zn., 0 % položiek ≥ 1000 zn.; oproti článku 298/3207, 307/3207, 251/3207. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "hn-cz",
+    "nazov": "Hospodářské noviny (CZ)",
+    "typ": "medium",
+    "url_web": "https://hn.cz/",
+    "rss": [
+      "https://hn.cz/?m=rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Feed rss: 60 pol., 14/deň, posledná 2026-09-29. text v RSS: medián 248 zn., 0 % položiek ≥ 1000 zn.; oproti článku 250/3880, 250/3908, 251/2692. paywall: signály u 1/3 článkov (ld+json isAccessibleForFree=false; trieda paywall/locked). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "ct24",
+    "nazov": "ČT24 / Česká televize",
+    "typ": "tv",
+    "url_web": "https://ct24.ceskatelevize.cz/",
+    "rss": [
+      "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy",
+      "https://ct24.ceskatelevize.cz/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "ČT 1 a ČT 24. Feed rss: 30 pol., 19/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 410 zn., 0 % položiek ≥ 1000 zn.; oproti článku 410/1581, 476/2708, 351/6988. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá (ČT 1, ČT 24); v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "prima-cnn",
+    "nazov": "CNN Prima News (TV Prima)",
+    "typ": "tv",
+    "url_web": "https://cnn.iprima.cz/",
+    "rss": [
+      "https://cnn.iprima.cz/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Feed rss: 32 pol., 76/deň, posledná 2026-09-29. text v RSS: medián 1776 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1695/149, 1489/174, 1708/92. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá (TV Prima); v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "tn-nova",
+    "nazov": "TN.cz (TV Nova)",
+    "typ": "tv",
+    "url_web": "https://tn.nova.cz/",
+    "rss": [
+      "https://tn.nova.cz/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Feed atom: 50 pol., 77/deň, posledná 2026-09-29. text v RSS: medián 1521 zn., 76 % položiek ≥ 1000 zn.; oproti článku 853/1506, 445/1021, 281/857. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá (TV Nova); v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "radiozurnal-cz",
+    "nazov": "ČRo Radiožurnál",
+    "typ": "radio",
+    "url_web": "https://radiozurnal.rozhlas.cz/",
+    "rss": [
+      "https://radiozurnal.rozhlas.cz/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "cs",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Feed rss: 50 pol., 9.1/deň, posledná 2026-09-29. text v RSS: medián 165 zn., 0 % položiek ≥ 1000 zn.; oproti článku 156/549, 155/4124, 154/471. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 5 zahraničné médiá (ČRo Rádiožurnál); v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "economist",
+    "nazov": "The Economist",
+    "typ": "medium",
+    "url_web": "https://www.economist.com/",
+    "rss": [
+      "https://www.economist.com/latest/rss.xml"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Platený obsah. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 60 pol., 11/deň, posledná 2026-09-29. text v RSS: medián 70 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 6 zahraničné webstránky; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "ft",
+    "nazov": "Financial Times",
+    "typ": "medium",
+    "url_web": "https://www.ft.com/",
+    "rss": [
+      "https://www.ft.com/rss/home"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Platený obsah. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 10 pol., 11/deň, posledná 2026-09-29. text v RSS: medián 113 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 6 zahraničné webstránky; v zmluve 130/2026 už nie je)."
+  },
+  {
+    "id": "wsj",
+    "nazov": "The Wall Street Journal",
+    "typ": "medium",
+    "url_web": "https://www.wsj.com/",
+    "rss": [
+      "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "en",
+    "kategoria": "zahranicne",
+    "overene_at": "2026-09-29T21:49:07.843Z",
+    "poznamka": "Platený obsah. web nedostupný (HTTP 401). web odmieta boty (403/výzva). Feed rss: 60 pol., 0.2/deň, posledná 2026-09-29. text v RSS: medián 125 zn. (článok sa nepodarilo stiahnuť: 401, 401, 401) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 821/2024 príloha č. 1, bod 6 zahraničné webstránky; v zmluve 130/2026 už nie je)."
+  }
+]

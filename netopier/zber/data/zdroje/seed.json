@@ -1,0 +1,2526 @@
+[
+ {
+  "id": "sme",
+  "nazov": "SME",
+  "typ": "medium",
+  "url_web": "https://www.sme.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Petit Press. Cloudflare „Security Verification“ (403/429) pre časť dotazov.",
+  "rss": [
+   "https://www.sme.sk/rss",
+   "https://domov.sme.sk/rss",
+   "https://svet.sme.sk/rss",
+   "https://ekonomika.sme.sk/rss",
+   "https://komentare.sme.sk/rss",
+   "https://kultura.sme.sk/rss"
+  ],
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "dennikn",
+  "nazov": "Denník N",
+  "typ": "medium",
+  "url_web": "https://dennikn.sk/",
+  "kategoria": "celostatne",
+  "rss": [
+   "https://dennikn.sk/feed/",
+   "https://dennikn.sk/minuta/feed/?cat=2386"
+  ],
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "pravda",
+  "nazov": "Pravda",
+  "typ": "medium",
+  "url_web": "https://www.pravda.sk/",
+  "kategoria": "celostatne",
+  "rss": [
+   "https://www.pravda.sk/spravy/rss/xml"
+  ],
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "hnonline",
+  "nazov": "Hospodárske noviny (HNonline)",
+  "typ": "medium",
+  "url_web": "https://hnonline.sk/",
+  "kategoria": "ekonomicke",
+  "poznamka": "Mafra Slovakia / Zoznam.",
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "cas",
+  "nazov": "Nový Čas",
+  "typ": "medium",
+  "url_web": "https://www.cas.sk/",
+  "kategoria": "bulvar",
+  "poznamka": "Ringier Axel Springer.",
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "pluska",
+  "nazov": "Pluska.sk (Plus jeden deň)",
+  "typ": "medium",
+  "url_web": "https://www.pluska.sk/",
+  "kategoria": "bulvar",
+  "mediaboard": "1 denníky; 5 weby"
+ },
+ {
+  "id": "aktuality",
+  "nazov": "Aktuality.sk",
+  "typ": "medium",
+  "url_web": "https://www.aktuality.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Ringier Axel Springer.",
+  "rss": [
+   "https://www.aktuality.sk/rss/"
+  ],
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "topky",
+  "nazov": "Topky.sk",
+  "typ": "medium",
+  "url_web": "https://www.topky.sk/",
+  "kategoria": "bulvar",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "zoznam-spravy",
+  "nazov": "Zoznam Správy",
+  "typ": "medium",
+  "url_web": "https://spravy.zoznam.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Zoznam.sk (skupina Zoznam / Mafra)."
+ },
+ {
+  "id": "dnes24",
+  "nazov": "Dnes24.sk",
+  "typ": "medium",
+  "url_web": "https://www.dnes24.sk/",
+  "kategoria": "celostatne"
+ },
+ {
+  "id": "24hod",
+  "nazov": "24hod.sk",
+  "typ": "medium",
+  "url_web": "https://www.24hod.sk/",
+  "kategoria": "celostatne"
+ },
+ {
+  "id": "aktualne",
+  "nazov": "Aktuálne.sk",
+  "typ": "medium",
+  "url_web": "https://www.aktualne.sk/",
+  "kategoria": "celostatne"
+ },
+ {
+  "id": "dolezite",
+  "nazov": "Dôležité.sk",
+  "typ": "medium",
+  "url_web": "https://www.dolezite.sk/",
+  "kategoria": "celostatne"
+ },
+ {
+  "id": "bratislavskenoviny",
+  "nazov": "Bratislavské noviny",
+  "typ": "medium",
+  "url_web": "https://www.bratislavskenoviny.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "postoj",
+  "nazov": "Postoj",
+  "typ": "medium",
+  "url_web": "https://www.postoj.sk/",
+  "kategoria": "nazorove",
+  "poznamka": "Konzervatívno-kresťanské médium.",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "standard",
+  "nazov": "Štandard",
+  "typ": "medium",
+  "url_web": "https://standard.sk/",
+  "kategoria": "nazorove",
+  "poznamka": "Denník Štandard.",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "startitup",
+  "nazov": "Startitup",
+  "typ": "medium",
+  "url_web": "https://www.startitup.sk/",
+  "kategoria": "technologie",
+  "poznamka": "Startupy a technológie."
+ },
+ {
+  "id": "refresher",
+  "nazov": "Refresher",
+  "typ": "medium",
+  "url_web": "https://refresher.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Mladé publikum, lifestyle a spoločnosť."
+ },
+ {
+  "id": "zive",
+  "nazov": "Živé.sk",
+  "typ": "medium",
+  "url_web": "https://www.zive.sk/",
+  "kategoria": "technologie"
+ },
+ {
+  "id": "vosveteit",
+  "nazov": "Vosveteit.sk",
+  "typ": "medium",
+  "url_web": "https://vosveteit.zoznam.sk/",
+  "kategoria": "technologie"
+ },
+ {
+  "id": "techbox",
+  "nazov": "Techbox.sk",
+  "typ": "medium",
+  "url_web": "https://www.techbox.sk/",
+  "kategoria": "technologie"
+ },
+ {
+  "id": "hlavnespravy",
+  "nazov": "Hlavné správy",
+  "typ": "medium",
+  "url_web": "https://www.hlavnespravy.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedené v zozname konspiratori.sk (podľa verejných správ); v zmluve Mediaboardu ako sledovaný web.",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "hlavnydennik",
+  "nazov": "Hlavný denník",
+  "typ": "medium",
+  "url_web": "https://www.hlavnydennik.sk/",
+  "kategoria": "alternativne",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "dennike",
+  "nazov": "Denník E (dennike.sk)",
+  "typ": "medium",
+  "url_web": "https://dennike.sk/",
+  "kategoria": "ekonomicke",
+  "poznamka": "Súčasť monitoringu Denníka N (v zmluve „vrátane dennike.sk“).",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "ereport",
+  "nazov": "eReport",
+  "typ": "medium",
+  "url_web": "https://www.ereport.sk/",
+  "kategoria": "alternativne",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "iden",
+  "nazov": "iDEN",
+  "typ": "medium",
+  "url_web": "https://www.iden.sk/",
+  "kategoria": "celostatne",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "marker",
+  "nazov": "Marker",
+  "typ": "medium",
+  "url_web": "https://www.marker.sk/",
+  "kategoria": "ekonomicke",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "extraplus",
+  "nazov": "Extra plus",
+  "typ": "medium",
+  "url_web": "https://www.extraplus.sk/",
+  "kategoria": "bulvar",
+  "poznamka": "Mesačník + web.",
+  "mediaboard": "4 týždenníky/mesačníky (Extra plus); 5 weby"
+ },
+ {
+  "id": "noviny",
+  "nazov": "Noviny.sk (TV JOJ)",
+  "typ": "medium",
+  "url_web": "https://www.noviny.sk/",
+  "kategoria": "tv",
+  "poznamka": "Spravodajský web TV JOJ.",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "tvnoviny",
+  "nazov": "TN LIVE / TVNoviny.sk (Markíza)",
+  "typ": "medium",
+  "url_web": "https://tnlive.sk/",
+  "kategoria": "tv",
+  "poznamka": "Spravodajský web TV Markíza; tvnoviny.sk sa presmeruje na tnlive.sk.",
+  "mediaboard": "5 weby"
+ },
+ {
+  "id": "ta3",
+  "nazov": "TA3.com",
+  "typ": "tv",
+  "url_web": "https://www.ta3.com/",
+  "kategoria": "tv",
+  "poznamka": "Spravodajská televízia + web.",
+  "mediaboard": "2 spravodajstvo (Hlavné správy 18.30); 3.1 (V politike, Téma dňa); 5 weby"
+ },
+ {
+  "id": "webnoviny",
+  "nazov": "Webnoviny.sk (SITA)",
+  "typ": "medium",
+  "url_web": "https://www.webnoviny.sk/",
+  "kategoria": "agentury",
+  "poznamka": "Portál tlačovej agentúry SITA."
+ },
+ {
+  "id": "teraz",
+  "nazov": "Teraz.sk (TASR)",
+  "typ": "medium",
+  "url_web": "https://www.teraz.sk/",
+  "kategoria": "agentury",
+  "poznamka": "Portál tlačovej agentúry TASR; feedy vypísané na teraz.sk/rss.",
+  "rss": [
+   "http://www.teraz.sk/rss/vsetky-spravy.rss",
+   "http://www.teraz.sk/rss/slovensko.rss",
+   "http://www.teraz.sk/rss/ekonomika.rss",
+   "http://www.teraz.sk/rss/regiony.rss",
+   "http://www.teraz.sk/rss/sport.rss",
+   "http://www.teraz.sk/rss/kultura.rss"
+  ]
+ },
+ {
+  "id": "sita",
+  "nazov": "SITA.sk",
+  "typ": "medium",
+  "url_web": "https://sita.sk/",
+  "kategoria": "agentury",
+  "poznamka": "Portál agentúry SITA."
+ },
+ {
+  "id": "tyzden",
+  "nazov": "Týždeň",
+  "typ": "medium",
+  "url_web": "https://www.tyzden.sk/",
+  "kategoria": "tyzdennik",
+  "mediaboard": "4 týždenníky/mesačníky; 5 weby"
+ },
+ {
+  "id": "plus7dni",
+  "nazov": "Plus 7 dní",
+  "typ": "medium",
+  "url_web": "https://plus7dni.pluska.sk/",
+  "kategoria": "tyzdennik",
+  "rss": [
+   "https://plus7dni.pluska.sk/rss.xml"
+  ],
+  "mediaboard": "4 týždenníky/mesačníky"
+ },
+ {
+  "id": "index",
+  "nazov": "Index (týždenník)",
+  "typ": "medium",
+  "url_web": "https://www.index.sk/",
+  "kategoria": "tyzdennik",
+  "poznamka": "V zmluve je uvedený iba názov týždenníka „Index“, doménu zmluva neuvádza; index.sk je kandidát, nepotvrdené.",
+  "mediaboard": "4 týždenníky/mesačníky (Index)"
+ },
+ {
+  "id": "etrend",
+  "nazov": "Trend (etrend.sk / trend.sk)",
+  "typ": "medium",
+  "url_web": "https://www.trend.sk/",
+  "kategoria": "ekonomicke",
+  "poznamka": "Týždenník Trend; etrend.sk a trend.sk vracajú ten istý web (News and Media Holding).",
+  "mediaboard": "4 týždenníky/mesačníky (Trend); 5 weby"
+ },
+ {
+  "id": "zivot",
+  "nazov": "Život (týždenník)",
+  "typ": "medium",
+  "url_web": "https://zivot.pluska.sk/",
+  "kategoria": "tyzdennik",
+  "mediaboard": "4 týždenníky/mesačníky (Život)"
+ },
+ {
+  "id": "slovenka",
+  "nazov": "Slovenka",
+  "typ": "medium",
+  "url_web": "https://www.slovenka.sk/",
+  "kategoria": "tyzdennik",
+  "mediaboard": "4 týždenníky/mesačníky (Slovenka)"
+ },
+ {
+  "id": "zemavek",
+  "nazov": "Zem a vek",
+  "typ": "medium",
+  "url_web": "https://www.zemavek.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Týždenník."
+ },
+ {
+  "id": "literarnytyzdennik",
+  "nazov": "Literárny týždenník",
+  "typ": "medium",
+  "url_web": "https://www.literarnytyzdennik.sk/",
+  "kategoria": "tyzdennik"
+ },
+ {
+  "id": "katolickenoviny",
+  "nazov": "Katolícke noviny",
+  "typ": "medium",
+  "url_web": "https://www.katolickenoviny.sk/",
+  "kategoria": "tyzdennik"
+ },
+ {
+  "id": "forbes",
+  "nazov": "Forbes Slovensko",
+  "typ": "medium",
+  "url_web": "https://www.forbes.sk/",
+  "kategoria": "ekonomicke"
+ },
+ {
+  "id": "finweb",
+  "nazov": "Finweb (HN)",
+  "typ": "medium",
+  "url_web": "https://finweb.hnonline.sk/",
+  "kategoria": "ekonomicke"
+ },
+ {
+  "id": "podnikajte",
+  "nazov": "Podnikajte.sk",
+  "typ": "medium",
+  "url_web": "https://www.podnikajte.sk/",
+  "kategoria": "ekonomicke"
+ },
+ {
+  "id": "ekonomika-sme",
+  "nazov": "Ekonomika SME",
+  "typ": "medium",
+  "url_web": "https://ekonomika.sme.sk/",
+  "kategoria": "ekonomicke",
+  "poznamka": "Sekcia SME.",
+  "rss": [
+   "https://ekonomika.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "energie-portal",
+  "nazov": "Energie-portal.sk",
+  "typ": "medium",
+  "url_web": "https://www.energie-portal.sk/",
+  "kategoria": "ekonomicke"
+ },
+ {
+  "id": "podnikam",
+  "nazov": "Podnikam.sk (SITA)",
+  "typ": "medium",
+  "url_web": "https://www.podnikam.sk/",
+  "kategoria": "ekonomicke"
+ },
+ {
+  "id": "zdravotnickenoviny",
+  "nazov": "Zdravotnícke noviny",
+  "typ": "medium",
+  "url_web": "https://www.zdravotnickenoviny.sk/",
+  "kategoria": "odborne"
+ },
+ {
+  "id": "ucitelskenoviny",
+  "nazov": "Učiteľské noviny",
+  "typ": "medium",
+  "url_web": "https://www.ucitelskenoviny.sk/",
+  "kategoria": "odborne"
+ },
+ {
+  "id": "polnoinfo",
+  "nazov": "Poľnoinfo",
+  "typ": "medium",
+  "url_web": "https://www.polnoinfo.sk/",
+  "kategoria": "odborne",
+  "poznamka": "Pôdohospodárstvo."
+ },
+ {
+  "id": "euractiv",
+  "nazov": "Euractiv Slovensko",
+  "typ": "medium",
+  "url_web": "https://euractiv.sk/",
+  "kategoria": "odborne",
+  "poznamka": "Európska únia."
+ },
+ {
+  "id": "sport",
+  "nazov": "Šport.sk",
+  "typ": "medium",
+  "url_web": "https://www.sport.sk/",
+  "kategoria": "sport"
+ },
+ {
+  "id": "denniksport",
+  "nazov": "Denník Šport",
+  "typ": "medium",
+  "url_web": "https://www.denniksport.sk/",
+  "kategoria": "sport"
+ },
+ {
+  "id": "sportnet",
+  "nazov": "Sportnet (SME)",
+  "typ": "medium",
+  "url_web": "https://sportnet.sme.sk/",
+  "kategoria": "sport",
+  "rss": [
+   "https://sport.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "vsieti",
+  "nazov": "Vsieti.sk",
+  "typ": "medium",
+  "url_web": "https://www.vsieti.sk/",
+  "kategoria": "nazorove"
+ },
+ {
+  "id": "infovojna",
+  "nazov": "Infovojna",
+  "typ": "medium",
+  "url_web": "https://infovojna.bz/",
+  "kategoria": "alternativne",
+  "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť."
+ },
+ {
+  "id": "slobodnyvysielac",
+  "nazov": "Slobodný vysielač",
+  "typ": "medium",
+  "url_web": "https://www.slobodnyvysielac.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Internetové rádio + web."
+ },
+ {
+  "id": "zvtv",
+  "nazov": "ZVTV",
+  "typ": "medium",
+  "url_web": "https://zvtv.sk/",
+  "kategoria": "alternativne"
+ },
+ {
+  "id": "armadnymagazin",
+  "nazov": "Armádny magazín",
+  "typ": "medium",
+  "url_web": "https://www.armadnymagazin.sk/",
+  "kategoria": "alternativne"
+ },
+ {
+  "id": "bajecnezeny",
+  "nazov": "Báječné ženy",
+  "typ": "medium",
+  "url_web": "https://www.bajecnezeny.sk/",
+  "kategoria": "alternativne"
+ },
+ {
+  "id": "demagog",
+  "nazov": "Demagog.sk",
+  "typ": "medium",
+  "url_web": "https://demagog.sk/",
+  "kategoria": "overovanie",
+  "poznamka": "Overovanie výrokov politikov."
+ },
+ {
+  "id": "konspiratori",
+  "nazov": "Konšpirátori.sk",
+  "typ": "ine",
+  "url_web": "https://konspiratori.sk/",
+  "kategoria": "overovanie",
+  "poznamka": "Verejná databáza webov s nedôveryhodným obsahom; sledovací zoznam, nie spravodajstvo.",
+  "probe": "web"
+ },
+ {
+  "id": "icjk",
+  "nazov": "Investigatívne centrum Jána Kuciaka",
+  "typ": "medium",
+  "url_web": "https://icjk.sk/",
+  "kategoria": "investigativa"
+ },
+ {
+  "id": "transparency",
+  "nazov": "Transparency International Slovensko",
+  "typ": "medium",
+  "url_web": "https://transparency.sk/",
+  "kategoria": "investigativa"
+ },
+ {
+  "id": "slovensko-digital",
+  "nazov": "Slovensko.Digital",
+  "typ": "medium",
+  "url_web": "https://slovensko.digital/",
+  "kategoria": "investigativa",
+  "poznamka": "Občianska iniciatíva; blogy, otvorené dáta."
+ },
+ {
+  "id": "ineko",
+  "nazov": "INEKO",
+  "typ": "medium",
+  "url_web": "https://www.ineko.sk/",
+  "kategoria": "investigativa",
+  "poznamka": "Think-tank."
+ },
+ {
+  "id": "globsec",
+  "nazov": "GLOBSEC",
+  "typ": "medium",
+  "url_web": "https://www.globsec.org/",
+  "kategoria": "investigativa",
+  "jazyk": "en"
+ },
+ {
+  "id": "viaiuris",
+  "nazov": "Via Iuris",
+  "typ": "medium",
+  "url_web": "https://www.viaiuris.sk/",
+  "kategoria": "investigativa"
+ },
+ {
+  "id": "spectator",
+  "nazov": "The Slovak Spectator",
+  "typ": "medium",
+  "url_web": "https://spectator.sme.sk/",
+  "kategoria": "anglicke",
+  "jazyk": "en"
+ },
+ {
+  "id": "slobodnaeuropa",
+  "nazov": "Slobodná Európa (RFE/RL)",
+  "typ": "medium",
+  "url_web": "https://www.slobodnaeuropa.sk/",
+  "kategoria": "celostatne"
+ },
+ {
+  "id": "dennikn-blog",
+  "nazov": "Blog N (Denník N)",
+  "typ": "medium",
+  "url_web": "https://dennikn.sk/blog/",
+  "kategoria": "blogy",
+  "rss": [
+   "https://dennikn.sk/blog/feed/"
+  ]
+ },
+ {
+  "id": "blog-sme",
+  "nazov": "Blog SME",
+  "typ": "medium",
+  "url_web": "https://blog.sme.sk/",
+  "kategoria": "blogy",
+  "rss": [
+   "https://blog.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "pravda-blog",
+  "nazov": "Blogy Pravda",
+  "typ": "medium",
+  "url_web": "https://blog.pravda.sk/",
+  "kategoria": "blogy"
+ },
+ {
+  "id": "korzar",
+  "nazov": "Korzár (Košice, Prešov a východ)",
+  "typ": "medium",
+  "url_web": "https://korzar.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://korzar.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "mynitra",
+  "nazov": "MY Nitrianske noviny",
+  "typ": "medium",
+  "url_web": "https://mynitra.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://mynitra.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "myzilina",
+  "nazov": "MY Žilina",
+  "typ": "medium",
+  "url_web": "https://myzilina.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://myzilina.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "mytrencin",
+  "nazov": "MY Trenčianske noviny",
+  "typ": "medium",
+  "url_web": "https://mytrencin.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://mytrencin.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "mytrnava",
+  "nazov": "MY Trnava",
+  "typ": "medium",
+  "url_web": "https://mytrnava.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://mytrnava.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "mybystrica",
+  "nazov": "MY Banská Bystrica",
+  "typ": "medium",
+  "url_web": "https://mybystrica.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://mybystrica.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "bratislavaden",
+  "nazov": "Bratislavaden.sk",
+  "typ": "medium",
+  "url_web": "https://bratislavaden.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "SITA."
+ },
+ {
+  "id": "nitraden",
+  "nazov": "Nitraden.sk",
+  "typ": "medium",
+  "url_web": "https://nitraden.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "SITA."
+ },
+ {
+  "id": "regiony-zoznam",
+  "nazov": "Zoznam Regióny",
+  "typ": "medium",
+  "url_web": "https://regiony.zoznam.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "kosicednes",
+  "nazov": "Košice Dnes",
+  "typ": "medium",
+  "url_web": "https://kosicednes.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "trnavskyhlas",
+  "nazov": "Trnavský hlas",
+  "typ": "medium",
+  "url_web": "https://www.trnavskyhlas.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "trnava-live",
+  "nazov": "Trnava LIVE",
+  "typ": "medium",
+  "url_web": "https://www.trnava-live.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "presovak",
+  "nazov": "Prešovák.sk",
+  "typ": "medium",
+  "url_web": "https://www.presovak.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "zilinak",
+  "nazov": "Žilinak.sk",
+  "typ": "medium",
+  "url_web": "https://www.zilinak.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "bystricak",
+  "nazov": "Bystričák.sk",
+  "typ": "medium",
+  "url_web": "https://www.bystricak.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "azet",
+  "nazov": "Azet.sk",
+  "typ": "medium",
+  "url_web": "https://www.azet.sk/",
+  "kategoria": "bulvar",
+  "poznamka": "Ringier Slovakia Media; v IAB top 10 (2025)."
+ },
+ {
+  "id": "koktejl",
+  "nazov": "Koktejl (azet.sk)",
+  "typ": "medium",
+  "url_web": "https://koktejl.azet.sk/",
+  "kategoria": "bulvar"
+ },
+ {
+  "id": "interez",
+  "nazov": "Interez",
+  "typ": "medium",
+  "url_web": "https://interez.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Startitup; v IAB top (2025)."
+ },
+ {
+  "id": "emefka",
+  "nazov": "Emefka",
+  "typ": "medium",
+  "url_web": "https://emefka.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Startitup."
+ },
+ {
+  "id": "odzadu",
+  "nazov": "Odzadu",
+  "typ": "medium",
+  "url_web": "https://odzadu.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Startitup."
+ },
+ {
+  "id": "mediaklik",
+  "nazov": "Mediaklik",
+  "typ": "medium",
+  "url_web": "https://www.mediaklik.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "OUR Media."
+ },
+ {
+  "id": "defencenews",
+  "nazov": "Defence News",
+  "typ": "medium",
+  "url_web": "https://www.defencenews.sk/",
+  "kategoria": "odborne",
+  "poznamka": "OUR Media; obrana."
+ },
+ {
+  "id": "ujszo",
+  "nazov": "Új Szó",
+  "typ": "medium",
+  "url_web": "https://www.ujszo.com/",
+  "kategoria": "celostatne",
+  "poznamka": "Maďarský denník na Slovensku.",
+  "jazyk": "hu"
+ },
+ {
+  "id": "vasarnap",
+  "nazov": "Vasárnap",
+  "typ": "medium",
+  "url_web": "https://vasarnap.com/",
+  "kategoria": "tyzdennik",
+  "poznamka": "Maďarský týždenník na Slovensku.",
+  "jazyk": "hu"
+ },
+ {
+  "id": "parameter",
+  "nazov": "Paraméter",
+  "typ": "medium",
+  "url_web": "https://www.parameter.sk/",
+  "kategoria": "celostatne",
+  "poznamka": "Maďarský spravodajský portál na Slovensku.",
+  "jazyk": "hu"
+ },
+ {
+  "id": "regionpress",
+  "nazov": "Regionpress",
+  "typ": "medium",
+  "url_web": "https://www.regionpress.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Sieť 34 regionálnych redakcií (Prešovsko, Košicko, Trnavsko, …)."
+ },
+ {
+  "id": "trencinak",
+  "nazov": "Trenčínak.sk",
+  "typ": "medium",
+  "url_web": "https://www.trencinak.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "my-sme",
+  "nazov": "MY regionálne noviny (Petit Press, prehľad)",
+  "typ": "medium",
+  "url_web": "https://my.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Sieť 26 titulov MY.",
+  "probe": "web"
+ },
+ {
+  "id": "stvr-spravy",
+  "nazov": "STVR Správy",
+  "typ": "tv",
+  "url_web": "https://spravy.stvr.sk/",
+  "kategoria": "tv",
+  "poznamka": "Verejnoprávna televízia (nástupca RTVS).",
+  "mediaboard": "2 spravodajstvo (STVR Správy 19.00, STVR 24 Komentáre); 3.1 (O 5 minút 12)"
+ },
+ {
+  "id": "stvr",
+  "nazov": "STVR (Slovenská televízia a rozhlas)",
+  "typ": "tv",
+  "url_web": "https://www.stvr.sk/",
+  "kategoria": "tv"
+ },
+ {
+  "id": "stvr-slovensko",
+  "nazov": "Rádio Slovensko / Rádiožurnál (STVR)",
+  "typ": "radio",
+  "url_web": "https://slovensko.stvr.sk/",
+  "kategoria": "radio",
+  "poznamka": "Rádiožurnál 12.00 a 18.00, Sobotné dialógy.",
+  "mediaboard": "2 spravodajstvo (Rádiožurnál 12.00, 18.00); 3.1 (Sobotné dialógy)"
+ },
+ {
+  "id": "stvr-regina",
+  "nazov": "Rádio Regina (STVR)",
+  "typ": "radio",
+  "url_web": "https://regina.stvr.sk/",
+  "kategoria": "radio",
+  "poznamka": "Regionálne vysielanie STVR."
+ },
+ {
+  "id": "stvr-rsi",
+  "nazov": "Rádio Slovakia International (STVR)",
+  "typ": "radio",
+  "url_web": "https://rsi.stvr.sk/",
+  "kategoria": "radio",
+  "jazyk": "en"
+ },
+ {
+  "id": "markiza",
+  "nazov": "TV Markíza",
+  "typ": "tv",
+  "url_web": "https://www.markiza.sk/",
+  "kategoria": "tv",
+  "poznamka": "Televízne noviny 19.00.",
+  "mediaboard": "2 spravodajstvo (Televízne noviny 19.00); 3.1 (Na telo)"
+ },
+ {
+  "id": "joj",
+  "nazov": "TV JOJ",
+  "typ": "tv",
+  "url_web": "https://www.joj.sk/",
+  "kategoria": "tv",
+  "poznamka": "Noviny 19.30.",
+  "mediaboard": "2 spravodajstvo (Noviny 19.30)"
+ },
+ {
+  "id": "joj24",
+  "nazov": "JOJ 24",
+  "typ": "tv",
+  "url_web": "https://joj24.noviny.sk/",
+  "kategoria": "tv",
+  "poznamka": "Politika 24, Analýzy 24.",
+  "mediaboard": "3.1 (Politika 24, Analýzy 24)"
+ },
+ {
+  "id": "expres",
+  "nazov": "Rádio Expres",
+  "typ": "radio",
+  "url_web": "https://expres.sk/",
+  "kategoria": "radio",
+  "poznamka": "Infoexpres, Braňo Závodský Naživo.",
+  "mediaboard": "2 spravodajstvo (Infoexpres 12.00, 17.00); 3.1 (Braňo Závodský Naživo)"
+ },
+ {
+  "id": "europa2",
+  "nazov": "Rádio Európa 2",
+  "typ": "radio",
+  "url_web": "https://www.europa2.sk/",
+  "kategoria": "radio"
+ },
+ {
+  "id": "funradio",
+  "nazov": "Fun Rádio",
+  "typ": "radio",
+  "url_web": "https://www.funradio.sk/",
+  "kategoria": "radio"
+ },
+ {
+  "id": "jemne",
+  "nazov": "Rádio Jemné",
+  "typ": "radio",
+  "url_web": "https://www.jemne.sk/",
+  "kategoria": "radio"
+ },
+ {
+  "id": "lumen",
+  "nazov": "Rádio Lumen",
+  "typ": "radio",
+  "url_web": "https://www.lumen.sk/",
+  "kategoria": "radio"
+ },
+ {
+  "id": "tvlux",
+  "nazov": "TV LUX",
+  "typ": "tv",
+  "url_web": "https://www.tvlux.sk/",
+  "kategoria": "tv",
+  "poznamka": "Katolícka televízia."
+ },
+ {
+  "id": "tvnoe",
+  "nazov": "TV Noe",
+  "typ": "tv",
+  "url_web": "https://www.tvnoe.sk/",
+  "kategoria": "tv"
+ },
+ {
+  "id": "tasr",
+  "nazov": "TASR – Tlačová agentúra SR",
+  "typ": "agentura",
+  "url_web": "https://www.tasr.sk/",
+  "kategoria": "agentury",
+  "poznamka": "Verejnoprávna agentúra; spravodajské produkty platené, tlačové správy a teraz.sk čiastočne verejné."
+ },
+ {
+  "id": "sita-agentura",
+  "nazov": "SITA – Slovenská informačná a tlačová agentúra",
+  "typ": "agentura",
+  "url_web": "https://sita.sk/",
+  "kategoria": "agentury",
+  "poznamka": "Súkromná agentúra; produkty platené."
+ },
+ {
+  "id": "vlada",
+  "nazov": "Úrad vlády SR – tlačové správy a oznamy",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.vlada.gov.sk/",
+  "kategoria": "vlada",
+  "poznamka": "Tlačové správy a oznamy.",
+  "rss": [
+   "https://www.vlada.gov.sk/rss/"
+  ]
+ },
+ {
+  "id": "rokovania-vlady",
+  "nazov": "Rokovania vlády SR (rokovania.gov.sk)",
+  "typ": "statny_zdroj",
+  "url_web": "https://rokovania.gov.sk/",
+  "kategoria": "vlada",
+  "poznamka": "Materiály, zápisnice a uznesenia z rokovaní vlády."
+ },
+ {
+  "id": "prezident",
+  "nazov": "Prezident SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.prezident.sk/",
+  "kategoria": "vlada"
+ },
+ {
+  "id": "nrsr",
+  "nazov": "Národná rada SR (nrsr.sk)",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.nrsr.sk/",
+  "kategoria": "parlament",
+  "poznamka": "Rieši iný agent (XDR – Národná rada); tu iba zaznačená.",
+  "probe": "none"
+ },
+ {
+  "id": "mfsr",
+  "nazov": "Ministerstvo financií SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mfsr.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "minv",
+  "nazov": "Ministerstvo vnútra SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.minv.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mzv",
+  "nazov": "Ministerstvo zahraničných vecí a európskych záležitostí SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mzv.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mosr",
+  "nazov": "Ministerstvo obrany SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mosr.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "minedu",
+  "nazov": "Ministerstvo školstva, výskumu, vývoja a mládeže SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.minedu.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "health",
+  "nazov": "Ministerstvo zdravotníctva SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.health.gov.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "employment",
+  "nazov": "Ministerstvo práce, sociálnych vecí a rodiny SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.employment.gov.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mhsr",
+  "nazov": "Ministerstvo hospodárstva SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mhsr.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mindop",
+  "nazov": "Ministerstvo dopravy SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mindop.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mpsr",
+  "nazov": "Ministerstvo pôdohospodárstva a rozvoja vidieka SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mpsr.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "minzp",
+  "nazov": "Ministerstvo životného prostredia SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://minzp.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "culture",
+  "nazov": "Ministerstvo kultúry SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.culture.gov.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "justice",
+  "nazov": "Ministerstvo spravodlivosti SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.justice.gov.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mirri",
+  "nazov": "Ministerstvo investícií, regionálneho rozvoja a informatizácie SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mirri.gov.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "mcrs",
+  "nazov": "Ministerstvo cestovného ruchu a športu SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mcrs.sk/",
+  "kategoria": "ministerstvo"
+ },
+ {
+  "id": "policia",
+  "nazov": "Polícia SR (sekcia na minv.sk)",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.minv.sk/?policia=",
+  "kategoria": "policia",
+  "poznamka": "Web polície je sekcia webu Ministerstva vnútra; samostatný RSS sa nenašiel.",
+  "probe": "web"
+ },
+ {
+  "id": "genpro",
+  "nazov": "Generálna prokuratúra SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.genpro.gov.sk/",
+  "kategoria": "sudy"
+ },
+ {
+  "id": "ustavnysud",
+  "nazov": "Ústavný súd SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.ustavnysud.sk/",
+  "kategoria": "sudy"
+ },
+ {
+  "id": "nsud",
+  "nazov": "Najvyšší súd SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.nsud.sk/",
+  "kategoria": "sudy"
+ },
+ {
+  "id": "justice-sudy",
+  "nazov": "Súdy SR – Občan a justícia (obcan.justice.sk)",
+  "typ": "statny_zdroj",
+  "url_web": "https://obcan.justice.sk/",
+  "kategoria": "sudy",
+  "poznamka": "Rozhodnutia súdov, sudcovia, súdy (Ministerstvo spravodlivosti).",
+  "probe": "web",
+  "api": "https://obcan.justice.sk/pilot/api/ress-isu-service/v1 (JSON: rozhodnutie, sudca, sud; stránkovanie page/size)",
+  "api_test": "https://obcan.justice.sk/pilot/api/ress-isu-service/v1/rozhodnutie?page=1&size=1"
+ },
+ {
+  "id": "nku",
+  "nazov": "Najvyšší kontrolný úrad SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.nku.gov.sk/",
+  "kategoria": "kontrola"
+ },
+ {
+  "id": "upn",
+  "nazov": "Ústav pamäti národa",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.upn.gov.sk/",
+  "kategoria": "kontrola"
+ },
+ {
+  "id": "uvo",
+  "nazov": "Úrad pre verejné obstarávanie",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.uvo.gov.sk/",
+  "kategoria": "obstaravanie",
+  "poznamka": "Vestník verejného obstarávania; podlimitné zákazky bez otvoreného API."
+ },
+ {
+  "id": "pmu",
+  "nazov": "Protimonopolný úrad SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.antimon.gov.sk/",
+  "kategoria": "regulator"
+ },
+ {
+  "id": "urso",
+  "nazov": "Úrad pre reguláciu sieťových odvetví",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.urso.gov.sk/",
+  "kategoria": "regulator"
+ },
+ {
+  "id": "rvr",
+  "nazov": "Rada pre vysielanie a retransmisiu",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.rvr.sk/",
+  "kategoria": "regulator",
+  "poznamka": "Regulátor vysielania; relevantné pre médiá."
+ },
+ {
+  "id": "dataprotection",
+  "nazov": "Úrad na ochranu osobných údajov",
+  "typ": "statny_zdroj",
+  "url_web": "https://dataprotection.gov.sk/",
+  "kategoria": "regulator"
+ },
+ {
+  "id": "nbs",
+  "nazov": "Národná banka Slovenska",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.nbs.sk/",
+  "kategoria": "financie",
+  "poznamka": "Tlačové správy.",
+  "rss": [
+   "https://www.nbs.sk/rss"
+  ]
+ },
+ {
+  "id": "financnasprava",
+  "nazov": "Finančná správa SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.financnasprava.sk/",
+  "kategoria": "financie"
+ },
+ {
+  "id": "rrz",
+  "nazov": "Rada pre rozpočtovú zodpovednosť",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.rozpoctovarada.sk/",
+  "kategoria": "financie"
+ },
+ {
+  "id": "ifp",
+  "nazov": "Inštitút finančnej politiky (MF SR)",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.mfsr.sk/sk/financie/institut-financnej-politiky/",
+  "kategoria": "financie",
+  "probe": "web"
+ },
+ {
+  "id": "socpoist",
+  "nazov": "Sociálna poisťovňa",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.socpoist.sk/",
+  "kategoria": "financie"
+ },
+ {
+  "id": "upsvr",
+  "nazov": "ÚPSVR (ústredie práce, sociálnych vecí a rodiny)",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.upsvr.gov.sk/",
+  "kategoria": "financie"
+ },
+ {
+  "id": "uvzsr",
+  "nazov": "Úrad verejného zdravotníctva SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.uvzsr.sk/",
+  "kategoria": "zdravotnictvo"
+ },
+ {
+  "id": "sukl",
+  "nazov": "Štátny ústav pre kontrolu liekov",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.sukl.sk/",
+  "kategoria": "zdravotnictvo"
+ },
+ {
+  "id": "tlacovarada",
+  "nazov": "Tlačová rada SR",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.tlacovarada.sk/",
+  "kategoria": "regulator",
+  "poznamka": "Samoregulácia tlače (etický kódex).",
+  "probe": "web"
+ },
+ {
+  "id": "statistics",
+  "nazov": "Štatistický úrad SR (DATAcube)",
+  "typ": "register",
+  "url_web": "https://slovak.statistics.sk/",
+  "kategoria": "statistika",
+  "poznamka": "Využíva existujúci konektor `statistika`.",
+  "api": "https://data.statistics.sk/api/v2 (JSON-stat, DATAcube)",
+  "api_test": "https://data.statistics.sk/api/v2/collection"
+ },
+ {
+  "id": "crz",
+  "nazov": "Centrálny register zmlúv (CRZ)",
+  "typ": "register",
+  "url_web": "https://www.crz.gov.sk/",
+  "kategoria": "zmluvy",
+  "poznamka": "Využíva existujúci konektor `crz`.",
+  "probe": "web",
+  "api": "https://www.crz.gov.sk/export/YYYY-MM-DD.zip (XML, denný export)",
+  "api_test": "https://www.crz.gov.sk/export/2026-09-28.zip"
+ },
+ {
+  "id": "ted",
+  "nazov": "TED – Tenders Electronic Daily (SR)",
+  "typ": "register",
+  "url_web": "https://ted.europa.eu/",
+  "kategoria": "obstaravanie",
+  "poznamka": "Nadlimitné obstarávania; API overené existujúcim konektorom `ted` (zber 26. 9. 2026). Vyhľadávanie je POST, bez GET testu.",
+  "probe": "web",
+  "api": "https://api.ted.europa.eu/v3/notices/search (POST, JSON)"
+ },
+ {
+  "id": "rpo",
+  "nazov": "Register právnických osôb (RPO, ŠÚ SR)",
+  "typ": "register",
+  "url_web": "https://rpo.statistics.sk/",
+  "kategoria": "register",
+  "probe": "web",
+  "api": "https://api.statistics.sk/rpo/v1 (REST JSON: /search, /entity/{id})",
+  "api_test": "https://api.statistics.sk/rpo/v1/search?fullName=slovnaft"
+ },
+ {
+  "id": "orsr",
+  "nazov": "Obchodný register SR (ORSR)",
+  "typ": "register",
+  "url_web": "https://www.orsr.sk/",
+  "kategoria": "register",
+  "poznamka": "Iba HTML (zápisy, výpisy); bez API. Nahrádza ho RPO.",
+  "probe": "web"
+ },
+ {
+  "id": "registeruz",
+  "nazov": "Register účtovných závierok",
+  "typ": "register",
+  "url_web": "https://www.registeruz.sk/",
+  "kategoria": "register",
+  "probe": "web",
+  "api": "https://www.registeruz.sk/cruz-public/api (JSON: uctovne-jednotky, uctovne-zavierky, …)",
+  "api_test": "https://www.registeruz.sk/cruz-public/api/uctovne-jednotky?zmenene-od=2026-09-01&max-zaznamov=2"
+ },
+ {
+  "id": "rpvs",
+  "nazov": "Register partnerov verejného sektora (RPVS)",
+  "typ": "register",
+  "url_web": "https://rpvs.gov.sk/",
+  "kategoria": "register",
+  "poznamka": "Koneční užívatelia výhod; OData stránkuje sám (parameter $top je obmedzený).",
+  "probe": "web",
+  "api": "https://rpvs.gov.sk/opendatav2 (OData v4)",
+  "api_test": "https://rpvs.gov.sk/opendatav2/PartneriVerejnehoSektora"
+ },
+ {
+  "id": "zrsr",
+  "nazov": "Živnostenský register",
+  "typ": "register",
+  "url_web": "https://www.zrsr.sk/",
+  "kategoria": "register",
+  "probe": "web"
+ },
+ {
+  "id": "ru",
+  "nazov": "Register úpadcov",
+  "typ": "register",
+  "url_web": "https://ru.justice.sk/ru-verejnost-web/",
+  "kategoria": "register",
+  "poznamka": "Iba HTML.",
+  "probe": "web"
+ },
+ {
+  "id": "katastera",
+  "nazov": "Kataster nehnuteľností (ÚGKK, INSPIRE WFS)",
+  "typ": "register",
+  "url_web": "https://www.skgeodesy.sk/",
+  "kategoria": "register",
+  "poznamka": "Využíva existujúci konektor `kataster`; vlastníci parciel (LV) nie sú otvorené dáta.",
+  "probe": "web",
+  "api": "https://inspirews.skgeodesy.sk/geoserver/cp/ows (WFS, parcely CP)",
+  "api_test": "https://inspirews.skgeodesy.sk/geoserver/cp/ows?service=WFS&request=GetCapabilities"
+ },
+ {
+  "id": "data-slovensko",
+  "nazov": "Národný katalóg otvorených dát (data.slovensko.sk)",
+  "typ": "register",
+  "url_web": "https://data.slovensko.sk/",
+  "kategoria": "otvorene-data",
+  "poznamka": "Katalóg datasetov štátu; CKAN API nefunguje (vracia HTML), funguje SPARQL.",
+  "probe": "web",
+  "api": "https://data.slovensko.sk/api/sparql (SPARQL 1.1)",
+  "api_test": "https://data.slovensko.sk/api/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%3Fs%20%3Fp%20%3Fo%7D%20LIMIT%201"
+ },
+ {
+  "id": "slov-lex",
+  "nazov": "Slov-Lex (zbierka zákonov, legislatívne procesy)",
+  "typ": "register",
+  "url_web": "https://www.slov-lex.sk/",
+  "kategoria": "legislativa",
+  "poznamka": "Bez overeného otvoreného API.",
+  "probe": "web"
+ },
+ {
+  "id": "itms",
+  "nazov": "ITMS21+ (eurofondy, otvorené dáta)",
+  "typ": "register",
+  "url_web": "https://opendata.itms2014.sk/",
+  "kategoria": "eurofondy",
+  "probe": "web"
+ },
+ {
+  "id": "shmu",
+  "nazov": "Slovenský hydrometeorologický ústav (výstrahy)",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.shmu.sk/",
+  "kategoria": "ine",
+  "probe": "web"
+ },
+ {
+  "id": "eurostat",
+  "nazov": "Eurostat (dáta za SR)",
+  "typ": "register",
+  "url_web": "https://ec.europa.eu/eurostat/",
+  "kategoria": "statistika",
+  "poznamka": "Celoeurópsky zdroj; SR je filter.",
+  "jazyk": "en",
+  "probe": "web",
+  "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{dataset}?geo=SK (JSON-stat)",
+  "api_test": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?geo=SK&lastTimePeriod=1"
+ },
+ {
+  "id": "kraj-bsk",
+  "nazov": "Bratislavský samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.region-bsk.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-ttsk",
+  "nazov": "Trnavský samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.trnava-vuc.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-tsk",
+  "nazov": "Trenčiansky samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.tsk.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-nsk",
+  "nazov": "Nitriansky samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.unsk.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-zsk",
+  "nazov": "Žilinský samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.zilinskazupa.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-bbsk",
+  "nazov": "Banskobystrický samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.bbsk.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-psk",
+  "nazov": "Prešovský samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.po-kraj.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "kraj-ksk",
+  "nazov": "Košický samosprávny kraj",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.vucke.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (predseda kraja)."
+ },
+ {
+  "id": "mesto-ba",
+  "nazov": "Mesto Bratislava",
+  "typ": "statny_zdroj",
+  "url_web": "https://bratislava.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-tt",
+  "nazov": "Mesto Trnava",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.trnava.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-tn",
+  "nazov": "Mesto Trenčín",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.trencin.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-nr",
+  "nazov": "Mesto Nitra",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.nitra.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-za",
+  "nazov": "Mesto Žilina",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.zilina.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-bb",
+  "nazov": "Mesto Banská Bystrica",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.banskabystrica.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-po",
+  "nazov": "Mesto Prešov",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.presov.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "mesto-ke",
+  "nazov": "Mesto Košice",
+  "typ": "statny_zdroj",
+  "url_web": "https://www.kosice.sk/",
+  "kategoria": "samsprava",
+  "poznamka": "Voľby 24. 10. 2026 (primátor)."
+ },
+ {
+  "id": "yt-ta3",
+  "nazov": "TA3 (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCRdWsx3iLG7vwq1cWK26gzA",
+  "kategoria": "youtube_kanal",
+  "poznamka": "V politike, Téma dňa a ďalšie relácie.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCRdWsx3iLG7vwq1cWK26gzA"
+  ],
+  "mediaboard": "2 spravodajstvo; 3.1 (V politike, Téma dňa)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-stvr",
+  "nazov": "STVR (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCi9f1eukX2qQDdmn__GcysA",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCi9f1eukX2qQDdmn__GcysA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-stvr-diskusie",
+  "nazov": "STVR – Diskusie a politika (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCVZqPnawsP7epBNZJCp6-qg",
+  "kategoria": "youtube_kanal",
+  "poznamka": "O 5 minút 12, Sobotné dialógy, STVR 24 Komentáre a ďalšie diskusné relácie.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCVZqPnawsP7epBNZJCp6-qg"
+  ],
+  "mediaboard": "3.1 (O 5 minút 12, Sobotné dialógy); 2 (STVR 24 Komentáre)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-joj",
+  "nazov": "Televízia JOJ (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC5zY50gn7Z0-yGSt74dRZXw",
+  "kategoria": "youtube_kanal",
+  "poznamka": "JOJ 24 (Politika 24, Analýzy 24) vystupuje aj v spoločných kanáloch „Televízia JOJ and JOJ 24“, ktoré nemajú vlastný feed.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC5zY50gn7Z0-yGSt74dRZXw"
+  ],
+  "mediaboard": "2 spravodajstvo (Noviny); 3.1 (Politika 24, Analýzy 24)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-markiza",
+  "nazov": "Televízia Markíza (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCIAAI5FnphpbEYVdpuB2CHg",
+  "kategoria": "youtube_kanal",
+  "poznamka": "Televízne noviny, Na telo.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCIAAI5FnphpbEYVdpuB2CHg"
+  ],
+  "mediaboard": "2 spravodajstvo; 3.1 (Na telo)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-expres",
+  "nazov": "Rádio Expres (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCkwlix5Fv0dg3cQJCz4dO4Q",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCkwlix5Fv0dg3cQJCz4dO4Q"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-dennikn",
+  "nazov": "Denník N (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCe_VgLz1y99hUF1q5ppQesA",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCe_VgLz1y99hUF1q5ppQesA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-sme",
+  "nazov": "SME (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCyda3-VrO_BezqwTrWSjtmw",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCyda3-VrO_BezqwTrWSjtmw"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-aktuality",
+  "nazov": "Aktuality.sk (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC2lCFhJIC4adt_oP1dwSOVg",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC2lCFhJIC4adt_oP1dwSOVg"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-standard",
+  "nazov": "Štandard (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCB0B3N2gqu-EaheNeRLFGbg",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCB0B3N2gqu-EaheNeRLFGbg"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-postoj",
+  "nazov": "POSTOJ TV (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC-myj78RmSMJNYkEPtCSB7g",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC-myj78RmSMJNYkEPtCSB7g"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-slobodnyvysielac",
+  "nazov": "Slobodný vysielač – archív (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCKj43efhJ3jazTlenp8EJ0g",
+  "kategoria": "youtube_kanal",
+  "poznamka": "Oficiálny archívny kanál.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCKj43efhJ3jazTlenp8EJ0g"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-zvtv",
+  "nazov": "ZVTV (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCivFldR8ZAMO5i4DEE53_Bw",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCivFldR8ZAMO5i4DEE53_Bw"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-hlavnespravy",
+  "nazov": "Hlavné správy (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCs3NaeO10RxshJVWdcEN_Iw",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCs3NaeO10RxshJVWdcEN_Iw"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-ereport",
+  "nazov": "eReport (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCpM-t0T57ODqg3Z5oOo-x5A",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCpM-t0T57ODqg3Z5oOo-x5A"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-hn",
+  "nazov": "HNtelevízia (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCWzUV7BBmiE8Sbt8xo89tDA",
+  "kategoria": "youtube_kanal",
+  "poznamka": "Hospodárske noviny.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCWzUV7BBmiE8Sbt8xo89tDA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-forbes",
+  "nazov": "Forbes Slovensko (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCm3KWuHbScDjr54EI53AnbQ",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCm3KWuHbScDjr54EI53AnbQ"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-refresher",
+  "nazov": "Refresher SK (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCpegYoYUzkTZZWtbyBI5hGA",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCpegYoYUzkTZZWtbyBI5hGA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-startitup",
+  "nazov": "Startitup (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UClbseppdhNj1vZsTgH6T1Og",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UClbseppdhNj1vZsTgH6T1Og"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-interez",
+  "nazov": "Interez (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCqEwTmcuvDnQrx3nZQ2J7KA",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCqEwTmcuvDnQrx3nZQ2J7KA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-pravda",
+  "nazov": "Pravda (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCFwiZDXn2BtsBxNpUm977pg",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCFwiZDXn2BtsBxNpUm977pg"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-novycas",
+  "nazov": "Nový Čas (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCVbQJfFCW2xvYqvR-h-Yb3g",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCVbQJfFCW2xvYqvR-h-Yb3g"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-trend",
+  "nazov": "TREND (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCqAk6ZriM5qvhxLgUoFsfvw",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCqAk6ZriM5qvhxLgUoFsfvw"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-icjk",
+  "nazov": "Investigatívne centrum Jána Kuciaka (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCPQY77IlYZN_wwSXpfipXHA",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCPQY77IlYZN_wwSXpfipXHA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-sita",
+  "nazov": "SITA agentúra (YouTube)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCRq0LCpVbXtkpmCwtDW6svw",
+  "kategoria": "youtube_kanal",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCRq0LCpVbXtkpmCwtDW6svw"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-branozavodsky",
+  "nazov": "Braňo Závodský Naživo (Rádio Expres)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCW1pHS8ZHpI33xnOhBvSGyQ",
+  "kategoria": "podcast_relacia",
+  "poznamka": "Každý pracovný deň 10 minút po 12.00; víťaz Orange Podcast roka 2026 (Rozhľad).",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCW1pHS8ZHpI33xnOhBvSGyQ",
+   "https://rss.podplaystudio.com/2460.xml"
+  ],
+  "mediaboard": "3.1 (Braňo Závodský Naživo)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-bardy-kacer",
+  "nazov": "Bárdy & Káčer",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC2kzV2zMZxLE1ywlO1e3GTg",
+  "kategoria": "podcast_relacia",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC2kzV2zMZxLE1ywlO1e3GTg",
+   "https://feeds.captivate.fm/bardyandkacer/"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-datel",
+  "nazov": "Ďateľ k veci",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCS1hDXcZBlU9F8Egrztb30Q",
+  "kategoria": "podcast_relacia",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCS1hDXcZBlU9F8Egrztb30Q",
+   "https://rss.buzzsprout.com/2502209.rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-360tka",
+  "nazov": "360tka",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UCmrhO5Os8uoGD_YFktVAUrg",
+  "kategoria": "podcast_relacia",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCmrhO5Os8uoGD_YFktVAUrg",
+   "https://anchor.fm/s/105ad270c/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-fiki",
+  "nazov": "Fiki Unchained (Richard Sulík)",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC8SC3sB2-FNRc3awzVJu_jA",
+  "kategoria": "podcast_relacia",
+  "poznamka": "Existujúci korpus: `netopier/fiki/`, `data/fiki/`.",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC8SC3sB2-FNRc3awzVJu_jA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-politolog",
+  "nazov": "Politológ bez diplomu",
+  "typ": "podcast",
+  "url_web": "https://www.youtube.com/channel/UC9ABe980LZhZkC30T5aowTA",
+  "kategoria": "podcast_relacia",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UC9ABe980LZhZkC30T5aowTA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-newsfilter",
+  "nazov": "Denník N Newsfilter",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://dennikn.podbean.com/feed.xml"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-vredakcii",
+  "nazov": "V redakcii (Denník N)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feed.podbean.com/vredakcii/feed.xml"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-dobre-rano",
+  "nazov": "Dobré ráno (SME)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Denný podcast denníka SME.",
+  "rss": [
+   "https://www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd7e-b12201270fe1/1b9163b9-0283-44eb-b3a9-b23d014269d6/f3c26c85-8543-46e4-8ca9-b23d01426a0b/podcast.rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-ranny-brifing",
+  "nazov": "Ranný brífing SME",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd7e-b12201270fe1/fdf64332-de4a-4c0c-902a-b12400e91ffd/201b5e44-a26d-421b-a50d-b12400e92027/podcast.rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-rozhovory-zkh",
+  "nazov": "Rozhovory ZKH (SME)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/78049d90/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-nahlas",
+  "nazov": "NAHLAS (Aktuality.sk)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feeds.captivate.fm/nahlas-aktualitysk/"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-fair-play",
+  "nazov": "Fair Play Michala Kovačiča (Aktuality.sk)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/114fc3cfc/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-aktuality",
+  "nazov": "Podcasty Aktuality.sk",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feeds.captivate.fm/podcasty-aktualitysk/"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-ta3",
+  "nazov": "Podcast TA3",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feeds.transistor.fm/podcast-ta3-c7b7e6f8-0dc5-4390-86f2-adbd14b69a88"
+  ],
+  "mediaboard": "3.1 (V politike, Téma dňa)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-analyzy24",
+  "nazov": "Analýzy 24 (JOJ 24)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feed.podbean.com/nahranejoj/feed.xml"
+  ],
+  "mediaboard": "3.1 (Analýzy 24)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-politika24",
+  "nazov": "Politika 24 (JOJ 24)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feed.podbean.com/politika24/feed.xml"
+  ],
+  "mediaboard": "3.1 (Politika 24)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-stvr-o5minut",
+  "nazov": "O 5 minút 12 (STVR)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "http://api.stvr.sk/xml/applepodcast_tvarchive.xml?series=14036"
+  ],
+  "mediaboard": "3.1 (O 5 minút 12)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-stvr-sobotne-dialogy",
+  "nazov": "Sobotné dialógy (STVR)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "http://api.stvr.sk/xml/applepodcast_archive.xml?series=1134"
+  ],
+  "mediaboard": "3.1 (Sobotné dialógy)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-stvr-do-krizu",
+  "nazov": "Do kríža (STVR)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "http://api.stvr.sk/xml/applepodcast_tvarchive.xml?series=23280"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-stvr-otvorene",
+  "nazov": "Otvorene s Annou Vargovou (STVR)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "http://api.stvr.sk/xml/applepodcast_archive.xml?series=11340"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-stvr-radiozurnal18",
+  "nazov": "Rádiožurnál o 18:00 (STVR)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "http://api.stvr.sk/xml/applepodcast_archive.xml?series=1124"
+  ],
+  "mediaboard": "2 spravodajstvo (Rádiožurnál 18.00)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-hn-doslova",
+  "nazov": "Doslova s Gogovou (HN)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/d885630c/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-chmelar",
+  "nazov": "Eduard Chmelár Podcast",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feed.podbean.com/eduardchmelarpodcast/feed.xml"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-sita-rozhovory",
+  "nazov": "Rozhovory Štúdia SITA",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/eef20ba4/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-tasr",
+  "nazov": "TASR podcasty (Teraz.sk / TASR TV)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/1101391f4/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-postoj",
+  "nazov": "Podcast denníka Postoj",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feeds.soundcloud.com/users/soundcloud:users:434012961/sounds.rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-hlavnespravy",
+  "nazov": "Podcasty a rozhovory Hlavné správy",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feed.podbean.com/hlavnespravy/feed.xml"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-slobodny-vysielac",
+  "nazov": "Slobodný vysielač (zvukový podcast)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://hearthis.at/slobodnyvysielac/podcast.xml"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-infovojna-archiv",
+  "nazov": "Infovojna archív",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/8bf8ced4/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-na-telo",
+  "nazov": "Na telo s Michalom Kovačičom (Markíza)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://feeds.soundcloud.com/users/soundcloud:users:511678815/sounds.rss"
+  ],
+  "mediaboard": "3.1 (Na telo)",
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-karty-na-stol",
+  "nazov": "Karty na stôl s Norom Dolinským (Plus 1 deň)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://rss.buzzsprout.com/2020952.rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-1na1-interez",
+  "nazov": "1 na 1 (Interez)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK).",
+  "rss": [
+   "https://anchor.fm/s/100dfa4c0/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-dnes-vecer-simecka",
+  "nazov": "Dnes večer s Michalom Šimečkom (Štúdio Štúrova)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky.",
+  "rss": [
+   "https://anchor.fm/s/1019ef3c0/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-fakticka-poznamka",
+  "nazov": "Faktická poznámka (Štúdio Štúrova)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky.",
+  "rss": [
+   "https://anchor.fm/s/f7954898/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-bod-varu",
+  "nazov": "Bod Varu (Štúdio Štúrova)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky.",
+  "rss": [
+   "https://anchor.fm/s/fd7d68e4/podcast/rss"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pod-ps-plan",
+  "nazov": "Plán pre budúcnosť (Progresívne Slovensko)",
+  "typ": "podcast",
+  "url_web": null,
+  "kategoria": "podcast_relacia",
+  "poznamka": "Zvukový podcast (feed z Apple Podcasts, country=SK). Stranícky podcast.",
+  "rss": [
+   "https://www.spreaker.com/show/5943010/episodes/feed"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-smer",
+  "nazov": "SMER – Sociálna demokracia (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCdU1Hed-u-HJky_GNcPABeQ",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCdU1Hed-u-HJky_GNcPABeQ"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-ps",
+  "nazov": "Progresívne Slovensko (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCLIsT-M9az2qvLb9E8znE-w",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCLIsT-M9az2qvLb9E8znE-w"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-hlas",
+  "nazov": "HLAS – sociálna demokracia (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCIXk1BNeVHNsmc68vCIeE9A",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCIXk1BNeVHNsmc68vCIeE9A"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-pellegrini",
+  "nazov": "Peter Pellegrini (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCdu0cvg_SvZ0px4-tSrB68g",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCdu0cvg_SvZ0px4-tSrB68g"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-matovic",
+  "nazov": "Igor Matovič (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCsZbmwDA4qNkIvntsPlYRpg",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCsZbmwDA4qNkIvntsPlYRpg"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-blaha",
+  "nazov": "Ľuboš Blaha (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCQoZFnw0SF-f2aLUPm0V_WQ",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCQoZFnw0SF-f2aLUPm0V_WQ"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-uhrik",
+  "nazov": "Milan Uhrík / Republika (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCA8sTkXwvqalS3s_QcurwrA",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCA8sTkXwvqalS3s_QcurwrA"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "yt-danko",
+  "nazov": "Andrej Danko / SNS (YouTube)",
+  "typ": "ine",
+  "url_web": "https://www.youtube.com/channel/UCqp7MtE36r2_7upCAwsts0A",
+  "kategoria": "politik_youtube",
+  "rss": [
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCqp7MtE36r2_7upCAwsts0A"
+  ],
+  "probe": "rssonly"
+ },
+ {
+  "id": "pravo-cz",
+  "nazov": "Právo (CZ)",
+  "typ": "medium",
+  "url_web": "https://www.novinky.cz/",
+  "kategoria": "zahranicne",
+  "poznamka": "Právo; web denníka je novinky.cz.",
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá",
+  "jazyk": "cs"
+ },
+ {
+  "id": "idnes",
+  "nazov": "iDNES.cz (MF Dnes)",
+  "typ": "medium",
+  "url_web": "https://www.idnes.cz/",
+  "kategoria": "zahranicne",
+  "poznamka": "Mladá fronta DNES.",
+  "rss": [
+   "https://servis.idnes.cz/rss.aspx?c=zpravodaj"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá",
+  "jazyk": "cs"
+ },
+ {
+  "id": "lidovky",
+  "nazov": "Lidovky.cz (Lidové noviny)",
+  "typ": "medium",
+  "url_web": "https://www.lidovky.cz/",
+  "kategoria": "zahranicne",
+  "rss": [
+   "https://servis.lidovky.cz/rss.aspx"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá",
+  "jazyk": "cs",
+  "probe": "rssonly"
+ },
+ {
+  "id": "hn-cz",
+  "nazov": "Hospodářské noviny (CZ)",
+  "typ": "medium",
+  "url_web": "https://hn.cz/",
+  "kategoria": "zahranicne",
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá",
+  "jazyk": "cs"
+ },
+ {
+  "id": "ct24",
+  "nazov": "ČT24 / Česká televize",
+  "typ": "tv",
+  "url_web": "https://ct24.ceskatelevize.cz/",
+  "kategoria": "zahranicne",
+  "poznamka": "ČT 1 a ČT 24.",
+  "rss": [
+   "https://ct24.ceskatelevize.cz/rss/hlavni-zpravy"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá (ČT 1, ČT 24)",
+  "jazyk": "cs"
+ },
+ {
+  "id": "prima-cnn",
+  "nazov": "CNN Prima News (TV Prima)",
+  "typ": "tv",
+  "url_web": "https://cnn.iprima.cz/",
+  "kategoria": "zahranicne",
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá (TV Prima)",
+  "jazyk": "cs"
+ },
+ {
+  "id": "tn-nova",
+  "nazov": "TN.cz (TV Nova)",
+  "typ": "tv",
+  "url_web": "https://tn.nova.cz/",
+  "kategoria": "zahranicne",
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá (TV Nova)",
+  "jazyk": "cs"
+ },
+ {
+  "id": "radiozurnal-cz",
+  "nazov": "ČRo Radiožurnál",
+  "typ": "radio",
+  "url_web": "https://radiozurnal.rozhlas.cz/",
+  "kategoria": "zahranicne",
+  "mediaboard": "2024: príloha č. 1, bod 5 zahraničné médiá (ČRo Rádiožurnál)",
+  "jazyk": "cs"
+ },
+ {
+  "id": "economist",
+  "nazov": "The Economist",
+  "typ": "medium",
+  "url_web": "https://www.economist.com/",
+  "kategoria": "zahranicne",
+  "poznamka": "Platený obsah.",
+  "rss": [
+   "https://www.economist.com/latest/rss.xml"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 6 zahraničné webstránky",
+  "jazyk": "en"
+ },
+ {
+  "id": "ft",
+  "nazov": "Financial Times",
+  "typ": "medium",
+  "url_web": "https://www.ft.com/",
+  "kategoria": "zahranicne",
+  "poznamka": "Platený obsah.",
+  "rss": [
+   "https://www.ft.com/rss/home"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 6 zahraničné webstránky",
+  "jazyk": "en"
+ },
+ {
+  "id": "wsj",
+  "nazov": "The Wall Street Journal",
+  "typ": "medium",
+  "url_web": "https://www.wsj.com/",
+  "kategoria": "zahranicne",
+  "poznamka": "Platený obsah.",
+  "rss": [
+   "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+  ],
+  "mediaboard": "2024: príloha č. 1, bod 6 zahraničné webstránky",
+  "jazyk": "en"
+ }
+]
