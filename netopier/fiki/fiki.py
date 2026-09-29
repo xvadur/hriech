@@ -40,7 +40,7 @@ COOKIES = Path(os.environ.get("YT_COOKIES", Path.home() / ".config" / "xvadur" /
 
 
 def ytdlp() -> list[str]:
-    return [*ytdlp(), *(["--cookies", str(COOKIES)] if COOKIES.exists() else [])]
+    return ["yt-dlp", *(["--cookies", str(COOKIES)] if COOKIES.exists() else [])]
 
 # poradie pokusov o jazyk titulkov; prvý úspešný vyhráva.
 # Pôvodný prepis (-orig) má prednosť pred strojovým prekladom (napr. české video → „sk“).
