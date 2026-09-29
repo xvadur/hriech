@@ -122,7 +122,7 @@ export function parseFeed(xml: string): FeedItem[] {
       guid: text(entry.id),
       link: atomLink(entry.link),
       title: stripHtml(text(entry.title), 500),
-      summary: stripHtml(text(entry.summary) ?? text(entry.content)),
+      summary: stripHtml(text(entry.summary) ?? text(entry.content) ?? text(entry['media:group']?.['media:description'])),
       published: toIso(text(entry.published) ?? text(entry.updated)),
       author: text(entry.author?.name) ?? text(entry.author),
       categories: categories(entry.category),

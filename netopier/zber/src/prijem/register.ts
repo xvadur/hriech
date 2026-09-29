@@ -25,7 +25,7 @@ export interface KanalPrijmu {
   url: string;
   jazyk: string | null;
   celyTextVRss: boolean;
-  /** typ dokumentu, ktorý kanál dáva (clanok | minuta | tlacova_sprava) */
+  /** typ dokumentu, ktorý kanál dáva (clanok | minuta | tlacova_sprava | epizoda | video) */
   typDokumentu: string;
 }
 
@@ -38,7 +38,7 @@ export function zdrojTyp(typ: string | null | undefined): ZdrojTyp {
   if (t.includes('register')) return 'register';
   if (t.includes('think')) return 'thinktank';
   if (t.includes('agregator') || t.includes('agregátor')) return 'agregator';
-  if (/(institu|urad|úrad|vlad|parlament|ministerst|samosprav|strana|polici|sud|súd)/.test(t)) return 'institucia';
+  if (/(institu|urad|úrad|vlad|parlament|ministerst|samosprav|statn|štátn|strana|polici|sud|súd)/.test(t)) return 'institucia';
   return 'medium';
 }
 
@@ -53,6 +53,8 @@ export function zdrojRozsah(z: ZdrojRegistra): 'lokalny' | 'narodny' | 'medzinar
 export function typDokumentu(z: ZdrojRegistra, url: string): string {
   if (/\/minut[ay]\b|minuta-po-minute/i.test(url)) return 'minuta';
   const t = `${z.typ ?? ''} ${z.kategoria ?? ''}`.toLowerCase();
+  if (/youtube\.com\/feeds|youtube/.test(`${url} ${t}`)) return 'video';
+  if (/podcast/.test(t) || /(anchor\.fm|podcasts?\.|\/podcast)/i.test(url)) return 'epizoda';
   if (t.includes('tlacov') || t.includes('tlačov') || zdrojTyp(z.typ) === 'institucia') return 'tlacova_sprava';
   return 'clanok';
 }

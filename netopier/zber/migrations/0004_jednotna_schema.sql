@@ -37,6 +37,8 @@ INSERT INTO dokument_typy (id, nazov, popis) VALUES
   ('zmluva', 'Zmluva', 'zmluva z registra (CRZ)'),
   ('obstaravanie', 'Obstarávanie', 'oznámenie o obstarávaní (TED, ÚVO)'),
   ('prispevok', 'Príspevok', 'príspevok na sociálnej sieti'),
+  ('epizoda', 'Epizóda podcastu', 'epizóda podcastu alebo relácie (prepis je samostatný dokument typu prepis)'),
+  ('video', 'Video', 'video (YouTube a iné), popis z kanála'),
   ('ine', 'Iné', NULL);
 
 -- 3. Dokument: jednotka obsahu naprieč zdrojmi. Deduplikácia podľa url_kanon (UNIQUE) a obsahu (obsah_hash → duplikat_of).

@@ -64,6 +64,8 @@ export const TEXT_MIN_OK = 600;
 /** RSS text sa berie ako celý, ak je aspoň taký dlhý (alebo ak register hovorí cely_text_v_rss). */
 export const RSS_TEXT_MIN = 1500;
 const ROBOTS_PLATNOST_MS = 24 * 3600_000;
+/** Typy, pri ktorých sa stránka nesťahuje (text = popis z kanála). */
+const BEZ_STRANKY = new Set(['epizoda', 'video']);
 const MAX_POKUSOV = 4;
 
 const spi = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
@@ -270,8 +272,11 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
       continue;
     }
     const rssText = htmlNaText(item.content);
-    const celyZRss = rssText.length >= (k.celyTextVRss ? 200 : RSS_TEXT_MIN) ? rssText : null;
-    const stav = celyZRss ? 'ok' : item.link ? 'caka' : 'bez_textu';
+    // Epizóda a video: text je popis z kanála (stránka sa nesťahuje; prepis je samostatný dokument).
+    const bezStranky = BEZ_STRANKY.has(k.typDokumentu);
+    const popis = bezStranky ? rssText || item.summary || '' : '';
+    const celyZRss = bezStranky ? popis || null : rssText.length >= (k.celyTextVRss ? 200 : RSS_TEXT_MIN) ? rssText : null;
+    const stav = celyZRss ? 'ok' : item.link && !bezStranky ? 'caka' : 'bez_textu';
     const novy = await db
       .prepare(
         `INSERT INTO dokumenty (typ, zdroj_id, kanal, url, url_kanon, external_id, titulok, perex, autor, jazyk, kategorie,
@@ -290,7 +295,7 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
     await db.prepare(`INSERT OR IGNORE INTO dokument_vyskyty (dokument_id, kanal, record_id, prvy_at) VALUES (?, ?, ?, ?)`).bind(novy.id, k.feedId, recordId, nowIso).run();
     s.vyskyty_nove++;
     if (celyZRss) {
-      const r = await ulozText(db, novy.id, celyZRss, 'rss', item.link, nowIso);
+      const r = await ulozText(db, novy.id, celyZRss, 'rss', item.link, nowIso, bezStranky ? { minOk: 1 } : {});
       s.texty_z_rss++;
       zs.texty_ok += r.stav === 'ok' ? 1 : 0;
       if (r.duplikatOf) s.duplikaty_obsahu++;
@@ -364,7 +369,7 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
   const kandidati = await db
     .prepare(
       `SELECT id, url, zdroj_id, typ FROM dokumenty
-       WHERE url IS NOT NULL AND (text_stav = 'caka'
+       WHERE url IS NOT NULL AND typ NOT IN ('epizoda', 'video') AND (text_stav = 'caka'
          OR (text_stav = 'chyba' AND text_pokusy < ? AND (text_dalsi_pokus_at IS NULL OR text_dalsi_pokus_at <= ?)))
        ORDER BY prvy_zaznam_at DESC, id DESC LIMIT ?`,
     )
@@ -408,6 +413,7 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
           .bind(host, nowIso)
           .run();
         if (res.status === 429 || res.status >= 500) {
+          await res.body?.cancel().catch(() => {});
           await chybaTextu(db, d.id, 'chyba', `HTTP ${res.status}`, now);
           pripocitaj('chyba');
           s.chyby.push({ dokument: d.id, chyba: `HTTP ${res.status} ${d.url}` });
@@ -415,12 +421,14 @@ async function stiahniTexty(db: D1Database, o: PrijemMoznosti, s: PrijemSuhrn) {
           continue;
         }
         if (!res.ok) {
+          await res.body?.cancel().catch(() => {});
           await chybaTextu(db, d.id, 'nedostupne', `HTTP ${res.status}`, now);
           pripocitaj('nedostupne');
           continue;
         }
         const typ = res.headers.get('content-type') ?? '';
         if (typ && !/html|xml/i.test(typ)) {
+          await res.body?.cancel().catch(() => {}); // audio, PDF…: telo sa nesťahuje
           await chybaTextu(db, d.id, 'bez_textu', `content-type ${typ}`, now);
           pripocitaj('bez_textu');
           continue;

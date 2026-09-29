@@ -5,6 +5,7 @@ import { kanalyZRegistra, overRegister, zlucRegister, type ZdrojRegistra } from 
 import { parseRobots, robotsPovoluje } from '../src/prijem/robots';
 import { dekodujTelo, htmlNaText, jsonLdClanok, vytiahniText } from '../src/prijem/text';
 import { kanonUrl } from '../src/prijem/url';
+import { parseFeed } from '../src/sources/rss';
 
 const db = (workerEnv as unknown as { DB: D1Database }).DB;
 
@@ -184,6 +185,15 @@ describe('príjem: pomocné funkcie', () => {
     expect(dekodujTelo(cp1250, 'text/html; charset=windows-1250')).toBe('žltť');
   });
 
+  it('YouTube Atom: popis z media:description, content:encoded ako celý obsah', () => {
+    const yt = `<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><entry><id>yt:video:1</id><title>Video</title>
+<link rel="alternate" href="https://www.youtube.com/watch?v=1"/><published>2026-09-29T08:00:00+00:00</published>
+<media:group><media:title>Video</media:title><media:description>Popis videa o voľbách.</media:description></media:group></entry></feed>`;
+    expect(parseFeed(yt)[0]).toMatchObject({ link: 'https://www.youtube.com/watch?v=1', summary: 'Popis videa o voľbách.', content: null });
+    const [polozka] = parseFeed(rss([{ link: 'https://x.sk/1', title: 'T', content: '<p>Celý text</p>' }]));
+    expect(polozka!.content).toBe('<p>Celý text</p>');
+  });
+
   it('register: kontrola, kanály, zlúčenie so zálohou', () => {
     const { zdroje, chyby } = overRegister([...REGISTER, { id: 'alfa', nazov: 'dup' }, { nazov: 'bez id' }]);
     expect(zdroje).toHaveLength(3);
@@ -191,6 +201,12 @@ describe('príjem: pomocné funkcie', () => {
     const kanaly = kanalyZRegistra(zdroje);
     expect(kanaly.map((k) => k.feedId)).toEqual(['alfa', 'beta', 'beta_2']);
     expect(kanaly.find((k) => k.zdrojId === 'beta')!.typDokumentu).toBe('clanok');
+    const typy = kanalyZRegistra([
+      { id: 'p', nazov: 'P', typ: 'podcast', rss: ['https://p.test/rss'] },
+      { id: 'y', nazov: 'Y', typ: 'medium', kategoria: 'youtube_kanal', rss: ['https://www.youtube.com/feeds/videos.xml?channel_id=x'] },
+      { id: 'm', nazov: 'M', typ: 'statny_zdroj', rss: ['https://m.test/rss'] },
+    ]);
+    expect(typy.map((k) => k.typDokumentu)).toEqual(['epizoda', 'video', 'tlacova_sprava']);
     const existujuci = kanalyZRegistra([{ id: 'dennikn', nazov: 'N', typ: 'medium', rss: ['https://dennikn.sk/minuta/feed/?cat=2386'] }]);
     expect(existujuci[0]).toMatchObject({ feedId: 'dennikn_minuty_all', typDokumentu: 'minuta' });
     const zlucene = zlucRegister(zdroje, [
@@ -251,6 +267,21 @@ describe('príjem: beh nad kanálmi', () => {
     expect(await n(`SELECT COUNT(*) AS n FROM dokumenty`)).toBe(6);
     const p = await stavPrijmu(db);
     expect(p.duplicity).toMatchObject({ url_duplicit: 0, obsahovych_duplikatov: 1 });
+  });
+
+  it('podcast: text je popis z kanála, stránka ani zvuk sa nesťahujú', async () => {
+    const volania: string[] = [];
+    const fetcher = (async (input: RequestInfo | URL) => {
+      const url = String(input instanceof Request ? input.url : input);
+      volania.push(url);
+      if (url === 'https://p.test/rss') return new Response(rss([{ link: 'https://p.test/epizoda-1.mp3', guid: 'e1', title: 'Epizóda 1' }]), { headers: { 'content-type': 'application/xml' } });
+      return new Response('x', { status: 500 });
+    }) as typeof fetch;
+    const s = await runPrijem(db, { ...moznosti(fetcher), register: [{ id: 'p', nazov: 'Podcast', typ: 'podcast', rss: ['https://p.test/rss'], jazyk: 'sk' }] });
+    expect(s.dokumenty_novych).toBe(1);
+    expect(await db.prepare(`SELECT typ, text_stav FROM dokumenty`).first()).toMatchObject({ typ: 'epizoda', text_stav: 'ok' });
+    expect(await n(`SELECT COUNT(*) AS n FROM dokument_texty WHERE metoda = 'rss' AND text = 'Perex Epizóda 1'`)).toBe(1);
+    expect(volania).toEqual(['https://p.test/rss']);
   });
 
   it('chyba kanála a sieťová chyba článku: záznam chyby, opakovanie až po odklade', async () => {
