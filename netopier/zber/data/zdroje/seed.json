@@ -119,7 +119,8 @@
   "nazov": "Dôležité.sk",
   "typ": "medium",
   "url_web": "https://www.dolezite.sk/",
-  "kategoria": "celostatne"
+  "kategoria": "celostatne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "bratislavskenoviny",
@@ -143,7 +144,7 @@
   "typ": "medium",
   "url_web": "https://standard.sk/",
   "kategoria": "nazorove",
-  "poznamka": "Denník Štandard.",
+  "poznamka": "Denník Štandard. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026).",
   "mediaboard": "5 weby"
  },
  {
@@ -189,7 +190,7 @@
   "typ": "medium",
   "url_web": "https://www.hlavnespravy.sk/",
   "kategoria": "alternativne",
-  "poznamka": "Uvedené v zozname konspiratori.sk (podľa verejných správ); v zmluve Mediaboardu ako sledovaný web.",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026).",
   "mediaboard": "5 weby"
  },
  {
@@ -198,7 +199,8 @@
   "typ": "medium",
   "url_web": "https://www.hlavnydennik.sk/",
   "kategoria": "alternativne",
-  "mediaboard": "5 weby"
+  "mediaboard": "5 weby",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "dennike",
@@ -215,7 +217,8 @@
   "typ": "medium",
   "url_web": "https://www.ereport.sk/",
   "kategoria": "alternativne",
-  "mediaboard": "5 weby"
+  "mediaboard": "5 weby",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "iden",
@@ -231,7 +234,8 @@
   "typ": "medium",
   "url_web": "https://www.marker.sk/",
   "kategoria": "ekonomicke",
-  "mediaboard": "5 weby"
+  "mediaboard": "5 weby",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "extraplus",
@@ -239,7 +243,7 @@
   "typ": "medium",
   "url_web": "https://www.extraplus.sk/",
   "kategoria": "bulvar",
-  "poznamka": "Mesačník + web.",
+  "poznamka": "Mesačník + web. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026).",
   "mediaboard": "4 týždenníky/mesačníky (Extra plus); 5 weby"
  },
  {
@@ -352,6 +356,7 @@
   "typ": "medium",
   "url_web": "https://www.slovenka.sk/",
   "kategoria": "tyzdennik",
+  "poznamka": "slovenka.sk sa presmeruje na zenskyweb.sk/slovenka/ (Ženský web); feed a API sú celého Ženského webu.",
   "mediaboard": "4 týždenníky/mesačníky (Slovenka)"
  },
  {
@@ -360,7 +365,7 @@
   "typ": "medium",
   "url_web": "https://www.zemavek.sk/",
   "kategoria": "alternativne",
-  "poznamka": "Týždenník."
+  "poznamka": "Týždenník. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "literarnytyzdennik",
@@ -396,17 +401,6 @@
   "typ": "medium",
   "url_web": "https://www.podnikajte.sk/",
   "kategoria": "ekonomicke"
- },
- {
-  "id": "ekonomika-sme",
-  "nazov": "Ekonomika SME",
-  "typ": "medium",
-  "url_web": "https://ekonomika.sme.sk/",
-  "kategoria": "ekonomicke",
-  "poznamka": "Sekcia SME.",
-  "rss": [
-   "https://ekonomika.sme.sk/rss"
-  ]
  },
  {
   "id": "energie-portal",
@@ -489,7 +483,7 @@
   "typ": "medium",
   "url_web": "https://infovojna.bz/",
   "kategoria": "alternativne",
-  "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť."
+  "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "slobodnyvysielac",
@@ -497,28 +491,31 @@
   "typ": "medium",
   "url_web": "https://www.slobodnyvysielac.sk/",
   "kategoria": "alternativne",
-  "poznamka": "Internetové rádio + web."
+  "poznamka": "Internetové rádio + web. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "zvtv",
   "nazov": "ZVTV",
   "typ": "medium",
   "url_web": "https://zvtv.sk/",
-  "kategoria": "alternativne"
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "armadnymagazin",
   "nazov": "Armádny magazín",
   "typ": "medium",
   "url_web": "https://www.armadnymagazin.sk/",
-  "kategoria": "alternativne"
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "bajecnezeny",
   "nazov": "Báječné ženy",
   "typ": "medium",
   "url_web": "https://www.bajecnezeny.sk/",
-  "kategoria": "alternativne"
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026)."
  },
  {
   "id": "demagog",
@@ -862,6 +859,272 @@
   "probe": "web"
  },
  {
+  "id": "kosicak",
+  "nazov": "Košičák.sk",
+  "typ": "medium",
+  "url_web": "https://www.kosicak.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak)."
+ },
+ {
+  "id": "nitrak",
+  "nazov": "Nitrák.sk",
+  "typ": "medium",
+  "url_web": "https://www.nitrak.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak)."
+ },
+ {
+  "id": "bratislavak",
+  "nazov": "Bratislavák.sk",
+  "typ": "medium",
+  "url_web": "https://www.bratislavak.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak)."
+ },
+ {
+  "id": "trnavak",
+  "nazov": "Trnavák.sk",
+  "typ": "medium",
+  "url_web": "https://www.trnavak.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak)."
+ },
+ {
+  "id": "moja-zilina",
+  "nazov": "Moja Žilina",
+  "typ": "medium",
+  "url_web": "https://www.moja-zilina.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Považie, Turiec, Žilina."
+ },
+ {
+  "id": "netky",
+  "nazov": "Netky (regióny)",
+  "typ": "medium",
+  "url_web": "https://www.netky.sk/",
+  "kategoria": "regionalne"
+ },
+ {
+  "id": "myhornanitra",
+  "nazov": "MY Horná Nitra",
+  "typ": "medium",
+  "url_web": "https://myhornanitra.sme.sk/",
+  "kategoria": "regionalne",
+  "poznamka": "Petit Press.",
+  "rss": [
+   "https://myhornanitra.sme.sk/rss"
+  ]
+ },
+ {
+  "id": "k-sho",
+  "nazov": "sho.sk",
+  "typ": "medium",
+  "url_web": "https://sho.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-lifenews",
+  "nazov": "lifenews.sk",
+  "typ": "medium",
+  "url_web": "https://lifenews.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-podtatransky-kurier",
+  "nazov": "podtatransky-kurier.sk",
+  "typ": "medium",
+  "url_web": "https://podtatransky-kurier.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-chcemeslobodu",
+  "nazov": "chcemeslobodu.sk",
+  "typ": "medium",
+  "url_web": "https://chcemeslobodu.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-inenoviny",
+  "nazov": "inenoviny.sk",
+  "typ": "medium",
+  "url_web": "https://inenoviny.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-oral",
+  "nazov": "oral.sk",
+  "typ": "medium",
+  "url_web": "https://oral.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-slovanskenoviny",
+  "nazov": "slovanskenoviny.sk",
+  "typ": "medium",
+  "url_web": "https://slovanskenoviny.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-silavedomia",
+  "nazov": "silavedomia.sk",
+  "typ": "medium",
+  "url_web": "https://silavedomia.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-snn",
+  "nazov": "snn.sk",
+  "typ": "medium",
+  "url_web": "https://snn.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-srspol",
+  "nazov": "srspol.sk",
+  "typ": "medium",
+  "url_web": "https://srspol.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-akw",
+  "nazov": "akw.sk",
+  "typ": "medium",
+  "url_web": "https://akw.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-belobog",
+  "nazov": "belobog.sk",
+  "typ": "medium",
+  "url_web": "https://belobog.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-odznova",
+  "nazov": "odznova.sk",
+  "typ": "medium",
+  "url_web": "https://odznova.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-slovenskeslovo",
+  "nazov": "slovenskeslovo.sk",
+  "typ": "medium",
+  "url_web": "https://slovenskeslovo.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-plenum",
+  "nazov": "plenum.sk",
+  "typ": "medium",
+  "url_web": "https://plenum.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-aktuality24",
+  "nazov": "aktuality24.sk",
+  "typ": "medium",
+  "url_web": "https://aktuality24.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-tvotv",
+  "nazov": "tvotv.sk",
+  "typ": "medium",
+  "url_web": "https://tvotv.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-skspravy",
+  "nazov": "skspravy.sk",
+  "typ": "medium",
+  "url_web": "https://skspravy.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-christianitas",
+  "nazov": "christianitas.sk",
+  "typ": "medium",
+  "url_web": "https://christianitas.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-napalete",
+  "nazov": "napalete.sk",
+  "typ": "medium",
+  "url_web": "https://napalete.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-slovensky-vecernik",
+  "nazov": "slovensky-vecernik.sk",
+  "typ": "medium",
+  "url_web": "https://slovensky-vecernik.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-dennikvv",
+  "nazov": "dennikvv.sk",
+  "typ": "medium",
+  "url_web": "https://dennikvv.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-bystricoviny",
+  "nazov": "bystricoviny.sk",
+  "typ": "medium",
+  "url_web": "https://bystricoviny.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-institutisop",
+  "nazov": "institutisop.sk",
+  "typ": "medium",
+  "url_web": "https://institutisop.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-slovenskoaktualne",
+  "nazov": "slovenskoaktualne.sk",
+  "typ": "medium",
+  "url_web": "https://slovenskoaktualne.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
+  "id": "k-veci-verejne",
+  "nazov": "veci-verejne.sk",
+  "typ": "medium",
+  "url_web": "https://veci-verejne.sk/",
+  "kategoria": "alternativne",
+  "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov."
+ },
+ {
   "id": "stvr-spravy",
   "nazov": "STVR Správy",
   "typ": "tv",
@@ -1134,7 +1397,7 @@
   "id": "mcrs",
   "nazov": "Ministerstvo cestovného ruchu a športu SR",
   "typ": "statny_zdroj",
-  "url_web": "https://www.mcrs.sk/",
+  "url_web": "https://www.mincrs.sk/",
   "kategoria": "ministerstvo"
  },
  {
@@ -1289,15 +1552,6 @@
   "typ": "statny_zdroj",
   "url_web": "https://www.sukl.sk/",
   "kategoria": "zdravotnictvo"
- },
- {
-  "id": "tlacovarada",
-  "nazov": "Tlačová rada SR",
-  "typ": "statny_zdroj",
-  "url_web": "https://www.tlacovarada.sk/",
-  "kategoria": "regulator",
-  "poznamka": "Samoregulácia tlače (etický kódex).",
-  "probe": "web"
  },
  {
   "id": "statistics",

@@ -5,14 +5,15 @@
     "typ": "medium",
     "url_web": "https://www.sme.sk/",
     "rss": [
-      "https://svet.sme.sk/rss"
+      "https://ekonomika.sme.sk/rss",
+      "https://komentare.sme.sk/rss"
     ],
     "api": null,
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "celostatne",
-    "overene_at": "2026-09-29T21:42:25.353Z",
-    "poznamka": "Petit Press. Cloudflare „Security Verification“ (403/429) pre časť dotazov. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 20 pol., 81/deň, posledná 2026-09-29. text v RSS: medián 59 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 1 denníky; 5 weby)."
+    "overene_at": "2026-09-29T21:54:11.471Z",
+    "poznamka": "Petit Press. Cloudflare „Security Verification“ (403/429) pre časť dotazov. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 20 pol., 78/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 56 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 1 denníky; 5 weby)."
   },
   {
     "id": "dennikn",
@@ -187,8 +188,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "celostatne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "RSS: nenájdený platný feed (www.dolezite.sk/rss → HTTP 404; www.dolezite.sk/rss/ → HTTP 404; www.dolezite.sk/feed → HTTP 404; www.dolezite.sk/feed/ → HTTP 404)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). RSS: nenájdený platný feed (www.dolezite.sk/rss → HTTP 404; www.dolezite.sk/rss/ → HTTP 404; www.dolezite.sk/feed → HTTP 404; www.dolezite.sk/feed/ → HTTP 404)."
   },
   {
     "id": "bratislavskenoviny",
@@ -230,8 +231,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "nazorove",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Denník Štandard. Feed rss: 28 pol., 6.9/deň, posledná 2026-09-29. text v RSS: medián 113 zn., 0 % položiek ≥ 1000 zn.; oproti článku 124/14051, 72/8583, 125/5868. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Denník Štandard. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 28 pol., 6.9/deň, posledná 2026-09-29. text v RSS: medián 113 zn., 0 % položiek ≥ 1000 zn.; oproti článku 124/14051, 72/8583, 125/5868. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 5 weby)."
   },
   {
     "id": "startitup",
@@ -327,8 +328,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Uvedené v zozname konspiratori.sk (podľa verejných správ); v zmluve Mediaboardu ako sledovaný web. Feed rss: 24 pol., 346/deň, posledná 2026-09-29. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/939, 0/945, 345/11257. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 670 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 24 pol., 346/deň, posledná 2026-09-29. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/939, 0/945, 345/11257. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 670 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 5 weby)."
   },
   {
     "id": "hlavnydennik",
@@ -340,8 +341,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "RSS: nenájdený platný feed (www.hlavnydennik.sk/rss → HTTP 404; www.hlavnydennik.sk/rss/ → HTTP 404; www.hlavnydennik.sk/feed → HTTP 404; www.hlavnydennik.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). RSS: nenájdený platný feed (www.hlavnydennik.sk/rss → HTTP 404; www.hlavnydennik.sk/rss/ → HTTP 404; www.hlavnydennik.sk/feed → HTTP 404; www.hlavnydennik.sk/feed/ → HTTP 404). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 5 weby)."
   },
   {
     "id": "dennike",
@@ -371,8 +372,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Feed rss: 1 pol., frekvencia nezistená, posledná 2026-09-29. text v RSS: medián 791 zn., 0 % položiek ≥ 1000 zn.; oproti článku 791/1231. paywall: nezistený (0/1 článkov). WordPress REST otvorené (medián 1024 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 1 pol., frekvencia nezistená, posledná 2026-09-29. text v RSS: medián 791 zn., 0 % položiek ≥ 1000 zn.; oproti článku 791/1231. paywall: nezistený (0/1 článkov). WordPress REST otvorené (medián 1024 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 5 weby)."
   },
   {
     "id": "iden",
@@ -401,8 +402,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "ekonomicke",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Feed rss: 50 pol., 3.7/deň, posledná 2026-09-29. text v RSS: medián 110 zn., 0 % položiek ≥ 1000 zn.; oproti článku 96/1638, 99/6513, 104/9218. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 50 pol., 3.7/deň, posledná 2026-09-29. text v RSS: medián 110 zn., 0 % položiek ≥ 1000 zn.; oproti článku 96/1638, 99/6513, 104/9218. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 5 weby)."
   },
   {
     "id": "extraplus",
@@ -416,8 +417,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "bulvar",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Mesačník + web. Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 504 zn., 0 % položiek ≥ 1000 zn.; oproti článku 370/2426, 561/2741, 520/3148. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Extra plus); 5 weby)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Mesačník + web. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 504 zn., 0 % položiek ≥ 1000 zn.; oproti článku 370/2426, 561/2741, 520/3148. paywall: nezistený (0/3 článkov). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 4 týždenníky/mesačníky (Extra plus); 5 weby)."
   },
   {
     "id": "noviny",
@@ -591,8 +592,8 @@
     "cely_text_v_rss": true,
     "jazyk": "sk",
     "kategoria": "tyzdennik",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Feed rss: 10 pol., 6.5/deň, posledná 2026-09-29. text v RSS: medián 3656 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3656/3098, 3290/3125, 2664/2230. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3174 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha 1, bod 4 týždenníky/mesačníky (Slovenka))."
+    "overene_at": "2026-09-29T22:02:46.938Z",
+    "poznamka": "slovenka.sk sa presmeruje na zenskyweb.sk/slovenka/ (Ženský web); feed a API sú celého Ženského webu. Feed rss: 10 pol., 6.5/deň, posledná 2026-09-29. text v RSS: medián 3656 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3656/3098, 3290/3125, 2664/2230. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3174 zn. v content.rendered). Mediaboard (zmluva ÚV SR 130/2026, príloha č. 1, bod 4 týždenníky/mesačníky (Slovenka))."
   },
   {
     "id": "zemavek",
@@ -606,8 +607,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Týždenník. Feed rss: 10 pol., 6.6/deň, posledná 2026-09-29. text v RSS: medián 406 zn., 0 % položiek ≥ 1000 zn.; oproti článku 309/1731, 409/2059, 381/2426. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3232 zn. v content.rendered)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Týždenník. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 10 pol., 6.6/deň, posledná 2026-09-29. text v RSS: medián 406 zn., 0 % položiek ≥ 1000 zn.; oproti článku 309/1731, 409/2059, 381/2426. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3232 zn. v content.rendered)."
   },
   {
     "id": "literarnytyzdennik",
@@ -677,19 +678,6 @@
     "kategoria": "ekonomicke",
     "overene_at": "2026-09-29T21:39:09.452Z",
     "poznamka": "Feed rss: 50 pol., 1.0/deň, posledná 2026-09-29. text v RSS: medián 225 zn., 0 % položiek ≥ 1000 zn.; oproti článku 220/7120, 229/7277, 223/9445. paywall: nezistený (0/3 článkov)."
-  },
-  {
-    "id": "ekonomika-sme",
-    "nazov": "Ekonomika SME",
-    "typ": "medium",
-    "url_web": "https://ekonomika.sme.sk/",
-    "rss": [],
-    "api": null,
-    "cely_text_v_rss": false,
-    "jazyk": "sk",
-    "kategoria": "ekonomicke",
-    "overene_at": null,
-    "poznamka": "Sekcia SME. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (ekonomika.sme.sk/rss → HTTP 429)."
   },
   {
     "id": "energie-portal",
@@ -824,8 +812,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "sport",
-    "overene_at": "2026-09-29T21:42:25.353Z",
-    "poznamka": "Feed rss: 60 pol., 101/deň, posledná 2026-09-29. text v RSS: medián 77 zn., 0 % položiek ≥ 1000 zn.; oproti článku 86/545, 77/323, 50/2847. paywall: nezistený (0/3 článkov)."
+    "overene_at": "2026-09-29T21:54:11.471Z",
+    "poznamka": "Feed rss: 60 pol., 96/deň, posledná 2026-09-29. text v RSS: medián 74 zn., 0 % položiek ≥ 1000 zn.; oproti článku 60/4478, 29/4026, 86/545. paywall: nezistený (0/3 článkov)."
   },
   {
     "id": "vsieti",
@@ -850,8 +838,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť. RSS: nenájdený platný feed (www.infovojna.com/rss → nie je feed (text/html); www.infovojna.com/rss/ → nie je feed (text/html); www.infovojna.com/feed → nie je feed (text/html); www.infovojna.com/feed/ → nie je feed (text/html))."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Doména sa menila (infovojna.sk → infovojna.bz); overiť. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). RSS: nenájdený platný feed (www.infovojna.com/rss → nie je feed (text/html); www.infovojna.com/rss/ → nie je feed (text/html); www.infovojna.com/feed → nie je feed (text/html); www.infovojna.com/feed/ → nie je feed (text/html))."
   },
   {
     "id": "slobodnyvysielac",
@@ -864,7 +852,7 @@
     "jazyk": "sk",
     "kategoria": "alternativne",
     "overene_at": null,
-    "poznamka": "Internetové rádio + web. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
+    "poznamka": "Internetové rádio + web. Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát)."
   },
   {
     "id": "zvtv",
@@ -876,8 +864,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://zvtv.sk/feed/ (posledná položka 2025-03-28). WordPress REST otvorené (medián 64 zn. v content.rendered)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://zvtv.sk/feed/ (posledná položka 2025-03-28). WordPress REST otvorené (medián 64 zn. v content.rendered)."
   },
   {
     "id": "armadnymagazin",
@@ -891,8 +879,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 7487 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1528/5297, 5703/7820, 3704/5905. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3590 zn. v content.rendered)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). Feed rss: 10 pol., 16/deň, posledná 2026-09-29. text v RSS: medián 7487 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1528/5297, 5703/7820, 3704/5905. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3590 zn. v content.rendered)."
   },
   {
     "id": "bajecnezeny",
@@ -904,8 +892,8 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "alternativne",
-    "overene_at": "2026-09-29T21:39:09.452Z",
-    "poznamka": "RSS: nenájdený platný feed (bajecnezeny.sk/rss → HTTP 404; bajecnezeny.sk/rss/ → HTTP 404; bajecnezeny.sk/feed → HTTP 404; bajecnezeny.sk/feed/ → HTTP 404)."
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026). RSS: nenájdený platný feed (bajecnezeny.sk/rss → HTTP 404; bajecnezeny.sk/rss/ → HTTP 404; bajecnezeny.sk/feed → HTTP 404; bajecnezeny.sk/feed/ → HTTP 404)."
   },
   {
     "id": "demagog",
@@ -1075,7 +1063,7 @@
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "blogy",
-    "overene_at": "2026-09-29T21:42:25.353Z",
+    "overene_at": "2026-09-29T21:54:11.471Z",
     "poznamka": "web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 50 pol., 14/deň, posledná 2026-09-29. text v RSS: medián 143 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
   },
   {
@@ -1098,13 +1086,15 @@
     "nazov": "Korzár (Košice, Prešov a východ)",
     "typ": "medium",
     "url_web": "https://korzar.sme.sk/",
-    "rss": [],
+    "rss": [
+      "https://korzar.sme.sk/rss"
+    ],
     "api": null,
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "regionalne",
-    "overene_at": null,
-    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (korzar.sme.sk/rss → HTTP 429)."
+    "overene_at": "2026-09-29T21:54:11.471Z",
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). Feed rss: 20 pol., 19/deň, posledná 2026-09-29. text v RSS: medián 38 zn. (článok sa nepodarilo stiahnuť: 403, 403, 403) — celý text nepotvrdený. paywall: neoverené (články nedostupné)."
   },
   {
     "id": "mynitra",
@@ -1492,6 +1482,499 @@
     "kategoria": "regionalne",
     "overene_at": null,
     "poznamka": "Sieť 26 titulov MY. web nedostupný (HTTP 403). web odmieta boty (403/výzva)."
+  },
+  {
+    "id": "kosicak",
+    "nazov": "Košičák.sk",
+    "typ": "medium",
+    "url_web": "https://www.kosicak.sk/",
+    "rss": [
+      "https://www.kosicak.sk/rss",
+      "https://www.kosicak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak). Feed rss: 7 pol., 1.9/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 119 zn., 0 % položiek ≥ 1000 zn.; oproti článku 120/3134, 119/1753, 119/2362. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "nitrak",
+    "nazov": "Nitrák.sk",
+    "typ": "medium",
+    "url_web": "https://www.nitrak.sk/",
+    "rss": [
+      "https://www.nitrak.sk/rss",
+      "https://www.nitrak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak). Feed rss: 8 pol., 5.5/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 122 zn., 0 % položiek ≥ 1000 zn.; oproti článku 122/4044, 123/1209, 120/3429. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "bratislavak",
+    "nazov": "Bratislavák.sk",
+    "typ": "medium",
+    "url_web": "https://www.bratislavak.sk/",
+    "rss": [
+      "https://www.bratislavak.sk/rss",
+      "https://www.bratislavak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak). Feed rss: 7 pol., 4.9/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 121 zn., 0 % položiek ≥ 1000 zn.; oproti článku 127/4476, 120/2143, 121/2313. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "trnavak",
+    "nazov": "Trnavák.sk",
+    "typ": "medium",
+    "url_web": "https://www.trnavak.sk/",
+    "rss": [
+      "https://www.trnavak.sk/rss",
+      "https://www.trnavak.sk/rss/discover"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "Regionálny portál (rovnaká sieť ako Žilinak, Prešovák, Bystričák, Trenčínak). Feed rss: 8 pol., 3.0/deň, posledná 2026-09-29, feedov 2. text v RSS: medián 121 zn., 0 % položiek ≥ 1000 zn.; oproti článku 119/1913, 121/3263, 253/1799. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "moja-zilina",
+    "nazov": "Moja Žilina",
+    "typ": "medium",
+    "url_web": "https://www.moja-zilina.sk/",
+    "rss": [
+      "https://www.moja-zilina.sk/feed/"
+    ],
+    "api": "https://www.moja-zilina.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "Považie, Turiec, Žilina. Feed rss: 20 pol., 2.7/deň, posledná 2026-09-29. text v RSS: medián 420 zn., 0 % položiek ≥ 1000 zn.; oproti článku 379/4464, 375/893, 424/1291. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1233 zn. v content.rendered)."
+  },
+  {
+    "id": "netky",
+    "nazov": "Netky (regióny)",
+    "typ": "medium",
+    "url_web": "https://www.netky.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": "2026-09-29T21:50:42.977Z",
+    "poznamka": "RSS: nenájdený platný feed (www.netky.sk/rss → HTTP 404; www.netky.sk/rss/ → HTTP 404; www.netky.sk/feed → HTTP 404; www.netky.sk/feed/ → HTTP 404)."
+  },
+  {
+    "id": "myhornanitra",
+    "nazov": "MY Horná Nitra",
+    "typ": "medium",
+    "url_web": "https://myhornanitra.sme.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "regionalne",
+    "overene_at": null,
+    "poznamka": "Petit Press. web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (myhornanitra.sme.sk/rss → HTTP 429)."
+  },
+  {
+    "id": "k-sho",
+    "nazov": "sho.sk",
+    "typ": "medium",
+    "url_web": "https://sho.sk/",
+    "rss": [
+      "https://sho.sk/feed/"
+    ],
+    "api": "https://sho.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 1.3/deň, posledná 2026-09-29. text v RSS: medián 1399 zn., 90 % položiek ≥ 1000 zn.; oproti článku 1399/1405, 3422/3341, 930/865. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1263 zn. v content.rendered)."
+  },
+  {
+    "id": "k-lifenews",
+    "nazov": "lifenews.sk",
+    "typ": "medium",
+    "url_web": "https://lifenews.sk/",
+    "rss": [
+      "https://lifenews.sk/feed"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 30 pol., frekvencia nezistená, posledná ?. text v RSS: medián 696 zn. (článok sa nepodarilo stiahnuť) — celý text nepotvrdený."
+  },
+  {
+    "id": "k-podtatransky-kurier",
+    "nazov": "podtatransky-kurier.sk",
+    "typ": "medium",
+    "url_web": "https://podtatransky-kurier.sk/",
+    "rss": [
+      "https://www.podtatransky-kurier.sk/rss"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 1.8/deň, posledná 2026-09-29. text v RSS: medián 145 zn., 0 % položiek ≥ 1000 zn.; oproti článku 132/783, 140/9345, 161/1819. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-chcemeslobodu",
+    "nazov": "chcemeslobodu.sk",
+    "typ": "medium",
+    "url_web": "https://chcemeslobodu.sk/",
+    "rss": [
+      "https://www.chcemeslobodu.sk/rss.xml"
+    ],
+    "api": "https://www.chcemeslobodu.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 50 pol., 0.0/deň, posledná 2026-09-25. text v RSS: medián 0 zn., 0 % položiek ≥ 1000 zn.; oproti článku 0/4253, 0/4621, 0/3608. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 16402 zn. v content.rendered)."
+  },
+  {
+    "id": "k-inenoviny",
+    "nazov": "inenoviny.sk",
+    "typ": "medium",
+    "url_web": "https://inenoviny.sk/",
+    "rss": [
+      "https://www.inenoviny.sk/feed/"
+    ],
+    "api": "https://www.inenoviny.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 0.3/deň, posledná 2026-09-25. text v RSS: medián 4004 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1492/1541, 7580/7640, 2624/1888. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2644 zn. v content.rendered)."
+  },
+  {
+    "id": "k-oral",
+    "nazov": "oral.sk",
+    "typ": "medium",
+    "url_web": "https://oral.sk/",
+    "rss": [
+      "https://oral.sk/rss"
+    ],
+    "api": "https://oral.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 297/deň, posledná 2026-09-29. text v RSS: medián 201 zn., 0 % položiek ≥ 1000 zn.; oproti článku 98/166, 301/302, 148/216. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 216 zn. v content.rendered)."
+  },
+  {
+    "id": "k-slovanskenoviny",
+    "nazov": "slovanskenoviny.sk",
+    "typ": "medium",
+    "url_web": "https://slovanskenoviny.sk/",
+    "rss": [
+      "https://slovanskenoviny.sk/feed/"
+    ],
+    "api": "https://slovanskenoviny.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 53/deň, posledná 2026-09-29. text v RSS: medián 3174 zn., 90 % položiek ≥ 1000 zn.; oproti článku 3174/3331, 1994/2255, 2431/2665. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2276 zn. v content.rendered)."
+  },
+  {
+    "id": "k-silavedomia",
+    "nazov": "silavedomia.sk",
+    "typ": "medium",
+    "url_web": "https://silavedomia.sk/",
+    "rss": [
+      "https://silavedomia.sk/feed/"
+    ],
+    "api": "https://silavedomia.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 5 pol., 0.0/deň, posledná 2026-09-18. text v RSS: medián 353 zn., 0 % položiek ≥ 1000 zn.; oproti článku 353/4477, 374/9275, 339/7979. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 8628 zn. v content.rendered)."
+  },
+  {
+    "id": "k-snn",
+    "nazov": "snn.sk",
+    "typ": "medium",
+    "url_web": "https://snn.sk/",
+    "rss": [
+      "https://snn.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 20 pol., 1.5/deň, posledná 2026-09-29. text v RSS: medián 3736 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1912/1702, 2640/2728, 2264/2272. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-srspol",
+    "nazov": "srspol.sk",
+    "typ": "medium",
+    "url_web": "https://srspol.sk/",
+    "rss": [
+      "https://www.srspol.sk/feed/"
+    ],
+    "api": "https://www.srspol.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 4.6/deň, posledná 2026-09-29. text v RSS: medián 1703 zn., 80 % položiek ≥ 1000 zn.; oproti článku 3370/3202, 2836/2673, 907/785. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2708 zn. v content.rendered)."
+  },
+  {
+    "id": "k-akw",
+    "nazov": "akw.sk",
+    "typ": "medium",
+    "url_web": "https://akw.sk/",
+    "rss": [
+      "https://akw.sk/feed/"
+    ],
+    "api": "https://akw.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 0.9/deň, posledná 2026-09-28. text v RSS: medián 3741 zn., 90 % položiek ≥ 1000 zn.; oproti článku 5216/5122, 1496/1376, 3659/3562. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3589 zn. v content.rendered)."
+  },
+  {
+    "id": "k-belobog",
+    "nazov": "belobog.sk",
+    "typ": "medium",
+    "url_web": "https://belobog.sk/",
+    "rss": [
+      "https://www.belobog.sk/feed/"
+    ],
+    "api": "https://www.belobog.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 3.0/deň, posledná 2026-09-29. text v RSS: medián 134 zn., 0 % položiek ≥ 1000 zn.; oproti článku 112/7448, 197/5879, 207/2589. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 6017 zn. v content.rendered)."
+  },
+  {
+    "id": "k-odznova",
+    "nazov": "odznova.sk",
+    "typ": "medium",
+    "url_web": "https://odznova.sk/",
+    "rss": [
+      "https://www.odznova.sk/feed/"
+    ],
+    "api": "https://www.odznova.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 0.2/deň, posledná 2026-09-23. text v RSS: medián 4138 zn., 100 % položiek ≥ 1000 zn.; oproti článku 2544/2155, 4138/3639, 2868/2501. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2752 zn. v content.rendered)."
+  },
+  {
+    "id": "k-slovenskeslovo",
+    "nazov": "slovenskeslovo.sk",
+    "typ": "medium",
+    "url_web": "https://slovenskeslovo.sk/",
+    "rss": [
+      "https://slovenskeslovo.sk/feed/"
+    ],
+    "api": "https://slovenskeslovo.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 5 pol., 0.6/deň, posledná 2026-09-25. text v RSS: medián 139 zn., 0 % položiek ≥ 1000 zn.; oproti článku 139/180, 142/6265, 141/425. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 1094 zn. v content.rendered)."
+  },
+  {
+    "id": "k-plenum",
+    "nazov": "plenum.sk",
+    "typ": "medium",
+    "url_web": "https://plenum.sk/",
+    "rss": [
+      "https://plenum.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 50 pol., 19/deň, posledná 2026-09-29. text v RSS: medián 2478 zn., 100 % položiek ≥ 1000 zn.; oproti článku 2478/2284, 3945/3638, 3358/3155. paywall: nezistený (0/3 článkov). neaktívny feed: https://plenum.sk/web-stories/feed/ (posledná položka 2026-08-25)."
+  },
+  {
+    "id": "k-aktuality24",
+    "nazov": "aktuality24.sk",
+    "typ": "medium",
+    "url_web": "https://aktuality24.sk/",
+    "rss": [
+      "https://aktuality24.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 0.1/deň, posledná 2026-09-27. text v RSS: medián 1872 zn., 70 % položiek ≥ 1000 zn.; oproti článku 1872/1818, 1933/1900, 4044/4000. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-tvotv",
+    "nazov": "tvotv.sk",
+    "typ": "medium",
+    "url_web": "https://tvotv.sk/",
+    "rss": [
+      "https://www.tvotv.sk/feed/"
+    ],
+    "api": "https://www.tvotv.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 12 pol., 1.0/deň, posledná 2026-09-28. text v RSS: medián 2173 zn., 100 % položiek ≥ 1000 zn.; oproti článku 1775/497, 2803/2655, 1954/1771. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2196 zn. v content.rendered)."
+  },
+  {
+    "id": "k-skspravy",
+    "nazov": "skspravy.sk",
+    "typ": "medium",
+    "url_web": "https://skspravy.sk/",
+    "rss": [
+      "https://skspravy.sk/feed/"
+    ],
+    "api": "https://skspravy.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 7.1/deň, posledná 2026-09-29. text v RSS: medián 3799 zn., 100 % položiek ≥ 1000 zn.; oproti článku 2458/2382, 2142/2078, 6846/6756. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2458 zn. v content.rendered)."
+  },
+  {
+    "id": "k-christianitas",
+    "nazov": "christianitas.sk",
+    "typ": "medium",
+    "url_web": "https://christianitas.sk/",
+    "rss": [
+      "https://christianitas.sk/rss"
+    ],
+    "api": "https://christianitas.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 7.6/deň, posledná 2026-09-29. text v RSS: medián 7291 zn., 100 % položiek ≥ 1000 zn.; oproti článku 13452/12745, 3877/3603, 6316/6009. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 6139 zn. v content.rendered)."
+  },
+  {
+    "id": "k-napalete",
+    "nazov": "napalete.sk",
+    "typ": "medium",
+    "url_web": "https://napalete.sk/",
+    "rss": [],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": null,
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. web nedostupný (The operation was aborted due to timeout). RSS: nenájdený platný feed (žiadny kandidát)."
+  },
+  {
+    "id": "k-slovensky-vecernik",
+    "nazov": "slovensky-vecernik.sk",
+    "typ": "medium",
+    "url_web": "https://slovensky-vecernik.sk/",
+    "rss": [
+      "https://slovensky-vecernik.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 50 pol., 394/deň, posledná 2026-08-30. text v RSS: medián 107 zn., 0 % položiek ≥ 1000 zn.; oproti článku 172/990, 69/4212, 74/6536. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-dennikvv",
+    "nazov": "dennikvv.sk",
+    "typ": "medium",
+    "url_web": "https://dennikvv.sk/",
+    "rss": [
+      "https://www.dennikvv.sk/feed/"
+    ],
+    "api": "https://www.dennikvv.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 4.4/deň, posledná 2026-09-29. text v RSS: medián 2420 zn., 100 % položiek ≥ 1000 zn.; oproti článku 6223/6180, 2927/2951, 2420/2358. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 2823 zn. v content.rendered)."
+  },
+  {
+    "id": "k-bystricoviny",
+    "nazov": "bystricoviny.sk",
+    "typ": "medium",
+    "url_web": "https://bystricoviny.sk/",
+    "rss": [
+      "https://www.bystricoviny.sk/feed/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 20 pol., 4.8/deň, posledná 2026-09-29. text v RSS: medián 3869 zn., 100 % položiek ≥ 1000 zn.; oproti článku 3702/3553, 2247/2098, 6225/6106. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-institutisop",
+    "nazov": "institutisop.sk",
+    "typ": "medium",
+    "url_web": "https://institutisop.sk/",
+    "rss": [
+      "https://www.institutisop.sk/rss/"
+    ],
+    "api": null,
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 15 pol., 0.1/deň, posledná 2026-09-12. text v RSS: medián 1543 zn., 53 % položiek ≥ 1000 zn.; oproti článku 5143/3869, 5123/3896, 4894/3988. paywall: nezistený (0/3 článkov)."
+  },
+  {
+    "id": "k-slovenskoaktualne",
+    "nazov": "slovenskoaktualne.sk",
+    "typ": "medium",
+    "url_web": "https://slovenskoaktualne.sk/",
+    "rss": [
+      "https://slovenskoaktualne.sk/feed/"
+    ],
+    "api": "https://slovenskoaktualne.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": false,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 14/deň, posledná 2026-09-29. text v RSS: medián 1980 zn., 70 % položiek ≥ 1000 zn.; oproti článku 369/202, 650/474, 401/237 (časť položiek má celý text, ale nie väčšina). paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 237 zn. v content.rendered)."
+  },
+  {
+    "id": "k-veci-verejne",
+    "nazov": "veci-verejne.sk",
+    "typ": "medium",
+    "url_web": "https://veci-verejne.sk/",
+    "rss": [
+      "https://veci-verejne.sk/feed/"
+    ],
+    "api": "https://veci-verejne.sk/wp-json/wp/v2/posts",
+    "cely_text_v_rss": true,
+    "jazyk": "sk",
+    "kategoria": "alternativne",
+    "overene_at": "2026-09-29T21:53:18.016Z",
+    "poznamka": "Uvedený v databáze konspiratori.sk (zoznam stiahnutý 29. 9. 2026); tá je sama iniciatívou proti reklame na spornom obsahu, nie posudkom pravdivosti jednotlivých článkov. Feed rss: 10 pol., 9.9/deň, posledná 2026-09-29. text v RSS: medián 3024 zn., 100 % položiek ≥ 1000 zn.; oproti článku 2769/2765, 3443/3404, 3451/3376. paywall: nezistený (0/3 článkov). WordPress REST otvorené (medián 3443 zn. v content.rendered)."
   },
   {
     "id": "stvr-spravy",
@@ -1974,14 +2457,14 @@
     "id": "mcrs",
     "nazov": "Ministerstvo cestovného ruchu a športu SR",
     "typ": "statny_zdroj",
-    "url_web": "https://www.mcrs.sk/",
+    "url_web": "https://www.mincrs.sk/",
     "rss": [],
     "api": null,
     "cely_text_v_rss": false,
     "jazyk": "sk",
     "kategoria": "ministerstvo",
-    "overene_at": null,
-    "poznamka": "web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát)."
+    "overene_at": "2026-09-29T22:01:57.861Z",
+    "poznamka": "RSS: nenájdený platný feed (www.mincrs.sk/rss → HTTP 404; www.mincrs.sk/rss/ → HTTP 404; www.mincrs.sk/feed → HTTP 404; www.mincrs.sk/feed/ → HTTP 404)."
   },
   {
     "id": "policia",
@@ -2264,19 +2747,6 @@
     "kategoria": "zdravotnictvo",
     "overene_at": "2026-09-29T21:39:09.452Z",
     "poznamka": "RSS: nenájdený platný feed (www.sukl.sk/rss → HTTP 404; www.sukl.sk/rss/ → HTTP 404; www.sukl.sk/feed → HTTP 404; www.sukl.sk/feed/ → HTTP 404)."
-  },
-  {
-    "id": "tlacovarada",
-    "nazov": "Tlačová rada SR",
-    "typ": "statny_zdroj",
-    "url_web": "https://www.tlacovarada.sk/",
-    "rss": [],
-    "api": null,
-    "cely_text_v_rss": false,
-    "jazyk": "sk",
-    "kategoria": "regulator",
-    "overene_at": null,
-    "poznamka": "Samoregulácia tlače (etický kódex). web nedostupný (ENOTFOUND)."
   },
   {
     "id": "statistics",

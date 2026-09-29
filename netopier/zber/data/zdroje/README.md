@@ -24,30 +24,30 @@ Stav: 2026-09-29. „RSS“ = zdroj má aspoň jeden živý feed overený dotazo
 
 | typ | zdrojov | s RSS | celý text v RSS | s API | overené živým dotazom |
 |---|---|---|---|---|---|
-| medium | 108 | 68 | 14 | 22 | 91 |
+| medium | 140 | 99 | 30 | 40 | 123 |
 | agentura | 2 | 1 | 0 | 1 | 2 |
 | tv | 11 | 5 | 2 | 1 | 10 |
 | radio | 9 | 3 | 0 | 0 | 8 |
 | podcast | 62 | 50 | 0 | 0 | 62 |
-| statny_zdroj | 57 | 25 | 4 | 8 | 49 |
+| statny_zdroj | 56 | 25 | 4 | 8 | 50 |
 | register | 14 | 0 | 0 | 9 | 12 |
 | ine | 9 | 6 | 0 | 0 | 9 |
-| **spolu** | 272 | 158 | 20 | 41 | 243 |
+| **spolu** | 303 | 189 | 36 | 59 | 276 |
 
 Podľa kategórie:
 
 | kategória | zdrojov | s RSS |
 |---|---|---|
 | podcast_relacia | 37 | 26 |
+| alternativne | 35 | 29 |
+| regionalne | 26 | 15 |
 | youtube_kanal | 25 | 24 |
-| regionalne | 19 | 9 |
 | celostatne | 18 | 12 |
 | samsprava | 16 | 10 |
 | ministerstvo | 15 | 6 |
 | zahranicne | 11 | 11 |
-| ekonomicke | 10 | 7 |
 | tv | 10 | 2 |
-| alternativne | 9 | 4 |
+| ekonomicke | 9 | 7 |
 | tyzdennik | 8 | 3 |
 | radio | 8 | 2 |
 | politik_youtube | 8 | 6 |
@@ -57,9 +57,9 @@ Podľa kategórie:
 | financie | 6 | 4 |
 | agentury | 5 | 4 |
 | odborne | 5 | 2 |
-| regulator | 5 | 1 |
 | technologie | 4 | 4 |
 | sudy | 4 | 1 |
+| regulator | 4 | 1 |
 | nazorove | 3 | 2 |
 | sport | 3 | 3 |
 | blogy | 3 | 3 |
@@ -150,151 +150,228 @@ Zdroje zo zmluvy s RSS: 43 z 55 položiek zaradených do registra.
 - Mediaboard má v tom istom období v CRZ ďalších 33 zmlúv s verejnými inštitúciami (Ministerstvo zdravotníctva, dopravy, investícií a práce, Kancelária NR SR, Rada pre mediálne služby, LESY SR, TIPOS, SAV, univerzity, divadlá, nemocnica, mestské časti a i.); ich zoznamy médií sa nesťahovali.
 - Nezaradené položky zo zmluvy: „Index“ (týždenník; zmluva doménu neuvádza), Šarm a Nový čas pre ženy (iba 2024), tlačené vydania ako také (v registri sú ich weby), relácie bez samostatného webu sú pokryté kanálmi v kategórii `podcast_relacia` a `youtube_kanal`.
 
+## Zdroje s celým textom v RSS
+
+- **Hospodárske noviny (HNonline)** (`hnonline`) — https://hnonline.sk/feed
+- **iDEN** (`iden`) — https://iden.sk/rss
+- **Slovenka** (`slovenka`) — https://zenskyweb.sk/feed/
+- **Finweb (HN)** (`finweb`) — https://hnonline.sk/finweb/feed
+- **Podnikam.sk (SITA)** (`podnikam`) — https://podnikam.sk/rss
+- **Transparency International Slovensko** (`transparency`) — https://transparency.sk/sk/feed/
+- **Slovensko.Digital** (`slovensko-digital`) — https://slovensko.digital/feed/
+- **Via Iuris** (`viaiuris`) — https://viaiuris.sk/feed/
+- **Bratislavaden.sk** (`bratislavaden`) — https://bratislavaden.sk/rss
+- **Nitraden.sk** (`nitraden`) — https://nitraden.iden.sk/rss
+- **Košice Dnes** (`kosicednes`) — https://kosicednes.sk/feed
+- **Emefka** (`emefka`) — https://emefka.sk/rss
+- **Odzadu** (`odzadu`) — https://www.odzadu.sk/feed/
+- **Paraméter** (`parameter`) — https://parameter.sk/feed
+- **sho.sk** (`k-sho`) — https://sho.sk/feed/
+- **inenoviny.sk** (`k-inenoviny`) — https://www.inenoviny.sk/feed/
+- **slovanskenoviny.sk** (`k-slovanskenoviny`) — https://slovanskenoviny.sk/feed/
+- **snn.sk** (`k-snn`) — https://snn.sk/feed/
+- **srspol.sk** (`k-srspol`) — https://www.srspol.sk/feed/
+- **akw.sk** (`k-akw`) — https://akw.sk/feed/
+- **odznova.sk** (`k-odznova`) — https://www.odznova.sk/feed/
+- **plenum.sk** (`k-plenum`) — https://plenum.sk/feed/
+- **aktuality24.sk** (`k-aktuality24`) — https://aktuality24.sk/feed/
+- **tvotv.sk** (`k-tvotv`) — https://www.tvotv.sk/feed/
+- **skspravy.sk** (`k-skspravy`) — https://skspravy.sk/feed/
+- **christianitas.sk** (`k-christianitas`) — https://christianitas.sk/rss
+- **dennikvv.sk** (`k-dennikvv`) — https://www.dennikvv.sk/feed/
+- **bystricoviny.sk** (`k-bystricoviny`) — https://www.bystricoviny.sk/feed/
+- **institutisop.sk** (`k-institutisop`) — https://www.institutisop.sk/rss/
+- **veci-verejne.sk** (`k-veci-verejne`) — https://veci-verejne.sk/feed/
+- **STVR Správy** (`stvr-spravy`) — https://spravy.stvr.sk/feed/
+- **Rada pre rozpočtovú zodpovednosť** (`rrz`) — https://www.rrz.sk/rss
+- **Žilinský samosprávny kraj** (`kraj-zsk`) — https://www.zilinskazupa.sk/rss
+- **Mesto Trnava** (`mesto-tt`) — https://www.trnava.sk/rss/news
+- **Mesto Košice** (`mesto-ke`) — https://www.kosice.sk/rss/aktuality
+- **CNN Prima News (TV Prima)** (`prima-cnn`) — https://cnn.iprima.cz/rss
+
+## API a exporty
+
+- **Startitup** (`startitup`) — https://www.startitup.sk/wp-json/wp/v2/posts
+- **Vosveteit.sk** (`vosveteit`) — https://vosveteit.zoznam.sk/wp-json/wp/v2/posts
+- **Techbox.sk** (`techbox`) — https://www.techbox.sk/wp-json/wp/v2/posts
+- **Hlavné správy** (`hlavnespravy`) — https://www.hlavnespravy.sk/wp-json/wp/v2/posts
+- **eReport** (`ereport`) — https://ereport.sk/wp-json/wp/v2/posts
+- **iDEN** (`iden`) — https://iden.sk/wp-json/wp/v2/posts
+- **Webnoviny.sk (SITA)** (`webnoviny`) — https://sita.sk/wp-json/wp/v2/posts
+- **SITA.sk** (`sita`) — https://sita.sk/wp-json/wp/v2/posts
+- **Slovenka** (`slovenka`) — https://zenskyweb.sk/wp-json/wp/v2/posts
+- **Zem a vek** (`zemavek`) — https://zemavek.sk/wp-json/wp/v2/posts
+- **Podnikam.sk (SITA)** (`podnikam`) — https://podnikam.sk/wp-json/wp/v2/posts
+- **Poľnoinfo** (`polnoinfo`) — https://polnoinfo.sk/wp-json/wp/v2/posts
+- **ZVTV** (`zvtv`) — https://zvtv.sk/wp-json/wp/v2/posts
+- **Armádny magazín** (`armadnymagazin`) — https://www.armadnymagazin.sk/wp-json/wp/v2/posts
+- **Transparency International Slovensko** (`transparency`) — https://transparency.sk/wp-json/wp/v2/posts
+- **Via Iuris** (`viaiuris`) — https://viaiuris.sk/wp-json/wp/v2/posts
+- **Blogy Pravda** (`pravda-blog`) — https://blog.pravda.sk/wp-json/wp/v2/posts
+- **Nitraden.sk** (`nitraden`) — https://nitraden.iden.sk/wp-json/wp/v2/posts
+- **Zoznam Regióny** (`regiony-zoznam`) — https://regiony.zoznam.sk/wp-json/wp/v2/posts
+- **Trnava LIVE** (`trnava-live`) — https://www.trnava-live.sk/wp-json/wp/v2/posts
+- **Interez** (`interez`) — https://www.interez.sk/wp-json/wp/v2/posts
+- **Odzadu** (`odzadu`) — https://www.odzadu.sk/wp-json/wp/v2/posts
+- **Moja Žilina** (`moja-zilina`) — https://www.moja-zilina.sk/wp-json/wp/v2/posts
+- **sho.sk** (`k-sho`) — https://sho.sk/wp-json/wp/v2/posts
+- **chcemeslobodu.sk** (`k-chcemeslobodu`) — https://www.chcemeslobodu.sk/wp-json/wp/v2/posts
+- **inenoviny.sk** (`k-inenoviny`) — https://www.inenoviny.sk/wp-json/wp/v2/posts
+- **oral.sk** (`k-oral`) — https://oral.sk/wp-json/wp/v2/posts
+- **slovanskenoviny.sk** (`k-slovanskenoviny`) — https://slovanskenoviny.sk/wp-json/wp/v2/posts
+- **silavedomia.sk** (`k-silavedomia`) — https://silavedomia.sk/wp-json/wp/v2/posts
+- **srspol.sk** (`k-srspol`) — https://www.srspol.sk/wp-json/wp/v2/posts
+- **akw.sk** (`k-akw`) — https://akw.sk/wp-json/wp/v2/posts
+- **belobog.sk** (`k-belobog`) — https://www.belobog.sk/wp-json/wp/v2/posts
+- **odznova.sk** (`k-odznova`) — https://www.odznova.sk/wp-json/wp/v2/posts
+- **slovenskeslovo.sk** (`k-slovenskeslovo`) — https://slovenskeslovo.sk/wp-json/wp/v2/posts
+- **tvotv.sk** (`k-tvotv`) — https://www.tvotv.sk/wp-json/wp/v2/posts
+- **skspravy.sk** (`k-skspravy`) — https://skspravy.sk/wp-json/wp/v2/posts
+- **christianitas.sk** (`k-christianitas`) — https://christianitas.sk/wp-json/wp/v2/posts
+- **dennikvv.sk** (`k-dennikvv`) — https://www.dennikvv.sk/wp-json/wp/v2/posts
+- **slovenskoaktualne.sk** (`k-slovenskoaktualne`) — https://slovenskoaktualne.sk/wp-json/wp/v2/posts
+- **veci-verejne.sk** (`k-veci-verejne`) — https://veci-verejne.sk/wp-json/wp/v2/posts
+- **STVR Správy** (`stvr-spravy`) — https://spravy.stvr.sk/wp-json/wp/v2/posts
+- **SITA – Slovenská informačná a tlačová agentúra** (`sita-agentura`) — https://sita.sk/wp-json/wp/v2/posts
+- **Súdy SR – Občan a justícia (obcan.justice.sk)** (`justice-sudy`) — https://obcan.justice.sk/pilot/api/ress-isu-service/v1 (JSON: rozhodnutie, sudca, sud; stránkovanie page/size)
+- **Rada pre rozpočtovú zodpovednosť** (`rrz`) — https://www.rrz.sk/wp-json/wp/v2/posts
+- **Štatistický úrad SR (DATAcube)** (`statistics`) — https://data.statistics.sk/api/v2 (JSON-stat, DATAcube)
+- **Centrálny register zmlúv (CRZ)** (`crz`) — https://www.crz.gov.sk/export/YYYY-MM-DD.zip (XML, denný export)
+- **TED – Tenders Electronic Daily (SR)** (`ted`) — https://api.ted.europa.eu/v3/notices/search (POST, JSON)
+- **Register právnických osôb (RPO, ŠÚ SR)** (`rpo`) — https://api.statistics.sk/rpo/v1 (REST JSON: /search, /entity/{id})
+- **Register účtovných závierok** (`registeruz`) — https://www.registeruz.sk/cruz-public/api (JSON: uctovne-jednotky, uctovne-zavierky, …)
+- **Register partnerov verejného sektora (RPVS)** (`rpvs`) — https://rpvs.gov.sk/opendatav2 (OData v4)
+- **Kataster nehnuteľností (ÚGKK, INSPIRE WFS)** (`katastera`) — https://inspirews.skgeodesy.sk/geoserver/cp/ows (WFS, parcely CP)
+- **Národný katalóg otvorených dát (data.slovensko.sk)** (`data-slovensko`) — https://data.slovensko.sk/api/sparql (SPARQL 1.1)
+- **Eurostat (dáta za SR)** (`eurostat`) — https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{dataset}?geo=SK (JSON-stat)
+- **Trnavský samosprávny kraj** (`kraj-ttsk`) — https://trnava-vuc.sk/wp-json/wp/v2/posts
+- **Prešovský samosprávny kraj** (`kraj-psk`) — https://psk.sk/wp-json/wp/v2/posts
+- **Mesto Trenčín** (`mesto-tn`) — https://trencin.sk/wp-json/wp/v2/posts
+- **Mesto Nitra** (`mesto-nr`) — https://nitra.sk/wp-json/wp/v2/posts
+- **Mesto Žilina** (`mesto-za`) — https://zilina.sk/wp-json/wp/v2/posts
+- **Mesto Banská Bystrica** (`mesto-bb`) — https://www.banskabystrica.sk/wp-json/wp/v2/posts
+
 ## Čo sa nedá (alebo nedá bez ďalšieho) zbierať
 
-### Web alebo feed blokuje boty / je nedostupný
-- **Aktuálne.sk** (`aktualne`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Literárny týždenník** (`literarnytyzdennik`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **Forbes Slovensko** (`forbes`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ekonomika SME** (`ekonomika-sme`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (ekonomika.sme.sk/rss → HTTP 429).
-- **Zdravotnícke noviny** (`zdravotnickenoviny`) — web nedostupný (ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE). RSS: nenájdený platný feed (žiadny kandidát).
-- **Učiteľské noviny** (`ucitelskenoviny`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Euractiv Slovensko** (`euractiv`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Slobodný vysielač** (`slobodnyvysielac`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **GLOBSEC** (`globsec`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **The Slovak Spectator** (`spectator`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Korzár (Košice, Prešov a východ)** (`korzar`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (korzar.sme.sk/rss → HTTP 429).
-- **MY Nitrianske noviny** (`mynitra`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mynitra.sme.sk/rss → HTTP 429).
-- **MY Žilina** (`myzilina`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (myzilina.sme.sk/rss → HTTP 429).
-- **MY Trenčianske noviny** (`mytrencin`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrencin.sme.sk/rss → HTTP 429).
-- **MY Trnava** (`mytrnava`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrnava.sme.sk/rss → HTTP 429).
-- **MY Banská Bystrica** (`mybystrica`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mybystrica.sme.sk/rss → HTTP 429).
-- **MY regionálne noviny (Petit Press, prehľad)** (`my-sme`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva).
-- **Rádio Jemné** (`jemne`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **TV Noe** (`tvnoe`) — web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo zahraničných vecí a európskych záležitostí SR** (`mzv`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo dopravy SR** (`mindop`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo cestovného ruchu a športu SR** (`mcrs`) — web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát).
-- **Súdy SR – Občan a justícia (obcan.justice.sk)** (`justice-sudy`) — web nedostupný (HTTP 404). API overené (200, application/json).
-- **Tlačová rada SR** (`tlacovarada`) — web nedostupný (ENOTFOUND).
-- **Štatistický úrad SR (DATAcube)** (`statistics`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát). API overené (200, application/json).
-- **Živnostenský register** (`zrsr`) — web nedostupný (UNABLE_TO_GET_ISSUER_CERT_LOCALLY).
-- **Bratislavský samosprávny kraj** (`kraj-bsk`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Banskobystrický samosprávny kraj** (`kraj-bbsk`) — web nedostupný (UNABLE_TO_VERIFY_LEAF_SIGNATURE). RSS: nenájdený platný feed (žiadny kandidát).
+### Web alebo feed blokuje boty (Cloudflare výzva, 403/429)
+- **Forbes Slovensko** (`forbes`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **Euractiv Slovensko** (`euractiv`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **Slobodný vysielač** (`slobodnyvysielac`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **GLOBSEC** (`globsec`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **The Slovak Spectator** (`spectator`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **MY Nitrianske noviny** (`mynitra`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **MY Žilina** (`myzilina`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **MY Trenčianske noviny** (`mytrencin`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **MY Trnava** (`mytrnava`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **MY Banská Bystrica** (`mybystrica`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **MY regionálne noviny (Petit Press, prehľad)** (`my-sme`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **MY Horná Nitra** (`myhornanitra`) — web: HTTP 403; web odmieta boty (403/výzva); feed vracia 429 (limit dotazov)
+- **Ministerstvo zahraničných vecí a európskych záležitostí SR** (`mzv`) — web: HTTP 403; web odmieta boty (403/výzva)
+- **Štatistický úrad SR (DATAcube)** (`statistics`) — web: HTTP 403; web odmieta boty (403/výzva)
+
+### Chyba certifikátu (neúplný reťazec, nesedí názov)
+- **Aktuálne.sk** (`aktualne`) — web: ERR_TLS_CERT_ALTNAME_INVALID
+- **Zdravotnícke noviny** (`zdravotnickenoviny`) — web: ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE
+- **Učiteľské noviny** (`ucitelskenoviny`) — web: ERR_TLS_CERT_ALTNAME_INVALID
+- **Živnostenský register** (`zrsr`) — web: UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+- **Bratislavský samosprávny kraj** (`kraj-bsk`) — web: ERR_TLS_CERT_ALTNAME_INVALID
+- **Banskobystrický samosprávny kraj** (`kraj-bbsk`) — web: UNABLE_TO_VERIFY_LEAF_SIGNATURE
+
+### Web neodpovedal (timeout, DNS)
+- **Literárny týždenník** (`literarnytyzdennik`) — web: UND_ERR_CONNECT_TIMEOUT
+- **napalete.sk** (`k-napalete`) — web: The operation was aborted due to timeout
+- **Rádio Jemné** (`jemne`) — web: UND_ERR_CONNECT_TIMEOUT
+- **TV Noe** (`tvnoe`) — web: ENOTFOUND
+- **Ministerstvo dopravy SR** (`mindop`) — web: UND_ERR_CONNECT_TIMEOUT
+- **Súdy SR – Občan a justícia (obcan.justice.sk)** (`justice-sudy`) — web: HTTP 404
 
 ### Web funguje, ale nenašiel sa platný feed
-- **Nový Čas** (`cas`) — Ringier Axel Springer. RSS: nenájdený platný feed (www.cas.sk/rss → HTTP 404; www.cas.sk/rss/ → HTTP 404; www.cas.sk/feed → HTTP 404; www.cas.sk/feed/ → HTTP 40
-- **Zoznam Správy** (`zoznam-spravy`) — Zoznam.sk (skupina Zoznam / Mafra). RSS: nenájdený platný feed (www.zoznam.sk/rss → nie je feed (text/html); www.zoznam.sk/rss/ → nie je feed (text/html); www.z
-- **Dnes24.sk** (`dnes24`) — RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.dnes24.sk/rss/ (posledná položka 2020-01-06).
-- **Dôležité.sk** (`dolezite`) — RSS: nenájdený platný feed (www.dolezite.sk/rss → HTTP 404; www.dolezite.sk/rss/ → HTTP 404; www.dolezite.sk/feed → HTTP 404; www.dolezite.sk/feed/ → HTTP 404).
-- **Bratislavské noviny** (`bratislavskenoviny`) — RSS: nenájdený platný feed (www.bratislavskenoviny.sk/o-nas/rss/5-rss-kanal-banoviny-sk → HTTP 404; www.bratislavskenoviny.sk/feed/rss2?category=banoviny-1 → HT
-- **Hlavný denník** (`hlavnydennik`) — RSS: nenájdený platný feed (www.hlavnydennik.sk/rss → HTTP 404; www.hlavnydennik.sk/rss/ → HTTP 404; www.hlavnydennik.sk/feed → HTTP 404; www.hlavnydennik.sk/fe
-- **Noviny.sk (TV JOJ)** (`noviny`) — Spravodajský web TV JOJ. RSS: nenájdený platný feed (www.noviny.sk/rss → HTTP 404; www.noviny.sk/rss/ → HTTP 404; www.noviny.sk/feed → HTTP 404; www.noviny.sk/f
-- **TN LIVE / TVNoviny.sk (Markíza)** (`tvnoviny`) — Spravodajský web TV Markíza; tvnoviny.sk sa presmeruje na tnlive.sk. RSS: nenájdený platný feed (tnlive.sk/rss → HTTP 404; tnlive.sk/rss/ → HTTP 404; tnlive.sk/
-- **Plus 7 dní** (`plus7dni`) — RSS: nenájdený platný feed (plus7dni.pluska.sk/rss.xml → feed bez položiek; plus7dni.pluska.sk/rss → HTTP 404; plus7dni.pluska.sk/rss/ → HTTP 404; plus7dni.plus
-- **Index (týždenník)** (`index`) — V zmluve je uvedený iba názov týždenníka „Index“, doménu zmluva neuvádza; index.sk je kandidát, nepotvrdené. RSS: nenájdený platný feed (www.index.sk/rss → HTTP
-- **Trend (etrend.sk / trend.sk)** (`etrend`) — Týždenník Trend; etrend.sk a trend.sk vracajú ten istý web (News and Media Holding). RSS: nenájdený platný feed (www.trend.sk/rss → HTTP 404; www.trend.sk/rss/ 
-- **Katolícke noviny** (`katolickenoviny`) — RSS: nenájdený platný feed (www.katolickenoviny.sk/rss → HTTP 404; www.katolickenoviny.sk/rss/ → HTTP 404; www.katolickenoviny.sk/feed → HTTP 404; www.katolicke
-- **Vsieti.sk** (`vsieti`) — RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.vsieti.sk/rss.xml (posledná položka 2015-04-25).
-- **Infovojna** (`infovojna`) — Doména sa menila (infovojna.sk → infovojna.bz); overiť. RSS: nenájdený platný feed (www.infovojna.com/rss → nie je feed (text/html); www.infovojna.com/rss/ → ni
-- **Báječné ženy** (`bajecnezeny`) — RSS: nenájdený platný feed (bajecnezeny.sk/rss → HTTP 404; bajecnezeny.sk/rss/ → HTTP 404; bajecnezeny.sk/feed → HTTP 404; bajecnezeny.sk/feed/ → HTTP 404).
-- **Demagog.sk** (`demagog`) — Overovanie výrokov politikov. RSS: nenájdený platný feed (demagog.sk/rss → nie je feed (text/html); demagog.sk/rss/ → nie je feed (text/html); demagog.sk/feed →
-- **Konšpirátori.sk** (`konspiratori`) — Verejná databáza webov s nedôveryhodným obsahom; sledovací zoznam, nie spravodajstvo.
-- **Slobodná Európa (RFE/RL)** (`slobodnaeuropa`) — RSS: nenájdený platný feed (www.slobodnaeuropa.sk/rss → nie je feed (text/html); www.slobodnaeuropa.sk/rss/ → nie je feed (text/html); www.slobodnaeuropa.sk/fee
-- **Trnavský hlas** (`trnavskyhlas`) — RSS: nenájdený platný feed (www.trnavskyhlas.sk/rss/rss-trnavsky-hlas.php → nie je feed (text/html); www.trnavskyhlas.sk/rss/rss-trnavsky-hlas-sport.php → nie j
-- **Azet.sk** (`azet`) — Ringier Slovakia Media; v IAB top 10 (2025). RSS: nenájdený platný feed (www.azet.sk/rss → ECONNRESET; www.azet.sk/rss/ → ECONNRESET; www.azet.sk/feed → HTTP 40
-- **Új Szó** (`ujszo`) — Maďarský denník na Slovensku. RSS: nenájdený platný feed (ujszo.com/rss → nie je feed (text/html); ujszo.com/rss/ → nie je feed (text/html); ujszo.com/feed → HT
-- **Vasárnap** (`vasarnap`) — Maďarský týždenník na Slovensku. RSS: nenájdený platný feed (vasarnap.com/rss → nie je feed (text/html); vasarnap.com/rss/ → nie je feed (text/html); vasarnap.c
-- **Regionpress** (`regionpress`) — Sieť 34 regionálnych redakcií (Prešovsko, Košicko, Trnavsko, …). RSS: nenájdený platný feed (www.regionpress.sk/rss → HTTP 404; www.regionpress.sk/rss/ → HTTP 4
-- **STVR (Slovenská televízia a rozhlas)** (`stvr`) — RSS: nenájdený platný feed (www.stvr.sk/rss → HTTP 404; www.stvr.sk/rss/ → HTTP 404; www.stvr.sk/feed → HTTP 404; www.stvr.sk/feed/ → HTTP 404).
-- **Rádio Slovensko / Rádiožurnál (STVR)** (`stvr-slovensko`) — Rádiožurnál 12.00 a 18.00, Sobotné dialógy. RSS: nenájdený platný feed (slovensko.stvr.sk/rss → HTTP 404; slovensko.stvr.sk/rss/ → HTTP 404; slovensko.stvr.sk/f
-- **Rádio Regina (STVR)** (`stvr-regina`) — Regionálne vysielanie STVR. RSS: nenájdený platný feed (regina.stvr.sk/rss → HTTP 404; regina.stvr.sk/rss/ → HTTP 404; regina.stvr.sk/feed → HTTP 404; regina.st
-- **Rádio Slovakia International (STVR)** (`stvr-rsi`) — RSS: nenájdený platný feed (rsi.stvr.sk/rss → HTTP 404; rsi.stvr.sk/rss/ → HTTP 404; rsi.stvr.sk/feed → HTTP 404; rsi.stvr.sk/feed/ → HTTP 404).
-- **TV Markíza** (`markiza`) — Televízne noviny 19.00. RSS: nenájdený platný feed (www.markiza.sk/rss → HTTP 404; www.markiza.sk/rss/ → HTTP 404; www.markiza.sk/feed → HTTP 404; www.markiza.s
-- **TV JOJ** (`joj`) — Noviny 19.30. RSS: nenájdený platný feed (www.joj.sk/rss → HTTP 404; www.joj.sk/rss/ → HTTP 404; www.joj.sk/feed → HTTP 404; www.joj.sk/feed/ → HTTP 404). Media
-- **JOJ 24** (`joj24`) — Politika 24, Analýzy 24. RSS: nenájdený platný feed (joj24.noviny.sk/rss → HTTP 404; joj24.noviny.sk/rss/ → HTTP 404; joj24.noviny.sk/feed → HTTP 404; joj24.nov
-- **Fun Rádio** (`funradio`) — RSS: nenájdený platný feed (www.funradio.sk/rss → HTTP 404; www.funradio.sk/rss/ → HTTP 404; www.funradio.sk/feed → HTTP 404; www.funradio.sk/feed/ → HTTP 404).
-- **Rádio Lumen** (`lumen`) — RSS: nenájdený platný feed (www.lumen.sk/rss → HTTP 404; www.lumen.sk/rss/ → HTTP 404; www.lumen.sk/feed → HTTP 404; www.lumen.sk/feed/ → HTTP 404).
-- **TV LUX** (`tvlux`) — Katolícka televízia. RSS: nenájdený platný feed (www.tvlux.sk/rss → nie je feed (text/html); www.tvlux.sk/rss/ → nie je feed (text/html); www.tvlux.sk/feed → ni
-- **TASR – Tlačová agentúra SR** (`tasr`) — Verejnoprávna agentúra; spravodajské produkty platené, tlačové správy a teraz.sk čiastočne verejné. RSS: nenájdený platný feed (www.tasr.sk/rss → nie je feed (t
-- **Rokovania vlády SR (rokovania.gov.sk)** (`rokovania-vlady`) — Materiály, zápisnice a uznesenia z rokovaní vlády. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://rokovania.gov.sk/rss?id=rpo_material (p
-- **Prezident SR** (`prezident`) — RSS: nenájdený platný feed (www.prezident.sk/rss → nie je feed (text/html); www.prezident.sk/rss/ → nie je feed (text/html); www.prezident.sk/feed → nie je feed
-- **Ministerstvo vnútra SR** (`minv`) — RSS: nenájdený platný feed (www.minv.sk/rss → HTTP 404; www.minv.sk/rss/ → HTTP 404; www.minv.sk/feed → HTTP 404; www.minv.sk/feed/ → HTTP 404).
-- **Ministerstvo zdravotníctva SR** (`health`) — RSS: nenájdený platný feed (www.health.gov.sk/RSS → nie je feed (text/html); www.health.gov.sk/rss → nie je feed (text/html); www.health.gov.sk/rss/ → nie je fe
-- **Ministerstvo životného prostredia SR** (`minzp`) — RSS: nenájdený platný feed (minzp.sk/rss → nie je feed (text/html); minzp.sk/rss/ → nie je feed (text/html); minzp.sk/feed → HTTP 404; minzp.sk/feed/ → HTTP 404
-- **Ministerstvo kultúry SR** (`culture`) — RSS: nenájdený platný feed (www.culture.gov.sk/rss → HTTP 404; www.culture.gov.sk/rss/ → HTTP 404; www.culture.gov.sk/feed → HTTP 404; www.culture.gov.sk/feed/ 
-- **Ministerstvo spravodlivosti SR** (`justice`) — RSS: nenájdený platný feed (www.justice.gov.sk/?feed=rss2 → feed bez položiek; www.justice.gov.sk/rss → feed bez položiek; www.justice.gov.sk/rss/ → feed bez po
-- **Ministerstvo investícií, regionálneho rozvoja a informatizácie SR** (`mirri`) — RSS: nenájdený platný feed (mirri.gov.sk/rss → feed bez položiek; mirri.gov.sk/rss/ → feed bez položiek; mirri.gov.sk/feed → feed bez položiek; mirri.gov.sk/fee
-- **Polícia SR (sekcia na minv.sk)** (`policia`) — Web polície je sekcia webu Ministerstva vnútra; samostatný RSS sa nenašiel.
-- **Generálna prokuratúra SR** (`genpro`) — RSS: nenájdený platný feed (www.genpro.gov.sk/rss → nie je feed (text/html); www.genpro.gov.sk/rss/ → nie je feed (text/html); www.genpro.gov.sk/feed → nie je f
-- **Najvyšší súd SR** (`nsud`) — RSS: nenájdený platný feed (www.nsud.sk/rss → HTTP 404; www.nsud.sk/rss/ → HTTP 404; www.nsud.sk/feed → HTTP 404; www.nsud.sk/feed/ → HTTP 404).
-- **Úrad pre verejné obstarávanie** (`uvo`) — Vestník verejného obstarávania; podlimitné zákazky bez otvoreného API. RSS: nenájdený platný feed (www.uvo.gov.sk/rss → nie je feed (text/html); www.uvo.gov.sk/
-- **Úrad pre reguláciu sieťových odvetví** (`urso`) — RSS: nenájdený platný feed (www.urso.gov.sk/rss → HTTP 404; www.urso.gov.sk/rss/ → HTTP 404; www.urso.gov.sk/feed → HTTP 404; www.urso.gov.sk/feed/ → HTTP 404).
-- **Rada pre vysielanie a retransmisiu** (`rvr`) — Regulátor vysielania; relevantné pre médiá. RSS: nenájdený platný feed (www.rvr.sk/rss → HTTP 404; www.rvr.sk/rss/ → HTTP 404; www.rvr.sk/feed → HTTP 404; www.r
-- **Úrad na ochranu osobných údajov** (`dataprotection`) — RSS: nenájdený platný feed (dataprotection.gov.sk/rss → HTTP 404; dataprotection.gov.sk/rss/ → HTTP 404; dataprotection.gov.sk/feed → HTTP 404; dataprotection.g
-- **Inštitút finančnej politiky (MF SR)** (`ifp`) — 
-- **ÚPSVR (ústredie práce, sociálnych vecí a rodiny)** (`upsvr`) — RSS: nenájdený platný feed (www.upsvr.gov.sk/rss.html?page_id=189 → nie je feed (text/html); www.upsvr.gov.sk/rss → nie je feed (text/html); www.upsvr.gov.sk/rs
-- **Úrad verejného zdravotníctva SR** (`uvzsr`) — RSS: nenájdený platný feed (www.uvzsr.sk/rss → HTTP 404; www.uvzsr.sk/rss/ → HTTP 404; www.uvzsr.sk/feed → HTTP 404; www.uvzsr.sk/feed/ → HTTP 404).
-- **Štátny ústav pre kontrolu liekov** (`sukl`) — RSS: nenájdený platný feed (www.sukl.sk/rss → HTTP 404; www.sukl.sk/rss/ → HTTP 404; www.sukl.sk/feed → HTTP 404; www.sukl.sk/feed/ → HTTP 404).
-- **Slovenský hydrometeorologický ústav (výstrahy)** (`shmu`) — 
-- **Trenčiansky samosprávny kraj** (`kraj-tsk`) — Voľby 24. 10. 2026 (predseda kraja). RSS: nenájdený platný feed (www.tsk.sk/rss → nie je feed (text/html); www.tsk.sk/rss/ → nie je feed (text/html); www.tsk.sk
-- **Košický samosprávny kraj** (`kraj-ksk`) — Voľby 24. 10. 2026 (predseda kraja). RSS: nenájdený platný feed (www.kosickazupa.sk/rss → HTTP 404; www.kosickazupa.sk/rss/ → HTTP 404; www.kosickazupa.sk/feed 
-- **Mesto Bratislava** (`mesto-ba`) — Voľby 24. 10. 2026 (primátor). RSS: nenájdený platný feed (bratislava.sk/rss → HTTP 404; bratislava.sk/rss/ → HTTP 404; bratislava.sk/feed → HTTP 404; bratislav
-- **Mesto Prešov** (`mesto-po`) — Voľby 24. 10. 2026 (primátor). RSS: nenájdený platný feed (www.presov.sk/rss → HTTP 404; www.presov.sk/rss/ → HTTP 404; www.presov.sk/feed → HTTP 404; www.preso
-- **Hlavné správy (YouTube)** (`yt-hlavnespravy`) — RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCs3NaeO10RxshJVWdcEN_Iw (posledná položka 202
-- **Dobré ráno (SME)** (`pod-dobre-rano`) — Zvukový podcast (feed z Apple Podcasts, country=SK). Denný podcast denníka SME. RSS: nenájdený platný feed (www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd
-- **Ranný brífing SME** (`pod-ranny-brifing`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (www.omnycontent.com/d/playlist/67682ce6-d1e9-437d-bd7e-b12201270fe1/fdf64332-de
-- **NAHLAS (Aktuality.sk)** (`pod-nahlas`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (feeds.captivate.fm/nahlas-aktualitysk/ → nie je feed (application/xml)).
-- **Fair Play Michala Kovačiča (Aktuality.sk)** (`pod-fair-play`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://anchor.fm/s/114fc3cfc/podcast/rss (po
-- **Podcasty Aktuality.sk** (`pod-aktuality`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (feeds.captivate.fm/podcasty-aktualitysk/ → nie je feed (application/xml)).
-- **Eduard Chmelár Podcast** (`pod-chmelar`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feed.podbean.com/eduardchmelarpodcast
-- **Podcasty a rozhovory Hlavné správy** (`pod-hlavnespravy`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feed.podbean.com/hlavnespravy/feed.xm
-- **Na telo s Michalom Kovačičom (Markíza)** (`pod-na-telo`) — Zvukový podcast (feed z Apple Podcasts, country=SK). RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://feeds.soundcloud.com/users/soundcloud
-- **Dnes večer s Michalom Šimečkom (Štúdio Štúrova)** (`pod-dnes-vecer-simecka`) — Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky. RSS: nenájdený platný feed (žiadny kandidát). neaktívny fe
-- **Bod Varu (Štúdio Štúrova)** (`pod-bod-varu`) — Zvukový podcast (feed z Apple Podcasts, country=SK). Štúdio Štúrova je spojené s PS; zdroj stranícky. RSS: nenájdený platný feed (žiadny kandidát). neaktívny fe
-- **Plán pre budúcnosť (Progresívne Slovensko)** (`pod-ps-plan`) — Zvukový podcast (feed z Apple Podcasts, country=SK). Stranícky podcast. RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.spreaker.com/s
-- **Igor Matovič (YouTube)** (`yt-matovic`) — RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCsZbmwDA4qNkIvntsPlYRpg (posledná položka 202
-- **Ľuboš Blaha (YouTube)** (`yt-blaha`) — RSS: nenájdený platný feed (žiadny kandidát). neaktívny feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCQoZFnw0SF-f2aLUPm0V_WQ (posledná položka 202
+- **Nový Čas** (`cas`) — RSS nenájdený
+- **Zoznam Správy** (`zoznam-spravy`) — RSS nenájdený
+- **Dôležité.sk** (`dolezite`) — RSS nenájdený
+- **Bratislavské noviny** (`bratislavskenoviny`) — RSS nenájdený
+- **Hlavný denník** (`hlavnydennik`) — RSS nenájdený
+- **Noviny.sk (TV JOJ)** (`noviny`) — RSS nenájdený
+- **TN LIVE / TVNoviny.sk (Markíza)** (`tvnoviny`) — RSS nenájdený
+- **Plus 7 dní** (`plus7dni`) — RSS nenájdený; feed bez položiek
+- **Index (týždenník)** (`index`) — RSS nenájdený
+- **Trend (etrend.sk / trend.sk)** (`etrend`) — RSS nenájdený
+- **Infovojna** (`infovojna`) — RSS nenájdený
+- **Báječné ženy** (`bajecnezeny`) — RSS nenájdený
+- **Demagog.sk** (`demagog`) — RSS nenájdený
+- **Konšpirátori.sk** (`konspiratori`) — iba web, feed sa nehľadal (bez RSS)
+- **Slobodná Európa (RFE/RL)** (`slobodnaeuropa`) — RSS nenájdený
+- **Trnavský hlas** (`trnavskyhlas`) — RSS nenájdený
+- **Azet.sk** (`azet`) — RSS nenájdený
+- **Új Szó** (`ujszo`) — RSS nenájdený
+- **Vasárnap** (`vasarnap`) — RSS nenájdený
+- **Regionpress** (`regionpress`) — RSS nenájdený
+- **Netky (regióny)** (`netky`) — RSS nenájdený
+- **STVR (Slovenská televízia a rozhlas)** (`stvr`) — RSS nenájdený
+- **Rádio Slovensko / Rádiožurnál (STVR)** (`stvr-slovensko`) — RSS nenájdený
+- **Rádio Regina (STVR)** (`stvr-regina`) — RSS nenájdený
+- **Rádio Slovakia International (STVR)** (`stvr-rsi`) — RSS nenájdený
+- **TV Markíza** (`markiza`) — RSS nenájdený
+- **TV JOJ** (`joj`) — RSS nenájdený
+- **JOJ 24** (`joj24`) — RSS nenájdený
+- **Fun Rádio** (`funradio`) — RSS nenájdený
+- **Rádio Lumen** (`lumen`) — RSS nenájdený
+- **TV LUX** (`tvlux`) — RSS nenájdený
+- **TASR – Tlačová agentúra SR** (`tasr`) — RSS nenájdený
+- **Prezident SR** (`prezident`) — RSS nenájdený
+- **Ministerstvo vnútra SR** (`minv`) — RSS nenájdený
+- **Ministerstvo zdravotníctva SR** (`health`) — RSS nenájdený
+- **Ministerstvo životného prostredia SR** (`minzp`) — RSS nenájdený
+- **Ministerstvo kultúry SR** (`culture`) — RSS nenájdený
+- **Ministerstvo spravodlivosti SR** (`justice`) — RSS nenájdený; feed bez položiek
+- **Ministerstvo investícií, regionálneho rozvoja a informatizácie SR** (`mirri`) — RSS nenájdený; feed bez položiek
+- **Ministerstvo cestovného ruchu a športu SR** (`mcrs`) — RSS nenájdený
+- **Polícia SR (sekcia na minv.sk)** (`policia`) — iba web, feed sa nehľadal (bez RSS)
+- **Generálna prokuratúra SR** (`genpro`) — RSS nenájdený
+- **Najvyšší súd SR** (`nsud`) — RSS nenájdený
+- **Úrad pre verejné obstarávanie** (`uvo`) — RSS nenájdený
+- **Úrad pre reguláciu sieťových odvetví** (`urso`) — RSS nenájdený
+- **Rada pre vysielanie a retransmisiu** (`rvr`) — RSS nenájdený
+- **Úrad na ochranu osobných údajov** (`dataprotection`) — RSS nenájdený
+- **Inštitút finančnej politiky (MF SR)** (`ifp`) — iba web, feed sa nehľadal (bez RSS)
+- **ÚPSVR (ústredie práce, sociálnych vecí a rodiny)** (`upsvr`) — RSS nenájdený
+- **Úrad verejného zdravotníctva SR** (`uvzsr`) — RSS nenájdený
+- **Štátny ústav pre kontrolu liekov** (`sukl`) — RSS nenájdený
+- **Slovenský hydrometeorologický ústav (výstrahy)** (`shmu`) — iba web, feed sa nehľadal (bez RSS)
+- **Trenčiansky samosprávny kraj** (`kraj-tsk`) — RSS nenájdený
+- **Košický samosprávny kraj** (`kraj-ksk`) — RSS nenájdený
+- **Mesto Bratislava** (`mesto-ba`) — RSS nenájdený
+- **Mesto Prešov** (`mesto-po`) — RSS nenájdený
+- **Dobré ráno (SME)** (`pod-dobre-rano`) — RSS nenájdený
+- **Ranný brífing SME** (`pod-ranny-brifing`) — RSS nenájdený
+- **NAHLAS (Aktuality.sk)** (`pod-nahlas`) — RSS nenájdený
+- **Podcasty Aktuality.sk** (`pod-aktuality`) — RSS nenájdený
 
-### Neoverené (web neodpovedal)
-- **Aktuálne.sk** (`aktualne`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Literárny týždenník** (`literarnytyzdennik`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **Forbes Slovensko** (`forbes`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ekonomika SME** (`ekonomika-sme`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (ekonomika.sme.sk/rss → HTTP 429).
-- **Zdravotnícke noviny** (`zdravotnickenoviny`) — web nedostupný (ERR_SSL_SSL/TLS_ALERT_HANDSHAKE_FAILURE). RSS: nenájdený platný feed (žiadny kandidát).
-- **Učiteľské noviny** (`ucitelskenoviny`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Euractiv Slovensko** (`euractiv`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Slobodný vysielač** (`slobodnyvysielac`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **GLOBSEC** (`globsec`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **The Slovak Spectator** (`spectator`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Korzár (Košice, Prešov a východ)** (`korzar`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (korzar.sme.sk/rss → HTTP 429).
-- **MY Nitrianske noviny** (`mynitra`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mynitra.sme.sk/rss → HTTP 429).
-- **MY Žilina** (`myzilina`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (myzilina.sme.sk/rss → HTTP 429).
-- **MY Trenčianske noviny** (`mytrencin`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrencin.sme.sk/rss → HTTP 429).
-- **MY Trnava** (`mytrnava`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mytrnava.sme.sk/rss → HTTP 429).
-- **MY Banská Bystrica** (`mybystrica`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (mybystrica.sme.sk/rss → HTTP 429).
-- **MY regionálne noviny (Petit Press, prehľad)** (`my-sme`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva).
-- **Rádio Jemné** (`jemne`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **TV Noe** (`tvnoe`) — web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát).
-- **Národná rada SR (nrsr.sk)** (`nrsr`) — Rieši iný agent (XDR – Národná rada); tu iba zaznačená. RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo zahraničných vecí a európskych záležitostí SR** (`mzv`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo dopravy SR** (`mindop`) — web nedostupný (UND_ERR_CONNECT_TIMEOUT). RSS: nenájdený platný feed (žiadny kandidát).
-- **Ministerstvo cestovného ruchu a športu SR** (`mcrs`) — web nedostupný (ENOTFOUND). RSS: nenájdený platný feed (žiadny kandidát).
-- **Súdy SR – Občan a justícia (obcan.justice.sk)** (`justice-sudy`) — web nedostupný (HTTP 404). API overené (200, application/json).
-- **Tlačová rada SR** (`tlacovarada`) — web nedostupný (ENOTFOUND).
-- **Štatistický úrad SR (DATAcube)** (`statistics`) — web nedostupný (HTTP 403). web odmieta boty (403/výzva). RSS: nenájdený platný feed (žiadny kandidát). API overené (200, application/json).
-- **Živnostenský register** (`zrsr`) — web nedostupný (UNABLE_TO_GET_ISSUER_CERT_LOCALLY).
-- **Bratislavský samosprávny kraj** (`kraj-bsk`) — web nedostupný (ERR_TLS_CERT_ALTNAME_INVALID). RSS: nenájdený platný feed (žiadny kandidát).
-- **Banskobystrický samosprávny kraj** (`kraj-bbsk`) — web nedostupný (UNABLE_TO_VERIFY_LEAF_SIGNATURE). RSS: nenájdený platný feed (žiadny kandidát).
+### Feedy neaktívne dlhšie ako 30 dní
+- **Dnes24.sk** (`dnes24`) — feed neaktívny (posledná položka 2020-01-06); RSS nenájdený
+- **Katolícke noviny** (`katolickenoviny`) — feed neaktívny (posledná položka 2023-01-30); RSS nenájdený
+- **Vsieti.sk** (`vsieti`) — feed neaktívny (posledná položka 2015-04-25); RSS nenájdený
+- **ZVTV** (`zvtv`) — feed neaktívny (posledná položka 2025-03-28); RSS nenájdený
+- **Rokovania vlády SR (rokovania.gov.sk)** (`rokovania-vlady`) — feed neaktívny (posledná položka 2012-06-21); RSS nenájdený
+- **Hlavné správy (YouTube)** (`yt-hlavnespravy`) — feed neaktívny (posledná položka 2026-08-05); RSS nenájdený
+- **Fair Play Michala Kovačiča (Aktuality.sk)** (`pod-fair-play`) — feed neaktívny (posledná položka 2023-04-17); RSS nenájdený
+- **Eduard Chmelár Podcast** (`pod-chmelar`) — feed neaktívny (posledná položka 2020-03-25); RSS nenájdený
+- **Podcasty a rozhovory Hlavné správy** (`pod-hlavnespravy`) — feed neaktívny (posledná položka 2026-08-01); RSS nenájdený
+- **Na telo s Michalom Kovačičom (Markíza)** (`pod-na-telo`) — feed neaktívny (posledná položka 2024-05-26); RSS nenájdený
+- **Dnes večer s Michalom Šimečkom (Štúdio Štúrova)** (`pod-dnes-vecer-simecka`) — feed neaktívny (posledná položka 2026-07-05); RSS nenájdený
+- **Bod Varu (Štúdio Štúrova)** (`pod-bod-varu`) — feed neaktívny (posledná položka 2026-05-29); RSS nenájdený
+- **Plán pre budúcnosť (Progresívne Slovensko)** (`pod-ps-plan`) — feed neaktívny (posledná položka 2023-09-25); RSS nenájdený
+- **Igor Matovič (YouTube)** (`yt-matovic`) — feed neaktívny (posledná položka 2024-06-03); RSS nenájdený
+- **Ľuboš Blaha (YouTube)** (`yt-blaha`) — feed neaktívny (posledná položka 2022-09-08); RSS nenájdený
 
-### Paywall (signály v HTML článkov)
-- **Denník N** (`dennikn`) — 
-- **Denník E (dennike.sk)** (`dennike`) — 
-- **Týždeň** (`tyzden`) — 
-- **Finweb (HN)** (`finweb`) — 
-- **Energie-portal.sk** (`energie-portal`) — 
-- **Emefka** (`emefka`) — 
-- **Hospodářské noviny (CZ)** (`hn-cz`) — 
+### Paywall (signály v HTML článkov; chýbajúci signál nie je dôkaz, že paywall neexistuje)
+- **Denník N** (`dennikn`) — paywall: signály u 3/3 článkov (ld+json isAccessibleForFree=false; text o predplatnom)
+- **Denník E (dennike.sk)** (`dennike`) — paywall: signály u 3/3 článkov (ld+json isAccessibleForFree=false; text o predplatnom)
+- **Týždeň** (`tyzden`) — paywall: signály u 3/3 článkov (trieda paywall/locked)
+- **Finweb (HN)** (`finweb`) — paywall: signály u 2/3 článkov (ld+json isAccessibleForFree=false)
+- **Energie-portal.sk** (`energie-portal`) — paywall: signály u 3/3 článkov (trieda paywall/locked; text o predplatnom)
+- **Emefka** (`emefka`) — paywall: signály u 1/3 článkov (ld+json isAccessibleForFree=false; trieda paywall/locked)
+- **Hospodářské noviny (CZ)** (`hn-cz`) — paywall: signály u 1/3 článkov (ld+json isAccessibleForFree=false; trieda paywall/locked)
 
 ### Odmietajú UA Netopier, ale pustia prehliadačový UA
 _žiadne_

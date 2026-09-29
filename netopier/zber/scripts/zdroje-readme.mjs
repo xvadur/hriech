@@ -31,14 +31,36 @@ const katRows = [...kat.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => [
 
 // čo sa nedá zbierať
 const has = (r, re) => re.test(r.poznamka);
-const blokovane = reg.filter((r) => has(r, /odmieta boty|web nedostupný/i) && !hasRss(r));
-const bezRss = reg.filter((r) => !hasRss(r) && !has(r, /odmieta boty|web nedostupný/i) && r.overene_at && (r.typ !== 'register') && !r.api);
-const nedostupne = reg.filter((r) => !r.overene_at);
+const dovod = (r) => {
+  const p = r.poznamka;
+  const out = [];
+  const web = p.match(/web nedostupný \(([^)]*)\)/);
+  if (web) out.push(`web: ${web[1]}`);
+  if (/odmieta boty/.test(p)) out.push('web odmieta boty (403/výzva)');
+  const rate = p.match(/([\w.-]+\/rss) → HTTP 429/);
+  if (rate) out.push('feed vracia 429 (limit dotazov)');
+  const stale = p.match(/neaktívny feed: (\S+) \(posledná položka ([\d-]+)\)/);
+  if (stale) out.push(`feed neaktívny (posledná položka ${stale[2]})`);
+  if (/RSS: nenájdený platný feed/.test(p) && !web) out.push('RSS nenájdený');
+  if (/feed bez položiek/.test(p)) out.push('feed bez položiek');
+  return out.join('; ') || 'iba web, feed sa nehľadal (bez RSS)';
+};
+const tlsRe = /CERT|SSL|TLS|ISSUER|LEAF/;
+const botRe = /odmieta boty|→ HTTP 429/;
+const skip = (r) => seedById.get(r.id)?.probe === 'none';
+const nedost = reg.filter((r) => !skip(r) && (!r.overene_at || (has(r, /web nedostupný/) && !hasRss(r) && !r.api)));
+const blokovane = nedost.filter((r) => botRe.test(r.poznamka));
+const tls = nedost.filter((r) => !botRe.test(r.poznamka) && tlsRe.test(r.poznamka));
+const siet = nedost.filter((r) => !botRe.test(r.poznamka) && !tlsRe.test(r.poznamka));
+const stale = reg.filter((r) => !skip(r) && !hasRss(r) && has(r, /neaktívny feed/));
+const bezRss = reg.filter((r) => !skip(r) && !hasRss(r) && r.overene_at && r.typ !== 'register' && !r.api && !nedost.includes(r) && !stale.includes(r));
+const plneTexty = reg.filter((r) => r.cely_text_v_rss);
+const sApi = reg.filter((r) => r.api);
 const paywall = reg.filter((r) => has(r, /paywall: signály/));
 const uaBlok = reg.filter((r) => has(r, /odmieta UA Netopier/));
 
 const list = (arr, note) => (arr.length ? arr.map((r) => `- **${r.nazov}** (\`${r.id}\`)${note ? ' — ' + note(r) : ''}`).join('\n') : '_žiadne_');
-const short = (r) => r.poznamka.replace(/^.*?(web nedostupný[^.]*\.|web odmieta[^.]*\.)/, '$1').slice(0, 160);
+const short = dovod;
 
 // Mediaboard
 const mb = seed.filter((s) => s.mediaboard);
@@ -66,19 +88,33 @@ ${table(mbRows, ['zdroj v zmluve', 'bod prílohy č. 1', 'RSS v registri', 'cel�
 
 Zdroje zo zmluvy s RSS: ${cnt(mbReg, hasRss)} z ${mb.length} položiek zaradených do registra.
 ${read('README.mediaboard.md')}
+## Zdroje s celým textom v RSS
+
+${list(plneTexty, (r) => r.rss[0])}
+
+## API a exporty
+
+${list(sApi, (r) => r.api)}
+
 ## Čo sa nedá (alebo nedá bez ďalšieho) zbierať
 
-### Web alebo feed blokuje boty / je nedostupný
+### Web alebo feed blokuje boty (Cloudflare výzva, 403/429)
 ${list(blokovane, short)}
+
+### Chyba certifikátu (neúplný reťazec, nesedí názov)
+${list(tls, short)}
+
+### Web neodpovedal (timeout, DNS)
+${list(siet, short)}
 
 ### Web funguje, ale nenašiel sa platný feed
 ${list(bezRss, short)}
 
-### Neoverené (web neodpovedal)
-${list(nedostupne, short)}
+### Feedy neaktívne dlhšie ako 30 dní
+${list(stale, short)}
 
-### Paywall (signály v HTML článkov)
-${list(paywall, (r) => (r.poznamka.match(/paywall: signály[^.]*\\./) ?? [''])[0])}
+### Paywall (signály v HTML článkov; chýbajúci signál nie je dôkaz, že paywall neexistuje)
+${list(paywall, (r) => (r.poznamka.match(/paywall: signály[^.]*/) ?? [''])[0])}
 
 ### Odmietajú UA Netopier, ale pustia prehliadačový UA
 ${list(uaBlok)}

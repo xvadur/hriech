@@ -452,8 +452,8 @@ async function pool(items, worker, n) {
   return out;
 }
 
-const seed = JSON.parse(readFileSync(join(DIR, 'seed.json'), 'utf8'));
-const regPath = join(DIR, 'register.json');
+const seed = JSON.parse(readFileSync(args.seed ?? join(DIR, 'seed.json'), 'utf8'));
+const regPath = args.out ?? join(DIR, 'register.json');
 const old = existsSync(regPath) ? JSON.parse(readFileSync(regPath, 'utf8')) : [];
 const oldById = new Map(old.map((r) => [r.id, r]));
 const todo = seed.filter((s) => !ONLY || ONLY.has(s.id));
