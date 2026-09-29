@@ -32,6 +32,7 @@
 - Voľby: rozšírenie podľa XDR-282 (kandidáti verejní menom, mestá nad 20 000, mestské časti BA a KE)
 - XDR-279: Netopier ako služba na Macu (zber každých 2–5 min + `derive` po zbere) — LaunchAgent iba na pokyn
 - Voľby (XDR-276): po 29. 9. doplniť oficiálne zoznamy do `zber/data/volby/zdroje.json` a pustiť `pnpm run volby`; potom sledované osoby (XDR-277) nad `entity` `osoba:*`
+- Rozbor webov redakcií (XDR-298, 29. 9.): `docs/redakcie-weby.md` — čo má ktorá redakcia strojovo čitateľné (news sitemapy, JSON-LD, RSS, live) a poradie príjmu pre D7 (STVR, Denník N, Štandard, SITA, Startitup najprv)
 - I2: migrácie 0004–0006 (udalosti, zvody, redakcia; 0003 je voľby), seed zvodov (D6, Adam škrtá), rozšírenie SK zdrojov (D7: SME, TASR, HN, TA3, Markíza, JOJ, STVR, Postoj, Štandard, Refresher, Startitup, Trend — dnes iba Denník N, Aktuality, Pravda), sledované entity a aliasy (`entity_alias`) pre `derive:zmienky`
 - I3: udalosti z RSS (port `events.py`, `text.py` do `derive/udalosti.ts`), potom B10 tri skóre udalostí a B9 filter relevancie s `why_surfaced`
 - Meranie médií rozšíriť podľa registra C: čomu sa venujú vs. čo sa stalo (registre ↔ médiá), otázky, naratívy, sentiment, vata podľa umiestnenia, nepresnosti proti registrom — potrebuje celé texty (rozhodnuté 28. 9.) a udalosti (I3)
