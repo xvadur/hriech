@@ -28,6 +28,8 @@
 - 2026-09-25 — Netopier je backend Hriechu vo workspace; v0 zmazaný; minulé koncepcie archivované do `xvadur_core/zdroje/hriech/archiv-2026-09/netopier/` [A]
 
 ## Ďalší krok
+- Brána a čítanie (rozhodnuté 29. 9., XDR-283): matica filtra XVADUR v1 (`redakcia/data/filter-xvadur.json`), klient Jevu cez OpenRouter, čítanie označených cez Gemini 2.5 Flash-Lite, test na 50 slovenských textoch; čaká na kľúč (XDR-284). Adresa API na overenie: dokumentácia uvádza `api/alpha/decisions` + `typesafe/jev-1.13`, vzorové skripty `api/v1/systemone` + `jev-1.13`
+- Voľby: rozšírenie podľa XDR-282 (kandidáti verejní menom, mestá nad 20 000, mestské časti BA a KE)
 - XDR-279: Netopier ako služba na Macu (zber každých 2–5 min + `derive` po zbere) — LaunchAgent iba na pokyn
 - Voľby (XDR-276): po 29. 9. doplniť oficiálne zoznamy do `zber/data/volby/zdroje.json` a pustiť `pnpm run volby`; potom sledované osoby (XDR-277) nad `entity` `osoba:*`
 - I2: migrácie 0004–0006 (udalosti, zvody, redakcia; 0003 je voľby), seed zvodov (D6, Adam škrtá), rozšírenie SK zdrojov (D7: SME, TASR, HN, TA3, Markíza, JOJ, STVR, Postoj, Štandard, Refresher, Startitup, Trend — dnes iba Denník N, Aktuality, Pravda), sledované entity a aliasy (`entity_alias`) pre `derive:zmienky`

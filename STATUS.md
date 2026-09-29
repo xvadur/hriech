@@ -6,6 +6,8 @@
 - Backend: Netopier v2 v `netopier/` beží lokálne na Macu nad lokálnou D1 (28. 9., XDR-275, krok I0): 14 299 záznamov, 13 479 normalizovaných dátumov, 2 024 entít, 4 700 väzieb, fulltext, meranie 3 SK redakcií; balík `@netopier/redakcia` (skóre zvodov s paritou proti openclaw `scoring.js`, meranie médií); voľby 24. 10. v lokálnej D1 (28. 9., XDR-276: 8 krajov, 79 okresov, 47 obcí, 104 kandidatúr, 16 prieskumov, 14 termínov, geo hranice; `pnpm run volby`); cloudový Worker nenasadený (pozri `netopier/STATUS.md`)
 
 ## Rozhodnutia
+- 2026-09-29 — brána Netopiera je Jev (TypeSafe AI) cez OpenRouter, vstupný filter XVADUR ako matica otázok; čítací model (zatiaľ Gemini 2.5 Flash-Lite) iba nad označeným; rozpočet do 10 € mesačne; do cloudu iba verejné texty; lokálny model možno neskôr; Hostinger GPU a Hermes v cloude zamietnuté (XDR-283, `docs/redakcia/ROZHODNUTIE.md`) [A]
+- 2026-09-28 — termín: spojené komunálne a župné voľby 24. 10. 2026, dovtedy má byť Hriech vonku s volebnými modulmi (XDR-280); kandidáti sa zobrazujú menom, sledujú sa aj mestá nad 20 000 obyvateľov a mestské časti Bratislavy a Košíc (XDR-282); Netopier pobeží ako služba na Macu (XDR-279); cieľ Netopiera nie je informovať, ale merať, ako médiá pracujú [A]
 - 2026-09-28 — Claude smie čítať verejné texty médií celé; prepisy cez entitný a fulltextový filter; „skóre“ = meranie médií podľa registra, openclaw iba kontrola [A]
 - 2026-09-27 — AI redakcia: návrh architektúry, register 124 funkcií a medzery v `docs/redakcia/`; beží lokálne na Macu, na Cloudflare zadarmo iba zobrazovacia D1 a web, Minúta bez meškania, bez GitHub Actions, bez platených služieb; meno Hriech dočasné; jadro pred Živé: kalendár a anticipácia, filter relevancie, kauzy, prepisy, aktéri a sociálne siete, meranie médií [A]
 - 2026-09-26 — nový článok má výskum aj draft v `research/<téma>/` v repozitári Hriechu; osobné podklady ostávajú v jadre [A]
@@ -16,11 +18,13 @@
 - 2026-09-25 — Hriech dostane redizajn [A]
 
 ## Ďalší krok
-- AI redakcia: I0 hotové (XDR-275), návrh prepísaný na lokálny režim (`docs/redakcia/navrh-architektury.md`, časť 1L). Ďalej XDR-279 (služba na Macu), I2 (migrácie 0003–0005, zvody, SK zdroje), I3 (udalosti), zobrazovacia D1 pre web
+- Netopier, poradie (jeden agent naraz, bez workflowov): zvody XDR-278 (agent zastavený 28. 9., nič nezapísané, spustiť znova) → osoby a tlačovky XDR-277 → rozšírenie volieb XDR-282 (listiny vyšli 29. 9.) → matica filtra XDR-283 (návrh ide bez kľúča) → meranie nad rámec I0 XDR-281 → služba XDR-279 → volebné moduly na webe XDR-280 (čaká na knižnicu komponentov)
+- Hotové 28. 9.: I0 lokálny beh (XDR-275), volebné dáta (XDR-276)
 - Článok **Zeitgeber — kto vlastní hodiny** (cykly, kalendár, globálna kontrola bez sprisahania): výskum v `research/zeitgeber/`, overiť zdroje, potom draft; píše sa cez Vianoce a Nový rok. Main obsahuje nepublikovaný research — push iba po Adamovom schválení.
 - Určiť nový stack a roadmapu pre moduly (mapa s vrstvami, štátny dashboard, voľby a prieskumy, kalendár a odpočet, minúta po minúte, analýza spravodajstva, rebríček redakcií, Chronos, demografia, Opus Major)
 
 ## Blokované
+- OpenRouter kľúč a kredit 10 $ do `netopier/.env` (XDR-284) — na Adamovi; bez neho nejde brána ani test slovenčiny
 - Nasadenie Netopiera do cloudu (XDR-228) čaká na Adama: Workers Paid a pokyn na deploy
 
 ## Inbox
