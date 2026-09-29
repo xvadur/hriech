@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 import sqlite3
 import subprocess
@@ -34,6 +35,12 @@ RAW = DATA / "raw"
 DB_PATH = DATA / "fiki.sqlite"
 VIDEOS_JSON = DATA / "videos.json"
 VYSTUPENIA = DATA / "vystupenia.txt"
+# Prihlásenie do YouTube pri bloku „not a bot“ (súbor vytvára projekty/obsah/nastroje/cookies_dia.py).
+COOKIES = Path(os.environ.get("YT_COOKIES", Path.home() / ".config" / "xvadur" / "yt-cookies.txt"))
+
+
+def ytdlp() -> list[str]:
+    return [*ytdlp(), *(["--cookies", str(COOKIES)] if COOKIES.exists() else [])]
 
 # poradie pokusov o jazyk titulkov; prvý úspešný vyhráva.
 # Pôvodný prepis (-orig) má prednosť pred strojovým prekladom (napr. české video → „sk“).
@@ -129,7 +136,7 @@ def db() -> sqlite3.Connection:
 
 def list_channel() -> list[dict]:
     out = subprocess.run(
-        ["yt-dlp", "--flat-playlist", "-J", CHANNEL_URL],
+        [*ytdlp(), "--flat-playlist", "-J", CHANNEL_URL],
         capture_output=True, text=True, check=True,
     ).stdout
     return [e for e in json.loads(out).get("entries", []) if e.get("id")]
@@ -165,7 +172,7 @@ def fetch_subs(video_id: str) -> dict | None:
     for langs in LANG_ATTEMPTS:
         proc = subprocess.run(
             [
-                "yt-dlp", "--no-simulate", "--skip-download",
+                *ytdlp(), "--no-simulate", "--skip-download",
                 "--write-subs", "--write-auto-subs",
                 "--sub-langs", langs, "--sub-format", "vtt",
                 "--sleep-subtitles", "1",
@@ -424,7 +431,7 @@ def vylucene(title: str, channel: str) -> str | None:
 
 def video_meta(vid: str) -> dict | None:
     proc = subprocess.run(
-        ["yt-dlp", "--skip-download", "--print",
+        [*ytdlp(), "--skip-download", "--print",
          "%(.{id,title,channel,channel_id,upload_date,duration,view_count})j",
          f"https://www.youtube.com/watch?v={vid}"],
         capture_output=True, text=True,
