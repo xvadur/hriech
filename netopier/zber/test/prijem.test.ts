@@ -1,7 +1,7 @@
 import { env as workerEnv } from 'cloudflare:workers';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { runPrijem, stavPrijmu, ulozText } from '../src/prijem/index';
-import { kanalyZRegistra, overRegister, zlucRegister, type ZdrojRegistra } from '../src/prijem/register';
+import { kanalyZRegistra, overRegister, zdrojeZWorldMonitora, zdrojRiadok, zlucRegister, type ZdrojRegistra } from '../src/prijem/register';
 import { parseRobots, robotsPovoluje } from '../src/prijem/robots';
 import { dekodujTelo, htmlNaText, jsonLdClanok, vytiahniText } from '../src/prijem/text';
 import { kanonUrl } from '../src/prijem/url';
@@ -219,6 +219,13 @@ describe('príjem: pomocné funkcie', () => {
     expect(zlucene.find((z) => z.id === 'alfa')!.rss).toEqual(['https://alfa.test/feed']);
     expect(zlucene.find((z) => z.id === 'gama')).toMatchObject({ nazov: 'Gama bez RSS', rss: ['https://gama.test/rss'] });
     expect(zlucene.find((z) => z.id === 'gama')!.poznamka).toContain('zálohy');
+  });
+
+  it('svet z World Monitora: medzinárodný zdroj, kanál bez celých textov', () => {
+    const svet = zdrojeZWorldMonitora({ feeds: [{ id: 'wm-telex', name: 'Telex', url: 'https://telex.hu/rss', lang: 'hu', category: 'europe' }] });
+    expect(zdrojRiadok(svet[0]!)).toMatchObject({ rozsah: 'medzinarodny', kategoria: 'svet europe', jazyk: 'hu' });
+    expect(kanalyZRegistra(svet)[0]).toMatchObject({ feedId: 'wm-telex', bezTextov: true, typDokumentu: 'clanok' });
+    expect(kanalyZRegistra(REGISTER)[0]!.bezTextov).toBe(false);
   });
 });
 

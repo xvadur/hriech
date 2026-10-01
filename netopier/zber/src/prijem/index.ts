@@ -288,7 +288,7 @@ async function zapisDokumenty(db: D1Database, v: KanalVysledok, nazovZdroja: str
     const bezStranky = BEZ_STRANKY.has(k.typDokumentu);
     const popis = bezStranky ? rssText || item.summary || '' : '';
     const celyZRss = bezStranky ? popis || null : rssText.length >= (k.celyTextVRss ? 200 : RSS_TEXT_MIN) ? rssText : null;
-    const stav = celyZRss ? 'ok' : item.link && !bezStranky ? 'caka' : 'bez_textu';
+    const stav = celyZRss ? 'ok' : item.link && !bezStranky && !k.bezTextov ? 'caka' : 'bez_textu';
     const novy = await db
       .prepare(
         `INSERT INTO dokumenty (typ, zdroj_id, kanal, url, url_kanon, external_id, titulok, perex, autor, jazyk, kategorie,
@@ -607,4 +607,4 @@ export async function stavPrijmu(db: D1Database) {
   return { spolu: spolu!.results[0], texty: texty!.results, zdroje: zdroje!.results, duplicity: dup!.results[0] };
 }
 
-export { overRegister, kanalyZRegistra, zlucRegister } from './register';
+export { overRegister, kanalyZRegistra, zlucRegister, zdrojeZWorldMonitora } from './register';

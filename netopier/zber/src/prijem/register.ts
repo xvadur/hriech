@@ -16,6 +16,8 @@ export interface ZdrojRegistra {
   kategoria?: string | null;
   overene_at?: string | null;
   poznamka?: string | null;
+  /** iba titulok a perex z kanála, stránka článku sa nesťahuje (svet a Európa z World Monitora) */
+  bez_textov?: boolean | null;
 }
 
 /** Kanál príjmu: jedna RSS/Atom URL jedného zdroja. */
@@ -25,6 +27,8 @@ export interface KanalPrijmu {
   url: string;
   jazyk: string | null;
   celyTextVRss: boolean;
+  /** celý text sa zo stránky nesťahuje */
+  bezTextov: boolean;
   /** typ dokumentu, ktorý kanál dáva (clanok | minuta | tlacova_sprava | epizoda | video) */
   typDokumentu: string;
 }
@@ -44,6 +48,7 @@ export function zdrojTyp(typ: string | null | undefined): ZdrojTyp {
 
 export function zdrojRozsah(z: ZdrojRegistra): 'lokalny' | 'narodny' | 'medzinarodny' {
   const k = `${z.kategoria ?? ''} ${z.typ ?? ''}`.toLowerCase();
+  if (k.startsWith('svet')) return 'medzinarodny';
   if (/(region|lokal|mestsk|krajsk)/.test(k)) return 'lokalny';
   if (z.jazyk && !['sk', 'cs', 'hu'].includes(z.jazyk.toLowerCase())) return 'medzinarodny';
   return 'narodny';
@@ -82,6 +87,7 @@ export function kanalyZRegistra(register: ZdrojRegistra[]): KanalPrijmu[] {
         url,
         jazyk: z.jazyk ?? null,
         celyTextVRss: Boolean(z.cely_text_v_rss),
+        bezTextov: Boolean(z.bez_textov),
         typDokumentu: typDokumentu(z, url),
       });
     });
@@ -107,6 +113,23 @@ export function zdrojRiadok(z: ZdrojRegistra) {
     overene_at: z.overene_at ?? null,
     poznamka: z.poznamka ?? null,
   };
+}
+
+/**
+ * Svetové a európske kanály z kurátorovaného katalógu World Monitor (data/worldmonitor-feeds.json)
+ * ako zdroje registra: iba titulok a perex, kategória „svet <oblasť>“.
+ */
+export function zdrojeZWorldMonitora(data: { feeds?: Array<{ id: string; name: string; url: string; lang?: string; category?: string }> }): ZdrojRegistra[] {
+  return (data.feeds ?? []).map((f) => ({
+    id: f.id,
+    nazov: f.name,
+    typ: 'medium',
+    rss: [f.url],
+    jazyk: f.lang ?? null,
+    kategoria: `svet ${f.category ?? ''}`.trim(),
+    cely_text_v_rss: false,
+    bez_textov: true,
+  }));
 }
 
 /** Kontrola tvaru registra (chyby sa vrátia ako text, príjem ich zaloguje a zdroj preskočí). */

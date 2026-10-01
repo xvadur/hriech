@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "@fontsource-variable/rubik";
+@import "@fontsource-variable/source-sans-3";
+
+/* BoldKit tokeny vo farbách Hriechu (DESIGN.md): ružová, ink, papier; Rubik + Source Sans 3. */
+@theme {
+  --color-pink: #f18fa0;
+  --color-blush: #fbe8ec;
+  --color-ink: #181616;
+  --color-muted: #625457;
+  --color-paper: #ffffff;
+  --color-line: #dac4c9;
+  --color-alarm: #e2303f;
+  --font-display: "Rubik Variable", sans-serif;
+  --font-sans: "Source Sans 3 Variable", sans-serif;
+  --radius-brutal: 8px;
+  --shadow-brutal: 4px 4px 0 0 var(--color-ink);
+  --shadow-brutal-sm: 2px 2px 0 0 var(--color-ink);
+}
+
+:root {
+  --bg: var(--color-blush);
+  --card: var(--color-paper);
+  --fg: var(--color-ink);
+  --fg-muted: var(--color-muted);
+  --border: var(--color-ink);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141112;
+    --card: #1e1a1b;
+    --fg: #f6eef0;
+    --fg-muted: #b7a7ab;
+    --border: #f6eef0;
+    color-scheme: dark;
+  }
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+}
+
+.bk-card {
+  background: var(--card);
+  border: 3px solid var(--border);
+  border-radius: var(--radius-brutal);
+  box-shadow: 4px 4px 0 0 var(--border);
+}
+
+.bk-chip {
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0 0 var(--border);
+  transition: transform 120ms cubic-bezier(0.22, 1, 0.3, 1.12), box-shadow 120ms;
+}
+.bk-chip:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 var(--border);
+}
+.bk-chip[aria-pressed="true"] {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+@media (prefers-color-scheme: dark) {
+  .bk-chip[aria-pressed="true"] {
+    background: var(--color-pink);
+    color: var(--color-ink);
+  }
+}
+
+.polozka.nova {
+  animation: nova 2.4s ease-out;
+}
+@keyframes nova {
+  0% {
+    background: var(--color-pink);
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+.live-bodka {
+  animation: pulz 1.6s ease-in-out infinite;
+}
+@keyframes pulz {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.stlpec {
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .polozka.nova,
+  .live-bodka {
+    animation: none;
+  }
+}

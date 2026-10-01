@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Príjem RSS s celými textmi (XDR-299) nad lokálnym SQLite súborom. Príkaz pre službu (každých 2–5 minút).
 // Register: zber/data/zdroje/register.json (XDR-296); kým neexistuje, zber/data/prijem-zaloha.json.
+// Svet a Európa: zber/data/worldmonitor-feeds.json (iba titulky a perexy, bez celých textov; --bez-sveta vypne).
 // Log: riadok na výstup + JSON riadok do netopier/data/log/prijem.jsonl. Zámok: netopier/data/prijem.lock (beh sa neprekrýva).
 // Použitie:
 //   node scripts/prijem-node.mjs                     # kanály + celé texty
@@ -23,7 +24,7 @@ const dataDir = dirname(DB_CESTA);
 const zamok = join(dataDir, 'prijem.lock');
 const logSubor = join(dataDir, 'log', 'prijem.jsonl');
 
-function nacitajRegister(overRegister, zlucRegister) {
+function nacitajRegister(overRegister, zlucRegister, zdrojeZWorldMonitora) {
   const i = args.indexOf('--register');
   const registerCesta = i >= 0 && args[i + 1] ? args[i + 1] : join(zber, 'data/zdroje/register.json');
   const zalohaCesta = join(zber, 'data/prijem-zaloha.json');
@@ -36,8 +37,17 @@ function nacitajRegister(overRegister, zlucRegister) {
   const register = nacitaj(registerCesta);
   const zaloha = nacitaj(zalohaCesta);
   if (!register.length && !zaloha.length) throw new Error(`Register zdrojov chýba (${registerCesta})`);
-  const spolu = zlucRegister(register, zaloha);
-  return { zdroje: spolu, popis: `register ${register.length}, záloha doplnila ${spolu.length - register.length}` };
+  const slovensko = zlucRegister(register, zaloha);
+  const svetCesta = join(zber, 'data/worldmonitor-feeds.json');
+  const urls = new Set(slovensko.flatMap((z) => z.rss ?? []));
+  const svet =
+    args.includes('--bez-sveta') || !existsSync(svetCesta)
+      ? []
+      : overRegister(zdrojeZWorldMonitora(JSON.parse(readFileSync(svetCesta, 'utf8')))).zdroje.filter((z) => !(z.rss ?? []).some((u) => urls.has(u)));
+  return {
+    zdroje: [...slovensko, ...svet],
+    popis: `register ${register.length}, záloha doplnila ${slovensko.length - register.length}, svet ${svet.length}`,
+  };
 }
 
 function beziIny() {
@@ -54,7 +64,7 @@ function beziIny() {
 mkdirSync(join(dataDir, 'log'), { recursive: true });
 const outfile = join(zber, '.wrangler/tmp/prijem-node.mjs');
 await build({ entryPoints: [join(zber, 'src/prijem/index.ts')], bundle: true, format: 'esm', platform: 'node', outfile, logLevel: 'warning' });
-const { overRegister, zlucRegister, runPrijem, stavPrijmu } = await import(outfile);
+const { overRegister, zlucRegister, zdrojeZWorldMonitora, runPrijem, stavPrijmu } = await import(outfile);
 
 const { env, dispose } = lokalneEnv();
 try {
@@ -68,7 +78,7 @@ try {
     }
     writeFileSync(zamok, String(process.pid));
     try {
-      const { zdroje, popis } = nacitajRegister(overRegister, zlucRegister);
+      const { zdroje, popis } = nacitajRegister(overRegister, zlucRegister, zdrojeZWorldMonitora);
       const s = await runPrijem(env.DB, {
         register: zdroje,
         fetch: (u, i) => fetch(u, i),
