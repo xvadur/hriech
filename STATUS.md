@@ -21,7 +21,7 @@
 - 2026-09-25 — Hriech dostane redizajn [A]
 
 ## Ďalší krok
-- Web Netopiera stojí od 1. 10. (`netopier/web/`, http://localhost:4400): Svet, Európa, Slovensko naživo, témy naprieč redakciami, fulltext; príjem číta aj 155 svetových a európskych kanálov. Hotové 29.–30. 9.: register zdrojov (XDR-296), rozbor webov redakcií (XDR-298), jednotná schéma a príjem (XDR-299), služba príjmu (XDR-279, beží), Národná rada (XDR-297)
+- Netopier od 1. 10.: jadro je meranie médií v číslach (barometer strašenia, pozornosť, rýchlosť reakcie na kauzy, správanie médií, podcasty), nie čítačka; web `netopier/web/` Adam odmietol, viacagentový návrh zastavený (pozri `netopier/STATUS.md`). Príjem číta aj 155 svetových a európskych kanálov. Hotové 29.–30. 9.: register zdrojov (XDR-296), rozbor webov redakcií (XDR-298), jednotná schéma a príjem (XDR-299), služba príjmu (XDR-279, beží), Národná rada (XDR-297)
 - Netopier, poradie (jeden agent naraz, bez workflowov): zvody XDR-278 (agent zastavený 28. 9., nič nezapísané, spustiť znova) → osoby a tlačovky XDR-277 → rozšírenie volieb XDR-282 (listiny vyšli 29. 9.) → matica filtra XDR-283 (návrh ide bez kľúča) → meranie nad rámec I0 XDR-281 → služba XDR-279 → volebné moduly na webe XDR-280 (čaká na knižnicu komponentov)
 - Hotové 28. 9.: I0 lokálny beh (XDR-275), volebné dáta (XDR-276)
 - Článok **Zeitgeber — kto vlastní hodiny** (cykly, kalendár, globálna kontrola bez sprisahania): výskum v `research/zeitgeber/`, overiť zdroje, potom draft; píše sa cez Vianoce a Nový rok. Research je na GitHube od 29. 9. (push pri savegame).
