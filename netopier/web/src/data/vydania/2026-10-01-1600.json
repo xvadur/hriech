@@ -1,0 +1,142 @@
+{
+  "cislo": 1,
+  "uzavierka": "2026-10-01T14:00:00Z",
+  "autorstvo": "Vydanie zostavil a napísal Claude (AI redaktor Netopiera) zo správ, ktoré Netopier prijal do uzávierky. Každé tvrdenie má pri sebe zdroj; čo zdroje nepotvrdzujú, je v časti Čo nevieme.",
+  "udalosti": [
+    {
+      "id": "flydubai-1073",
+      "oblast": "svet",
+      "kicker": "Svet · Blízky východ",
+      "titulok": "Kopilot pobodal kapitána a strhol lietadlo do strmhlavého letu. Cestujúci ho premohli",
+      "perex": "Let Flydubai 1073 z Dubaja do Tel Avivu so 174 ľuďmi na palube v stredu ráno strmhlav klesol asi o päť kilometrov. Kapitán so zraneniami od noža otvoril kokpit, cestujúci útočníka premohli a lietadlo pristálo v saudskoarabskom Tabúku. Izrael hovorí o islamistickom teroristickom útoku, motív zatiaľ nikto nepotvrdil.",
+      "vieme": [
+        { "text": "Lietadlo vzlietlo z Dubaja o 6:05 miestneho času, o 8:31 vyslalo núdzový signál a o pár minút kód 7500, ktorý znamená únos.", "zdroj": "CNN Prima News" },
+        { "text": "Počas boja v kokpite klesol stroj asi za minútu z 33 000 na 17 000 stôp, teda z približne 10 na 5 kilometrov.", "zdroj": "Welt" },
+        { "text": "Útočníkom bol podľa viacerých redakcií kopilot z Ománu. Kapitána, Inda Smita Machčhara, pobodal; kapitán napriek zraneniu otvoril dvere kokpitu a leží v nemocnici v Saudskej Arábii.", "zdroj": "Guardian, Seznam Zprávy, BBC Mundo, Ta Nea" },
+        { "text": "Cestujúci Janiv Hajún, inštalatér, podľa vlastných slov vytiahol kopilota z kokpitu a pritiahol knipel. Vraví, že to vedel zo seriálu o leteckých nehodách. Pristátie potom zvládli piloti, ktorí leteli ako cestujúci.", "zdroj": "Reuters cez HotNews, Právo, Denník N" },
+        { "text": "Netanjahu na Fox News povedal, že kopilot prešiel islamistickou radikalizáciou. Izrael žiada jeho vydanie, podozrivý je zadržaný v Saudskej Arábii.", "zdroj": "Repubblica, Die Zeit" },
+        { "text": "Vyšetrovanie otvorili Spojené arabské emiráty aj Izrael. Flydubai na odporúčanie Šin Bet pozastavila všetky lety do Izraela; doteraz ich mala desať denne. El Al chystá záchranné lety pre Izraelčanov uviaznutých v Emirátoch.", "zdroj": "Egypt Independent, Daily Sabah, Právo podľa Jerusalem Post" }
+      ],
+      "nevieme": [
+        "Motív a s kým bol útočník spojený. Guardian aj Reuters píšu, že motív zatiaľ nie je známy; Netanjahu sľúbil do niekoľkých dní povedať, či ide o stopu do Iránu.",
+        "Či Saudská Arábia podozrivého vydá Izraelu.",
+        "Iránska agentúra Fars píše, že sa vrátil aj druhý let Flydubai do Tel Avivu. Žiadna iná redakcia v Netopierovi to nepotvrdila."
+      ],
+      "hladaj": "flydubai OR \"fly dubai\" OR fz1073"
+    },
+    {
+      "id": "koalicia-76",
+      "oblast": "slovensko",
+      "kicker": "Slovensko · Parlament",
+      "titulok": "Slyško odchádza z Hlasu k odvolanému Tarabovi. Koalícia má podľa Tarabu už len 76 hlasov",
+      "perex": "Poslanec Peter Slyško vystúpil zo strany Hlas-SD aj z jej klubu a v parlamente bude ako nezaradený spolupracovať s Tomášom Tarabom, ktorý sa po odvolaní z postu ministra vrátil do Národnej rady. Podľa Tarabu má vláda teraz presne 76 hlasov zo 150.",
+      "vieme": [
+        { "text": "Slyško doručil vedeniu Hlasu-SD vzdanie sa členstva v strane aj v klube a skončil ako krajský predseda strany v Žilinskom kraji.", "zdroj": "TASR" },
+        { "text": "Taraba si od štvrtka uplatňuje mandát poslanca. Ministrom životného prostredia prestal byť po tom, čo mu SNS spolu s opozíciou vyslovila nedôveru a prezident ho odvolal.", "zdroj": "TASR, Rádio Expres" },
+        { "text": "Taraba a Slyško hovoria, že nechcú ísť proti vláde a nežiadajú miesto na koaličných radách.", "zdroj": "Denník N, TASR" },
+        { "text": "Koalícia vo štvrtok zvládla tri hlasovania, väčšinu zákonov odložila na utorok 6. októbra. Premiér Fico pre chorobu v parlamente nebol.", "zdroj": "Denník N" },
+        { "text": "SNS chce za ministra životného prostredia Filipa Kuffu a pozvala Fica na rokovanie svojho klubu. Koaličná rada má byť v piatok 2. októbra. Ministerstvo zatiaľ vedie premiér.", "zdroj": "SITA, Rádio Expres" },
+        { "text": "Fico cez Richarda Takáča odkázal, že Kuffovo zotrvanie vo funkcii štátneho tajomníka považuje za vhodné, hoci ho Taraba nazval „závadovou osobou“.", "zdroj": "Denník N" },
+        { "text": "Tibor Gašpar (Smer-SD) pripúšťa „absolútne tesnú väčšinu“, predčasné voľby odmieta. KDH vyzvalo Fica, aby požiadal parlament o dôveru.", "zdroj": "TASR" }
+      ],
+      "nevieme": [
+        "Či Fico navrhne prezidentovi Kuffu za ministra, ako chce SNS.",
+        "Ako budú Taraba a Slyško hlasovať v utorok, keď sa vrátia odložené zákony.",
+        "Ako Danko doloží tvrdenie, že Taraba odišiel pre „škandalózne tendre“. Zatiaľ ide o jeho vyjadrenie."
+      ],
+      "hladaj": "slyško OR taraba OR tarabu OR tarabom OR kuffa OR kuffu"
+    },
+    {
+      "id": "pike",
+      "oblast": "svet",
+      "kicker": "Svet · USA",
+      "titulok": "Odsúdená prežila dve smrtiace injekcie. Tennessee zastavilo všetky popravy",
+      "perex": "Christa Pikeová, odsúdená za vraždu, prežila v stredu večer pokus o popravu smrtiacou injekciou a je v nemocnici. Guvernér Tennessee zastavil popravy minimálne do konca roka a nariadil nezávislé vyšetrovanie.",
+      "vieme": [
+        { "text": "Po dvoch smrtiacich injekciách ostala nažive a previezli ju do nemocnice.", "zdroj": "BBC, El País" },
+        { "text": "Guvernér pozastavil všetky popravy v štáte do konca roka a nariadil nezávislé vyšetrovanie.", "zdroj": "Guardian" },
+        { "text": "Svedkovia opísali, že po podaní látok ešte dlho chrčala a dusila sa.", "zdroj": "Právo podľa televízie WKRN" },
+        { "text": "Šéf OSN pre ľudské práva žiada USA, aby sa o popravu nepokúšali znova.", "zdroj": "NRK" }
+      ],
+      "nevieme": [
+        "Ako dlho bola po podaní látok pri vedomí: Právo píše o vyše hodine, Ta Nea o 40 minútach.",
+        "Či štát skúsi popravu znova po skončení moratória."
+      ],
+      "hladaj": "pike OR pikeová OR pikeovej OR pikeové OR pikeovou"
+    },
+    {
+      "id": "nato-polsko",
+      "oblast": "europa",
+      "kicker": "Európa · NATO",
+      "titulok": "Pentagón chystá v Poľsku stretnutie o budúcnosti NATO. Británia, Francúzsko ani Pobaltie pozvánku nedostali",
+      "perex": "Trumpova administratíva plánuje v októbri v Poľsku stretnutie vybraných členov aliancie. Pracovnú skupinu vedie námestník ministra obrany Elbridge Colby. Informáciu priniesol Politico, prevzali ju TASR, ČT24 aj PAP.",
+      "vieme": [
+        { "text": "Medzi nepozvanými sú Spojené kráľovstvo, Francúzsko a pobaltské štáty, teda aj krajiny s najvyššími výdavkami na obranu.", "zdroj": "Politico cez TASR a ČT24" },
+        { "text": "Podľa šiestich diplomatov výber vyvoláva otázku, či Washington neuprednostňuje niektorých spojencov.", "zdroj": "TASR" },
+        { "text": "Biely dom predtým hrozil „zoznamom poslušných a neposlušných“ vlád.", "zdroj": "ČT24" }
+      ],
+      "nevieme": [
+        "Presný dátum, miesto a zoznam pozvaných. Pentagón ho nezverejnil, správa stojí na anonymných diplomatoch.",
+        "Či je pozvané Slovensko."
+      ],
+      "hladaj": "pentagon AND nato"
+    },
+    {
+      "id": "obciansky-zakonnik",
+      "oblast": "slovensko",
+      "kicker": "Slovensko · Zákony",
+      "titulok": "Parlament schválil nový Občiansky zákonník, nahradí kódex z roku 1964",
+      "perex": "Národná rada schválila rekodifikáciu súkromného práva: dedenie, majetok manželov, nájmy aj zmluvy medzi firmami. Účinnosť je plánovaná od 1. júla 2027.",
+      "vieme": [
+        { "text": "Nový kódex nahrádza Občiansky zákonník z roku 1964, účinný má byť od 1. júla 2027.", "zdroj": "SITA" },
+        { "text": "Návrh podporilo aj opozičné KDH a prešli dva jeho pozmeňujúce návrhy.", "zdroj": "SITA, TASR" },
+        { "text": "Minister spravodlivosti Boris Susko: najväčšia reforma súkromného práva za 60 rokov „sa nestala rukojemníkom politiky“.", "zdroj": "TASR" }
+      ],
+      "nevieme": [
+        "Konkrétne zmeny pre ľudí (dedenie, nájmy) zatiaľ redakcie opisujú iba v hrubých črtách; Netopier ich ešte neporovnal so znením zákona."
+      ],
+      "hladaj": "\"občiansky zákonník\" OR \"občianskeho zákonníka\" OR \"občiansky zakonnik\""
+    },
+    {
+      "id": "rusko-madarsko",
+      "oblast": "europa",
+      "kicker": "Európa · Maďarsko a Rusko",
+      "titulok": "Moskva vyhosťuje maďarských diplomatov. Budapešť nechce eskalovať",
+      "perex": "Rusko vo štvrtok nariadilo skupine zamestnancov maďarského veľvyslanectva v Moskve a konzulátov v Petrohrade a Kazani odísť do dvoch týždňov. Je to odpoveď na septembrové vyhostenie desiatich ruských diplomatov z Maďarska.",
+      "vieme": [
+        { "text": "Maďarská ministerka zahraničia Anita Orbánová 8. septembra oznámila vyhostenie desiatich ruských diplomatov.", "zdroj": "TASR cez eReport" },
+        { "text": "Ruské ministerstvo si predvolalo maďarského chargé d'affaires a podalo protest; počet vyhostených neuviedlo.", "zdroj": "Právo podľa ČTK" },
+        { "text": "Maďarské ministerstvo zahraničia podľa TASS nechce napätie ďalej stupňovať.", "zdroj": "TASS" }
+      ],
+      "nevieme": ["Koľko maďarských diplomatov musí odísť."],
+      "hladaj": "diplomat* AND (maďar* OR madar* OR hungar* OR magyar*) AND (rus* OR russ* OR orosz*)"
+    },
+    {
+      "id": "hanko",
+      "oblast": "europa",
+      "kicker": "Európa · Maďarsko",
+      "titulok": "Orbánov exminister Hankó ide do väzby pre podozrenie z korupcie",
+      "perex": "Okresný súd v Kecskeméte nariadil väzbu pre poslanca Fideszu a bývalého ministra kultúry a inovácií Balázsa Hankóa. Parlament ho pred pár dňami zbavil imunity.",
+      "vieme": [
+        { "text": "Väzbu oznámil hovorca župnej prokuratúry, správu priniesla agentúra MTI.", "zdroj": "Topky podľa TASR" },
+        { "text": "Hankó je podozrivý z korupcie, parlament mu pred pár dňami zobral imunitu.", "zdroj": "Denník N, Aktuality" }
+      ],
+      "nevieme": ["Výšku škody. Číslo okolo 46 miliónov eur zatiaľ uvádza iba novinár na sieti X citovaný v Topky, nie prokuratúra."],
+      "hladaj": "hankó OR hanko OR hankóa"
+    },
+    {
+      "id": "cernak",
+      "oblast": "slovensko",
+      "kicker": "Slovensko · Súdy",
+      "titulok": "Černák sa po 31 rokoch priznal k podielu na smrti bratov Danišovcov",
+      "perex": "Mestský súd Bratislava I schválil dohodu o vine a treste: bývalý bos podsvetia je vinný v prípade bomby v aute, ktorá 6. júla 1995 zabila Vladimíra a Jozefa Danišovcov. Ďalší trest nedostal, odpykáva si doživotie.",
+      "vieme": [
+        { "text": "Súd uznal Černáka vinným z trestného činu všeobecného ohrozenia a upustil od súhrnného trestu, lebo doživotie považuje za dostačujúce.", "zdroj": "Startitup, Koktejl" },
+        { "text": "Rozsudok je právoplatný.", "zdroj": "Koktejl" },
+        { "text": "Polícia v roku 2020 uviedla, že vraždu Vladimíra Daniša mal Černák dohodnúť s Miroslavom Sýkorom.", "zdroj": "Denník N" }
+      ],
+      "nevieme": [],
+      "hladaj": "černák OR černáka OR cernak"
+    }
+  ]
+}

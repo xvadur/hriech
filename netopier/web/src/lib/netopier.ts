@@ -1,5 +1,5 @@
 // Čítanie z data/netopier.sqlite (iba čítanie). Príjem zapisuje každých 5 min, WAL dovolí čítať počas zápisu.
-import { existsSync, openSync, readSync, fstatSync, closeSync } from 'node:fs';
+import { existsSync, openSync, readSync, fstatSync, closeSync, readdirSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
@@ -344,4 +344,113 @@ export function hladaj(dotaz: string): Array<Polozka & { oblast: OblastId }> {
       oblast: x.oblast as OblastId,
     };
   });
+}
+
+// ── Vydanie: udalosti napísané redaktorom (src/data/vydania/*.json) + živé počty z Netopiera ──
+
+const VYDANIA = resolve(process.cwd(), 'src/data/vydania');
+
+export interface Tvrdenie {
+  text: string;
+  zdroj: string;
+}
+
+export interface Udalost {
+  id: string;
+  oblast: OblastId;
+  kicker: string;
+  titulok: string;
+  perex: string;
+  vieme: Tvrdenie[];
+  nevieme: string[];
+  hladaj: string;
+  zivo: { sprav: number; zdrojov: number; zaHodinu: number; prva: string | null; posledne: Polozka[] };
+}
+
+export interface Vydanie {
+  cislo: number;
+  uzavierka: string;
+  autorstvo: string;
+  udalosti: Udalost[];
+  minuta: Polozka[];
+  prijem: Teraz['prijem'];
+}
+
+function zivo(hladaj: string, now: Date): Udalost['zivo'] {
+  const d = spojenie();
+  const od = iso(new Date(now.getTime() - 48 * 3600_000));
+  const od1 = iso(new Date(now.getTime() - 3600_000));
+  try {
+    const riadky = d
+      .prepare(
+        `SELECT d.id, ${CAS_SQL} AS cas, z.nazov AS zdroj, z.id AS zdroj_id, COALESCE(d.jazyk, z.jazyk) AS jazyk, d.titulok, d.url, d.typ
+         FROM dokumenty_fts f JOIN dokumenty d ON d.id = f.rowid JOIN zdroje z ON z.id = d.zdroj_id
+         WHERE dokumenty_fts MATCH ? AND d.prvy_zaznam_at >= ? AND d.typ IN ('clanok', 'minuta', 'tlacova_sprava')
+         ORDER BY cas DESC`,
+      )
+      .all(`{titulok perex} : (${hladaj})`, od) as Array<Record<string, string | number | null>>;
+    const videne = new Set<string>();
+    const posledne: Polozka[] = [];
+    for (const r of riadky) {
+      const titulok = cistyTitulok(String(r.titulok ?? ''), r.url as string | null);
+      const k = titulok.toLowerCase().slice(0, 60);
+      if (!titulok || videne.has(k)) continue;
+      videne.add(k);
+      posledne.push({
+        id: Number(r.id),
+        cas: String(r.cas),
+        zdroj: String(r.zdroj),
+        zdrojId: String(r.zdroj_id),
+        jazyk: (r.jazyk as string | null)?.toLowerCase() ?? null,
+        titulok,
+        perex: null,
+        url: r.url as string | null,
+        typ: String(r.typ),
+        kluce: [],
+      });
+      if (posledne.length >= 4) break;
+    }
+    return {
+      sprav: riadky.length,
+      zdrojov: new Set(riadky.map((r) => r.zdroj_id)).size,
+      zaHodinu: riadky.filter((r) => String(r.cas) >= od1).length,
+      prva: riadky.length ? String(riadky[riadky.length - 1]!.cas) : null,
+      posledne,
+    };
+  } catch {
+    return { sprav: 0, zdrojov: 0, zaHodinu: 0, prva: null, posledne: [] };
+  }
+}
+
+/** Posledné vydanie (podľa názvu súboru) so živými počtami ku každej udalosti. */
+export function vydanie(): Vydanie {
+  const subory = readdirSync(VYDANIA).filter((f) => f.endsWith('.json')).sort();
+  const data = JSON.parse(readFileSync(resolve(VYDANIA, subory[subory.length - 1]!), 'utf8'));
+  const now = new Date();
+  const minuta = spojenie()
+    .prepare(
+      `SELECT d.id, ${CAS_SQL} AS cas, z.nazov AS zdroj, z.id AS zdroj_id, d.titulok, d.perex, d.url
+       FROM dokumenty d JOIN zdroje z ON z.id = d.zdroj_id
+       WHERE d.typ = 'minuta' AND d.prvy_zaznam_at >= ? ORDER BY cas DESC LIMIT 25`,
+    )
+    .all(iso(new Date(now.getTime() - 24 * 3600_000))) as Array<Record<string, string | number | null>>;
+  return {
+    cislo: data.cislo,
+    uzavierka: data.uzavierka,
+    autorstvo: data.autorstvo,
+    udalosti: data.udalosti.map((u: Omit<Udalost, 'zivo'>) => ({ ...u, zivo: zivo(u.hladaj, now) })),
+    minuta: minuta.map((r) => ({
+      id: Number(r.id),
+      cas: String(r.cas),
+      zdroj: String(r.zdroj),
+      zdrojId: String(r.zdroj_id),
+      jazyk: 'sk',
+      titulok: cistyTitulok(String(r.titulok ?? ''), null),
+      perex: bezHtml(r.perex as string | null),
+      url: r.url as string | null,
+      typ: 'minuta',
+      kluce: [],
+    })),
+    prijem: poslednyBeh(),
+  };
 }

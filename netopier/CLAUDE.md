@@ -10,7 +10,7 @@ Príkazy: testy `cd redakcia && pnpm run qa` a `cd zber && pnpm run qa` · migr�
 
 Kde čo je:
 - `zber/` — zber (médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR) a odvodenie `zber/src/derive/` nad lokálnou D1 (`zber/.wrangler/state`); migrácie `zber/migrations/`; príkazy v `zber/README.md`
-- `web/` — okno „čo sa deje teraz“: Astro (server, `@astrojs/node`) + Tailwind 4 nad `data/netopier.sqlite` iba na čítanie; Svet, Európa, Slovensko, témy naprieč redakciami, fulltext; dáta `web/src/lib/netopier.ts`
+- `web/` — redakcia: Astro (server, `@astrojs/node`) + Tailwind 4 nad `data/netopier.sqlite` iba na čítanie; `/` vydanie z `web/src/data/vydania/*.json` so živými počtami, `/prijem` surový príjem (Svet, Európa, Slovensko, fulltext); dáta `web/src/lib/netopier.ts`
 - `redakcia/` — balík `@netopier/redakcia`: skóre zvodov (port openclaw ako kontrola), normalizácia, entity, meranie médií; politika merania `redakcia/data/politika-merania.json`
 - `sources/slovak-core.yaml` — register zdrojov · `contracts/` — API kontrakty (events-v1, historická referencia)
 - `src/netopier/`, `migrations/` (Alembic), `compose.yaml`, `Dockerfile`, `ops/` — Python vrstva, nebeží a neoživuje sa (port čistých modulov v I3, archív v I10)
