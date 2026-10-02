@@ -24,6 +24,7 @@
 - Python vrstva `src/netopier/` (Miniflux, Postgres, FastAPI): nebeží od 7. 9., neoživuje sa (port čistých modulov v I3, archív v I10)
 
 ## Rozhodnutia
+- 2026-10-02 — Denník N cez Adamovo predplatné: celé texty sa sťahujú s jeho prihlásením (cookies z Dia), ostávajú lokálne v `data/netopier.sqlite`, nezverejňujú sa; používajú sa iba na filtráciu a hľadanie (LlamaIndex, Jev). Overené 2. 10. na troch článkoch: s prihlásením 1 265 / 2 766 / 3 016 slov, bez neho 194 / 211 / 879 [A]
 - 2026-10-01 — Netopier nemá byť čítačka ani redakcia, ktorá informuje. Jadro je **meranie médií v číslach**: barometer strašenia (téma, autor, rubrika; príklad Horák a AI, téma AI v Denníku N), kam ide pozornosť médií, ako rýchlo reagujú na kauzy, ako sa správajú (preberanie, zmeny titulkov, poplašnosť), podcasty Klik (SME) a Denníka N (vata v jazyku, otázky, kto koľko hovorí); prípad Kyseľ ako vzor. Dôvod: namiesto hodinovej hádky s AI (Dia) mať čísla s porovnaním a dôkazom po vetu. Grafy a indexy sú cieľ [A]
 - 2026-10-01 — hotové open-source komponenty pred vlastným kódom, nevymýšľať od nuly [A]
 - 2026-10-01 — „niečo sa deje a Netopier o tom musí vedieť“: rýchle zachytenie s úrovňou podľa toho, či sa Adama týka (Flydubai ho nezaujíma, stačí vedieť) [A]
@@ -59,7 +60,7 @@
 - Zobrazovacia D1 Free + zápis verejných riadkov z Macu (Minúta, vydania) — založenie DB je externá zmena, na pokyn
 
 ## Blokované
-- Čo Netopier smie čítať a ukladať z redakcií, ktoré v `robots.txt` blokujú AI crawlery (Denník N, SME, Aktuality, Trend, Nový Čas, TV Noviny; SME a Startitup `ai-train=no`), Denník N za paywallom iba metadáta, licencia TASR na celé správy — rozhoduje Adam (podklady v `docs/redakcie-weby.md`)
+- Denník N rozhodnutý 2. 10. (predplatné, pozri Rozhodnutia). SME blokuje skripty kontrolou Cloudflare, tá sa neobchádza; celé články SME iba dohodou s Petit Pressom, Klik ide cez zvukový feed na Omny (382 epizód od 8/2019, v registri bol zlý odkaz). Štandard: extraktor berie text o ochrane osobných údajov namiesto článku (57 dokumentov). Ostatné: čo Netopier smie čítať a ukladať z redakcií, ktoré v `robots.txt` blokujú AI crawlery (SME, Aktuality, Trend, Nový Čas, TV Noviny; SME a Startitup `ai-train=no`), Denník N za paywallom iba metadáta, licencia TASR na celé správy — rozhoduje Adam (podklady v `docs/redakcie-weby.md`)
 - Parita s openclaw nad rámec `scoring.js` (serverové skóre openclaw.sk sa nedá z verejných dát reprodukovať) — Adam rozhodne, či stačí parita s klientskym vzorcom
 - Nasadenie zberu do cloudu odložené (XDR-258); World Monitor živé dáta iba s plateným kľúčom (D12: nie)
 
