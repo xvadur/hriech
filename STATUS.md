@@ -1,46 +1,47 @@
 # STATUS — hriech
 
+**Smer od 5. 10. 2026:** `netopier/SMER.md` — Netopier je prístroj na vyšetrenie Slovenska, Hriech jeho
+verejný povrch: moderný OSINT dashboard o Slovensku na úrovni SaaS 2027 (mapa krajov, príbehy dňa
+s pokrytím, slepé miesta, živý príjem, voľby, Národná rada, barometre). Staré STATUS a návrhy redakcie
+z 27. 9. sú v `netopier/docs/archiv-2026-10-05/`.
+
 ## Živé
-- `hriech.xvadur.com` live (Cloudflare Worker `hriech-web`, Astro statický): publikácie, prípady, mapa redakcií (10 médií, 558 osôb, 586 rolí), RSS, vyhľadávanie
-- Frontend v gite je bajt po bajte zhodný so živým webom (overené 25. 9. 2026: CSS aj úvodná stránka, `pnpm qa` 59 stránok bez chyby)
-- Backend: Netopier v2 v `netopier/` beží lokálne na Macu nad lokálnou D1 (28. 9., XDR-275, krok I0): 14 299 záznamov, 13 479 normalizovaných dátumov, 2 024 entít, 4 700 väzieb, fulltext, meranie 3 SK redakcií; balík `@netopier/redakcia` (skóre zvodov s paritou proti openclaw `scoring.js`, meranie médií); voľby 24. 10. v lokálnej D1 (28. 9., XDR-276: 8 krajov, 79 okresov, 47 obcí, 104 kandidatúr, 16 prieskumov, 14 termínov, geo hranice; `pnpm run volby`); od 29. 9. jednotná schéma a príjem RSS s celými textmi nad SQLite súborom `netopier/data/netopier.sqlite` (XDR-299: 20 164 dokumentov z 208 zdrojov, 2 191 článkov s celým textom, príkaz pre službu `pnpm run prijem`); od 30. 9. príjem beží ako služba `com.xvadur.netopier` každých 5 min (k 01:40: 20 234 dokumentov, 15 194 s celým textom), register 330 zdrojov (XDR-296), Národná rada v databáze (XDR-297: 194 poslancov, 4 532 hlasovaní, 670 998 hlasov, 6 354 vystúpení); cloudový Worker nenasadený (pozri `netopier/STATUS.md`)
+- `hriech.xvadur.com` (Cloudflare Worker `hriech-web`, Astro statický): publikácie, prípad a mapa
+  redakcií (10 médií, 558 osôb, 586 rolí), RSS, vyhľadávanie. Vizuál ružový plastický (`DESIGN.md`,
+  5. 9.) — od 4. 10. zamietnutý, nahradí ho dashboard; dovtedy beží bez zmeny.
+- Backend Netopier beží lokálne na Macu, stav v `netopier/STATUS.md`.
 
 ## Rozhodnutia
-- 2026-10-03 — **Vzťah médií a AI k spoločnosti (Adam):** nie výsmech Kliku, ale čo o revolúcii v AI hovoria slovenské médiá proti tomu, čo zažíva Adam ako podnikateľ s AI (XVADUR ako dôkaz); RSS → matica hovien → denné grafy; najprv AI, potom celé médiá, politika a Národná rada; domény hriech.ai alebo strach.ai neskôr. Zistenia (Klik 407, Thompson, Horák, Eurostat) v `netopier/STATUS.md` [A]
-- 2026-10-04 — **Model sveta namiesto správ (Adam, rozhovor s ChatGPT 1.–4. 10. a s Claudom):** jednotka nie je článok, ale udalosť; každá udalosť pripisuje body uzlom siete (energia, dlh, obrana, AI/compute, suroviny) a hovnometer meria rozdiel medzi významom vo svete a pozornosťou média. Doplnené 4. 10.: (1) **genealógia** ako vlastnosť modelu — pri každom dnešnom uzle „kde a kedy to vzniklo“ (zvonček: kláštor → jezuiti 1599 → Mária Terézia 1774 → fabrika; Hormuz; AutoWarCom: Newton 1687 → Robins 1742 → Maxim 1884 → 2027), Zeitgeber je prvá genealógia; (2) **tabuľa hypotéz** (ACH): Veith (riaditeľ: Rím a jezuiti), Jiang (idea ako vírus, eschatologická konvergencia), Adamov distribuovaný model (incentívy a selekcia), mediálny „Trump je blázon“ — udalosti im pridávajú a uberajú váhu, indikátory sú konkrétne (pozemné jednotky v Iráne, Al-Aksá, AutoWarCom do 1. 10. 2027, nedeľný zákon, digitálna ID); (3) **kalibrácia komentátorov**: predpovede s dátumom a stavom splnené/nesplnené/čaká (vzor tracker Jianga: 111 predpovedí, 86 %), potom Klik, Mesežnikov, Horák; (4) **absorpcia naratívu**: koľko protichodných udalostí rámec prežil bez zmeny (Nathanov stroj, „Trump je blázon“). Open-source kostra z prieskumu ChatGPT: RSSHub, news-please, Aqua News, PLOVER, FollowTheMoney, OpenAleph, World Monitor, Orodruin; GDELT má NumMentions aj Goldstein a slovenčinu (65 jazykov), LittleSis 1,8 mil. vzťahov elít. Aprílový „Corpus Angle Gap Analysis“ v Obsidiane (Jiang, Harris, Veith) žiadal železnú kostru z primárnych dokumentov; Netopier je tá kostra. [A]
-- 2026-10-04 — **Prvé meranie týždňa 28. 9.–4. 10. v Netopierovi (SK zdroje, články a minúty):** Ukrajina 1 418, Fico 876, Taraba 569, ropa 209, Irán 173, dlh 157, Čína 127, nafta 75, Pentagon 66, Hegseth 22, Hormuz 10. Denník N: Taraba 12 článkov, Fico 26, Hegseth 0, Hormuz 0, nafta 0, ale v minútach Hegseth (1. 10. 10:31), nafta (14:50), Hormuz (20:03), výnosy (2. 10.): systémová udalosť dostane minútu, personálny konflikt článok → nová metrika **formát podľa témy** (formát a dĺžka, nie len počet). „Autonomous Warfare Command“ v slovenskom titulku ani raz. Pozor: Denník N má celý text len 7 zo 141, SME 0 zo 164 (titulky a perexy), TASR, HN, Pravda, Aktuality, STVR celý text. Publikovať ako obrázok s touto poznámkou. [A]
-- 2026-10-02 — **Frontend merania:** populárny stack (React, shadcn/ui, React Bits) a rozloženie prevzaté zo svetových predlôh, nie vymýšľané; Evidence zamietnutý. Prvá predloha podľa The Pudding „Film Dialogue“ (médiá v troch skupinách podľa podielu strachu v titulkoch o AI): `netopier/data/predlohy/svet/kto-strasi-ai-v1.png`, čaká na Adamovo „sedí“. Či to nahrádza BoldKit z 29. 9., je otvorené [A]
-- 2026-10-02 — **Rozhranie redakcie:** spravodajský web, ktorý prináša iné príbehy než Denník N, na úrovni Mediaboardu a lepší než Ground News (príbehy s pokrytím hlavný prúd / agentúry / alternatívne, slepé miesta, svet proti Slovensku); ružový dashboard so záznamom osoby zamietnutý. Predloha v2: `netopier/data/predlohy/redakcia-v2.png` (lokálne, mimo gitu), nestavia sa, kým Adam nepovie [A]
-- 2026-10-02 — **O čo ide:** nie spravodajstvo; správy sú surovina, nie produkt. Dve veci: (1) **páka** — vyšetrenie médií: merať, čo robia, po ľuďoch, reláciách a redakciách v čase (longitudinálne: kto koho volá ako experta a ako ho označí, platený obsah, rámce a čísla s časom v prepise) a pomenovať to nahlas = Netopier + Hriech; (2) **hlas** — Adamovo vysvetlenie sveta cez otázky, na ktoré médiá neodpovedajú (za koho peniaze, prečo teraz, kde je Slovensko, odkiaľ to ide, kam to vedie). Páka dáva hlasu dôveryhodnosť. Východisko: Adam 30. 5. (Codex) „nemám páku… dá sa ukázať, jak sú mimo, a postaviť na tom osobný hlas“; 27. 9. (Dia) „nie som tu od toho, aby som informoval verejnosť“. Prvý záznam osoby: `netopier/data/prepisy/osoby/melcerova-lubica.md` [A]
-- 2026-10-02 — **Nový koncept webu (rozhovor, nestavia sa):** médiá nie sú zdroj, ale predmet merania. Web má dve vrstvy: svet v dátach (čo sa stalo, kto to hlási, koľko zdrojov, čísla z registrov) a čo s tým spravili slovenské médiá (či to zobrali, kedy, s akým rámcom, čo vynechali). Agregovať dáta o svete, nie názory redaktorov; grafy a shitometer; systém platí iba keď je to nevyhnutné; meria sa kto čo hovorí, v akom množstve, voči komu, v akom pomere. Detail a čísla v `netopier/STATUS.md` [A]
-- 2026-10-02 — **Princíp Hriechu:** Adam nekomentuje a neútočí; zverejňuje merania vlastnej produkcie médií a politikov (napr. „za týždeň 55 textov, 30 o strachu z AI“), škodu si spôsobia svojou činnosťou sami. Autorita nie je titul, ale záznam. Nápad: shitometer na debaty ako kedysi hlasovanie v Na telo, kto z účastníkov viac „trepe“ [A]
-- 2026-09-30 — prvý krok Netopiera je web nad lokálnymi dátami, aby Adam videl štruktúru; klastrovanie tém a zdroje redakcií zatiaľ netreba (zastavené); stavba webu iba na Adamov pokyn [A]
-- 2026-09-29 — Netopier je spravodajský backend (zber, databáza, meranie), Hriech publikačná zložka; vzor publikačného enginu Natural20; Netopier zatiaľ lokálne, Supabase ostáva pre klientov [A]
-- 2026-09-29 — **Dizajn:** Hriech a Netopier stoja na tom istom dizajnovom systéme ako XVADUR (BoldKit, neobrutalizmus, rovnaké komponenty), iba vo vlastných farbách a písme cez tému (BoldKit Theme Builder). Knižnice a katalóg: `projekty/xvadur-ui/`, most na tokeny ako vzor: `projekty/xvadur.com/src/styles/boldkit.css` (vetva `v7-zaklad`). XDR-230 (redizajn Hriechu) stavať na tomto. [A]
-- 2026-09-29 — brána Netopiera je Jev (TypeSafe AI) cez OpenRouter, vstupný filter XVADUR ako matica otázok; čítací model (zatiaľ Gemini 2.5 Flash-Lite) iba nad označeným; rozpočet do 10 € mesačne; do cloudu iba verejné texty; lokálny model možno neskôr; Hostinger GPU a Hermes v cloude zamietnuté (XDR-283, `docs/redakcia/ROZHODNUTIE.md`) [A]
-- 2026-09-28 — termín: spojené komunálne a župné voľby 24. 10. 2026, dovtedy má byť Hriech vonku s volebnými modulmi (XDR-280); kandidáti sa zobrazujú menom, sledujú sa aj mestá nad 20 000 obyvateľov a mestské časti Bratislavy a Košíc (XDR-282); Netopier pobeží ako služba na Macu (XDR-279); cieľ Netopiera nie je informovať, ale merať, ako médiá pracujú [A]
-- 2026-09-28 — Claude smie čítať verejné texty médií celé; prepisy cez entitný a fulltextový filter; „skóre“ = meranie médií podľa registra, openclaw iba kontrola [A]
-- 2026-09-27 — AI redakcia: návrh architektúry, register 124 funkcií a medzery v `docs/redakcia/`; beží lokálne na Macu, na Cloudflare zadarmo iba zobrazovacia D1 a web, Minúta bez meškania, bez GitHub Actions, bez platených služieb; meno Hriech dočasné; jadro pred Živé: kalendár a anticipácia, filter relevancie, kauzy, prepisy, aktéri a sociálne siete, meranie médií [A]
-- 2026-09-26 — nový článok má výskum aj draft v `research/<téma>/` v repozitári Hriechu; osobné podklady ostávajú v jadre [A]
-- 2026-07-02 — mediálna kritika ako línia; 2026-09-01 genéza Hriechu cez Kyseľ/Blaha + Mediaboard [A]
-- 2026-09-03 — Hriech = autorstvo a publikácia; Netopier = monitoring a dôkazy [A]
-- 2026-09-05 — ružový plastický vizuál podľa loga (DESIGN.md), nasadený [A]
-- 2026-09-25 — Hriech je XVADUR spravodajská služba: Hriech frontend, Netopier backend; projekt vyčistený od minulých verzií (shadcn vrstva, mock „Vydanie“, staré koncepcie → `xvadur_core/zdroje/hriech/archiv-2026-09/`); v0 Netopiera zmazaný [A]
-- 2026-09-25 — Hriech dostane redizajn [A]
+- 2026-10-05 — hlavný smer projektu je `netopier/SMER.md`; staré texty do archívu, dáta a história ostávajú [A]
+- 2026-10-04 — verejný web = OSINT dashboard o Slovensku na úrovni SaaS 2027 (vzor World Monitor);
+  nie ružový, nie titulky o jednotlivcoch; predloha `netopier/data/predlohy/2026-10-04/hriech-osint.png` [A]
+- 2026-10-04 — model sveta: jednotka je udalosť; témy (energia, dlh, obrana, AI, suroviny) a váhy určuje Adam [A]
+- 2026-10-03 — vzťah médií a AI k spoločnosti, nie výsmech relácií; najprv AI, potom celé médiá,
+  politika a NR SR; MVP určuje Adam [A]
+- 2026-10-02 — páka (meranie médií po ľuďoch, reláciách a redakciách v čase) a hlas (päť otázok:
+  za koho peniaze, prečo teraz, kde je Slovensko, odkiaľ to ide, kam to vedie) [A]
+- 2026-10-02 — princíp: Hriech nekomentuje a neútočí, zverejňuje merania; autorita je záznam, nie titul [A]
+- 2026-10-02 — frontend z populárneho stacku a svetových predlôh; Evidence zamietnutý [A]
+- 2026-09-29 — Hriech je publikácia, Netopier backend; Netopier lokálne [A]
+- 2026-09-28 — termín: voľby 24. 10. 2026, Hriech má byť vonku s volebnými modulmi [A]
+- 2026-09-26 — nový článok má výskum aj draft v `research/<téma>/`; osobné podklady ostávajú v jadre [A]
+- 2026-09-25 — Hriech je XVADUR spravodajská služba; staré koncepcie v `xvadur_core/zdroje/hriech/archiv-2026-09/` [A]
+- 2026-09-07 — Hriech = autorstvo a publikácia, Netopier = monitoring a dôkazy [A]
+- 2026-09-05 — ružový plastický vizuál (`DESIGN.md`), nasadený [A]; od 4. 10. zamietnutý
+- 2026-09-01 — genéza Hriechu cez Kyseľ/Blaha a Mediaboard; 2026-07-02 mediálna kritika ako línia [A]
 
 ## Ďalší krok
-- **4. 10. večer:** (a) celý týždeň 28. 9.–4. 10. ako tabuľka formát × téma po všetkých slovenských redakciách, ako obrázok (druhé meranie po „Kto straší AI“); (b) **Veith, Total Onslaught 201–236:** všetkých 36 dielov je na archive.org (mp4, bez YouTube blokov), titulky nemá žiadna nahrávka, prepis iba zo zvuku: Parakeet TDT 0.6B v2 cez parakeet-mlx (angličtina, WER ~6 %, pod hodinu na 52 h) alebo mlx-whisper (`netopier/.venv`, ~3,5 h), výstup do Obsidianu `singularitas_opus_markdown/Operácie/Worldview Research/Raw Transcripts/Walter Veith Playlist` v aprílovom formáte, najprv 211, 212, 215, 221, 226; (c) **Jiang:** zoznam predpovedí s dátumom a stavom zo 144 prepisov v Obsidiane (na kanáli je 181 videí, chýba 38 od apríla; montrealská prednáška o frankizme je stiahnutá v scratchpade session 4. 10.). Všetko čaká na Adamovo slovo.
-- Netopier od 1. 10.: jadro je meranie médií v číslach (barometer strašenia, pozornosť, rýchlosť reakcie na kauzy, správanie médií, podcasty), nie čítačka; web `netopier/web/` Adam odmietol, viacagentový návrh zastavený (pozri `netopier/STATUS.md`). Príjem číta aj 155 svetových a európskych kanálov. Hotové 29.–30. 9.: register zdrojov (XDR-296), rozbor webov redakcií (XDR-298), jednotná schéma a príjem (XDR-299), služba príjmu (XDR-279, beží), Národná rada (XDR-297)
-- Netopier, poradie (jeden agent naraz, bez workflowov): zvody XDR-278 (agent zastavený 28. 9., nič nezapísané, spustiť znova) → osoby a tlačovky XDR-277 → rozšírenie volieb XDR-282 (listiny vyšli 29. 9.) → matica filtra XDR-283 (návrh ide bez kľúča) → meranie nad rámec I0 XDR-281 → služba XDR-279 → volebné moduly na webe XDR-280 (čaká na knižnicu komponentov)
-- Hotové 28. 9.: I0 lokálny beh (XDR-275), volebné dáta (XDR-276)
-- Článok **Zeitgeber — kto vlastní hodiny** (cykly, kalendár, globálna kontrola bez sprisahania): výskum v `research/zeitgeber/`, overiť zdroje, potom draft; píše sa cez Vianoce a Nový rok. Research je na GitHube od 29. 9. (push pri savegame).
-- Určiť nový stack a roadmapu pre moduly (mapa s vrstvami, štátny dashboard, voľby a prieskumy, kalendár a odpočet, minúta po minúte, analýza spravodajstva, rebríček redakcií, Chronos, demografia, Opus Major)
+- Adam vyberie prvý modul zo `netopier/SMER.md` a schváli stack verejného dashboardu
+  (návrh: Astro, MapLibre + deck.gl, tmavá téma shadcn namiesto BoldKitu).
+- Záloha archívu Netopiera (jediná kópia, Time Machine zlyháva).
+- Termín: prieskumy smú byť zverejnené iba do 9. 10.; voľby 24. 10.
 
 ## Blokované
-- OpenRouter kľúč a kredit 10 $ do `netopier/.env` (XDR-284) — na Adamovi; bez neho nejde brána ani test slovenčiny
-- Nasadenie Netopiera do cloudu (XDR-228) čaká na Adama: Workers Paid a pokyn na deploy
+- OpenRouter kľúč do `netopier/.env` — na Adamovi.
+- Nasadenie Netopiera a zobrazovacia D1 (Workers Paid) — iba na Adamov pokyn.
 
 ## Inbox
-- Draft „Fico nemusí čítať vaše články“ v3 (`xvadur_core/07_texty/drafty/`) — overenia (CRZ 0,00 € vs. 48 073,32 €) a oslovenie redakcií pred publikovaním
-- Draft 04 Karol — súkromný, rozhodnutie o anonymizácii
-- Klik corpus 50 — validačný backlog (`xvadur_core/zdroje/hriech/research/`)
+- Článok **Zeitgeber — kto vlastní hodiny**: výskum v `research/zeitgeber/`, draft cez Vianoce a Nový rok.
+- Draft „Fico nemusí čítať vaše články“ v3 (`xvadur_core/07_texty/drafty/`) — overenia a oslovenie redakcií.
+- Draft 04 Karol — súkromný, rozhodnutie o anonymizácii.
+- Klik corpus 50 — validačný backlog (`xvadur_core/zdroje/hriech/research/`).

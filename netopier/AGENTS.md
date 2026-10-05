@@ -1,35 +1,23 @@
-# Netopier Agent Rules
+# Netopier — pravidlá pre agentov
 
-## Purpose
+Smer: `SMER.md` (5. 10. 2026). Archív `docs/archiv-2026-10-05/` je história, nie zadanie.
 
-Netopier v2 is a clean, local-first Slovak public-source news intelligence backend.
-The previous v0 implementation is retired and must not be reintroduced.
+## Dáta
+- Iba verejné zdroje. Pri každom dokumente zachovať URL, čas zverejnenia, čas zberu, id zdroja,
+  hash surových dát a verziu algoritmu. Surová vrstva oddelene od odvodenej.
+- Celé chránené texty (napr. Denník N cez Adamovo predplatné) iba lokálne, nikdy do gitu ani von.
+- Súkromné dáta (korpus, Dia, zdravie, realitný trh, `xvadur_core`) nikdy do externých nástrojov ani modelov mimo Macu.
+- Fyzické osoby z registrov verejne nie (`entity.verejne = 0`).
 
-## Hard boundaries
+## Merania
+- Každé verejné číslo má uložený dotaz, verziu algoritmu, snímku dát a stav overenia; inak nejde von.
+- Každé číslo má porovnávaciu základňu (žáner, skupina médií, objem).
+- Model zaraďuje, Adam overuje vzorku; zhoda sa uvádza pri čísle.
+- Navonok neutrálne názvy nálezov; ľudia z médií iba v záznamoch merania, s možnosťou reakcie.
+- Profesijná, vlastnícka alebo inštitucionálna väzba sama osebe nie je dôkaz vplyvu ani konfliktu.
 
-- Never restore or import retired v0 pipeline code, runtime state, generated bundles,
-  schedulers, or clusters into the canonical implementation.
-- Public sources only. Preserve source URL, publication time, collection time, source ID,
-  raw payload hash, and algorithm/model version.
-- Keep raw evidence separate from derived stories, scores, and synthesis.
-- LLM output is optional derived data and can never block collection or story formation.
-- Runtime data and credentials stay under ignored paths or Docker volumes.
-- No deploy, push, publication, production credentials, or external mutation without
-  explicit current-conversation authorization.
-
-## Engineering contract
-
-- Prefer maintained OSS for commodity mechanics; own Slovak source semantics, story
-  assignment, ranking, provenance, and feed contracts.
-- Keep four deep modules: `MinifluxGateway`, `ArticleArchive`, `StoryEngine`, and
-  `FeedProjector`. Tests and callers use the same interfaces.
-- Miniflux owns feed polling. PostgreSQL/pgvector owns Netopier persistence and exact
-  vector search. FastAPI is a thin transport adapter.
-- One authoritative story-assignment writer during alpha.
-- A false merge is costlier than a false split.
-- New behaviour needs an interface-level test and proportional integration proof.
-
-## Proof states
-
-Distinguish implemented, unit-tested, integration-tested, runtime-observed, persisted,
-and destination-verified. A container starting is not a successful RSS-to-feed loop.
+## Kód
+- Hotové open source pred vlastným kódom; AGPL kód do tohto verejného repozitára bez licencie nie.
+- Každé nové správanie má test na úrovni rozhrania a dôkaz nad skutočnými dátami.
+- Rozlišovať stavy dôkazu: napísané, testované, spustené nad dátami, zapísané, overené v cieli.
+- Bez pokynu: žiadny push nasadenia, deploy, LaunchAgent, nová platená služba, nový kľúč.

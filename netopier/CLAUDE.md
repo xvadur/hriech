@@ -1,21 +1,27 @@
-# netopier — backend XVADUR spravodajskej služby
+# netopier — prístroj na vyšetrenie Slovenska (backend Hriechu)
 
+@SMER.md
 @AGENTS.md
 @STATUS.md
 @STACK.md
 
-Netopier v2 je backend Hriechu: zber verejných zdrojov, archív, odvodenie (entity, fulltext, meranie médií, skóre zvodov), korpusy. Beží lokálne na Macu nad lokálnou D1 (rozhodnutie 27. 9. 2026, `../docs/redakcia/ROZHODNUTIE.md`). Frontend a publikácia sú v nadradenom `../` (Hriech).
-
-Príkazy: testy `cd redakcia && pnpm run qa` a `cd zber && pnpm run qa` · migrácie `cd zber && pnpm run db:migrate:local` · zber `cd zber && node scripts/zber-node.mjs <zdroj>` · odvodenie `cd zber && pnpm run derive` · voľby `cd zber && pnpm run volby` · fulltext `node scripts/derive-node.mjs hladaj '…'` · korpus Fikiho `python3 fiki/fiki.py search|sync|stats` · web `cd web && npx -y pnpm@11.19.0 dev` → http://localhost:4400 (pnpm: `npx -y pnpm@11.19.0`).
+Smer od 5. 10. 2026 je `SMER.md`. Staré texty sú v `docs/archiv-2026-10-05/` (iba história, nie zadanie).
+Verejný povrch je Hriech v nadradenom `../`.
 
 Kde čo je:
-- `zber/` — zber (médiá, World Monitor, CRZ, TED, kataster, ŠÚ SR) a odvodenie `zber/src/derive/` nad lokálnou D1 (`zber/.wrangler/state`); migrácie `zber/migrations/`; príkazy v `zber/README.md`
-- `web/` — redakcia: Astro (server, `@astrojs/node`) + Tailwind 4 nad `data/netopier.sqlite` iba na čítanie; `/` vydanie z `web/src/data/vydania/*.json` so živými počtami, `/prijem` surový príjem (Svet, Európa, Slovensko, fulltext); dáta `web/src/lib/netopier.ts`
-- `redakcia/` — balík `@netopier/redakcia`: skóre zvodov (port openclaw ako kontrola), normalizácia, entity, meranie médií; politika merania `redakcia/data/politika-merania.json`
-- `sources/slovak-core.yaml` — register zdrojov · `contracts/` — API kontrakty (events-v1, historická referencia)
-- `src/netopier/`, `migrations/` (Alembic), `compose.yaml`, `Dockerfile`, `ops/` — Python vrstva, nebeží a neoživuje sa (port čistých modulov v I3, archív v I10)
-- `fiki/` + `data/fiki/` — korpus Fiki Unchained (titulky s časmi, FTS)
-- `data/realitny-trh/` — dáta o realitnom trhu (mimo gitu)
-- `docs/ARCHITECTURE.md`, `docs/DECISIONS.md`
+- `data/netopier.sqlite` — archív (mimo gitu); `data/log/` — logy príjmu
+- `zber/` — príjem RSS a konektory (CRZ, TED, kataster, ŠÚ SR, NR SR, voľby), odvodenie, skripty
+  `scripts/*-node.mjs`; register zdrojov `zber/data/zdroje/register.json`; geodáta `zber/data/volby/geo/`
+- `redakcia/` — balík `@netopier/redakcia` (normalizácia, entity, meranie médií, politika merania)
+- `podcasty/prepis.py` — prepisy relácií lokálne (mlx-whisper v `.venv`)
+- `fiki/` + `data/fiki/` — korpus titulkov Fiki Unchained
+- `web/` — lokálne Astro okno nad databázou (1. 10. odmietnuté ako čítačka; infraštruktúra ostáva)
+- `data/matica/`, `data/pokrytie/`, `data/prepisy/`, `data/podcasty/`, `data/navrh/` — merania a podklady (mimo gitu)
+- `src/netopier/`, `migrations/`, `compose.yaml`, `Dockerfile` — stará Python vrstva, nebeží, neoživuje sa
 
-Spustenie trvalej služby (LaunchAgent), deploy `zber/` aj založenie zobrazovacej D1 = externá mutácia, iba na pokyn.
+Príkazy: testy `cd redakcia && pnpm run qa`, `cd zber && pnpm run qa` · príjem `cd zber && pnpm run prijem`
+· stav `pnpm run prijem:stav` · voľby `pnpm run volby` · NR SR `node scripts/nrsr-node.mjs` · pokrytie
+`node scripts/pokrytie-node.mjs --dni 2` a `node scripts/pokrytie-strana.mjs` · prepis
+`.venv/bin/python podcasty/prepis.py prepis <relacia> --pocet N` · pnpm `npx -y pnpm@11.19.0`.
+
+LaunchAgent, nasadenie, zobrazovacia D1, platené služby a kľúče = externé zmeny, iba na Adamov pokyn.

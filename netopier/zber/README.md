@@ -1,7 +1,7 @@
 # netopier-zber — zber a odvodenie Netopiera v2
 
 Zber verejných zdrojov do archívu a odvodenie nad ním. Od 27. 9. 2026 beží **lokálne na Macu**
-(rozhodnutie v `../../docs/redakcia/ROZHODNUTIE.md`): rovnaký TypeScript kód ako Cloudflare Worker,
+(rozhodnutie v `../docs/archiv-2026-10-05/redakcia/ROZHODNUTIE.md`; smer od 5. 10. 2026 je `../SMER.md`): rovnaký TypeScript kód ako Cloudflare Worker,
 ale pracovná databáza je od 29. 9. jeden SQLite súbor `../data/netopier.sqlite` (mimo gitu) s rozhraním D1
 (`scripts/lib/db.mjs`, `node:sqlite`) a surové payloady sú v `../data/raw/` (zdôvodnenie v `../STACK.md`).
 Pôvodná lokálna D1 v `.wrangler/state` ostáva ako záloha; `pnpm run db:z-d1` ju raz skopíruje do súboru.
