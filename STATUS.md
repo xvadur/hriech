@@ -12,6 +12,7 @@ z 27. 9. sú v `netopier/docs/archiv-2026-10-05/`.
 - Backend Netopier beží lokálne na Macu, stav v `netopier/STATUS.md`.
 
 ## Rozhodnutia
+- 2026-10-05 — matica reči „Kto hovorí sám“ (`netopier/podcasty/matica_reci.py`), kalibrovaná na Adamovom svedectve 2020 a denníku 2017 proti 19 kázňam KZ, pustená na Klik 405–407, Tridsiatnik a V redakcii: médiá sa neskrývajú za citácie, ale za vatu (váhacie slová 65–102 na tisíc; kázne 36; Adam 48). Výstup `netopier/data/matica/kto-hovori-sam-2026-10-05.md` (mimo gitu). Stránka merania v Hriechu iba na pokyn. [A]
 - 2026-10-05 — hlavný smer projektu je `netopier/SMER.md`; staré texty do archívu, dáta a história ostávajú [A]
 - 2026-10-04 — verejný web = OSINT dashboard o Slovensku na úrovni SaaS 2027 (vzor World Monitor);
   nie ružový, nie titulky o jednotlivcoch; predloha `netopier/data/predlohy/2026-10-04/hriech-osint.png` [A]
