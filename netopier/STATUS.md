@@ -21,6 +21,9 @@ z 27. 9.) sú v `docs/archiv-2026-10-05/`.
 - **Barometer AI:** 599 titulkov Denníka N o AI (10/2019 – 9/2026) a 108 titulkov zaradených modelom.
 
 ## Rozhodnutia (dátumy z celej histórie projektu)
+- 2026-10-06 — **Netopier = samostatný produkt**, Adamova analytická schopnosť v kóde. Adam je
+  intelektuál, ktorý študuje médiá (nezávislý výskumník); Netopier vydáva snapshoty médií, Adam je
+  autor, výstup visí na jeho webe ako dôkaz. Shitmeter = meno matice hovien. BrokerOS ostáva biznis build [A]
 - 2026-10-05 — **Hlavný smer = `SMER.md`** (prístroj na vyšetrenie Slovenska, 11 modulov); všetko staré
   o Netopierovi do archívu, projekt a dáta pokračujú [A]
 - 2026-10-04 — verejný web Hriech = moderný OSINT dashboard o Slovensku na úrovni SaaS 2027 (vzor
