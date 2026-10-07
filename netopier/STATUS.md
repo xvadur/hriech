@@ -21,6 +21,10 @@ z 27. 9.) sú v `docs/archiv-2026-10-05/`.
 - **Barometer AI:** 599 titulkov Denníka N o AI (10/2019 – 9/2026) a 108 titulkov zaradených modelom.
 
 ## Rozhodnutia (dátumy z celej histórie projektu)
+- 2026-10-07 — **Pravidelná analýza po úsekoch:** každý týždeň (neskôr aj počas týždňa) zmrazený úsek
+  archívu a jeho analýza, z nej formáty. Úsek 01 = `data/useky/usek-01-2026-09-29_2026-10-07.sqlite`
+  (103 263 dokumentov, 29. 9.–7. 10.). Pred stavbou hotové nástroje z GitHubu (Kagi News, Media Cloud,
+  BERTopic, briefing pipeline), nie vlastné od nuly [A]
 - 2026-10-06 — **Netopier = samostatný produkt**, Adamova analytická schopnosť v kóde. Adam je
   intelektuál, ktorý študuje médiá (nezávislý výskumník); Netopier vydáva snapshoty médií, Adam je
   autor, výstup visí na jeho webe ako dôkaz. Shitmeter = meno matice hovien. BrokerOS ostáva biznis build [A]
